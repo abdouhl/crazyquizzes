@@ -1,9 +1,17 @@
 [
-  { "label": "ALL",          "color": "#1a1430", "ink": "#fff" },
-  { "label": "PERSONALITY",  "color": "#6c3bff", "ink": "#fff" },
+  { "label": "ALL",          "color": "#1a1430", "ink": "#fff"    },
+  { "label": "PERSONALITY",  "color": "#6c3bff", "ink": "#fff"    },
+  { "label": "POP CULTURE",  "color": "#ff3b9a", "ink": "#fff"    },
+  { "label": "MOVIES & TV",  "color": "#e74c3c", "ink": "#fff"    },
+  { "label": "MUSIC",        "color": "#8e44ad", "ink": "#fff"    },
   { "label": "FOOD",         "color": "#3bffd2", "ink": "#1a1430" },
-  { "label": "TOXIC TRAITS", "color": "#ff3b9a", "ink": "#fff" },
+  { "label": "TRIVIA",       "color": "#ffd23f", "ink": "#1a1430" },
+  { "label": "SCIENCE",      "color": "#16a085", "ink": "#fff"    },
+  { "label": "HISTORY",      "color": "#d35400", "ink": "#fff"    },
+  { "label": "GEOGRAPHY",    "color": "#2980b9", "ink": "#fff"    },
+  { "label": "SPORTS",       "color": "#e67e22", "ink": "#fff"    },
+  { "label": "TOXIC TRAITS", "color": "#6c3bff", "ink": "#fff"    },
   { "label": "Y2K",          "color": "#ffd23f", "ink": "#1a1430" },
   { "label": "CHAOS",        "color": "#fff",    "ink": "#1a1430" },
-  { "label": "VIBES",        "color": "#6c3bff", "ink": "#fff" }
+  { "label": "VIBES",        "color": "#3bffd2", "ink": "#1a1430" }
 ]

@@ -11,6 +11,7 @@ import blitzesData from '../data/blitzes.json';
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CrazyQuizzes — The Internet's Dumbest Quiz Site</title>
   <meta name="description" content="Take a quiz. Get judged by an algorithm with zero credentials. Send the results to the group chat." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -316,16 +317,14 @@ import blitzesData from '../data/blitzes.json';
       display: flex;
       align-items: center;
       justify-content: center;
-      background: repeating-linear-gradient(45deg, #efe7ff, #efe7ff 11px, #f8f4ff 11px, #f8f4ff 22px);
+      overflow: hidden;
     }
-    .quiz-card-cover-label {
-      font: 600 11px/1 'Courier New', monospace;
-      letter-spacing: .12em;
-      color: #6c3bff;
-      text-transform: uppercase;
-      background: #fff;
-      border: 2px solid #1a1430;
-      padding: 5px 9px;
+    .quiz-card-cover-emoji {
+      font-size: 56px;
+      line-height: 1;
+      filter: drop-shadow(0 4px 14px rgba(0,0,0,.45));
+      user-select: none;
+      letter-spacing: .05em;
     }
     .quiz-card-badge {
       position: absolute;
@@ -858,7 +857,7 @@ import blitzesData from '../data/blitzes.json';
         <button id="nav-blitz" class="nav-btn yellow">⚡ DAILY BLITZ</button>
         <button id="nav-random" class="nav-btn pink">🎲 RANDOM</button>
         <button id="nav-categories" class="nav-plain" style="background:none;border:none;cursor:pointer;">CATEGORIES</button>
-        <span class="nav-plain">ABOUT</span>
+        <a href="/about" class="nav-plain">ABOUT</a>
       </nav>
     </div>
   </header>
@@ -974,8 +973,33 @@ import blitzesData from '../data/blitzes.json';
     function clearTimers() { clearInterval(tickTimer); clearTimeout(advTimer); }
     function doShare() {
       navigator.clipboard.writeText(window.location.href).catch(() => {});
-      setState({ shared: true });
-      setTimeout(() => setState({ shared: false }), 2800);
+      showToast('✓ LINK COPIED — GO RUIN SOMEONE\'S DAY');
+    }
+    function doShareTikTok() {
+      const url = window.location.href;
+      if (navigator.share) {
+        navigator.share({ title: document.title, url }).catch(() => {});
+      } else {
+        navigator.clipboard.writeText(url).catch(() => {});
+        showToast('LINK COPIED — PASTE IT IN YOUR TIKTOK BIO 🎵');
+      }
+    }
+    function doShareInsta() {
+      const url = window.location.href;
+      if (navigator.share) {
+        navigator.share({ title: document.title, url }).catch(() => {});
+      } else {
+        navigator.clipboard.writeText(url).catch(() => {});
+        showToast('LINK COPIED — ADD IT TO YOUR INSTA STORY 📸');
+      }
+    }
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      if (!t) return;
+      t.textContent = msg;
+      t.style.display = 'block';
+      clearTimeout(showToast._tid);
+      showToast._tid = setTimeout(() => { t.style.display = 'none'; }, 2800);
     }
 
     // ============================================================
@@ -996,7 +1020,7 @@ import blitzesData from '../data/blitzes.json';
             <p>Take a quiz. Get judged by an algorithm with zero credentials. Send the results to the group chat. Repeat until 3am.</p>
             <div class="hero-btns">
               <button class="btn-primary" data-action="random">🎲 SPIN A RANDOM QUIZ</button>
-              <button class="btn-secondary" data-action="random">↓ BROWSE ALL</button>
+              <button class="btn-secondary" data-action="browse">↓ BROWSE ALL</button>
             </div>
           </section>
 
@@ -1041,8 +1065,8 @@ import blitzesData from '../data/blitzes.json';
                   </div>`;
                 return filtered.map(card => `
                   <div class="quiz-card" data-action="${e(card.type === 'blitz' ? 'blitz' : 'quiz')}" data-id="${e(card.id)}">
-                    <div class="quiz-card-cover">
-                      <span class="quiz-card-cover-label">${e(card.cover)}</span>
+                    <div class="quiz-card-cover" style="background:${e(card.coverBg)};">
+                      <span class="quiz-card-cover-emoji">${e(card.coverEmoji)}</span>
                       <span class="quiz-card-badge" style="background:${e(card.badgeColor)};color:${e(card.badgeInk)};">${e(card.badge)}</span>
                     </div>
                     <div class="quiz-card-body">
@@ -1075,11 +1099,14 @@ import blitzesData from '../data/blitzes.json';
                 <div class="footer-wip">UNDER-CONSTRUCTION.GIF</div>
               </div>
               <div class="footer-sitemap">
-                <span class="label">SITEMAP</span>
-                <a>All Quizzes</a>
-                <a>Make a Quiz</a>
-                <a>Hall of Shame</a>
-                <a>Sign Our Guestbook</a>
+                <span class="label">QUIZZES</span>
+                <a data-action="home" style="cursor:pointer;">All Quizzes</a>
+                <a data-action="random" style="cursor:pointer;">Random Quiz</a>
+                <span class="label" style="margin-top:8px;">COMPANY</span>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Use</a>
               </div>
             </div>
             <div class="footer-bottom">
@@ -1167,8 +1194,8 @@ import blitzesData from '../data/blitzes.json';
               <div class="share-label">SHARE YOUR DIAGNOSIS</div>
               <div class="share-grid">
                 <button class="share-btn pink" data-action="share">📋 COPY LINK</button>
-                <button class="share-btn cyan" data-action="share">TIKTOK</button>
-                <button class="share-btn yellow" data-action="share">INSTA</button>
+                <button class="share-btn cyan" data-action="share-tiktok">TIKTOK</button>
+                <button class="share-btn yellow" data-action="share-insta">INSTA</button>
               </div>
               <div class="results-actions">
                 <button class="btn-retake" data-action="retake">↻ TAKE AGAIN</button>
@@ -1282,8 +1309,8 @@ import blitzesData from '../data/blitzes.json';
               <div class="share-label">CHALLENGE A FRIEND</div>
               <div class="share-grid">
                 <button class="share-btn pink" data-action="share">📋 COPY LINK</button>
-                <button class="share-btn cyan" data-action="share">TIKTOK</button>
-                <button class="share-btn yellow" data-action="share">INSTA</button>
+                <button class="share-btn cyan" data-action="share-tiktok">TIKTOK</button>
+                <button class="share-btn yellow" data-action="share-insta">INSTA</button>
               </div>
               <div class="results-actions">
                 <button class="btn-retake" data-action="startblitz">↻ PLAY AGAIN</button>
@@ -1340,9 +1367,12 @@ import blitzesData from '../data/blitzes.json';
         case 'pick':       pickAnswer(el.dataset.key); break;
         case 'bpick':      lockBlitz(parseInt(el.dataset.idx)); break;
         case 'retake':     retakeQuiz(); break;
-        case 'share':      doShare(); break;
-        case 'filter':     filterCat(el.dataset.cat); break;
-        case 'categories': openCategories(); break;
+        case 'browse':        document.getElementById('cat-chips-section')?.scrollIntoView({ behavior: 'smooth' }); break;
+        case 'share':         doShare(); break;
+        case 'share-tiktok':  doShareTikTok(); break;
+        case 'share-insta':   doShareInsta(); break;
+        case 'filter':        filterCat(el.dataset.cat); break;
+        case 'categories':    openCategories(); break;
       }
     }
 

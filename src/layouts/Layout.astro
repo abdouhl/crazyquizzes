@@ -1,0 +1,243 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description = 'CrazyQuizzes — The Internet\'s Dumbest Quiz Site' } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title} — CrazyQuizzes</title>
+  <meta name="description" content={description} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style is:global>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      color: #1a1430;
+      background-color: #f3eeff;
+      background-image: linear-gradient(rgba(108,59,255,.08) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(108,59,255,.08) 1px, transparent 1px);
+      background-size: 28px 28px;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: #fffdf7;
+      border-bottom: 3px solid #1a1430;
+      box-shadow: 0 4px 0 rgba(26,20,48,.12);
+    }
+    .header-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 12px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    @keyframes cq-spin { to { transform: rotate(360deg); } }
+    .logo-star {
+      font-family: 'Bungee', cursive;
+      color: #6c3bff;
+      display: inline-block;
+      animation: cq-spin 7s linear infinite;
+      font-size: 22px;
+    }
+    .logo-text { font-family: 'Bungee', cursive; font-size: clamp(18px, 3vw, 24px); letter-spacing: .01em; }
+    .logo-text .crazy { color: #6c3bff; }
+    .logo-text .quizzes { color: #1a1430; }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      font-family: 'Bungee', cursive;
+      font-size: 11px;
+    }
+    .nav-btn {
+      cursor: pointer;
+      text-decoration: none;
+      color: #1a1430;
+      border: 2px solid #1a1430;
+      padding: 7px 12px;
+      box-shadow: 3px 3px 0 #1a1430;
+      transition: transform .1s, box-shadow .1s;
+      background: #3bffd2;
+      font-family: 'Bungee', cursive;
+      font-size: 11px;
+      display: inline-block;
+    }
+    .nav-btn:hover { transform: translate(-1px,-1px); box-shadow: 4px 4px 0 #1a1430; }
+    .nav-btn.yellow { background: #ffd23f; }
+    .nav-btn.pink { background: #ff3b9a; color: #fff; }
+    .nav-plain {
+      cursor: pointer;
+      text-decoration: none;
+      color: #1a1430;
+      padding: 7px 6px;
+      opacity: .7;
+      font-family: 'Bungee', cursive;
+      font-size: 11px;
+    }
+
+    .page-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 54px 22px 80px;
+    }
+    .page-badge {
+      display: inline-block;
+      font-family: 'Bungee', cursive;
+      font-size: 11px;
+      background: #1a1430;
+      color: #3bffd2;
+      padding: 6px 12px;
+      border: 3px solid #1a1430;
+      box-shadow: 4px 4px 0 #6c3bff;
+      margin-bottom: 18px;
+    }
+    .page-title {
+      font-family: 'Bungee', cursive;
+      font-size: clamp(32px, 6vw, 56px);
+      line-height: 1;
+      margin: 0 0 24px;
+    }
+    .page-body {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #2d2250;
+    }
+    .page-body h2 {
+      font-family: 'Bungee', cursive;
+      font-size: 18px;
+      margin: 36px 0 10px;
+      color: #1a1430;
+    }
+    .page-body p { margin: 0 0 16px; }
+    .page-body ul { margin: 0 0 16px; padding-left: 22px; }
+    .page-body li { margin-bottom: 6px; }
+    .page-body a { color: #6c3bff; text-decoration: underline; }
+
+    .contact-card {
+      background: #fffdf7;
+      border: 3px solid #1a1430;
+      box-shadow: 6px 6px 0 #1a1430;
+      padding: 28px 32px;
+      margin-top: 32px;
+    }
+    .contact-card h2 { margin-top: 0; }
+    .contact-email {
+      display: inline-block;
+      font-family: 'Bungee', cursive;
+      font-size: 18px;
+      color: #6c3bff;
+      text-decoration: none;
+      border-bottom: 3px solid #6c3bff;
+    }
+
+    footer {
+      background: #1a1430;
+      border-top: 3px solid #1a1430;
+      color: #fff;
+      margin-top: 0;
+    }
+    .footer-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 40px 22px 24px;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    .footer-brand { max-width: 300px; }
+    .footer-logo { font-family: 'Bungee', cursive; font-size: 22px; margin-bottom: 10px; }
+    .footer-logo .crazy { color: #3bffd2; }
+    .footer-logo .quizzes { color: #fff; }
+    .footer-desc { font-size: 13px; line-height: 1.5; color: #b3a9d6; margin: 0 0 14px; }
+    .footer-tagline { font: 600 10px/1 'Courier New', monospace; color: #3bffd2; letter-spacing: .1em; }
+    .footer-sitemap { font-family: 'Bungee', cursive; font-size: 11px; display: flex; flex-direction: column; gap: 10px; }
+    .footer-sitemap .label { color: #ff3b9a; }
+    .footer-sitemap .label:not(:first-child) { margin-top: 8px; }
+    .footer-sitemap a { color: #fff; text-decoration: none; cursor: pointer; }
+    .footer-sitemap a:hover { color: #3bffd2; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.12);
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 16px 22px;
+      font-size: 12px;
+      color: #b3a9d6;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="Go home">
+        <span class="logo-star">✦</span>
+        <span class="logo-text"><span class="crazy">CRAZY</span><span class="quizzes">QUIZZES</span></span>
+      </a>
+      <nav>
+        <a href="/" class="nav-btn">QUIZZES</a>
+        <a href="/#daily-blitz" class="nav-btn yellow">⚡ DAILY BLITZ</a>
+        <a href="/" class="nav-btn pink">🎲 RANDOM</a>
+        <a href="/about" class="nav-plain">ABOUT</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-wrap">
+    <slot />
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="crazy">CRAZY</span><span class="quizzes">QUIZZES</span></div>
+        <p class="footer-desc">Diagnosing your personality with snacks since right now. Results may be used against you in the group chat.</p>
+        <div class="footer-tagline">★ BEST VIEWED IN NETSCAPE NAVIGATOR 4.0 ★</div>
+      </div>
+      <div class="footer-sitemap">
+        <span class="label">QUIZZES</span>
+        <a href="/">All Quizzes</a>
+        <a href="/">Random Quiz</a>
+        <span class="label">COMPANY</span>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Use</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CrazyQuizzes.com — made with ♥ and zero focus groups</span>
+      <span>crazyquizzes.com</span>
+    </div>
+  </footer>
+</body>
+</html>

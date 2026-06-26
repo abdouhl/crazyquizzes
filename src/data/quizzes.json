@@ -321,5 +321,113 @@
       "vine":    { "name": "VINE BRAIN",             "kind": "The Chronically Quotable", "color": "#3bffd2", "nameInk": "#1a1430", "rarity": "24%", "tagline": "Road work ahead? Yeah, I sure hope it does.",                  "traits": ["Timing Impeccable", "Reference Dense", "6-Second Soul"],   "desc": "You communicate in 6-second references and you don't fully understand why people don't get them. The platform is dead but you carry it in your soul. It is Wednesday, my dudes. It will always be Wednesday." },
       "current": { "name": "CHRONICALLY ONLINE",     "kind": "The Final Form",           "color": "#ff3b9a", "nameInk": "#fff",    "rarity": "29%", "tagline": "You've been online so long you've become the internet.",       "traits": ["Deeply Ironic", "Hyperaware", "Operating on Different Physics"], "desc": "You have ascended beyond any single era and become something new. You speak fluent irony. You have opinions about discourse meta-discourse. You are aware of at least four ongoing controversies at all times. Unhinged. Thriving." }
     }
+  },
+
+  "sports-personality": {
+    "title": "What's Your Sports Personality?",
+    "cover": "sports collage",
+    "cat": "PERSONALITY · SPORTS",
+    "minutes": 2,
+    "qcount": 6,
+    "takes": "423K",
+    "desc": "Are you the diehard who paints their face, the casual fan there for vibes, or the couch oracle with seventeen hot takes? Find out which sports archetype the algorithm assigns you.",
+    "questions": [
+      { "text": "It's game day. You:", "options": [
+        { "label": "Wake up early, face paint, full kit on", "key": "ultra" },
+        { "label": "Show up if a friend drags you along",    "key": "casual" },
+        { "label": "Watch solo from the sofa in pajamas",   "key": "couch" },
+        { "label": "Check the final score the next morning","key": "vibe" }
+      ]},
+      { "text": "Your team is losing badly. You:", "options": [
+        { "label": "Yell tactical advice at the TV",         "key": "ultra" },
+        { "label": "Stay calm — it's just a game",          "key": "casual" },
+        { "label": "Switch channels, come back for extra time", "key": "couch" },
+        { "label": "Open a different app and emotionally disengage", "key": "vibe" }
+      ]},
+      { "text": "Pick a stadium snack:", "options": [
+        { "label": "Nothing — you're too tense to eat",     "key": "ultra" },
+        { "label": "Hot dog. Classic. No notes.",           "key": "casual" },
+        { "label": "Loaded nachos with extra jalapeños",    "key": "couch" },
+        { "label": "Overpriced drink and vibes only",       "key": "vibe" }
+      ]},
+      { "text": "Your ideal sport to watch:", "options": [
+        { "label": "Football/Soccer — the drama is unmatched", "key": "ultra" },
+        { "label": "Basketball — fast, flashy, nonstop",    "key": "casual" },
+        { "label": "Tennis — tactical, intense, no excuses","key": "couch" },
+        { "label": "Formula 1 — it's basically a TV show",  "key": "vibe" }
+      ]},
+      { "text": "Your athletic background:", "options": [
+        { "label": "Always picked first. Born competitive.", "key": "ultra" },
+        { "label": "Pretty decent — just never went pro",   "key": "casual" },
+        { "label": "I once ran for a bus. That counts.",    "key": "couch" },
+        { "label": "I am the witness. The snack-eater.",    "key": "vibe" }
+      ]},
+      { "text": "Sports rivalries are:", "options": [
+        { "label": "Sacred. They fuel my entire soul.",     "key": "ultra" },
+        { "label": "Fun to follow from a healthy distance", "key": "casual" },
+        { "label": "The most dramatic content on TV",       "key": "couch" },
+        { "label": "Exhausting but the memes are excellent","key": "vibe" }
+      ]}
+    ],
+    "results": {
+      "ultra":  { "name": "THE ULTRAFAN",     "kind": "The One Who Bleeds Team Colors",   "color": "#e67e22", "nameInk": "#fff",    "rarity": "23%", "tagline": "You own the jersey, the scarf, and three commemorative mugs.",  "traits": ["Deeply Loyal", "Loudly Passionate", "Emotionally Invested", "Owns Too Much Merch"], "desc": "You don't watch sports — you live them. Every referee decision is a personal attack. Every win is a religious experience. Every loss requires at least 48 hours of recovery time. The group chat dreads game day. You thrive." },
+      "casual": { "name": "THE CASUAL FAN",   "kind": "The Balanced One",                 "color": "#3bffd2", "nameInk": "#1a1430", "rarity": "38%", "tagline": "You enjoy sport without letting it ruin your week.",           "traits": ["Level-Headed", "Socially Sporty", "Good at Small Talk", "Healthy Boundaries"], "desc": "You know the rules, you have your favorites, and you can hold a solid conversation about the big games. But you also have a life outside of it. This is genuinely impressive. We respect it." },
+      "couch":  { "name": "THE COUCH ORACLE", "kind": "Tactical Genius, Horizontal Form", "color": "#6c3bff", "nameInk": "#fff",    "rarity": "27%", "tagline": "You could coach them. From here. Right now.",                  "traits": ["Deep Thinker", "Hot Take Machine", "Horizontal Athlete", "Loudly Correct"], "desc": "You know the stats, the formations, and exactly what the manager should have done. You just prefer delivering this analysis from a reclined position with snacks nearby. The players should be grateful." },
+      "vibe":   { "name": "THE VIBE FAN",     "kind": "Here for the Atmosphere",          "color": "#ff3b9a", "nameInk": "#fff",    "rarity": "12%", "tagline": "You're there for the drama, the atmosphere, and the snacks.",  "traits": ["Pure Energy", "Social Butterfly", "Snack Enthusiast", "Accidentally Invested"], "desc": "You didn't plan on caring. You definitely care now. You couldn't name three players on the roster but you have FEELINGS about this team and they are STRONG and you don't fully understand why." }
+    }
+  },
+
+  "music-era": {
+    "title": "Which Music Era Are You?",
+    "cover": "music timeline",
+    "cat": "PERSONALITY · MUSIC",
+    "minutes": 2,
+    "qcount": 6,
+    "takes": "614K",
+    "desc": "From vinyl and bell-bottoms to algorithmic playlists and bedroom pop — every era has a vibe. Which one does the algorithm say matches your soul?",
+    "questions": [
+      { "text": "Your ideal listening setup:", "options": [
+        { "label": "Vinyl player, warm lamp, no interruptions", "key": "classic" },
+        { "label": "CD Walkman with slightly tangled headphones","key": "nineties" },
+        { "label": "iPod shuffle — beautiful chaos",            "key": "indie" },
+        { "label": "Algorithmic playlist that knows me too well","key": "algo" }
+      ]},
+      { "text": "How do you discover new music?", "options": [
+        { "label": "A trusted friend hands me a physical recommendation", "key": "classic" },
+        { "label": "A music video I happened to catch on TV",             "key": "nineties" },
+        { "label": "Obscure blogs and friends with taste",                "key": "indie" },
+        { "label": "Short-form video app rabbit holes at 1am",            "key": "algo" }
+      ]},
+      { "text": "Pick a concert type:", "options": [
+        { "label": "Intimate club show — 200 people, real soul",       "key": "classic" },
+        { "label": "Stadium spectacle with light shows and merch",     "key": "nineties" },
+        { "label": "Festival set you discovered by accident",          "key": "indie" },
+        { "label": "Artist livestream from their actual bedroom",      "key": "algo" }
+      ]},
+      { "text": "Pick a genre for a full day of listening:", "options": [
+        { "label": "Classic rock, soul, or jazz",                      "key": "classic" },
+        { "label": "Pop, R&B, and early hip-hop",                      "key": "nineties" },
+        { "label": "Indie, emo, or whatever was core to me at 15",     "key": "indie" },
+        { "label": "Hyperpop, bedroom pop, whatever's trending",       "key": "algo" }
+      ]},
+      { "text": "How do you organize your music?", "options": [
+        { "label": "By album, in order, as the artist intended",       "key": "classic" },
+        { "label": "Burned CDs with hand-drawn track lists",           "key": "nineties" },
+        { "label": "An overstuffed library I pretend is curated",      "key": "indie" },
+        { "label": "A billion playlists for every micro-mood",         "key": "algo" }
+      ]},
+      { "text": "Music, to you, is:", "options": [
+        { "label": "An art form that demands patience and respect",    "key": "classic" },
+        { "label": "The soundtrack to my most defining memories",      "key": "nineties" },
+        { "label": "Something I feel deeply but can't always explain", "key": "indie" },
+        { "label": "Content that finds me at exactly the right moment","key": "algo" }
+      ]}
+    ],
+    "results": {
+      "classic":  { "name": "CLASSIC ERA",       "kind": "Born in the Wrong Decade",      "color": "#8e44ad", "nameInk": "#fff",    "rarity": "18%", "tagline": "You believe music peaked somewhere between 1965 and 1985.",      "traits": ["Old Soul", "Album Purist", "Vinyl Defender", "Gatekeeps (Lovingly)"],     "desc": "Everything since has been, in your considered view, a slow decline. You own at least one band t-shirt older than most of your friends, and you have strong opinions about which pressing sounds better. We respect the commitment." },
+      "nineties": { "name": "90s / 00s ERA",     "kind": "TRL Was Your Church",           "color": "#ff3b9a", "nameInk": "#fff",    "rarity": "31%", "tagline": "Having your song on someone's CD mix was the ultimate gesture.", "traits": ["Chronically Nostalgic", "Mix CD Artisan", "MTV Brain", "Emotionally Available"], "desc": "You came of age when music videos were an event, boy bands were serious business, and a burned CD mix was romance in physical form. You still know every lyric to songs you haven't heard in fifteen years." },
+      "indie":    { "name": "2010s ERA",         "kind": "Peaked Emotionally at a Festival","color": "#3bffd2", "nameInk": "#1a1430","rarity": "29%", "tagline": "You discovered yourself through music that most people forgot.", "traits": ["Deeply Felt", "Festival Veteran", "Identity Through Lyrics", "Still Processing"], "desc": "You felt every lyric personally, have strong opinions about albums most people skipped, and still consider a specific set of songs to be load-bearing infrastructure of your personality. It shaped you. We can tell." },
+      "algo":     { "name": "ALGORITHM ERA",     "kind": "Spotify Knows You Better Than You Do","color": "#ffd23f","nameInk":"#1a1430","rarity": "22%","tagline": "You've fully let go and the playlist is driving now.",            "traits": ["Digital Native", "Vibe-Driven", "Wrapped Devotee", "Eternally Discovering"], "desc": "You discover artists through 15-second clips, your Spotify Wrapped is a genuine personality test, and you are completely at peace with letting an algorithm make your listening decisions. Bold. Efficient. Very 2020s." }
+    }
   }
 }

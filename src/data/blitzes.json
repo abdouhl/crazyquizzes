@@ -73,5 +73,37 @@
       { "kind": "GUESS THE BRAND", "prompt": "🔍🌈",    "text": "Which brand does this emoji represent?", "options": ["Bing","DuckDuckGo","Google","Yahoo"],           "correct": 2 },
       { "kind": "GUESS THE BRAND", "prompt": "🎵❤️",    "text": "Which brand does this emoji represent?", "options": ["Apple Music","Spotify","SoundCloud","Tidal"],   "correct": 1 }
     ]
+  },
+
+  "history-events": {
+    "title": "Guess the Historical Event by Emoji",
+    "questions": [
+      { "kind": "GUESS THE EVENT", "prompt": "🚀🌕👨‍🚀",  "text": "Which event is this?", "options": ["Apollo 11 Moon Landing","Space Shuttle Launch","Sputnik Launch","Mars Rover Mission"],    "correct": 0 },
+      { "kind": "GUESS THE EVENT", "prompt": "🧱💥🎉",    "text": "Which event is this?", "options": ["Great Wall Completed","Berlin Wall Falls","Bastille Stormed","Pompeii Destroyed"],         "correct": 1 },
+      { "kind": "GUESS THE EVENT", "prompt": "🍎🌳💡",    "text": "Which event is this?", "options": ["Darwin's Theory","Newton & Gravity","Industrial Revolution","Enlightenment Begins"],       "correct": 1 },
+      { "kind": "GUESS THE EVENT", "prompt": "🖨️📖✍️",   "text": "Which event is this?", "options": ["Gutenberg's Printing Press","The Renaissance","Writing Invented","First Newspaper"],       "correct": 0 },
+      { "kind": "GUESS THE EVENT", "prompt": "⚓🌊🗺️",   "text": "Which event is this?", "options": ["The Crusades","Columbus Reaches the Americas","Vasco da Gama's Route","The Spanish Armada"],"correct": 1 },
+      { "kind": "GUESS THE EVENT", "prompt": "🦠😷⚰️",   "text": "Which event is this?", "options": ["Spanish Flu","The Black Death","COVID-19","Cholera Pandemic"],                             "correct": 1 },
+      { "kind": "GUESS THE EVENT", "prompt": "💣✈️🗽",   "text": "Which event is this?", "options": ["Pearl Harbor","9/11 Attacks","Hiroshima Bombing","D-Day Landing"],                         "correct": 1 },
+      { "kind": "GUESS THE EVENT", "prompt": "🔬💉🦟",   "text": "Which event is this?", "options": ["Discovery of Penicillin","First Vaccine Created","DNA Structure Found","Germ Theory Proven"],"correct": 0 },
+      { "kind": "GUESS THE EVENT", "prompt": "🧊❄️🚢",   "text": "Which event is this?", "options": ["Scott's Antarctic Trip","The Titanic Sinks","Shackleton's Endurance","Klondike Gold Rush"],  "correct": 1 },
+      { "kind": "GUESS THE EVENT", "prompt": "🌍✊📜",    "text": "Which event is this?", "options": ["French Revolution","American Independence","Magna Carta Signed","Abolition of Slavery"],     "correct": 1 }
+    ]
+  },
+
+  "science-facts": {
+    "title": "Science: True or False? Round 2",
+    "questions": [
+      { "kind": "TRUE OR FALSE", "prompt": "🧬", "text": "DNA stands for Deoxyribonucleic Acid.",                       "options": ["TRUE","FALSE"], "correct": 0 },
+      { "kind": "TRUE OR FALSE", "prompt": "☀️", "text": "The Sun is classified as a planet in our solar system.",      "options": ["TRUE","FALSE"], "correct": 1 },
+      { "kind": "TRUE OR FALSE", "prompt": "🫀", "text": "The human heart beats roughly 100,000 times per day.",        "options": ["TRUE","FALSE"], "correct": 0 },
+      { "kind": "TRUE OR FALSE", "prompt": "🦴", "text": "Adults have more bones than newborn babies.",                 "options": ["TRUE","FALSE"], "correct": 1 },
+      { "kind": "TRUE OR FALSE", "prompt": "🕸️", "text": "Spider silk is stronger than steel of the same thickness.",  "options": ["TRUE","FALSE"], "correct": 0 },
+      { "kind": "TRUE OR FALSE", "prompt": "🌪️", "text": "Sound travels faster than light.",                           "options": ["TRUE","FALSE"], "correct": 1 },
+      { "kind": "TRUE OR FALSE", "prompt": "🐬", "text": "Dolphins sleep with one hemisphere of their brain at a time.","options": ["TRUE","FALSE"], "correct": 0 },
+      { "kind": "TRUE OR FALSE", "prompt": "🔬", "text": "Atoms are mostly empty space.",                               "options": ["TRUE","FALSE"], "correct": 0 },
+      { "kind": "TRUE OR FALSE", "prompt": "🌙", "text": "The Moon produces its own light.",                            "options": ["TRUE","FALSE"], "correct": 1 },
+      { "kind": "TRUE OR FALSE", "prompt": "🧲", "text": "Opposite poles of magnets attract each other.",               "options": ["TRUE","FALSE"], "correct": 0 }
+    ]
   }
 }
