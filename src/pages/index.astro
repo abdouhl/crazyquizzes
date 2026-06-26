@@ -1,4 +1,8 @@
 ---
+import catsData    from '../data/categories.json';
+import cardsData   from '../data/cards.json';
+import quizzesData from '../data/quizzes.json';
+import blitzesData from '../data/blitzes.json';
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -865,102 +869,7 @@
   <!-- SHARE TOAST -->
   <div id="toast" class="toast" style="display:none;">✓ LINK COPIED — GO RUIN SOMEONE'S DAY</div>
 
-  <script>
-    // ============================================================
-    // DATA
-    // ============================================================
-    const cats = [
-      { label: 'ALL', color: '#1a1430', ink: '#fff' },
-      { label: 'PERSONALITY', color: '#6c3bff', ink: '#fff' },
-      { label: 'FOOD', color: '#3bffd2', ink: '#1a1430' },
-      { label: 'TOXIC TRAITS', color: '#ff3b9a', ink: '#fff' },
-      { label: 'Y2K', color: '#ffd23f', ink: '#1a1430' },
-      { label: 'CHAOS', color: '#fff', ink: '#1a1430' },
-      { label: 'VIBES', color: '#6c3bff', ink: '#fff' },
-    ];
-
-    const cards = [
-      { title: 'Guess the Movie by Emoji', cat: 'EMOJI BLITZ', takes: '1.4M', cover: 'emoji puzzle', badge: '⚡ BLITZ', badgeColor: '#ffd23f', badgeInk: '#1a1430', type: 'blitz',        categories: ['ALL', 'CHAOS'] },
-      { title: 'Which Y2K Snack Are You?', cat: 'PERSONALITY', takes: '847K', cover: 'snack collage', badge: '🔥 HOT',  badgeColor: '#ff3b9a', badgeInk: '#fff',    type: 'personality', categories: ['ALL', 'PERSONALITY', 'FOOD', 'Y2K'] },
-      { title: 'Guess the Flag in 10 Seconds', cat: 'FLAG BLITZ', takes: '903K', cover: 'world flags', badge: '⚡ BLITZ', badgeColor: '#ffd23f', badgeInk: '#1a1430', type: 'blitz',        categories: ['ALL', 'CHAOS', 'VIBES'] },
-      { title: 'True or False: Science Edition', cat: 'TRUE / FALSE', takes: '612K', cover: 'true or false', badge: '⚡ BLITZ', badgeColor: '#ffd23f', badgeInk: '#1a1430', type: 'blitz', categories: ['ALL', 'CHAOS', 'VIBES'] },
-      { title: "What's Your Actual Toxic Trait?", cat: 'PERSONALITY', takes: '1.2M', cover: 'warning sign', badge: 'TOXIC', badgeColor: '#6c3bff', badgeInk: '#fff', type: 'personality',  categories: ['ALL', 'PERSONALITY', 'TOXIC TRAITS', 'CHAOS'] },
-      { title: 'Daily Trivia Blitz', cat: 'TRIVIA', takes: '2.1M', cover: 'brain teasers', badge: '⚡ DAILY', badgeColor: '#3bffd2', badgeInk: '#1a1430', type: 'blitz',                   categories: ['ALL', 'VIBES', 'CHAOS'] },
-    ];
-
-    const blitzData = {
-      questions: [
-        { kind: 'GUESS THE MOVIE', prompt: '🦁👑', text: 'Which movie is this?', options: ['The Lion King', 'Madagascar', 'Jumanji', 'Zootopia'], correct: 0 },
-        { kind: 'GUESS THE COUNTRY', prompt: '🇯🇵', text: 'Whose flag is this?', options: ['China', 'South Korea', 'Japan', 'Thailand'], correct: 2 },
-        { kind: 'TRUE OR FALSE', prompt: '', text: "A group of flamingos is called a 'flamboyance'.", options: ['TRUE', 'FALSE'], correct: 0 },
-        { kind: 'GUESS THE BRAND', prompt: '🍎', text: 'Which brand does this represent?', options: ['Apple', 'Samsung', 'LG', 'Sony'], correct: 0 },
-        { kind: 'GUESS THE COUNTRY', prompt: '🇧🇷', text: 'Whose flag is this?', options: ['Argentina', 'Portugal', 'Brazil', 'Mexico'], correct: 2 },
-        { kind: 'TRIVIA', prompt: '🐙', text: 'How many hearts does an octopus have?', options: ['1', '2', '3', '8'], correct: 2 },
-        { kind: 'GUESS THE MOVIE', prompt: '🕷️🕸️🧑', text: 'Which movie is this?', options: ['Spider-Man', 'Ant-Man', 'Venom', 'Batman'], correct: 0 },
-        { kind: 'TRUE OR FALSE', prompt: '🗼', text: 'The Eiffel Tower can grow over 15 cm taller in summer.', options: ['TRUE', 'FALSE'], correct: 0 },
-        { kind: 'GUESS THE COUNTRY', prompt: '🇨🇦', text: 'Whose flag is this?', options: ['USA', 'Canada', 'Switzerland', 'Turkey'], correct: 1 },
-        { kind: 'GUESS THE SHOW', prompt: '🦑🔴🟢', text: 'Which show is this?', options: ['Squid Game', 'Alice in Borderland', 'Money Heist', 'Dark'], correct: 0 },
-      ],
-    };
-
-    const quizData = {
-      title: 'Which Y2K Snack Are You?',
-      cover: 'snack collage',
-      minutes: 2,
-      qcount: 6,
-      takes: '847K',
-      desc: "Answer 6 deeply unserious questions and our totally unqualified algorithm will diagnose your entire personality based on a discontinued lunchbox snack. No notes.",
-      questions: [
-        { text: "It's Friday night. Where you at?", options: [
-          { label: 'Throwing a party nobody asked for', key: 'dunk' },
-          { label: 'Crying to a playlist I made for this', key: 'gush' },
-          { label: 'Off the grid, not answering texts', key: 'capri' },
-          { label: "Color-coding next week's plans", key: 'lunch' } ] },
-        { text: 'Your role in the group chat is:', options: [
-          { label: 'Sending 47 unhinged memes a minute', key: 'dunk' },
-          { label: 'The paragraph-long emotional confessions', key: 'gush' },
-          { label: 'Left on read, replies 3 days later', key: 'capri' },
-          { label: 'The one actually making the plans', key: 'lunch' } ] },
-        { text: 'Pick a Y2K starter pack:', options: [
-          { label: 'Glitter butterfly clips & pure chaos', key: 'dunk' },
-          { label: 'Heart locket & a secret diary', key: 'gush' },
-          { label: 'Frosted tips, sunglasses indoors', key: 'capri' },
-          { label: 'Label maker & a gel pen collection', key: 'lunch' } ] },
-        { text: 'Choose your toxic trait (be honest):', options: [
-          { label: 'Starting drama purely for content', key: 'dunk' },
-          { label: 'Falling in love in 4 business days', key: 'gush' },
-          { label: 'Emotionally unavailable (but cute)', key: 'capri' },
-          { label: "Saying \"I'm fine\" while spiraling", key: 'lunch' } ] },
-        { text: 'Your phone ringtone is:', options: [
-          { label: 'An airhorn. Obviously.', key: 'dunk' },
-          { label: 'A sad acoustic cover of a pop song', key: 'gush' },
-          { label: 'Silent. Always silent.', key: 'capri' },
-          { label: 'The intro to a productivity podcast', key: 'lunch' } ] },
-        { text: 'Pick the vibe for your funeral:', options: [
-          { label: 'Bouncy castle & confetti cannons', key: 'dunk' },
-          { label: 'Everyone sobbing dramatically', key: 'gush' },
-          { label: "I faked it. I'm in Tulum.", key: 'capri' },
-          { label: 'Perfectly catered & exactly on schedule', key: 'lunch' } ] },
-      ],
-      results: {
-        dunk: { name: 'DUNKAROOS', kind: 'The Chaotic Nostalgic', color: '#ff3b9a', nameInk: '#fff', rarity: '23%',
-          tagline: 'You ARE the party — and also the reason it got shut down.',
-          traits: ['Unserious', 'Beloved', 'A Little Feral'],
-          desc: "You run on nostalgia and bad decisions. People can't stay mad at you because you're basically a walking dopamine rush in human form. Frosting optional, chaos mandatory." },
-        gush: { name: 'GUSHERS', kind: 'The Unhinged Romantic', color: '#6c3bff', nameInk: '#fff', rarity: '19%',
-          tagline: 'Sweet on the outside, completely liquid on the inside.',
-          traits: ['Dramatic', 'Soft', 'Oversharer'],
-          desc: "One bite and you EXPLODE with feelings. You fall hard, text first, and have already named your future kids. Your love language is the 2am paragraph. We respect it." },
-        capri: { name: 'CAPRI SUN', kind: 'The Unbothered Enigma', color: '#3bffd2', nameInk: '#1a1430', rarity: '31%',
-          tagline: 'Impossible to read, impossible to open.',
-          traits: ['Mysterious', 'Chill', 'Lowkey Chaotic'],
-          desc: "Everyone wants to know what's going on with you and nobody ever will. You stab your own straw through the back and ghost with elegance. Effortlessly iconic." },
-        lunch: { name: 'LUNCHABLES', kind: 'The Overachieving Architect', color: '#ffd23f', nameInk: '#1a1430', rarity: '27%',
-          tagline: 'You build your own fun out of spare parts.',
-          traits: ['Organized', 'Extra', 'Secretly Tired'],
-          desc: "You're the planner, the host, the one with the color-coded spreadsheet. You assemble joy with military precision and then quietly need a nap. A legend, frankly." },
-      },
-    };
+  <script define:vars={{ cats: catsData, cards: cardsData, quizzes: quizzesData, blitzes: blitzesData }}>
 
     const hitDigits = ['0','0','4','2','0','6','9','1'];
 
@@ -970,6 +879,8 @@
     let state = {
       view: 'home',
       activeCat: 'ALL',
+      activeQuizId: null,
+      activeBlitzId: null,
       qIndex: 0,
       scores: {},
       result: null,
@@ -1007,20 +918,21 @@
       document.getElementById('cat-chips-section')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     function openRandom() {
-      const randomCard = cards[Math.floor(Math.random() * cards.length)];
-      if (randomCard.type === 'blitz') openBlitz();
-      else openQuiz();
+      const card = cards[Math.floor(Math.random() * cards.length)];
+      if (card.type === 'blitz') openBlitz(card.id);
+      else openQuiz(card.id);
     }
-    function openQuiz() { setState({ view: 'intro', shared: false }); }
+    function openQuiz(id) { setState({ view: 'intro', activeQuizId: id, shared: false }); }
     function startQuiz() { setState({ view: 'question', qIndex: 0, scores: {}, result: null }); }
     function retakeQuiz() { setState({ view: 'question', qIndex: 0, scores: {}, result: null, shared: false }); }
 
     function pickAnswer(key) {
+      const quiz = quizzes[state.activeQuizId];
       const scores = { ...state.scores };
       scores[key] = (scores[key] || 0) + 1;
       const next = state.qIndex + 1;
-      if (next >= quizData.questions.length) {
-        const keys = Object.keys(quizData.results);
+      if (next >= quiz.questions.length) {
+        const keys = Object.keys(quiz.results);
         const winner = keys.reduce((a, b) => ((scores[b] || 0) > (scores[a] || 0) ? b : a), keys[0]);
         setState({ scores, result: winner, view: 'results' });
       } else {
@@ -1028,7 +940,7 @@
       }
     }
 
-    function openBlitz() { clearTimers(); setState({ view: 'bintro', shared: false }); }
+    function openBlitz(id) { clearTimers(); setState({ view: 'bintro', activeBlitzId: id, shared: false }); }
     function startBlitz() {
       clearTimers();
       setState({ view: 'bquestion', bIndex: 0, bTime: 10, bLocked: false, bPicked: null, bScore: 0, bStreak: 0 });
@@ -1042,7 +954,8 @@
     }
     function lockBlitz(idx) {
       if (state.bLocked) return;
-      const q = blitzData.questions[state.bIndex];
+      const blitz = blitzes[state.activeBlitzId];
+      const q = blitz.questions[state.bIndex];
       const correct = idx === q.correct;
       setState({
         bLocked: true,
@@ -1053,8 +966,9 @@
       advTimer = setTimeout(nextBlitz, 1500);
     }
     function nextBlitz() {
+      const blitz = blitzes[state.activeBlitzId];
       const next = state.bIndex + 1;
-      if (next >= blitzData.questions.length) { clearTimers(); setState({ view: 'bresults' }); }
+      if (next >= blitz.questions.length) { clearTimers(); setState({ view: 'bresults' }); }
       else setState({ bIndex: next, bTime: 10, bLocked: false, bPicked: null });
     }
     function clearTimers() { clearInterval(tickTimer); clearTimeout(advTimer); }
@@ -1126,7 +1040,7 @@
                     <p style="font-weight:500;color:#6b6285;margin:0;">Check back soon — our totally unqualified team is on it.</p>
                   </div>`;
                 return filtered.map(card => `
-                  <div class="quiz-card" data-action="${e(card.type === 'blitz' ? 'blitz' : 'quiz')}">
+                  <div class="quiz-card" data-action="${e(card.type === 'blitz' ? 'blitz' : 'quiz')}" data-id="${e(card.id)}">
                     <div class="quiz-card-cover">
                       <span class="quiz-card-cover-label">${e(card.cover)}</span>
                       <span class="quiz-card-badge" style="background:${e(card.badgeColor)};color:${e(card.badgeInk)};">${e(card.badge)}</span>
@@ -1178,7 +1092,7 @@
     }
 
     function renderIntro() {
-      const quiz = quizData;
+      const quiz = quizzes[state.activeQuizId];
       return `
         <div class="view-intro">
           <button class="back-link" data-action="home">← BACK TO QUIZZES</button>
@@ -1188,7 +1102,7 @@
               <span class="intro-viral">🔥 VIRAL</span>
             </div>
             <div class="intro-body">
-              <div class="intro-cat">PERSONALITY · FOOD</div>
+              <div class="intro-cat">${e(quiz.cat)}</div>
               <h1>${e(quiz.title)}</h1>
               <p>${e(quiz.desc)}</p>
               <div class="intro-meta">
@@ -1204,9 +1118,10 @@
     }
 
     function renderQuestion() {
-      const total = quizData.questions.length;
+      const quiz = quizzes[state.activeQuizId];
+      const total = quiz.questions.length;
       const num = state.qIndex + 1;
-      const q = quizData.questions[state.qIndex];
+      const q = quiz.questions[state.qIndex];
       const pct = Math.round((num / total) * 100);
       return `
         <div class="view-question">
@@ -1231,7 +1146,8 @@
     }
 
     function renderResults() {
-      const r = quizData.results[state.result];
+      const quiz = quizzes[state.activeQuizId];
+      const r = quiz.results[state.result];
       return `
         <div class="view-results">
           <div class="results-eyebrow">✦ THE ALGORITHM HAS SPOKEN ✦</div>
@@ -1265,6 +1181,7 @@
     }
 
     function renderBIntro() {
+      const blitz = blitzes[state.activeBlitzId];
       return `
         <div class="view-bintro">
           <button class="back-link" data-action="home">← BACK TO QUIZZES</button>
@@ -1272,7 +1189,7 @@
             <div class="bintro-inner">
               <div class="bintro-bolt">⚡</div>
               <div class="bintro-eyebrow">PLAY-ALONG · BEAT THE CLOCK</div>
-              <h1>TODAY'S <span class="yellow">BLITZ</span></h1>
+              <h1><span class="yellow">${e(blitz.title.toUpperCase())}</span></h1>
               <div class="bintro-chips">
                 <span class="bintro-chip cyan">10 QUESTIONS</span>
                 <span class="bintro-chip yellow">⏱ 10 SEC EACH</span>
@@ -1287,10 +1204,11 @@
     }
 
     function renderBQuestion() {
-      const bq = blitzData.questions[state.bIndex];
+      const blitz = blitzes[state.activeBlitzId];
+      const bq = blitz.questions[state.bIndex];
       const locked = state.bLocked;
       const picked = state.bPicked;
-      const bTotal = blitzData.questions.length;
+      const bTotal = blitz.questions.length;
       const danger = state.bTime <= 3;
       const timeColor = danger ? '#ff3b9a' : '#6c3bff';
       const timePct = Math.round((state.bTime / 10) * 100);
@@ -1340,8 +1258,9 @@
     }
 
     function renderBResults() {
+      const blitz = blitzes[state.activeBlitzId];
       const s = state.bScore;
-      const bTotal = blitzData.questions.length;
+      const bTotal = blitz.questions.length;
       let grade;
       if (s === bTotal) grade = { name: '🏆 QUIZ GOD', color: '#ffd23f', ink: '#1a1430', line: 'Flawless. Are you cheating? (We hope so.)' };
       else if (s >= bTotal * 0.8) grade = { name: '🧠 GALAXY BRAIN', color: '#6c3bff', ink: '#fff', line: 'Disgustingly smart. Please go outside.' };
@@ -1413,9 +1332,9 @@
       if (!action) return;
       switch (action) {
         case 'home':       goHome(); break;
-        case 'quiz':       openQuiz(); break;
+        case 'quiz':       openQuiz(el.dataset.id); break;
         case 'random':     openRandom(); break;
-        case 'blitz':      openBlitz(); break;
+        case 'blitz':      openBlitz(el.dataset.id); break;
         case 'start':      startQuiz(); break;
         case 'startblitz': startBlitz(); break;
         case 'pick':       pickAnswer(el.dataset.key); break;
@@ -1435,7 +1354,7 @@
     // Header buttons
     document.getElementById('logo-btn').addEventListener('click', goHome);
     document.getElementById('nav-quizzes').addEventListener('click', goHome);
-    document.getElementById('nav-blitz').addEventListener('click', openBlitz);
+    document.getElementById('nav-blitz').addEventListener('click', () => openBlitz('daily-trivia'));
     document.getElementById('nav-random').addEventListener('click', openRandom);
     document.getElementById('nav-categories').addEventListener('click', openCategories);
 

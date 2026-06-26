@@ -1,0 +1,9 @@
+[
+  { "label": "ALL",          "color": "#1a1430", "ink": "#fff" },
+  { "label": "PERSONALITY",  "color": "#6c3bff", "ink": "#fff" },
+  { "label": "FOOD",         "color": "#3bffd2", "ink": "#1a1430" },
+  { "label": "TOXIC TRAITS", "color": "#ff3b9a", "ink": "#fff" },
+  { "label": "Y2K",          "color": "#ffd23f", "ink": "#1a1430" },
+  { "label": "CHAOS",        "color": "#fff",    "ink": "#1a1430" },
+  { "label": "VIBES",        "color": "#6c3bff", "ink": "#fff" }
+]

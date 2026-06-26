@@ -1,0 +1,77 @@
+{
+  "emoji-movie": {
+    "title": "Guess the Movie by Emoji",
+    "questions": [
+      { "kind": "GUESS THE MOVIE", "prompt": "🦁👑",      "text": "Which movie is this?", "options": ["The Lion King","Bambi","Madagascar","Zootopia"],           "correct": 0 },
+      { "kind": "GUESS THE MOVIE", "prompt": "🧊❄️👸",    "text": "Which movie is this?", "options": ["Moana","Tangled","Frozen","Brave"],                        "correct": 2 },
+      { "kind": "GUESS THE MOVIE", "prompt": "🕷️🏙️🧑",   "text": "Which movie is this?", "options": ["Batman","Spider-Man","Ant-Man","Venom"],                   "correct": 1 },
+      { "kind": "GUESS THE MOVIE", "prompt": "🐠🔍",      "text": "Which movie is this?", "options": ["Finding Nemo","Shark Tale","Moana","The Little Mermaid"],  "correct": 0 },
+      { "kind": "GUESS THE MOVIE", "prompt": "⚡🧙📚",    "text": "Which movie is this?", "options": ["The Hobbit","Narnia","Harry Potter","Percy Jackson"],       "correct": 2 },
+      { "kind": "GUESS THE MOVIE", "prompt": "🦖🏝️🧬",   "text": "Which movie is this?", "options": ["King Kong","Jurassic Park","The Lost World","Avatar"],      "correct": 1 },
+      { "kind": "GUESS THE MOVIE", "prompt": "🤖❤️🌱",   "text": "Which movie is this?", "options": ["Transformers","WALL-E","Big Hero 6","I, Robot"],            "correct": 1 },
+      { "kind": "GUESS THE MOVIE", "prompt": "🧸🚀♾️",   "text": "Which movie is this?", "options": ["A Bug's Life","Toy Story","Cars","Monsters, Inc."],        "correct": 1 },
+      { "kind": "GUESS THE MOVIE", "prompt": "👑💃🥿",    "text": "Which movie is this?", "options": ["Snow White","Sleeping Beauty","Cinderella","Enchanted"],   "correct": 2 },
+      { "kind": "GUESS THE MOVIE", "prompt": "🦸‍♀️⚡🌩️", "text": "Which movie is this?", "options": ["Wonder Woman","Thor","Captain Marvel","Black Widow"],      "correct": 2 }
+    ]
+  },
+  "world-flags": {
+    "title": "Guess the Flag in 10 Seconds",
+    "questions": [
+      { "kind": "GUESS THE COUNTRY", "prompt": "🇯🇵", "text": "Whose flag is this?", "options": ["China","South Korea","Japan","Thailand"],            "correct": 2 },
+      { "kind": "GUESS THE COUNTRY", "prompt": "🇧🇷", "text": "Whose flag is this?", "options": ["Argentina","Portugal","Brazil","Mexico"],             "correct": 2 },
+      { "kind": "GUESS THE COUNTRY", "prompt": "🇨🇦", "text": "Whose flag is this?", "options": ["USA","Australia","Canada","Switzerland"],             "correct": 2 },
+      { "kind": "GUESS THE COUNTRY", "prompt": "🇦🇺", "text": "Whose flag is this?", "options": ["New Zealand","Australia","UK","Ireland"],             "correct": 1 },
+      { "kind": "GUESS THE COUNTRY", "prompt": "🇮🇳", "text": "Whose flag is this?", "options": ["Pakistan","Bangladesh","India","Sri Lanka"],          "correct": 2 },
+      { "kind": "GUESS THE COUNTRY", "prompt": "🇲🇽", "text": "Whose flag is this?", "options": ["Colombia","Peru","Mexico","Bolivia"],                 "correct": 2 },
+      { "kind": "GUESS THE COUNTRY", "prompt": "🇳🇴", "text": "Whose flag is this?", "options": ["Denmark","Sweden","Finland","Norway"],                "correct": 3 },
+      { "kind": "GUESS THE COUNTRY", "prompt": "🇿🇦", "text": "Whose flag is this?", "options": ["Nigeria","South Africa","Kenya","Ghana"],             "correct": 1 },
+      { "kind": "GUESS THE COUNTRY", "prompt": "🇦🇷", "text": "Whose flag is this?", "options": ["Uruguay","Chile","Argentina","Paraguay"],             "correct": 2 },
+      { "kind": "GUESS THE COUNTRY", "prompt": "🇸🇦", "text": "Whose flag is this?", "options": ["Iran","UAE","Saudi Arabia","Pakistan"],              "correct": 2 }
+    ]
+  },
+  "true-false": {
+    "title": "True or False: Science Edition",
+    "questions": [
+      { "kind": "TRUE OR FALSE", "prompt": "🦩", "text": "A group of flamingos is called a 'flamboyance'.",                  "options": ["TRUE","FALSE"], "correct": 0 },
+      { "kind": "TRUE OR FALSE", "prompt": "🧱", "text": "The Great Wall of China is visible from space with the naked eye.", "options": ["TRUE","FALSE"], "correct": 1 },
+      { "kind": "TRUE OR FALSE", "prompt": "🍌", "text": "Humans share about 60% of their DNA with bananas.",                "options": ["TRUE","FALSE"], "correct": 0 },
+      { "kind": "TRUE OR FALSE", "prompt": "⚡", "text": "Lightning never strikes the same place twice.",                     "options": ["TRUE","FALSE"], "correct": 1 },
+      { "kind": "TRUE OR FALSE", "prompt": "🦇", "text": "Bats are completely blind.",                                        "options": ["TRUE","FALSE"], "correct": 1 },
+      { "kind": "TRUE OR FALSE", "prompt": "💎", "text": "Diamonds are the hardest natural substance on Earth.",             "options": ["TRUE","FALSE"], "correct": 0 },
+      { "kind": "TRUE OR FALSE", "prompt": "🌊", "text": "The ocean covers about 71% of Earth's surface.",                   "options": ["TRUE","FALSE"], "correct": 0 },
+      { "kind": "TRUE OR FALSE", "prompt": "🐟", "text": "Goldfish only have a 3-second memory.",                            "options": ["TRUE","FALSE"], "correct": 1 },
+      { "kind": "TRUE OR FALSE", "prompt": "🗼", "text": "The Eiffel Tower can grow over 15 cm taller in summer.",           "options": ["TRUE","FALSE"], "correct": 0 },
+      { "kind": "TRUE OR FALSE", "prompt": "🦟", "text": "Mosquitoes have killed more humans than all wars combined.",        "options": ["TRUE","FALSE"], "correct": 0 }
+    ]
+  },
+  "daily-trivia": {
+    "title": "Daily Trivia Blitz",
+    "questions": [
+      { "kind": "TRIVIA", "prompt": "🐙", "text": "How many hearts does an octopus have?",               "options": ["1","2","3","8"],                                      "correct": 2 },
+      { "kind": "TRIVIA", "prompt": "🪐", "text": "Which planet has the most moons?",                    "options": ["Jupiter","Saturn","Uranus","Neptune"],                "correct": 1 },
+      { "kind": "TRIVIA", "prompt": "🧱", "text": "What year did the Berlin Wall fall?",                  "options": ["1985","1987","1989","1991"],                          "correct": 2 },
+      { "kind": "TRIVIA", "prompt": "🦘", "text": "What is the capital of Australia?",                   "options": ["Sydney","Melbourne","Brisbane","Canberra"],           "correct": 3 },
+      { "kind": "TRIVIA", "prompt": "🔢", "text": "How many sides does a heptagon have?",                "options": ["5","6","7","8"],                                      "correct": 2 },
+      { "kind": "TRIVIA", "prompt": "🥇", "text": "What is the chemical symbol for Gold?",               "options": ["Go","Gd","Au","Ag"],                                  "correct": 2 },
+      { "kind": "TRIVIA", "prompt": "🌍", "text": "What is the smallest country in the world?",          "options": ["Monaco","San Marino","Liechtenstein","Vatican City"],  "correct": 3 },
+      { "kind": "TRIVIA", "prompt": "🐆", "text": "What is the fastest land animal?",                    "options": ["Lion","Greyhound","Cheetah","Pronghorn"],             "correct": 2 },
+      { "kind": "TRIVIA", "prompt": "✋", "text": "How many bones are in the human hand?",               "options": ["19","23","27","31"],                                  "correct": 2 },
+      { "kind": "TRIVIA", "prompt": "🎸", "text": "How many strings does a standard guitar have?",       "options": ["4","5","6","7"],                                      "correct": 2 }
+    ]
+  },
+  "emoji-brand": {
+    "title": "Guess the Brand by Emoji",
+    "questions": [
+      { "kind": "GUESS THE BRAND", "prompt": "🍎",      "text": "Which brand does this emoji represent?", "options": ["Google","Apple","Samsung","Meta"],            "correct": 1 },
+      { "kind": "GUESS THE BRAND", "prompt": "☕🧜‍♀️",  "text": "Which brand does this emoji represent?", "options": ["Dunkin'","Costa","Starbucks","Pret"],          "correct": 2 },
+      { "kind": "GUESS THE BRAND", "prompt": "🐦",      "text": "Which brand does this emoji represent?", "options": ["Instagram","Discord","Twitter/X","Snapchat"],  "correct": 2 },
+      { "kind": "GUESS THE BRAND", "prompt": "🛒💙",    "text": "Which brand does this emoji represent?", "options": ["Target","Walmart","Costco","Amazon"],          "correct": 1 },
+      { "kind": "GUESS THE BRAND", "prompt": "🍟👑",    "text": "Which brand does this emoji represent?", "options": ["Burger King","McDonald's","Wendy's","KFC"],    "correct": 1 },
+      { "kind": "GUESS THE BRAND", "prompt": "📦🔶",    "text": "Which brand does this emoji represent?", "options": ["FedEx","UPS","Amazon","DHL"],                  "correct": 2 },
+      { "kind": "GUESS THE BRAND", "prompt": "🎮🟢",    "text": "Which brand does this emoji represent?", "options": ["Nintendo","PlayStation","Xbox","Sega"],         "correct": 2 },
+      { "kind": "GUESS THE BRAND", "prompt": "🍕🔴",    "text": "Which brand does this emoji represent?", "options": ["Pizza Hut","Domino's","Papa John's","Little Caesars"], "correct": 0 },
+      { "kind": "GUESS THE BRAND", "prompt": "🔍🌈",    "text": "Which brand does this emoji represent?", "options": ["Bing","DuckDuckGo","Google","Yahoo"],           "correct": 2 },
+      { "kind": "GUESS THE BRAND", "prompt": "🎵❤️",    "text": "Which brand does this emoji represent?", "options": ["Apple Music","Spotify","SoundCloud","Tidal"],   "correct": 1 }
+    ]
+  }
+}
