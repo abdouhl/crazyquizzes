@@ -23,3 +23,8 @@ Thumbs.db
 
 # generated pins
 public/pins/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
