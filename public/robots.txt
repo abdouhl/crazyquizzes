@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://crazyquizzes.com/sitemap-index.xml

@@ -1,55 +1,1263 @@
 [
-  { "id": "emoji-movie",        "title": "Guess the Movie by Emoji",           "cat": "EMOJI BLITZ",    "takes": "1.4M", "coverEmoji": "🎬🍿",   "coverBg": "linear-gradient(135deg,#1a1430 0%,#6c3bff 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","MOVIES & TV","POP CULTURE","CHAOS"] },
-  { "id": "y2k-snack",          "title": "Which Y2K Snack Are You?",           "cat": "PERSONALITY",    "takes": "847K", "coverEmoji": "🍟✨",   "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#ffd23f 100%)", "badge": "🔥 HOT",       "badgeColor": "#ff3b9a", "badgeInk": "#fff",    "type": "personality", "categories": ["ALL","PERSONALITY","FOOD","Y2K","POP CULTURE"] },
-  { "id": "world-flags",        "title": "Guess the Flag in 10 Seconds",       "cat": "FLAG BLITZ",     "takes": "903K", "coverEmoji": "🌍🚩",   "coverBg": "linear-gradient(135deg,#1a6ecc 0%,#0bcfd2 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","GEOGRAPHY","TRIVIA","CHAOS"] },
-  { "id": "true-false",         "title": "True or False: Science Edition",     "cat": "TRUE / FALSE",   "takes": "612K", "coverEmoji": "✅❌",   "coverBg": "linear-gradient(135deg,#27ae60 0%,#145a32 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","SCIENCE","TRIVIA","CHAOS"] },
-  { "id": "toxic-trait",        "title": "What's Your Actual Toxic Trait?",    "cat": "PERSONALITY",    "takes": "1.2M", "coverEmoji": "⚠️😈",  "coverBg": "linear-gradient(135deg,#6c3bff 0%,#ff3b9a 100%)", "badge": "🔥 TOXIC",     "badgeColor": "#6c3bff", "badgeInk": "#fff",    "type": "personality", "categories": ["ALL","PERSONALITY","TOXIC TRAITS","CHAOS"] },
-  { "id": "daily-trivia",       "title": "Daily Trivia Blitz",                 "cat": "TRIVIA",         "takes": "2.1M", "coverEmoji": "🧠💡",   "coverBg": "linear-gradient(135deg,#ffd23f 0%,#ff6b35 100%)", "badge": "⚡ DAILY",     "badgeColor": "#3bffd2", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","TRIVIA","POP CULTURE","CHAOS"] },
-  { "id": "vibe-check",         "title": "What's Your Actual Vibe?",           "cat": "PERSONALITY",    "takes": "538K", "coverEmoji": "✨🪩",   "coverBg": "linear-gradient(135deg,#3bffd2 0%,#6c3bff 100%)", "badge": "✨ NEW",       "badgeColor": "#3bffd2", "badgeInk": "#1a1430", "type": "personality", "categories": ["ALL","PERSONALITY","VIBES"] },
-  { "id": "emoji-brand",        "title": "Guess the Brand by Emoji",           "cat": "EMOJI BLITZ",    "takes": "722K", "coverEmoji": "🏷️⚡",  "coverBg": "linear-gradient(135deg,#ffd23f 0%,#ff3b9a 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","POP CULTURE","CHAOS"] },
-  { "id": "hogwarts-house",     "title": "Which Hogwarts House Are You?",       "cat": "PERSONALITY",    "takes": "991K", "coverEmoji": "🧙‍♂️⚡", "coverBg": "linear-gradient(135deg,#4a0080 0%,#8b0000 100%)", "badge": "🧙 MAGIC",     "badgeColor": "#6c3bff", "badgeInk": "#fff",    "type": "personality", "categories": ["ALL","PERSONALITY","MOVIES & TV","POP CULTURE"] },
-  { "id": "friend-type",        "title": "What Type of Friend Are You?",        "cat": "PERSONALITY",    "takes": "892K", "coverEmoji": "💬🤝",   "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#ff8c42 100%)", "badge": "🔥 HOT",       "badgeColor": "#ff3b9a", "badgeInk": "#fff",    "type": "personality", "categories": ["ALL","PERSONALITY","CHAOS","VIBES"] },
-  { "id": "internet-era",       "title": "Which Era of the Internet Are You?",  "cat": "PERSONALITY",    "takes": "481K", "coverEmoji": "💻🌐",   "coverBg": "linear-gradient(135deg,#1a1430 0%,#3bffd2 100%)", "badge": "✨ NEW",       "badgeColor": "#3bffd2", "badgeInk": "#1a1430", "type": "personality", "categories": ["ALL","PERSONALITY","POP CULTURE","Y2K","VIBES"] },
-  { "id": "capital-cities",     "title": "Guess the Capital City",              "cat": "GEOGRAPHY",      "takes": "344K", "coverEmoji": "🗺️🏛️", "coverBg": "linear-gradient(135deg,#2980b9 0%,#27ae60 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","GEOGRAPHY","TRIVIA","CHAOS"] },
-  { "id": "emoji-song",         "title": "Guess the Song by Emoji",             "cat": "MUSIC BLITZ",    "takes": "667K", "coverEmoji": "🎵🎧",   "coverBg": "linear-gradient(135deg,#8e44ad 0%,#3bffd2 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","MUSIC","POP CULTURE","CHAOS"] },
-  { "id": "movie-year",         "title": "What Year Did This Movie Drop?",      "cat": "MOVIE TRIVIA",   "takes": "529K", "coverEmoji": "🎬📅",   "coverBg": "linear-gradient(135deg,#e74c3c 0%,#1a1430 100%)", "badge": "🎬 TRIVIA",    "badgeColor": "#ff3b9a", "badgeInk": "#fff",    "type": "blitz",       "categories": ["ALL","MOVIES & TV","TRIVIA","POP CULTURE"] },
-  { "id": "sports-personality", "title": "What's Your Sports Personality?",     "cat": "PERSONALITY",    "takes": "423K", "coverEmoji": "⚽🏆",   "coverBg": "linear-gradient(135deg,#e67e22 0%,#1a1430 100%)", "badge": "🔥 HOT",       "badgeColor": "#ff3b9a", "badgeInk": "#fff",    "type": "personality", "categories": ["ALL","PERSONALITY","SPORTS"] },
-  { "id": "music-era",          "title": "Which Music Era Are You?",             "cat": "PERSONALITY",    "takes": "614K", "coverEmoji": "🎸🎤",   "coverBg": "linear-gradient(135deg,#8e44ad 0%,#ff3b9a 100%)", "badge": "✨ NEW",       "badgeColor": "#3bffd2", "badgeInk": "#1a1430", "type": "personality", "categories": ["ALL","PERSONALITY","MUSIC","POP CULTURE","VIBES"] },
-  { "id": "history-events",     "title": "Guess the Historical Event by Emoji", "cat": "HISTORY BLITZ",  "takes": "387K", "coverEmoji": "🏛️📜",  "coverBg": "linear-gradient(135deg,#d35400 0%,#1a1430 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","HISTORY","TRIVIA","CHAOS"] },
-  { "id": "science-facts",      "title": "Science: True or False? Round 2",     "cat": "SCIENCE BLITZ",  "takes": "298K", "coverEmoji": "🔬⚗️",  "coverBg": "linear-gradient(135deg,#16a085 0%,#2c3e50 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","SCIENCE","TRIVIA","CHAOS"] },
-
-  { "id": "disney-villain",     "title": "Which Disney Villain Are You?",       "cat": "PERSONALITY",    "takes": "743K", "coverEmoji": "😈👑",   "coverBg": "linear-gradient(135deg,#1a1430 0%,#6c3bff 100%)", "badge": "🔥 HOT",       "badgeColor": "#ff3b9a", "badgeInk": "#fff",    "type": "personality", "categories": ["ALL","PERSONALITY","MOVIES & TV","POP CULTURE"] },
-  { "id": "procrastinator-type","title": "What Type of Procrastinator Are You?","cat": "PERSONALITY",    "takes": "1.1M", "coverEmoji": "⏰😰",   "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#6c3bff 100%)", "badge": "🔥 RELATABLE", "badgeColor": "#ff3b9a", "badgeInk": "#fff",    "type": "personality", "categories": ["ALL","PERSONALITY","CHAOS"] },
-  { "id": "sleep-personality",  "title": "What's Your Sleep Personality?",      "cat": "PERSONALITY",    "takes": "689K", "coverEmoji": "😴🌙",   "coverBg": "linear-gradient(135deg,#1a1430 0%,#6c3bff 100%)", "badge": "✨ NEW",       "badgeColor": "#3bffd2", "badgeInk": "#1a1430", "type": "personality", "categories": ["ALL","PERSONALITY","VIBES","CHAOS"] },
-  { "id": "social-media-app",   "title": "Which Social Media App Are You?",     "cat": "PERSONALITY",    "takes": "922K", "coverEmoji": "📱✨",   "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#ffd23f 100%)", "badge": "🔥 HOT",       "badgeColor": "#ff3b9a", "badgeInk": "#fff",    "type": "personality", "categories": ["ALL","PERSONALITY","POP CULTURE","VIBES"] },
-  { "id": "conflict-style",     "title": "What's Your Conflict Style?",         "cat": "PERSONALITY",    "takes": "567K", "coverEmoji": "😤💬",   "coverBg": "linear-gradient(135deg,#ffd23f 0%,#ff3b9a 100%)", "badge": "✨ NEW",       "badgeColor": "#3bffd2", "badgeInk": "#1a1430", "type": "personality", "categories": ["ALL","PERSONALITY","CHAOS"] },
-  { "id": "decade-type",        "title": "Which Decade Are You?",               "cat": "PERSONALITY",    "takes": "831K", "coverEmoji": "📻🕺",   "coverBg": "linear-gradient(135deg,#d35400 0%,#ffd23f 100%)", "badge": "🔥 HOT",       "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "personality", "categories": ["ALL","PERSONALITY","POP CULTURE","Y2K","MUSIC"] },
-  { "id": "energy-type",        "title": "What Kind of Energy Do You Have?",    "cat": "PERSONALITY",    "takes": "1.3M", "coverEmoji": "⚡🌟",   "coverBg": "linear-gradient(135deg,#6c3bff 0%,#ff3b9a 100%)", "badge": "🔥 VIRAL",     "badgeColor": "#ff3b9a", "badgeInk": "#fff",    "type": "personality", "categories": ["ALL","PERSONALITY","VIBES","CHAOS"] },
-
-  { "id": "emoji-sport",        "title": "Guess the Sport by Emoji",            "cat": "EMOJI BLITZ",    "takes": "556K", "coverEmoji": "⚽🏀🎾", "coverBg": "linear-gradient(135deg,#e67e22 0%,#1a1430 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","SPORTS","TRIVIA","CHAOS"] },
-  { "id": "emoji-food",         "title": "Guess the Food Dish by Emoji",        "cat": "EMOJI BLITZ",    "takes": "478K", "coverEmoji": "🍝🍣🌮", "coverBg": "linear-gradient(135deg,#3bffd2 0%,#ff3b9a 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","FOOD","TRIVIA","CHAOS"] },
-  { "id": "emoji-tvshow",       "title": "Guess the TV Show by Emoji",          "cat": "EMOJI BLITZ",    "takes": "891K", "coverEmoji": "📺🎬💡",  "coverBg": "linear-gradient(135deg,#e74c3c 0%,#6c3bff 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","MOVIES & TV","POP CULTURE","CHAOS"] },
-  { "id": "emoji-celeb",        "title": "Guess the Celebrity by Emoji",        "cat": "EMOJI BLITZ",    "takes": "1.1M", "coverEmoji": "⭐🎤💫",  "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#ffd23f 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","POP CULTURE","MUSIC","CHAOS"] },
-  { "id": "tf-history",         "title": "True or False: History Edition",      "cat": "TRUE / FALSE",   "takes": "412K", "coverEmoji": "📜✅❌",  "coverBg": "linear-gradient(135deg,#d35400 0%,#1a1430 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","HISTORY","TRIVIA","CHAOS"] },
-  { "id": "tf-popculture",      "title": "True or False: Pop Culture Edition",  "cat": "TRUE / FALSE",   "takes": "783K", "coverEmoji": "🎭✅❌",  "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#ffd23f 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","POP CULTURE","TRIVIA","CHAOS"] },
-  { "id": "tf-sports",          "title": "True or False: Sports Edition",       "cat": "TRUE / FALSE",   "takes": "334K", "coverEmoji": "🏅✅❌",  "coverBg": "linear-gradient(135deg,#e67e22 0%,#27ae60 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","SPORTS","TRIVIA","CHAOS"] },
-  { "id": "tf-food",            "title": "True or False: Food Facts",           "cat": "TRUE / FALSE",   "takes": "291K", "coverEmoji": "🍕✅❌",  "coverBg": "linear-gradient(135deg,#27ae60 0%,#ffd23f 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","FOOD","TRIVIA","CHAOS"] },
-  { "id": "tf-geography",       "title": "True or False: World Geography",      "cat": "TRUE / FALSE",   "takes": "355K", "coverEmoji": "🌍✅❌",  "coverBg": "linear-gradient(135deg,#2980b9 0%,#1a1430 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","GEOGRAPHY","TRIVIA","CHAOS"] },
-  { "id": "music-trivia",       "title": "Music Trivia Blitz",                  "cat": "MUSIC TRIVIA",   "takes": "644K", "coverEmoji": "🎵🎸🎤",  "coverBg": "linear-gradient(135deg,#8e44ad 0%,#3bffd2 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","MUSIC","TRIVIA","POP CULTURE"] },
-  { "id": "sports-trivia",      "title": "Sports Facts Blitz",                  "cat": "SPORTS TRIVIA",  "takes": "388K", "coverEmoji": "🏆🥇⚽",  "coverBg": "linear-gradient(135deg,#e67e22 0%,#27ae60 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","SPORTS","TRIVIA","CHAOS"] },
-  { "id": "food-trivia",        "title": "Food & Cooking Trivia",               "cat": "FOOD TRIVIA",    "takes": "301K", "coverEmoji": "🍳👨‍🍳🌶️", "coverBg": "linear-gradient(135deg,#ff6b35 0%,#ffd23f 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","FOOD","TRIVIA","CHAOS"] },
-  { "id": "animal-trivia",      "title": "Animal Kingdom Trivia",               "cat": "NATURE TRIVIA",  "takes": "467K", "coverEmoji": "🦁🐬🦅",  "coverBg": "linear-gradient(135deg,#27ae60 0%,#1a1430 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","SCIENCE","TRIVIA","CHAOS"] },
-  { "id": "space-trivia",       "title": "Space & Astronomy Blitz",             "cat": "SCIENCE TRIVIA", "takes": "521K", "coverEmoji": "🚀🌌⭐",  "coverBg": "linear-gradient(135deg,#1a1430 0%,#6c3bff 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","SCIENCE","TRIVIA","CHAOS"] },
-  { "id": "90s-trivia",         "title": "90s Pop Culture Blitz",               "cat": "NOSTALGIA",      "takes": "888K", "coverEmoji": "📼💿🎮",  "coverBg": "linear-gradient(135deg,#6c3bff 0%,#ff3b9a 100%)", "badge": "🔥 HOT",       "badgeColor": "#ff3b9a", "badgeInk": "#fff",    "type": "blitz",       "categories": ["ALL","POP CULTURE","MUSIC","MOVIES & TV","Y2K"] },
-  { "id": "games-trivia",       "title": "Video Game Trivia Blitz",             "cat": "GAMING TRIVIA",  "takes": "712K", "coverEmoji": "🎮👾🕹️",  "coverBg": "linear-gradient(135deg,#1a1430 0%,#ff3b9a 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","POP CULTURE","TRIVIA","CHAOS"] },
-  { "id": "world-records",      "title": "Weird World Records Trivia",          "cat": "WORLD RECORDS",  "takes": "433K", "coverEmoji": "🏆🌍😮",  "coverBg": "linear-gradient(135deg,#ffd23f 0%,#ff3b9a 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","TRIVIA","SCIENCE","CHAOS"] },
-  { "id": "movie-taglines",     "title": "Guess the Movie Tagline",             "cat": "MOVIE TRIVIA",   "takes": "597K", "coverEmoji": "🎬💬🎭",  "coverBg": "linear-gradient(135deg,#e74c3c 0%,#1a1430 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","MOVIES & TV","POP CULTURE","TRIVIA"] },
-  { "id": "famous-quotes",      "title": "Who Said It? Famous Quotes",          "cat": "QUOTES TRIVIA",  "takes": "369K", "coverEmoji": "💬🧠📚",  "coverBg": "linear-gradient(135deg,#2c3e50 0%,#3bffd2 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","HISTORY","TRIVIA","CHAOS"] },
-  { "id": "olympic-trivia",     "title": "Olympic Games Trivia",                "cat": "SPORTS TRIVIA",  "takes": "278K", "coverEmoji": "🥇🏅🔥",  "coverBg": "linear-gradient(135deg,#d35400 0%,#ffd23f 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","SPORTS","HISTORY","TRIVIA"] },
-  { "id": "fastfood-menu",      "title": "Fast Food Deep Cut Trivia",           "cat": "FOOD TRIVIA",    "takes": "661K", "coverEmoji": "🍔🍟🌯",  "coverBg": "linear-gradient(135deg,#ff6b35 0%,#ffd23f 100%)", "badge": "🔥 HOT",       "badgeColor": "#ff3b9a", "badgeInk": "#fff",    "type": "blitz",       "categories": ["ALL","FOOD","POP CULTURE","TRIVIA"] },
-  { "id": "body-facts",         "title": "Human Body Facts Blitz",              "cat": "SCIENCE TRIVIA", "takes": "445K", "coverEmoji": "🫀🧬🦴",  "coverBg": "linear-gradient(135deg,#16a085 0%,#1a1430 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","SCIENCE","TRIVIA","CHAOS"] },
-  { "id": "logo-colors",        "title": "Brand Colors Blitz",                  "cat": "BRANDS TRIVIA",  "takes": "823K", "coverEmoji": "🎨🏷️🟥",  "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#3bffd2 100%)", "badge": "🔥 HOT",       "badgeColor": "#ff3b9a", "badgeInk": "#fff",    "type": "blitz",       "categories": ["ALL","POP CULTURE","TRIVIA","CHAOS"] },
-  { "id": "us-trivia",          "title": "USA Trivia Blitz",                    "cat": "USA TRIVIA",     "takes": "334K", "coverEmoji": "🇺🇸🗽🦅", "coverBg": "linear-gradient(135deg,#1a3a8f 0%,#e74c3c 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","GEOGRAPHY","HISTORY","TRIVIA"] },
-  { "id": "internet-trivia",    "title": "Internet & Tech Trivia",              "cat": "TECH TRIVIA",    "takes": "502K", "coverEmoji": "💻🌐⌨️",  "coverBg": "linear-gradient(135deg,#1a1430 0%,#3bffd2 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","TRIVIA","POP CULTURE","CHAOS"] },
-  { "id": "world-trivia",       "title": "Around the World Trivia",             "cat": "WORLD TRIVIA",   "takes": "319K", "coverEmoji": "🌍🗺️✈️",  "coverBg": "linear-gradient(135deg,#2980b9 0%,#27ae60 100%)", "badge": "⚡ BLITZ",     "badgeColor": "#ffd23f", "badgeInk": "#1a1430", "type": "blitz",       "categories": ["ALL","GEOGRAPHY","TRIVIA","CHAOS"] }
+  {
+    "id": "emoji-movie",
+    "title": "Guess the Movie by Emoji",
+    "cat": "EMOJI BLITZ",
+    "takes": "1.4M",
+    "coverEmoji": "🎬🍿",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#6c3bff 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MOVIES & TV",
+      "POP CULTURE",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "y2k-snack",
+    "title": "Which Y2K Snack Are You?",
+    "cat": "PERSONALITY",
+    "takes": "847K",
+    "coverEmoji": "🍟✨",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#ffd23f 100%)",
+    "badge": "🔥 HOT",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "FOOD",
+      "Y2K",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "world-flags",
+    "title": "Guess the Flag in 10 Seconds",
+    "cat": "FLAG BLITZ",
+    "takes": "903K",
+    "coverEmoji": "🌍🚩",
+    "coverBg": "linear-gradient(135deg,#1a6ecc 0%,#0bcfd2 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "GEOGRAPHY",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "true-false",
+    "title": "True or False: Science Edition",
+    "cat": "TRUE / FALSE",
+    "takes": "612K",
+    "coverEmoji": "✅❌",
+    "coverBg": "linear-gradient(135deg,#27ae60 0%,#145a32 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SCIENCE",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "toxic-trait",
+    "title": "What's Your Actual Toxic Trait?",
+    "cat": "PERSONALITY",
+    "takes": "1.2M",
+    "coverEmoji": "⚠️😈",
+    "coverBg": "linear-gradient(135deg,#6c3bff 0%,#ff3b9a 100%)",
+    "badge": "🔥 TOXIC",
+    "badgeColor": "#6c3bff",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "TOXIC TRAITS",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "daily-trivia",
+    "title": "Daily Trivia Blitz",
+    "cat": "TRIVIA",
+    "takes": "2.1M",
+    "coverEmoji": "🧠💡",
+    "coverBg": "linear-gradient(135deg,#ffd23f 0%,#ff6b35 100%)",
+    "badge": "⚡ DAILY",
+    "badgeColor": "#3bffd2",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "TRIVIA",
+      "POP CULTURE",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "vibe-check",
+    "title": "What's Your Actual Vibe?",
+    "cat": "PERSONALITY",
+    "takes": "538K",
+    "coverEmoji": "✨🪩",
+    "coverBg": "linear-gradient(135deg,#3bffd2 0%,#6c3bff 100%)",
+    "badge": "✨ NEW",
+    "badgeColor": "#3bffd2",
+    "badgeInk": "#1a1430",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "VIBES"
+    ]
+  },
+  {
+    "id": "emoji-brand",
+    "title": "Guess the Brand by Emoji",
+    "cat": "EMOJI BLITZ",
+    "takes": "722K",
+    "coverEmoji": "🏷️⚡",
+    "coverBg": "linear-gradient(135deg,#ffd23f 0%,#ff3b9a 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "POP CULTURE",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "hogwarts-house",
+    "title": "Which Hogwarts House Are You?",
+    "cat": "PERSONALITY",
+    "takes": "991K",
+    "coverEmoji": "🧙‍♂️⚡",
+    "coverBg": "linear-gradient(135deg,#4a0080 0%,#8b0000 100%)",
+    "badge": "🧙 MAGIC",
+    "badgeColor": "#6c3bff",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "MOVIES & TV",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "friend-type",
+    "title": "What Type of Friend Are You?",
+    "cat": "PERSONALITY",
+    "takes": "892K",
+    "coverEmoji": "💬🤝",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#ff8c42 100%)",
+    "badge": "🔥 HOT",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "CHAOS",
+      "VIBES"
+    ]
+  },
+  {
+    "id": "internet-era",
+    "title": "Which Era of the Internet Are You?",
+    "cat": "PERSONALITY",
+    "takes": "481K",
+    "coverEmoji": "💻🌐",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#3bffd2 100%)",
+    "badge": "✨ NEW",
+    "badgeColor": "#3bffd2",
+    "badgeInk": "#1a1430",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "POP CULTURE",
+      "Y2K",
+      "VIBES"
+    ]
+  },
+  {
+    "id": "capital-cities",
+    "title": "Guess the Capital City",
+    "cat": "GEOGRAPHY",
+    "takes": "344K",
+    "coverEmoji": "🗺️🏛️",
+    "coverBg": "linear-gradient(135deg,#2980b9 0%,#27ae60 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "GEOGRAPHY",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "emoji-song",
+    "title": "Guess the Song by Emoji",
+    "cat": "MUSIC BLITZ",
+    "takes": "667K",
+    "coverEmoji": "🎵🎧",
+    "coverBg": "linear-gradient(135deg,#8e44ad 0%,#3bffd2 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "movie-year",
+    "title": "What Year Did This Movie Drop?",
+    "cat": "MOVIE TRIVIA",
+    "takes": "529K",
+    "coverEmoji": "🎬📅",
+    "coverBg": "linear-gradient(135deg,#e74c3c 0%,#1a1430 100%)",
+    "badge": "🎬 TRIVIA",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MOVIES & TV",
+      "TRIVIA",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "sports-personality",
+    "title": "What's Your Sports Personality?",
+    "cat": "PERSONALITY",
+    "takes": "423K",
+    "coverEmoji": "⚽🏆",
+    "coverBg": "linear-gradient(135deg,#e67e22 0%,#1a1430 100%)",
+    "badge": "🔥 HOT",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "SPORTS"
+    ]
+  },
+  {
+    "id": "music-era",
+    "title": "Which Music Era Are You?",
+    "cat": "PERSONALITY",
+    "takes": "614K",
+    "coverEmoji": "🎸🎤",
+    "coverBg": "linear-gradient(135deg,#8e44ad 0%,#ff3b9a 100%)",
+    "badge": "✨ NEW",
+    "badgeColor": "#3bffd2",
+    "badgeInk": "#1a1430",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "MUSIC",
+      "POP CULTURE",
+      "VIBES"
+    ]
+  },
+  {
+    "id": "history-events",
+    "title": "Guess the Historical Event by Emoji",
+    "cat": "HISTORY BLITZ",
+    "takes": "387K",
+    "coverEmoji": "🏛️📜",
+    "coverBg": "linear-gradient(135deg,#d35400 0%,#1a1430 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "HISTORY",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "science-facts",
+    "title": "Science: True or False? Round 2",
+    "cat": "SCIENCE BLITZ",
+    "takes": "298K",
+    "coverEmoji": "🔬⚗️",
+    "coverBg": "linear-gradient(135deg,#16a085 0%,#2c3e50 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SCIENCE",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "disney-villain",
+    "title": "Which Disney Villain Are You?",
+    "cat": "PERSONALITY",
+    "takes": "743K",
+    "coverEmoji": "😈👑",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#6c3bff 100%)",
+    "badge": "🔥 HOT",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "MOVIES & TV",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "procrastinator-type",
+    "title": "What Type of Procrastinator Are You?",
+    "cat": "PERSONALITY",
+    "takes": "1.1M",
+    "coverEmoji": "⏰😰",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#6c3bff 100%)",
+    "badge": "🔥 RELATABLE",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "sleep-personality",
+    "title": "What's Your Sleep Personality?",
+    "cat": "PERSONALITY",
+    "takes": "689K",
+    "coverEmoji": "😴🌙",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#6c3bff 100%)",
+    "badge": "✨ NEW",
+    "badgeColor": "#3bffd2",
+    "badgeInk": "#1a1430",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "VIBES",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "social-media-app",
+    "title": "Which Social Media App Are You?",
+    "cat": "PERSONALITY",
+    "takes": "922K",
+    "coverEmoji": "📱✨",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#ffd23f 100%)",
+    "badge": "🔥 HOT",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "POP CULTURE",
+      "VIBES"
+    ]
+  },
+  {
+    "id": "conflict-style",
+    "title": "What's Your Conflict Style?",
+    "cat": "PERSONALITY",
+    "takes": "567K",
+    "coverEmoji": "😤💬",
+    "coverBg": "linear-gradient(135deg,#ffd23f 0%,#ff3b9a 100%)",
+    "badge": "✨ NEW",
+    "badgeColor": "#3bffd2",
+    "badgeInk": "#1a1430",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "decade-type",
+    "title": "Which Decade Are You?",
+    "cat": "PERSONALITY",
+    "takes": "831K",
+    "coverEmoji": "📻🕺",
+    "coverBg": "linear-gradient(135deg,#d35400 0%,#ffd23f 100%)",
+    "badge": "🔥 HOT",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "POP CULTURE",
+      "Y2K",
+      "MUSIC"
+    ]
+  },
+  {
+    "id": "energy-type",
+    "title": "What Kind of Energy Do You Have?",
+    "cat": "PERSONALITY",
+    "takes": "1.3M",
+    "coverEmoji": "⚡🌟",
+    "coverBg": "linear-gradient(135deg,#6c3bff 0%,#ff3b9a 100%)",
+    "badge": "🔥 VIRAL",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "VIBES",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "emoji-sport",
+    "title": "Guess the Sport by Emoji",
+    "cat": "EMOJI BLITZ",
+    "takes": "556K",
+    "coverEmoji": "⚽🏀🎾",
+    "coverBg": "linear-gradient(135deg,#e67e22 0%,#1a1430 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SPORTS",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "emoji-food",
+    "title": "Guess the Food Dish by Emoji",
+    "cat": "EMOJI BLITZ",
+    "takes": "478K",
+    "coverEmoji": "🍝🍣🌮",
+    "coverBg": "linear-gradient(135deg,#3bffd2 0%,#ff3b9a 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "FOOD",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "emoji-tvshow",
+    "title": "Guess the TV Show by Emoji",
+    "cat": "EMOJI BLITZ",
+    "takes": "891K",
+    "coverEmoji": "📺🎬💡",
+    "coverBg": "linear-gradient(135deg,#e74c3c 0%,#6c3bff 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MOVIES & TV",
+      "POP CULTURE",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "emoji-celeb",
+    "title": "Guess the Celebrity by Emoji",
+    "cat": "EMOJI BLITZ",
+    "takes": "1.1M",
+    "coverEmoji": "⭐🎤💫",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#ffd23f 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "POP CULTURE",
+      "MUSIC",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "tf-history",
+    "title": "True or False: History Edition",
+    "cat": "TRUE / FALSE",
+    "takes": "412K",
+    "coverEmoji": "📜✅❌",
+    "coverBg": "linear-gradient(135deg,#d35400 0%,#1a1430 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "HISTORY",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "tf-popculture",
+    "title": "True or False: Pop Culture Edition",
+    "cat": "TRUE / FALSE",
+    "takes": "783K",
+    "coverEmoji": "🎭✅❌",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#ffd23f 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "POP CULTURE",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "tf-sports",
+    "title": "True or False: Sports Edition",
+    "cat": "TRUE / FALSE",
+    "takes": "334K",
+    "coverEmoji": "🏅✅❌",
+    "coverBg": "linear-gradient(135deg,#e67e22 0%,#27ae60 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SPORTS",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "tf-food",
+    "title": "True or False: Food Facts",
+    "cat": "TRUE / FALSE",
+    "takes": "291K",
+    "coverEmoji": "🍕✅❌",
+    "coverBg": "linear-gradient(135deg,#27ae60 0%,#ffd23f 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "FOOD",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "tf-geography",
+    "title": "True or False: World Geography",
+    "cat": "TRUE / FALSE",
+    "takes": "355K",
+    "coverEmoji": "🌍✅❌",
+    "coverBg": "linear-gradient(135deg,#2980b9 0%,#1a1430 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "GEOGRAPHY",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "music-trivia",
+    "title": "Music Trivia Blitz",
+    "cat": "MUSIC TRIVIA",
+    "takes": "644K",
+    "coverEmoji": "🎵🎸🎤",
+    "coverBg": "linear-gradient(135deg,#8e44ad 0%,#3bffd2 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "TRIVIA",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "sports-trivia",
+    "title": "Sports Facts Blitz",
+    "cat": "SPORTS TRIVIA",
+    "takes": "388K",
+    "coverEmoji": "🏆🥇⚽",
+    "coverBg": "linear-gradient(135deg,#e67e22 0%,#27ae60 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SPORTS",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "food-trivia",
+    "title": "Food & Cooking Trivia",
+    "cat": "FOOD TRIVIA",
+    "takes": "301K",
+    "coverEmoji": "🍳👨‍🍳🌶️",
+    "coverBg": "linear-gradient(135deg,#ff6b35 0%,#ffd23f 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "FOOD",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "animal-trivia",
+    "title": "Animal Kingdom Trivia",
+    "cat": "NATURE TRIVIA",
+    "takes": "467K",
+    "coverEmoji": "🦁🐬🦅",
+    "coverBg": "linear-gradient(135deg,#27ae60 0%,#1a1430 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SCIENCE",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "space-trivia",
+    "title": "Space & Astronomy Blitz",
+    "cat": "SCIENCE TRIVIA",
+    "takes": "521K",
+    "coverEmoji": "🚀🌌⭐",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#6c3bff 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SCIENCE",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "90s-trivia",
+    "title": "90s Pop Culture Blitz",
+    "cat": "NOSTALGIA",
+    "takes": "888K",
+    "coverEmoji": "📼💿🎮",
+    "coverBg": "linear-gradient(135deg,#6c3bff 0%,#ff3b9a 100%)",
+    "badge": "🔥 HOT",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "POP CULTURE",
+      "MUSIC",
+      "MOVIES & TV",
+      "Y2K"
+    ]
+  },
+  {
+    "id": "games-trivia",
+    "title": "Video Game Trivia Blitz",
+    "cat": "GAMING TRIVIA",
+    "takes": "712K",
+    "coverEmoji": "🎮👾🕹️",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#ff3b9a 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "POP CULTURE",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "world-records",
+    "title": "Weird World Records Trivia",
+    "cat": "WORLD RECORDS",
+    "takes": "433K",
+    "coverEmoji": "🏆🌍😮",
+    "coverBg": "linear-gradient(135deg,#ffd23f 0%,#ff3b9a 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "TRIVIA",
+      "SCIENCE",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "movie-taglines",
+    "title": "Guess the Movie Tagline",
+    "cat": "MOVIE TRIVIA",
+    "takes": "597K",
+    "coverEmoji": "🎬💬🎭",
+    "coverBg": "linear-gradient(135deg,#e74c3c 0%,#1a1430 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MOVIES & TV",
+      "POP CULTURE",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "famous-quotes",
+    "title": "Who Said It? Famous Quotes",
+    "cat": "QUOTES TRIVIA",
+    "takes": "369K",
+    "coverEmoji": "💬🧠📚",
+    "coverBg": "linear-gradient(135deg,#2c3e50 0%,#3bffd2 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "HISTORY",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "olympic-trivia",
+    "title": "Olympic Games Trivia",
+    "cat": "SPORTS TRIVIA",
+    "takes": "278K",
+    "coverEmoji": "🥇🏅🔥",
+    "coverBg": "linear-gradient(135deg,#d35400 0%,#ffd23f 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SPORTS",
+      "HISTORY",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "fastfood-menu",
+    "title": "Fast Food Deep Cut Trivia",
+    "cat": "FOOD TRIVIA",
+    "takes": "661K",
+    "coverEmoji": "🍔🍟🌯",
+    "coverBg": "linear-gradient(135deg,#ff6b35 0%,#ffd23f 100%)",
+    "badge": "🔥 HOT",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "FOOD",
+      "POP CULTURE",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "body-facts",
+    "title": "Human Body Facts Blitz",
+    "cat": "SCIENCE TRIVIA",
+    "takes": "445K",
+    "coverEmoji": "🫀🧬🦴",
+    "coverBg": "linear-gradient(135deg,#16a085 0%,#1a1430 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SCIENCE",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "logo-colors",
+    "title": "Brand Colors Blitz",
+    "cat": "BRANDS TRIVIA",
+    "takes": "823K",
+    "coverEmoji": "🎨🏷️🟥",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#3bffd2 100%)",
+    "badge": "🔥 HOT",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "POP CULTURE",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "us-trivia",
+    "title": "USA Trivia Blitz",
+    "cat": "USA TRIVIA",
+    "takes": "334K",
+    "coverEmoji": "🇺🇸🗽🦅",
+    "coverBg": "linear-gradient(135deg,#1a3a8f 0%,#e74c3c 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "GEOGRAPHY",
+      "HISTORY",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "internet-trivia",
+    "title": "Internet & Tech Trivia",
+    "cat": "TECH TRIVIA",
+    "takes": "502K",
+    "coverEmoji": "💻🌐⌨️",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#3bffd2 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "TRIVIA",
+      "POP CULTURE",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "world-trivia",
+    "title": "Around the World Trivia",
+    "cat": "WORLD TRIVIA",
+    "takes": "319K",
+    "coverEmoji": "🌍🗺️✈️",
+    "coverBg": "linear-gradient(135deg,#2980b9 0%,#27ae60 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "GEOGRAPHY",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "dino-trivia",
+    "title": "Dinosaur Trivia Blitz",
+    "cat": "DINO TRIVIA",
+    "takes": "284K",
+    "coverEmoji": "🦕🦖",
+    "coverBg": "linear-gradient(135deg,#27ae60 0%,#1a6835 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SCIENCE",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "language-trivia",
+    "title": "Language & Linguistics Blitz",
+    "cat": "LANGUAGE TRIVIA",
+    "takes": "156K",
+    "coverEmoji": "🌐💬",
+    "coverBg": "linear-gradient(135deg,#3498db 0%,#8e44ad 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "car-trivia",
+    "title": "Cars & Automobiles Trivia",
+    "cat": "AUTO TRIVIA",
+    "takes": "312K",
+    "coverEmoji": "🚗💨",
+    "coverBg": "linear-gradient(135deg,#e74c3c 0%,#922b21 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "art-trivia",
+    "title": "Art & Famous Artists Blitz",
+    "cat": "ART TRIVIA",
+    "takes": "198K",
+    "coverEmoji": "🎨🖼️",
+    "coverBg": "linear-gradient(135deg,#9b59b6 0%,#e74c3c 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "TRIVIA",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "mythology-trivia",
+    "title": "World Mythology Blitz",
+    "cat": "MYTH TRIVIA",
+    "takes": "243K",
+    "coverEmoji": "⚡🏛️",
+    "coverBg": "linear-gradient(135deg,#e67e22 0%,#d35400 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "HISTORY",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "80s-trivia",
+    "title": "1980s Pop Culture Blitz",
+    "cat": "80s TRIVIA",
+    "takes": "389K",
+    "coverEmoji": "📼🕹️",
+    "coverBg": "linear-gradient(135deg,#ff6b6b 0%,#ee5a24 100%)",
+    "badge": "🔥 HOT",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "POP CULTURE",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "ocean-trivia",
+    "title": "Ocean & Marine Life Blitz",
+    "cat": "OCEAN TRIVIA",
+    "takes": "174K",
+    "coverEmoji": "🌊🐋",
+    "coverBg": "linear-gradient(135deg,#0099db 0%,#0055a4 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SCIENCE",
+      "TRIVIA",
+      "GEOGRAPHY"
+    ]
+  },
+  {
+    "id": "weather-trivia",
+    "title": "Weather & Climate Blitz",
+    "cat": "WEATHER TRIVIA",
+    "takes": "201K",
+    "coverEmoji": "⛈️🌪️",
+    "coverBg": "linear-gradient(135deg,#636e72 0%,#2d3436 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SCIENCE",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "royal-trivia",
+    "title": "Royal Families Blitz",
+    "cat": "ROYAL TRIVIA",
+    "takes": "267K",
+    "coverEmoji": "👑🏰",
+    "coverBg": "linear-gradient(135deg,#8e44ad 0%,#6c3bff 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "HISTORY",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "tv-trivia",
+    "title": "TV Shows Trivia Blitz",
+    "cat": "TV TRIVIA",
+    "takes": "445K",
+    "coverEmoji": "📺🎬",
+    "coverBg": "linear-gradient(135deg,#f39c12 0%,#d35400 100%)",
+    "badge": "🔥 HOT",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MOVIES & TV",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "rock-trivia",
+    "title": "Rock Music Blitz",
+    "cat": "ROCK TRIVIA",
+    "takes": "321K",
+    "coverEmoji": "🎸🤘",
+    "coverBg": "linear-gradient(135deg,#2c3e50 0%,#e74c3c 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "tech-trivia",
+    "title": "Technology & Inventions Blitz",
+    "cat": "TECH TRIVIA",
+    "takes": "289K",
+    "coverEmoji": "💻🤖",
+    "coverBg": "linear-gradient(135deg,#00b894 0%,#0984e3 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SCIENCE",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "math-trivia",
+    "title": "Math & Numbers Blitz",
+    "cat": "MATH TRIVIA",
+    "takes": "178K",
+    "coverEmoji": "🔢➗",
+    "coverBg": "linear-gradient(135deg,#6c5ce7 0%,#a29bfe 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SCIENCE",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "nature-trivia",
+    "title": "Nature & Wildlife Blitz",
+    "cat": "NATURE TRIVIA",
+    "takes": "236K",
+    "coverEmoji": "🌿🦋",
+    "coverBg": "linear-gradient(135deg,#00b894 0%,#55efc4 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SCIENCE",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "celebrity-trivia",
+    "title": "Celebrity Facts Blitz",
+    "cat": "CELEB TRIVIA",
+    "takes": "512K",
+    "coverEmoji": "⭐🎤",
+    "coverBg": "linear-gradient(135deg,#fd79a8 0%,#e84393 100%)",
+    "badge": "🔥 HOT",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "POP CULTURE",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "70s-trivia",
+    "title": "1970s Nostalgia Blitz",
+    "cat": "70s TRIVIA",
+    "takes": "298K",
+    "coverEmoji": "🪩🕺",
+    "coverBg": "linear-gradient(135deg,#e17055 0%,#d63031 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "POP CULTURE",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "2000s-trivia",
+    "title": "2000s Nostalgia Blitz",
+    "cat": "Y2K TRIVIA",
+    "takes": "467K",
+    "coverEmoji": "📱💾",
+    "coverBg": "linear-gradient(135deg,#00cec9 0%,#6c5ce7 100%)",
+    "badge": "🔥 HOT",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "POP CULTURE",
+      "TRIVIA",
+      "Y2K"
+    ]
+  },
+  {
+    "id": "space-explore",
+    "title": "Space Exploration Blitz",
+    "cat": "SPACE TRIVIA",
+    "takes": "334K",
+    "coverEmoji": "🚀🌙",
+    "coverBg": "linear-gradient(135deg,#2d3436 0%,#6c3bff 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SCIENCE",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "geography-deep",
+    "title": "World Geography Deep Dive",
+    "cat": "GEO TRIVIA",
+    "takes": "192K",
+    "coverEmoji": "🗺️🌍",
+    "coverBg": "linear-gradient(135deg,#0984e3 0%,#00b894 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "GEOGRAPHY",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "movie-facts",
+    "title": "Movie Facts & Cinema Blitz",
+    "cat": "CINEMA TRIVIA",
+    "takes": "378K",
+    "coverEmoji": "🎬🍿",
+    "coverBg": "linear-gradient(135deg,#fdcb6e 0%,#e17055 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MOVIES & TV",
+      "TRIVIA"
+    ]
+  }
 ]

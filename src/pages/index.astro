@@ -3,6 +3,32 @@ import catsData    from '../data/categories.json';
 import cardsData   from '../data/cards.json';
 import quizzesData from '../data/quizzes.json';
 import blitzesData from '../data/blitzes.json';
+
+const homeJsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': 'https://crazyquizzes.com/#website',
+      url: 'https://crazyquizzes.com/',
+      name: 'CrazyQuizzes',
+      description: "The Internet's Dumbest Quiz Site — personality quizzes, trivia blitzes, and emoji games.",
+      publisher: { '@type': 'Organization', name: 'CrazyQuizzes', url: 'https://crazyquizzes.com' },
+    },
+    {
+      '@type': 'ItemList',
+      name: 'Quizzes & Trivia Blitzes',
+      url: 'https://crazyquizzes.com/',
+      numberOfItems: (cardsData as any[]).length,
+      itemListElement: (cardsData as any[]).slice(0, 10).map((card, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: card.title,
+        url: `https://crazyquizzes.com/${card.type === 'blitz' ? 'blitz' : 'quiz'}/${card.id}`,
+      })),
+    },
+  ],
+});
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +37,24 @@ import blitzesData from '../data/blitzes.json';
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CrazyQuizzes — The Internet's Dumbest Quiz Site</title>
   <meta name="description" content="Take a quiz. Get judged by an algorithm with zero credentials. Send the results to the group chat." />
+  <link rel="canonical" href="https://crazyquizzes.com/" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CrazyQuizzes" />
+  <meta property="og:url" content="https://crazyquizzes.com/" />
+  <meta property="og:title" content="CrazyQuizzes — The Internet's Dumbest Quiz Site" />
+  <meta property="og:description" content="Take a quiz. Get judged by an algorithm with zero credentials. Send the results to the group chat." />
+  <meta property="og:image" content="https://crazyquizzes.com/og-default.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CrazyQuizzes — The Internet's Dumbest Quiz Site" />
+  <meta name="twitter:description" content="Take a quiz. Get judged by an algorithm with zero credentials. Send the results to the group chat." />
+  <meta name="twitter:image" content="https://crazyquizzes.com/og-default.png" />
+
+  <script type="application/ld+json" set:html={homeJsonLd} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -243,6 +286,7 @@ import blitzesData from '../data/blitzes.json';
       flex-wrap: wrap;
       transition: transform .12s, box-shadow .12s;
       margin-bottom: 36px;
+      text-decoration: none;
     }
     .blitz-banner:hover { transform: translate(-3px,-3px); box-shadow: 12px 12px 0 #6c3bff; }
     .blitz-bg-icon {
@@ -308,6 +352,9 @@ import blitzesData from '../data/blitzes.json';
       cursor: pointer;
       transition: transform .12s, box-shadow .12s;
       overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
     .quiz-card:hover { transform: translate(-3px,-3px); box-shadow: 9px 9px 0 #6c3bff; }
     .quiz-card-cover {
@@ -834,6 +881,63 @@ import blitzesData from '../data/blitzes.json';
       animation: cq-pop .3s ease both;
       white-space: nowrap;
     }
+
+    /* ---- MOBILE ---- */
+    button, a, .chip { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+
+    @media (max-width: 640px) {
+      /* Header */
+      .header-inner { padding: 9px 14px; gap: 8px; }
+      .logo-star { font-size: 18px; }
+      .logo-text { font-size: 16px; }
+      .nav-btn { font-size: 10px; padding: 6px 9px; box-shadow: 2px 2px 0 #1a1430; }
+      .nav-plain { display: none; }
+
+      /* App container */
+      #app { padding: 0 14px; }
+
+      /* Hero */
+      .hero { padding: 28px 0 20px; }
+      .hero-sticker { display: none; }
+      .hero h1 { font-size: clamp(32px, 10vw, 56px); margin-bottom: 12px; text-shadow: 3px 3px 0 #3bffd2; }
+      .hero h1 .purple { text-shadow: 3px 3px 0 #ff3b9a; }
+      .hero p { font-size: 15px; margin-bottom: 18px; }
+      .btn-primary, .btn-secondary { font-size: 14px; padding: 12px 18px; box-shadow: 4px 4px 0 #1a1430; }
+
+      /* Category chips */
+      .cat-chips { gap: 7px; padding: 6px 0 20px; }
+      .chip { font-size: 10px; padding: 7px 10px; box-shadow: 2px 2px 0 #1a1430; }
+
+      /* Blitz banner */
+      .blitz-banner { padding: 20px 18px; gap: 16px; box-shadow: 6px 6px 0 #6c3bff; margin-bottom: 24px; }
+      .blitz-eyebrow { font-size: 10px; margin-bottom: 8px; }
+      .blitz-banner h2 { font-size: clamp(22px, 6vw, 34px); margin-bottom: 8px; }
+      .blitz-banner p { font-size: 13px; }
+      .blitz-right { display: none; }
+      .blitz-bg-icon { font-size: 80px; }
+      .blitz-play-btn { font-size: 13px; padding: 11px 16px; box-shadow: 3px 3px 0 #ff3b9a; }
+
+      /* Quiz grid — single column on small screens */
+      .quiz-grid { grid-template-columns: 1fr; gap: 14px; padding-bottom: 40px; }
+      .quiz-card-cover { height: 120px; }
+      .quiz-card-cover-emoji { font-size: 44px; }
+      .quiz-card-body { padding: 12px 13px 14px; }
+      .quiz-card-title { font-size: 17px; margin-bottom: 10px; }
+      .quiz-card-takes { font-size: 11px; }
+
+      /* Trending header */
+      .trending-header { margin-bottom: 14px; }
+      .trending-header h2 { font-size: clamp(18px, 5vw, 26px); }
+
+      /* Footer */
+      footer { margin: 0 -14px; padding: 30px 14px 24px; }
+      .footer-inner { gap: 20px; }
+    }
+
+    /* Two-column grid on mid-size mobile (e.g. large phones) */
+    @media (min-width: 480px) and (max-width: 640px) {
+      .quiz-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    }
   </style>
 </head>
 <body>
@@ -854,7 +958,7 @@ import blitzesData from '../data/blitzes.json';
       </button>
       <nav>
         <button id="nav-quizzes" class="nav-btn">QUIZZES</button>
-        <button id="nav-blitz" class="nav-btn yellow">⚡ DAILY BLITZ</button>
+        <a id="nav-blitz" class="nav-btn yellow" href="/">⚡ DAILY BLITZ</a>
         <button id="nav-random" class="nav-btn pink">🎲 RANDOM</button>
         <button id="nav-categories" class="nav-plain" style="background:none;border:none;cursor:pointer;">CATEGORIES</button>
         <a href="/about" class="nav-plain">ABOUT</a>
@@ -918,10 +1022,9 @@ import blitzesData from '../data/blitzes.json';
     }
     function openRandom() {
       const card = cards[Math.floor(Math.random() * cards.length)];
-      if (card.type === 'blitz') openBlitz(card.id);
-      else openQuiz(card.id);
+      window.location.href = card.type === 'blitz' ? `/blitz/${card.id}` : `/quiz/${card.id}`;
     }
-    function openQuiz(id) { setState({ view: 'intro', activeQuizId: id, shared: false }); }
+    function openQuiz(id) { window.location.href = '/quiz/' + id; }
     function startQuiz() { setState({ view: 'question', qIndex: 0, scores: {}, result: null }); }
     function retakeQuiz() { setState({ view: 'question', qIndex: 0, scores: {}, result: null, shared: false }); }
 
@@ -939,7 +1042,7 @@ import blitzesData from '../data/blitzes.json';
       }
     }
 
-    function openBlitz(id) { clearTimers(); setState({ view: 'bintro', activeBlitzId: id, shared: false }); }
+    function openBlitz(id) { window.location.href = '/blitz/' + id; }
     function startBlitz() {
       clearTimers();
       setState({ view: 'bquestion', bIndex: 0, bTime: 10, bLocked: false, bPicked: null, bScore: 0, bStreak: 0 });
@@ -1042,8 +1145,8 @@ import blitzesData from '../data/blitzes.json';
           </section>
 
           <!-- DAILY BLITZ BANNER -->
-          <section>
-            <div class="blitz-banner" data-action="blitz" data-id="${e(todayBlitzId)}">
+          <section id="daily-blitz">
+            <a href="/blitz/${e(todayBlitzId)}" class="blitz-banner">
               <div class="blitz-bg-icon">⚡</div>
               <div style="position:relative;max-width:46ch;">
                 <div class="blitz-eyebrow">⚡ NEW EVERY DAY · PLAY ALONG · BEAT THE CLOCK</div>
@@ -1052,9 +1155,9 @@ import blitzesData from '../data/blitzes.json';
               </div>
               <div class="blitz-right">
                 <div class="blitz-emojis">🎬 🚩 ✅ 🧠</div>
-                <button class="blitz-play-btn" data-action="blitz" data-id="${e(todayBlitzId)}">▶ PLAY THE BLITZ</button>
+                <span class="blitz-play-btn">▶ PLAY THE BLITZ</span>
               </div>
-            </div>
+            </a>
           </section>
 
           <!-- QUIZ GRID -->
@@ -1072,7 +1175,7 @@ import blitzesData from '../data/blitzes.json';
                     <p style="font-weight:500;color:#6b6285;margin:0;">Check back soon — our totally unqualified team is on it.</p>
                   </div>`;
                 return filtered.map(card => `
-                  <div class="quiz-card" data-action="${e(card.type === 'blitz' ? 'blitz' : 'quiz')}" data-id="${e(card.id)}">
+                  <a href="${card.type === 'blitz' ? '/blitz/' : '/quiz/'}${e(card.id)}" class="quiz-card">
                     <div class="quiz-card-cover" style="background:${e(card.coverBg)};">
                       <span class="quiz-card-cover-emoji">${e(card.coverEmoji)}</span>
                       <span class="quiz-card-badge" style="background:${e(card.badgeColor)};color:${e(card.badgeInk)};">${e(card.badge)}</span>
@@ -1085,7 +1188,7 @@ import blitzesData from '../data/blitzes.json';
                         <span class="quiz-card-play">PLAY ▸</span>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 `).join('');
               })()}
             </div>
@@ -1392,7 +1495,7 @@ import blitzesData from '../data/blitzes.json';
     // Header buttons
     document.getElementById('logo-btn').addEventListener('click', goHome);
     document.getElementById('nav-quizzes').addEventListener('click', goHome);
-    document.getElementById('nav-blitz').addEventListener('click', () => openBlitz(getTodayBlitzId()));
+    document.getElementById('nav-blitz').href = `/blitz/${getTodayBlitzId()}`;
     document.getElementById('nav-random').addEventListener('click', openRandom);
     document.getElementById('nav-categories').addEventListener('click', openCategories);
 

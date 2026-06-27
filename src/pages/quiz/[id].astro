@@ -1,0 +1,849 @@
+---
+import quizzesData from '../../data/quizzes.json';
+import blitzesData from '../../data/blitzes.json';
+import cardsData from '../../data/cards.json';
+
+export function getStaticPaths() {
+  return Object.keys(quizzesData).map((id) => ({ params: { id } }));
+}
+
+const { id } = Astro.params;
+const quiz = (quizzesData as Record<string, any>)[id];
+const card = (cardsData as any[]).find((c) => c.id === id);
+
+const canonicalURL = `https://crazyquizzes.com/quiz/${id}`;
+const pageTitle = `${quiz.title} — CrazyQuizzes`;
+const pageDesc = quiz.desc;
+const ogImage = `https://crazyquizzes.com/og-default.png`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crazyquizzes.com' },
+        { '@type': 'ListItem', position: 2, name: quiz.title, item: canonicalURL },
+      ],
+    },
+    {
+      '@type': 'WebPage',
+      '@id': canonicalURL,
+      url: canonicalURL,
+      name: pageTitle,
+      description: pageDesc,
+      isPartOf: { '@id': 'https://crazyquizzes.com/#website' },
+      breadcrumb: { '@id': `${canonicalURL}#breadcrumb` },
+    },
+  ],
+};
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{pageTitle}</title>
+  <meta name="description" content={pageDesc} />
+  <link rel="canonical" href={canonicalURL} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CrazyQuizzes" />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:title" content={pageTitle} />
+  <meta property="og:description" content={pageDesc} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={pageTitle} />
+  <meta name="twitter:description" content={pageDesc} />
+  <meta name="twitter:image" content={ogImage} />
+
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style is:global>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+
+    @keyframes cq-blink { 0%, 55% { opacity: 1; } 56%, 100% { opacity: 0; } }
+    @keyframes cq-float { 0%, 100% { transform: translateY(0) rotate(var(--r,0deg)); } 50% { transform: translateY(-12px) rotate(var(--r,0deg)); } }
+    @keyframes cq-spin { to { transform: rotate(360deg); } }
+    @keyframes cq-wiggle { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+    @keyframes cq-pop { 0% { transform: scale(.6); opacity: 0; } 65% { transform: scale(1.1); } 100% { transform: scale(1); opacity: 1; } }
+
+    body {
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      color: #1a1430;
+      background-color: #f3eeff;
+      background-image: linear-gradient(rgba(108,59,255,.08) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(108,59,255,.08) 1px, transparent 1px);
+      background-size: 28px 28px;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: #fffdf7;
+      border-bottom: 3px solid #1a1430;
+      box-shadow: 0 4px 0 rgba(26,20,48,.12);
+    }
+    .header-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 12px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .logo-star {
+      font-family: 'Bungee', cursive;
+      color: #6c3bff;
+      display: inline-block;
+      animation: cq-spin 7s linear infinite;
+      font-size: 22px;
+    }
+    .logo-text { font-family: 'Bungee', cursive; font-size: clamp(18px, 3vw, 24px); letter-spacing: .01em; }
+    .logo-text .crazy { color: #6c3bff; }
+    .logo-text .quizzes { color: #1a1430; }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      font-family: 'Bungee', cursive;
+      font-size: 11px;
+    }
+    .nav-btn {
+      cursor: pointer;
+      text-decoration: none;
+      color: #1a1430;
+      border: 2px solid #1a1430;
+      padding: 7px 12px;
+      box-shadow: 3px 3px 0 #1a1430;
+      transition: transform .1s, box-shadow .1s;
+      background: #3bffd2;
+      font-family: 'Bungee', cursive;
+      font-size: 11px;
+      display: inline-block;
+    }
+    .nav-btn:hover { transform: translate(-1px,-1px); box-shadow: 4px 4px 0 #1a1430; }
+    .nav-btn.yellow { background: #ffd23f; }
+    .nav-btn.pink { background: #ff3b9a; color: #fff; border-color: #1a1430; }
+    .nav-plain {
+      cursor: pointer;
+      text-decoration: none;
+      color: #1a1430;
+      padding: 7px 6px;
+      opacity: .7;
+      font-family: 'Bungee', cursive;
+      font-size: 11px;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 14px 22px 0;
+      font-family: 'Bungee', cursive;
+      font-size: 11px;
+      color: #6b6285;
+    }
+    .breadcrumb a { color: #6c3bff; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; opacity: .5; }
+
+    #app {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 22px;
+    }
+
+    /* INTRO */
+    .view-intro { padding: 40px 0 70px; max-width: 680px; margin: 0 auto; }
+    .back-link {
+      display: inline-block;
+      cursor: pointer;
+      font-family: 'Bungee', cursive;
+      font-size: 11px;
+      color: #6c3bff;
+      margin-bottom: 22px;
+      background: none;
+      border: none;
+      padding: 0;
+      text-decoration: none;
+    }
+    .intro-card {
+      background: #fff;
+      border: 3px solid #1a1430;
+      box-shadow: 8px 8px 0 #1a1430;
+    }
+    .intro-cover {
+      height: 220px;
+      border-bottom: 3px solid #1a1430;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: repeating-linear-gradient(45deg, #efe7ff, #efe7ff 13px, #f8f4ff 13px, #f8f4ff 26px);
+    }
+    .intro-cover-label {
+      font: 600 12px/1 'Courier New', monospace;
+      letter-spacing: .12em;
+      color: #6c3bff;
+      text-transform: uppercase;
+      background: #fff;
+      border: 2px solid #1a1430;
+      padding: 6px 11px;
+    }
+    .intro-viral {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      font-family: 'Bungee', cursive;
+      font-size: 11px;
+      background: #ff3b9a;
+      color: #fff;
+      border: 2px solid #1a1430;
+      box-shadow: 2px 2px 0 #1a1430;
+      padding: 5px 9px;
+      transform: rotate(-5deg);
+    }
+    .intro-body { padding: 30px 28px 32px; }
+    .intro-cat { font-family: 'Bungee', cursive; font-size: 11px; color: #6c3bff; margin-bottom: 12px; }
+    .intro-body h1 {
+      font-family: 'Bungee', cursive;
+      font-size: clamp(26px, 5vw, 40px);
+      line-height: 1.02;
+      margin: 0 0 16px;
+    }
+    .intro-body p { font-size: 16px; font-weight: 500; line-height: 1.5; color: #3a3358; margin: 0 0 22px; }
+    .intro-meta { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 26px; }
+    .meta-chip {
+      font-family: 'Bungee', cursive;
+      font-size: 11px;
+      border: 2px solid #1a1430;
+      padding: 7px 11px;
+      box-shadow: 2px 2px 0 #1a1430;
+    }
+    .btn-start {
+      width: 100%;
+      font-family: 'Bungee', cursive;
+      font-size: 19px;
+      color: #fff;
+      background: #6c3bff;
+      border: 3px solid #1a1430;
+      box-shadow: 6px 6px 0 #1a1430;
+      padding: 18px;
+      cursor: pointer;
+      transition: transform .1s, box-shadow .1s;
+    }
+    .btn-start:hover { transform: translate(-2px,-2px); box-shadow: 8px 8px 0 #ff3b9a; }
+
+    /* QUESTION */
+    .view-question { padding: 36px 0 70px; max-width: 760px; margin: 0 auto; }
+    .q-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .quit-btn {
+      cursor: pointer;
+      font-family: 'Bungee', cursive;
+      font-size: 11px;
+      color: #6c3bff;
+      background: none;
+      border: none;
+      padding: 0;
+    }
+    .q-counter { font-family: 'Bungee', cursive; font-size: 12px; }
+    .progress-bar-wrap {
+      height: 22px;
+      border: 3px solid #1a1430;
+      background: #fff;
+      box-shadow: 4px 4px 0 #1a1430;
+      margin-bottom: 30px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: repeating-linear-gradient(45deg, #6c3bff, #6c3bff 8px, #8a63ff 8px, #8a63ff 16px);
+      transition: width .3s ease;
+    }
+    .view-question h1 {
+      font-family: 'Bungee', cursive;
+      font-size: clamp(24px, 4.4vw, 38px);
+      line-height: 1.08;
+      margin: 0 0 28px;
+    }
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .option-btn {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: #fff;
+      border: 3px solid #1a1430;
+      box-shadow: 5px 5px 0 #1a1430;
+      padding: 18px 20px;
+      cursor: pointer;
+      font: 600 17px/1.3 'Space Grotesk', sans-serif;
+      color: #1a1430;
+      transition: transform .1s, box-shadow .1s, background .1s;
+    }
+    .option-btn:hover { transform: translate(-3px,-3px); box-shadow: 8px 8px 0 #6c3bff; background: #f8f4ff; }
+    .option-letter {
+      flex: none;
+      width: 36px;
+      height: 36px;
+      background: #6c3bff;
+      color: #fff;
+      border: 2px solid #1a1430;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Bungee', cursive;
+      font-size: 14px;
+    }
+
+    /* RESULTS */
+    .view-results { padding: 40px 0 70px; max-width: 680px; margin: 0 auto; text-align: center; }
+    .results-eyebrow {
+      font-family: 'Bungee', cursive;
+      font-size: 13px;
+      color: #6c3bff;
+      margin-bottom: 6px;
+      animation: cq-wiggle 2.6s ease-in-out infinite;
+      display: inline-block;
+    }
+    .results-youare { font-family: 'Bungee', cursive; font-size: clamp(16px,3vw,20px); margin-bottom: 18px; }
+    .results-card {
+      background: #fff;
+      border: 3px solid #1a1430;
+      box-shadow: 8px 8px 0 #1a1430;
+      animation: cq-pop .45s ease both;
+      overflow: hidden;
+    }
+    .results-top { border-bottom: 3px solid #1a1430; padding: 30px 24px; }
+    .results-name {
+      font-family: 'Bungee', cursive;
+      font-size: clamp(34px, 7vw, 62px);
+      line-height: .98;
+      margin: 0;
+      text-shadow: 4px 4px 0 rgba(26,20,48,.18);
+    }
+    .results-kind { font-family: 'Bungee', cursive; font-size: 13px; margin-top: 10px; opacity: .85; }
+    .results-body { padding: 28px 26px 30px; }
+    .results-tagline { font-size: 18px; font-weight: 600; line-height: 1.45; margin: 0 0 20px; }
+    .results-desc { font-size: 15px; line-height: 1.55; color: #3a3358; margin: 0 0 22px; }
+    .results-traits { display: flex; gap: 9px; flex-wrap: wrap; justify-content: center; margin-bottom: 24px; }
+    .trait-chip {
+      font-family: 'Bungee', cursive;
+      font-size: 10px;
+      border: 2px solid #1a1430;
+      background: #f3eeff;
+      padding: 7px 11px;
+      box-shadow: 2px 2px 0 #1a1430;
+    }
+    .results-rarity {
+      background: #1a1430;
+      color: #3bffd2;
+      font-family: 'Bungee', cursive;
+      font-size: 12px;
+      padding: 11px;
+      margin-bottom: 24px;
+    }
+    .share-label { font-family: 'Bungee', cursive; font-size: 11px; color: #6b6285; margin-bottom: 12px; }
+    .share-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+    .share-btn {
+      font-family: 'Bungee', cursive;
+      font-size: 12px;
+      border: 2px solid #1a1430;
+      box-shadow: 3px 3px 0 #1a1430;
+      padding: 12px;
+      cursor: pointer;
+    }
+    .share-btn.pink { color: #fff; background: #ff3b9a; }
+    .share-btn.cyan { color: #1a1430; background: #3bffd2; }
+    .share-btn.yellow { color: #1a1430; background: #ffd23f; }
+    .results-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-retake {
+      flex: 1;
+      min-width: 140px;
+      font-family: 'Bungee', cursive;
+      font-size: 13px;
+      color: #fff;
+      background: #6c3bff;
+      border: 3px solid #1a1430;
+      box-shadow: 5px 5px 0 #1a1430;
+      padding: 15px;
+      cursor: pointer;
+      transition: transform .1s, box-shadow .1s;
+    }
+    .btn-retake:hover { transform: translate(-2px,-2px); box-shadow: 7px 7px 0 #1a1430; }
+    .btn-more {
+      flex: 1;
+      min-width: 140px;
+      font-family: 'Bungee', cursive;
+      font-size: 13px;
+      color: #1a1430;
+      background: #fff;
+      border: 3px solid #1a1430;
+      box-shadow: 5px 5px 0 #1a1430;
+      padding: 15px;
+      cursor: pointer;
+      transition: transform .1s, box-shadow .1s;
+    }
+    .btn-more:hover { transform: translate(-2px,-2px); box-shadow: 7px 7px 0 #3bffd2; }
+
+    /* TOAST */
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 26px;
+      transform: translateX(-50%);
+      z-index: 80;
+      background: #1a1430;
+      color: #3bffd2;
+      border: 3px solid #3bffd2;
+      box-shadow: 5px 5px 0 #6c3bff;
+      font-family: 'Bungee', cursive;
+      font-size: 12px;
+      padding: 13px 18px;
+      animation: cq-pop .3s ease both;
+      white-space: nowrap;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #1a1430;
+      border-top: 3px solid #1a1430;
+      color: #fff;
+    }
+    .footer-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 40px 22px 24px;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    .footer-brand { max-width: 300px; }
+    .footer-logo { font-family: 'Bungee', cursive; font-size: 22px; margin-bottom: 10px; }
+    .footer-logo .crazy { color: #3bffd2; }
+    .footer-logo .quizzes { color: #fff; }
+    .footer-desc { font-size: 13px; line-height: 1.5; color: #b3a9d6; margin: 0 0 14px; }
+    .footer-tagline { font: 600 10px/1 'Courier New', monospace; color: #3bffd2; letter-spacing: .1em; }
+    .footer-sitemap { font-family: 'Bungee', cursive; font-size: 11px; display: flex; flex-direction: column; gap: 10px; }
+    .footer-sitemap .label { color: #ff3b9a; }
+    .footer-sitemap a { color: #fff; text-decoration: none; }
+    .footer-sitemap a:hover { color: #3bffd2; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.12);
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 16px 22px;
+      font-size: 12px;
+      color: #b3a9d6;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* ---- MOBILE LAYOUT ---- */
+    /* Touch tap improvements everywhere */
+    button, a, [data-action] {
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Body as flex column so #app can fill remaining height */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100dvh;
+      overflow-x: hidden;
+    }
+    header { flex-shrink: 0; }
+    .breadcrumb { flex-shrink: 0; }
+    #app {
+      flex: 1;
+      min-height: 0;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    @media (max-width: 640px) {
+      /* Lock viewport — quiz fits the screen */
+      body { height: 100dvh; overflow: hidden; }
+
+      /* Hide non-essential chrome on mobile */
+      .breadcrumb { display: none; }
+      footer { display: none; }
+
+      /* Compact header */
+      .header-inner { padding: 8px 14px; gap: 8px; }
+      .logo-star { font-size: 18px; }
+      .logo-text { font-size: 16px; }
+      .nav-btn { font-size: 10px; padding: 6px 9px; box-shadow: 2px 2px 0 #1a1430; }
+      .nav-plain { display: none; }
+
+      /* #app padding */
+      #app { padding: 0 14px; }
+
+      /* ---- INTRO ---- */
+      .view-intro { padding: 10px 0 12px; }
+      .back-link { font-size: 10px; margin-bottom: 10px; }
+      .intro-card { box-shadow: 5px 5px 0 #1a1430; }
+      .intro-cover { height: 80px; }
+      .intro-cover-label { font-size: 10px; padding: 4px 8px; }
+      .intro-viral { font-size: 9px; padding: 3px 6px; top: 7px; left: 7px; }
+      .intro-body { padding: 12px 14px 14px; }
+      .intro-cat { font-size: 9px; margin-bottom: 6px; }
+      .intro-body h1 { font-size: 22px; line-height: 1; margin-bottom: 8px; }
+      .intro-body p {
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 12px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .intro-meta { gap: 6px; margin-bottom: 14px; }
+      .meta-chip { font-size: 9px; padding: 5px 8px; box-shadow: 1px 1px 0 #1a1430; }
+      .btn-start { font-size: 15px; padding: 14px; box-shadow: 4px 4px 0 #1a1430; }
+
+      /* ---- QUESTION ---- */
+      .view-question { padding: 10px 0 12px; }
+      .q-topbar { margin-bottom: 6px; }
+      .quit-btn { font-size: 10px; }
+      .q-counter { font-size: 10px; }
+      .progress-bar-wrap { height: 14px; margin-bottom: 14px; box-shadow: 3px 3px 0 #1a1430; }
+      .view-question h1 { font-size: 18px; line-height: 1.1; margin-bottom: 14px; }
+      .options-grid { gap: 9px; grid-template-columns: 1fr; }
+      .option-btn { padding: 11px 13px; font-size: 14px; gap: 10px; box-shadow: 3px 3px 0 #1a1430; }
+      .option-letter { width: 28px; height: 28px; font-size: 11px; flex-shrink: 0; }
+
+      /* ---- RESULTS ---- */
+      .view-results { padding: 10px 0 12px; }
+      .results-eyebrow { font-size: 11px; margin-bottom: 4px; }
+      .results-youare { font-size: 13px; margin-bottom: 10px; }
+      .results-card { box-shadow: 5px 5px 0 #1a1430; }
+      .results-top { padding: 16px 14px; }
+      .results-name { font-size: 26px; text-shadow: 3px 3px 0 rgba(26,20,48,.18); }
+      .results-kind { font-size: 10px; margin-top: 4px; }
+      .results-body { padding: 12px 12px 14px; }
+      .results-tagline { font-size: 13px; line-height: 1.35; margin-bottom: 8px; }
+      .results-desc {
+        font-size: 12px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .results-traits { gap: 5px; margin-bottom: 10px; }
+      .trait-chip { font-size: 9px; padding: 4px 7px; box-shadow: 1px 1px 0 #1a1430; }
+      .results-rarity { font-size: 10px; padding: 7px; margin-bottom: 10px; }
+      .share-label { font-size: 10px; margin-bottom: 6px; }
+      .share-grid { gap: 7px; margin-bottom: 10px; }
+      .share-btn { font-size: 10px; padding: 9px 6px; box-shadow: 2px 2px 0 #1a1430; }
+      .results-actions { gap: 8px; }
+      .btn-retake, .btn-more { font-size: 11px; padding: 11px; box-shadow: 3px 3px 0 #1a1430; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="CrazyQuizzes Home">
+        <span class="logo-star">✦</span>
+        <span class="logo-text"><span class="crazy">CRAZY</span><span class="quizzes">QUIZZES</span></span>
+      </a>
+      <nav aria-label="Site navigation">
+        <a href="/" class="nav-btn">QUIZZES</a>
+        <a href="/" class="nav-btn yellow" id="nav-blitz">⚡ DAILY BLITZ</a>
+        <button class="nav-btn pink" id="nav-random">🎲 RANDOM</button>
+        <a href="/about" class="nav-plain">ABOUT</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span>›</span>
+    <a href="/">Quizzes</a>
+    <span>›</span>
+    {quiz.title}
+  </nav>
+
+  <div id="app">
+    <!-- Static fallback for crawlers — JS replaces this -->
+    <div class="view-intro">
+      <a href="/" class="back-link">← BACK TO QUIZZES</a>
+      <div class="intro-card">
+        <div class="intro-cover">
+          <span class="intro-cover-label">{quiz.cover}</span>
+          <span class="intro-viral">🔥 VIRAL</span>
+        </div>
+        <div class="intro-body">
+          <div class="intro-cat">{quiz.cat}</div>
+          <h1>{quiz.title}</h1>
+          <p>{quiz.desc}</p>
+          <div class="intro-meta">
+            <span class="meta-chip" style="background:#3bffd2;">{quiz.qcount} QUESTIONS</span>
+            <span class="meta-chip" style="background:#ffd23f;">≈ {quiz.minutes} MIN</span>
+            <span class="meta-chip" style="background:#fff;">👁 {quiz.takes} TOOK THIS</span>
+          </div>
+          <button class="btn-start" id="static-start-btn">START THE CHAOS →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" style="display:none;">✓ LINK COPIED — GO RUIN SOMEONE'S DAY</div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="crazy">CRAZY</span><span class="quizzes">QUIZZES</span></div>
+        <p class="footer-desc">Diagnosing your personality with snacks since right now. Results may be used against you in the group chat.</p>
+        <div class="footer-tagline">★ BEST VIEWED IN NETSCAPE NAVIGATOR 4.0 ★</div>
+      </div>
+      <div class="footer-sitemap">
+        <span class="label">QUIZZES</span>
+        <a href="/">All Quizzes</a>
+        <a href="/" id="footer-blitz">Daily Blitz</a>
+        <span class="label">COMPANY</span>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Use</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CrazyQuizzes.com — made with ♥ and zero focus groups</span>
+      <span>crazyquizzes.com</span>
+    </div>
+  </footer>
+
+  <script define:vars={{ quizzes: quizzesData, blitzes: blitzesData, cards: cardsData, initialQuizId: id }}>
+    let state = {
+      view: 'intro',
+      activeQuizId: initialQuizId,
+      qIndex: 0,
+      scores: {},
+      result: null,
+    };
+
+    function setState(u) { state = { ...state, ...u }; render(); }
+
+    function getTodayBlitzId() {
+      const keys = Object.keys(blitzes);
+      return keys[Math.floor(Date.now() / 86400000) % keys.length];
+    }
+
+    function goHome() { window.location.href = '/'; }
+    function openRandom() {
+      const blitzIds = cards.filter(c => c.type === 'blitz').map(c => c.id);
+      const quizIds = cards.filter(c => c.type !== 'blitz').map(c => c.id);
+      const all = [...blitzIds.map(id => ({ type: 'blitz', id })), ...quizIds.map(id => ({ type: 'quiz', id }))];
+      const pick = all[Math.floor(Math.random() * all.length)];
+      window.location.href = pick.type === 'blitz' ? `/blitz/${pick.id}` : `/quiz/${pick.id}`;
+    }
+
+    function startQuiz() { setState({ view: 'question', qIndex: 0, scores: {}, result: null }); }
+    function retakeQuiz() { setState({ view: 'intro', qIndex: 0, scores: {}, result: null }); }
+
+    function pickAnswer(key) {
+      const quiz = quizzes[state.activeQuizId];
+      const scores = { ...state.scores };
+      scores[key] = (scores[key] || 0) + 1;
+      const next = state.qIndex + 1;
+      if (next >= quiz.questions.length) {
+        const keys = Object.keys(quiz.results);
+        const winner = keys.reduce((a, b) => ((scores[b] || 0) > (scores[a] || 0) ? b : a), keys[0]);
+        setState({ scores, result: winner, view: 'results' });
+      } else {
+        setState({ scores, qIndex: next });
+      }
+    }
+
+    function doShare() {
+      navigator.clipboard.writeText(window.location.href).catch(() => {});
+      showToast('✓ LINK COPIED — GO RUIN SOMEONE\'S DAY');
+    }
+    function doShareTikTok() {
+      if (navigator.share) navigator.share({ title: document.title, url: window.location.href }).catch(() => {});
+      else { navigator.clipboard.writeText(window.location.href).catch(() => {}); showToast('LINK COPIED — PASTE IT IN YOUR TIKTOK BIO 🎵'); }
+    }
+    function doShareInsta() {
+      if (navigator.share) navigator.share({ title: document.title, url: window.location.href }).catch(() => {});
+      else { navigator.clipboard.writeText(window.location.href).catch(() => {}); showToast('LINK COPIED — ADD IT TO YOUR INSTA STORY 📸'); }
+    }
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      if (!t) return;
+      t.textContent = msg;
+      t.style.display = 'block';
+      clearTimeout(showToast._tid);
+      showToast._tid = setTimeout(() => { t.style.display = 'none'; }, 2800);
+    }
+
+    function e(str) {
+      return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    function renderIntro() {
+      const quiz = quizzes[state.activeQuizId];
+      return `
+        <div class="view-intro">
+          <a href="/" class="back-link">← BACK TO QUIZZES</a>
+          <div class="intro-card">
+            <div class="intro-cover">
+              <span class="intro-cover-label">${e(quiz.cover)}</span>
+              <span class="intro-viral">🔥 VIRAL</span>
+            </div>
+            <div class="intro-body">
+              <div class="intro-cat">${e(quiz.cat)}</div>
+              <h1>${e(quiz.title)}</h1>
+              <p>${e(quiz.desc)}</p>
+              <div class="intro-meta">
+                <span class="meta-chip" style="background:#3bffd2;">${e(quiz.qcount)} QUESTIONS</span>
+                <span class="meta-chip" style="background:#ffd23f;">≈ ${e(quiz.minutes)} MIN</span>
+                <span class="meta-chip" style="background:#fff;">👁 ${e(quiz.takes)} TOOK THIS</span>
+              </div>
+              <button class="btn-start" data-action="start">START THE CHAOS →</button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderQuestion() {
+      const quiz = quizzes[state.activeQuizId];
+      const total = quiz.questions.length;
+      const num = state.qIndex + 1;
+      const q = quiz.questions[state.qIndex];
+      const pct = Math.round((num / total) * 100);
+      return `
+        <div class="view-question">
+          <div class="q-topbar">
+            <button class="quit-btn" data-action="home">✕ QUIT</button>
+            <span class="q-counter">QUESTION ${num} / ${total}</span>
+          </div>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar-fill" style="width:${pct}%;"></div>
+          </div>
+          <h1>${e(q.text)}</h1>
+          <div class="options-grid">
+            ${q.options.map((opt, i) => `
+              <button class="option-btn" data-action="pick" data-key="${e(opt.key)}">
+                <span class="option-letter">${'ABCD'[i]}</span>
+                <span>${e(opt.label)}</span>
+              </button>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderResults() {
+      const quiz = quizzes[state.activeQuizId];
+      const r = quiz.results[state.result];
+      return `
+        <div class="view-results">
+          <div class="results-eyebrow">✦ THE ALGORITHM HAS SPOKEN ✦</div>
+          <div class="results-youare">YOU ARE...</div>
+          <div class="results-card">
+            <div class="results-top" style="background:${e(r.color)};">
+              <h1 class="results-name" style="color:${e(r.nameInk)};">${e(r.name)}</h1>
+              <div class="results-kind" style="color:${e(r.nameInk)};">${e(r.kind)}</div>
+            </div>
+            <div class="results-body">
+              <p class="results-tagline">${e(r.tagline)}</p>
+              <p class="results-desc">${e(r.desc)}</p>
+              <div class="results-traits">
+                ${r.traits.map(t => `<span class="trait-chip">${e(t)}</span>`).join('')}
+              </div>
+              <div class="results-rarity">★ ONLY ${e(r.rarity)} OF PEOPLE GET THIS ★</div>
+              <div class="share-label">SHARE YOUR DIAGNOSIS</div>
+              <div class="share-grid">
+                <button class="share-btn pink" data-action="share">📋 COPY LINK</button>
+                <button class="share-btn cyan" data-action="share-tiktok">TIKTOK</button>
+                <button class="share-btn yellow" data-action="share-insta">INSTA</button>
+              </div>
+              <div class="results-actions">
+                <button class="btn-retake" data-action="retake">↻ TAKE AGAIN</button>
+                <button class="btn-more" data-action="home">MORE QUIZZES →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function render() {
+      const app = document.getElementById('app');
+      switch (state.view) {
+        case 'intro':    app.innerHTML = renderIntro(); break;
+        case 'question': app.innerHTML = renderQuestion(); break;
+        case 'results':  app.innerHTML = renderResults(); break;
+      }
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+
+    document.addEventListener('click', (ev) => {
+      const el = ev.target.closest('[data-action]');
+      if (!el) return;
+      switch (el.dataset.action) {
+        case 'home':         goHome(); break;
+        case 'start':        startQuiz(); break;
+        case 'pick':         pickAnswer(el.dataset.key); break;
+        case 'retake':       retakeQuiz(); break;
+        case 'share':        doShare(); break;
+        case 'share-tiktok': doShareTikTok(); break;
+        case 'share-insta':  doShareInsta(); break;
+      }
+    });
+
+    document.getElementById('nav-random').addEventListener('click', openRandom);
+    document.getElementById('nav-blitz').href = `/blitz/${getTodayBlitzId()}`;
+    document.getElementById('footer-blitz').href = `/blitz/${getTodayBlitzId()}`;
+
+    render();
+  </script>
+</body>
+</html>

@@ -1,0 +1,676 @@
+---
+import blitzesData from '../../data/blitzes.json';
+import cardsData from '../../data/cards.json';
+
+export function getStaticPaths() {
+  const blitzCardIds = new Set(
+    (cardsData as any[]).filter((c) => c.type === 'blitz').map((c) => c.id)
+  );
+  return Object.keys(blitzesData)
+    .filter((id) => blitzCardIds.has(id))
+    .map((id) => ({ params: { id } }));
+}
+
+const { id } = Astro.params;
+const blitz = (blitzesData as Record<string, any>)[id];
+const card = (cardsData as any[]).find((c) => c.id === id);
+
+const canonicalURL = `https://crazyquizzes.com/blitz/${id}`;
+const pageTitle = `${blitz.title} — Quiz Blitz — CrazyQuizzes`;
+const pageDesc = `Think you're fast? Take the ${blitz.title} blitz — 10 questions, 10 seconds each. Can you beat the clock?`;
+const ogImage = `https://crazyquizzes.com/og-default.png`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crazyquizzes.com' },
+        { '@type': 'ListItem', position: 2, name: 'Daily Blitz', item: 'https://crazyquizzes.com' },
+        { '@type': 'ListItem', position: 3, name: blitz.title, item: canonicalURL },
+      ],
+    },
+    {
+      '@type': 'WebPage',
+      '@id': canonicalURL,
+      url: canonicalURL,
+      name: pageTitle,
+      description: pageDesc,
+      isPartOf: { '@id': 'https://crazyquizzes.com/#website' },
+    },
+  ],
+};
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{pageTitle}</title>
+  <meta name="description" content={pageDesc} />
+  <link rel="canonical" href={canonicalURL} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CrazyQuizzes" />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:title" content={pageTitle} />
+  <meta property="og:description" content={pageDesc} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={pageTitle} />
+  <meta name="twitter:description" content={pageDesc} />
+  <meta name="twitter:image" content={ogImage} />
+
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style is:global>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+
+    @keyframes cq-spin { to { transform: rotate(360deg); } }
+    @keyframes cq-wiggle { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+    @keyframes cq-pop { 0% { transform: scale(.6); opacity: 0; } 65% { transform: scale(1.1); } 100% { transform: scale(1); opacity: 1; } }
+
+    body {
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      color: #1a1430;
+      background-color: #f3eeff;
+      background-image: linear-gradient(rgba(108,59,255,.08) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(108,59,255,.08) 1px, transparent 1px);
+      background-size: 28px 28px;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: #fffdf7;
+      border-bottom: 3px solid #1a1430;
+      box-shadow: 0 4px 0 rgba(26,20,48,.12);
+    }
+    .header-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 12px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-star { font-family: 'Bungee', cursive; color: #6c3bff; display: inline-block; animation: cq-spin 7s linear infinite; font-size: 22px; }
+    .logo-text { font-family: 'Bungee', cursive; font-size: clamp(18px, 3vw, 24px); letter-spacing: .01em; }
+    .logo-text .crazy { color: #6c3bff; }
+    .logo-text .quizzes { color: #1a1430; }
+
+    nav { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .nav-btn {
+      cursor: pointer;
+      text-decoration: none;
+      color: #1a1430;
+      border: 2px solid #1a1430;
+      padding: 7px 12px;
+      box-shadow: 3px 3px 0 #1a1430;
+      transition: transform .1s, box-shadow .1s;
+      background: #3bffd2;
+      font-family: 'Bungee', cursive;
+      font-size: 11px;
+      display: inline-block;
+    }
+    .nav-btn:hover { transform: translate(-1px,-1px); box-shadow: 4px 4px 0 #1a1430; }
+    .nav-btn.yellow { background: #ffd23f; }
+    .nav-btn.pink { background: #ff3b9a; color: #fff; border-color: #1a1430; }
+    .nav-plain { cursor: pointer; text-decoration: none; color: #1a1430; padding: 7px 6px; opacity: .7; font-family: 'Bungee', cursive; font-size: 11px; }
+
+    .breadcrumb {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 14px 22px 0;
+      font-family: 'Bungee', cursive;
+      font-size: 11px;
+      color: #6b6285;
+    }
+    .breadcrumb a { color: #6c3bff; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { margin: 0 6px; opacity: .5; }
+
+    #app { max-width: 1140px; margin: 0 auto; padding: 0 22px; }
+
+    /* BLITZ INTRO */
+    .view-bintro { padding: 40px 0 70px; max-width: 640px; margin: 0 auto; }
+    .back-link {
+      display: inline-block;
+      cursor: pointer;
+      font-family: 'Bungee', cursive;
+      font-size: 11px;
+      color: #6c3bff;
+      margin-bottom: 22px;
+      text-decoration: none;
+    }
+    .bintro-card {
+      background: #1a1430;
+      border: 3px solid #1a1430;
+      box-shadow: 8px 8px 0 #6c3bff;
+      overflow: hidden;
+    }
+    .bintro-inner { padding: 34px 28px 30px; text-align: center; }
+    .bintro-bolt { font-size: 54px; line-height: 1; margin-bottom: 14px; animation: cq-wiggle 2.6s ease-in-out infinite; display: inline-block; }
+    .bintro-eyebrow { font-family: 'Bungee', cursive; font-size: 11px; color: #3bffd2; margin-bottom: 10px; }
+    .bintro-card h1 { font-family: 'Bungee', cursive; font-size: clamp(30px, 6vw, 48px); line-height: 1; margin: 0 0 18px; color: #fff; }
+    .bintro-card h1 .yellow { color: #ffd23f; }
+    .bintro-chips { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 28px; }
+    .bintro-chip { font-family: 'Bungee', cursive; font-size: 11px; border: 2px solid; padding: 8px 12px; }
+    .bintro-chip.cyan { border-color: #3bffd2; color: #3bffd2; }
+    .bintro-chip.yellow { border-color: #ffd23f; color: #ffd23f; }
+    .bintro-chip.pink { border-color: #ff3b9a; color: #ff3b9a; }
+    .bintro-card p { color: #b3a9d6; font-weight: 500; font-size: 15px; line-height: 1.5; margin: 0 0 26px; }
+    .btn-go {
+      width: 100%;
+      font-family: 'Bungee', cursive;
+      font-size: 19px;
+      color: #1a1430;
+      background: #3bffd2;
+      border: 3px solid #3bffd2;
+      box-shadow: 6px 6px 0 #ff3b9a;
+      padding: 18px;
+      cursor: pointer;
+      transition: transform .1s, box-shadow .1s;
+    }
+    .btn-go:hover { transform: translate(-2px,-2px); box-shadow: 8px 8px 0 #ffd23f; }
+
+    /* BLITZ QUESTION */
+    .view-bquestion { padding: 28px 0 70px; max-width: 760px; margin: 0 auto; }
+    .b-topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+    .quit-btn { cursor: pointer; font-family: 'Bungee', cursive; font-size: 11px; color: #6c3bff; background: none; border: none; padding: 0; }
+    .b-badges { display: flex; gap: 8px; flex-wrap: wrap; }
+    .b-badge { font-family: 'Bungee', cursive; font-size: 11px; border: 2px solid #1a1430; padding: 6px 10px; }
+    .b-badge.dark { background: #1a1430; color: #fff; }
+    .b-badge.cyan { background: #3bffd2; color: #1a1430; }
+    .b-badge.pink { background: #ff3b9a; color: #fff; }
+    .timer-row { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+    .timer-num { flex: none; font-family: 'Bungee', cursive; font-size: 18px; width: 48px; height: 48px; border: 3px solid #1a1430; box-shadow: 3px 3px 0 #1a1430; display: flex; align-items: center; justify-content: center; background: #fff; }
+    .timer-bar-wrap { flex: 1; height: 18px; border: 3px solid #1a1430; background: #fff; box-shadow: 3px 3px 0 #1a1430; overflow: hidden; }
+    .timer-bar-fill { height: 100%; transition: width 1s linear; }
+    .b-kind { font-family: 'Bungee', cursive; font-size: 11px; color: #6c3bff; margin-bottom: 14px; }
+    .b-prompt-box {
+      background: #fff;
+      border: 3px solid #1a1430;
+      box-shadow: 6px 6px 0 #1a1430;
+      padding: 26px;
+      text-align: center;
+      font-size: clamp(48px, 12vw, 84px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    .view-bquestion h1 { font-family: 'Bungee', cursive; font-size: clamp(20px, 3.6vw, 30px); line-height: 1.12; margin: 0 0 24px; }
+    .b-options-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    .b-option-btn {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      border: 3px solid #1a1430;
+      box-shadow: 5px 5px 0 #1a1430;
+      padding: 16px 18px;
+      cursor: pointer;
+      font: 700 17px/1.25 'Space Grotesk', sans-serif;
+      transition: transform .1s, box-shadow .1s;
+    }
+    .b-option-btn:hover { transform: translate(-2px,-2px); box-shadow: 7px 7px 0 #6c3bff; }
+    .b-option-letter { flex: none; width: 34px; height: 34px; background: #1a1430; color: #fff; border: 2px solid #1a1430; display: flex; align-items: center; justify-content: center; font-family: 'Bungee', cursive; font-size: 13px; }
+    .b-option-mark { font-family: 'Bungee', cursive; font-size: 18px; margin-left: auto; }
+
+    /* BLITZ RESULTS */
+    .view-bresults { padding: 40px 0 70px; max-width: 620px; margin: 0 auto; text-align: center; }
+    .bresults-eyebrow { font-family: 'Bungee', cursive; font-size: 13px; color: #6c3bff; margin-bottom: 16px; animation: cq-wiggle 2.6s ease-in-out infinite; display: inline-block; }
+    .bresults-card { background: #fff; border: 3px solid #1a1430; box-shadow: 8px 8px 0 #1a1430; animation: cq-pop .45s ease both; overflow: hidden; }
+    .bresults-top { border-bottom: 3px solid #1a1430; padding: 30px 24px; }
+    .bresults-label { font-family: 'Bungee', cursive; font-size: 13px; opacity: .8; margin-bottom: 6px; }
+    .bresults-score { font-family: 'Bungee', cursive; font-size: clamp(44px, 11vw, 80px); line-height: .95; text-shadow: 4px 4px 0 rgba(26,20,48,.15); }
+    .bresults-grade { font-family: 'Bungee', cursive; font-size: clamp(18px,4vw,26px); margin-top: 12px; }
+    .bresults-body { padding: 28px 26px 30px; }
+    .bresults-line { font-size: 17px; font-weight: 600; line-height: 1.45; margin: 0 0 24px; }
+    .share-label { font-family: 'Bungee', cursive; font-size: 11px; color: #6b6285; margin-bottom: 12px; }
+    .share-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 22px; }
+    .share-btn { font-family: 'Bungee', cursive; font-size: 12px; border: 2px solid #1a1430; box-shadow: 3px 3px 0 #1a1430; padding: 12px; cursor: pointer; }
+    .share-btn.pink { color: #fff; background: #ff3b9a; }
+    .share-btn.cyan { color: #1a1430; background: #3bffd2; }
+    .share-btn.yellow { color: #1a1430; background: #ffd23f; }
+    .results-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-retake { flex: 1; min-width: 140px; font-family: 'Bungee', cursive; font-size: 13px; color: #fff; background: #6c3bff; border: 3px solid #1a1430; box-shadow: 5px 5px 0 #1a1430; padding: 15px; cursor: pointer; transition: transform .1s, box-shadow .1s; }
+    .btn-retake:hover { transform: translate(-2px,-2px); box-shadow: 7px 7px 0 #1a1430; }
+    .btn-more { flex: 1; min-width: 140px; font-family: 'Bungee', cursive; font-size: 13px; color: #1a1430; background: #fff; border: 3px solid #1a1430; box-shadow: 5px 5px 0 #1a1430; padding: 15px; cursor: pointer; transition: transform .1s, box-shadow .1s; }
+    .btn-more:hover { transform: translate(-2px,-2px); box-shadow: 7px 7px 0 #3bffd2; }
+
+    /* TOAST */
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 26px;
+      transform: translateX(-50%);
+      z-index: 80;
+      background: #1a1430;
+      color: #3bffd2;
+      border: 3px solid #3bffd2;
+      box-shadow: 5px 5px 0 #6c3bff;
+      font-family: 'Bungee', cursive;
+      font-size: 12px;
+      padding: 13px 18px;
+      animation: cq-pop .3s ease both;
+      white-space: nowrap;
+    }
+
+    /* FOOTER */
+    footer { background: #1a1430; border-top: 3px solid #1a1430; color: #fff; }
+    .footer-inner { max-width: 1140px; margin: 0 auto; padding: 40px 22px 24px; display: flex; gap: 40px; flex-wrap: wrap; align-items: flex-start; }
+    .footer-brand { max-width: 300px; }
+    .footer-logo { font-family: 'Bungee', cursive; font-size: 22px; margin-bottom: 10px; }
+    .footer-logo .crazy { color: #3bffd2; }
+    .footer-logo .quizzes { color: #fff; }
+    .footer-desc { font-size: 13px; line-height: 1.5; color: #b3a9d6; margin: 0 0 14px; }
+    .footer-tagline { font: 600 10px/1 'Courier New', monospace; color: #3bffd2; letter-spacing: .1em; }
+    .footer-sitemap { font-family: 'Bungee', cursive; font-size: 11px; display: flex; flex-direction: column; gap: 10px; }
+    .footer-sitemap .label { color: #ff3b9a; }
+    .footer-sitemap a { color: #fff; text-decoration: none; }
+    .footer-sitemap a:hover { color: #3bffd2; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.12); max-width: 1140px; margin: 0 auto; padding: 16px 22px; font-size: 12px; color: #b3a9d6; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+    /* ---- MOBILE LAYOUT ---- */
+    button, a, [data-action] {
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100dvh;
+      overflow-x: hidden;
+    }
+    header { flex-shrink: 0; }
+    .breadcrumb { flex-shrink: 0; }
+    #app {
+      flex: 1;
+      min-height: 0;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    @media (max-width: 640px) {
+      body { height: 100dvh; overflow: hidden; }
+      .breadcrumb { display: none; }
+      footer { display: none; }
+
+      /* Compact header */
+      .header-inner { padding: 8px 14px; gap: 8px; }
+      .logo-star { font-size: 18px; }
+      .logo-text { font-size: 16px; }
+      .nav-btn { font-size: 10px; padding: 6px 9px; box-shadow: 2px 2px 0 #1a1430; }
+      .nav-plain { display: none; }
+
+      #app { padding: 0 14px; }
+
+      /* ---- BLITZ INTRO ---- */
+      .view-bintro { padding: 10px 0 12px; }
+      .back-link { font-size: 10px; margin-bottom: 10px; }
+      .bintro-card { box-shadow: 5px 5px 0 #6c3bff; }
+      .bintro-inner { padding: 18px 18px 20px; }
+      .bintro-bolt { font-size: 36px; margin-bottom: 8px; }
+      .bintro-eyebrow { font-size: 10px; margin-bottom: 6px; }
+      .bintro-card h1 { font-size: 24px; margin-bottom: 12px; }
+      .bintro-chips { gap: 7px; margin-bottom: 18px; }
+      .bintro-chip { font-size: 10px; padding: 6px 10px; }
+      .bintro-card p { font-size: 13px; line-height: 1.4; margin-bottom: 18px; }
+      .btn-go { font-size: 15px; padding: 14px; box-shadow: 4px 4px 0 #ff3b9a; }
+
+      /* ---- BLITZ QUESTION ---- */
+      .view-bquestion { padding: 10px 0 12px; }
+      .b-topbar { margin-bottom: 8px; }
+      .quit-btn { font-size: 10px; }
+      .b-badge { font-size: 10px; padding: 5px 8px; }
+      .timer-row { margin-bottom: 12px; gap: 8px; }
+      .timer-num { width: 38px; height: 38px; font-size: 15px; box-shadow: 2px 2px 0 #1a1430; }
+      .timer-bar-wrap { height: 14px; box-shadow: 2px 2px 0 #1a1430; }
+      .b-kind { font-size: 10px; margin-bottom: 8px; }
+      .b-prompt-box {
+        padding: 14px 12px;
+        font-size: clamp(36px, 14vw, 54px);
+        margin-bottom: 10px;
+        box-shadow: 4px 4px 0 #1a1430;
+        line-height: 1;
+      }
+      .view-bquestion h1 { font-size: 16px; line-height: 1.1; margin-bottom: 10px; }
+      .b-options-grid { gap: 9px; grid-template-columns: 1fr 1fr; }
+      .b-option-btn { padding: 12px 10px; font-size: 13px; gap: 8px; box-shadow: 3px 3px 0 #1a1430; }
+      .b-option-letter { width: 28px; height: 28px; font-size: 11px; flex-shrink: 0; }
+      .b-option-mark { font-size: 14px; }
+
+      /* ---- BLITZ RESULTS ---- */
+      .view-bresults { padding: 10px 0 12px; }
+      .bresults-eyebrow { font-size: 11px; margin-bottom: 10px; }
+      .bresults-card { box-shadow: 5px 5px 0 #1a1430; }
+      .bresults-top { padding: 16px 14px; }
+      .bresults-label { font-size: 11px; margin-bottom: 4px; }
+      .bresults-score { font-size: clamp(38px, 10vw, 60px); }
+      .bresults-grade { font-size: clamp(16px, 4vw, 22px); margin-top: 8px; }
+      .bresults-body { padding: 14px 12px 16px; }
+      .bresults-line { font-size: 14px; margin-bottom: 16px; }
+      .share-label { font-size: 10px; margin-bottom: 6px; }
+      .share-grid { gap: 7px; margin-bottom: 10px; }
+      .share-btn { font-size: 10px; padding: 9px 6px; box-shadow: 2px 2px 0 #1a1430; }
+      .results-actions { gap: 8px; }
+      .btn-retake, .btn-more { font-size: 11px; padding: 11px; box-shadow: 3px 3px 0 #1a1430; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="CrazyQuizzes Home">
+        <span class="logo-star">✦</span>
+        <span class="logo-text"><span class="crazy">CRAZY</span><span class="quizzes">QUIZZES</span></span>
+      </a>
+      <nav aria-label="Site navigation">
+        <a href="/" class="nav-btn">QUIZZES</a>
+        <a href="#" class="nav-btn yellow" id="nav-blitz">⚡ DAILY BLITZ</a>
+        <button class="nav-btn pink" id="nav-random">🎲 RANDOM</button>
+        <a href="/about" class="nav-plain">ABOUT</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span>›</span>
+    <a href="/">Daily Blitz</a>
+    <span>›</span>
+    {blitz.title}
+  </nav>
+
+  <div id="app">
+    <!-- Static fallback for crawlers -->
+    <div class="view-bintro">
+      <a href="/" class="back-link">← BACK TO QUIZZES</a>
+      <div class="bintro-card">
+        <div class="bintro-inner">
+          <div class="bintro-bolt">⚡</div>
+          <div class="bintro-eyebrow">PLAY-ALONG · BEAT THE CLOCK</div>
+          <h1><span class="yellow">{blitz.title.toUpperCase()}</span></h1>
+          <div class="bintro-chips">
+            <span class="bintro-chip cyan">10 QUESTIONS</span>
+            <span class="bintro-chip yellow">⏱ 10 SEC EACH</span>
+            <span class="bintro-chip pink">🔥 BUILD A STREAK</span>
+          </div>
+          <p>Guess the emoji, name the flag, true-or-false and more. Tap fast — when the timer hits zero, the answer locks itself.</p>
+          <button class="btn-go" id="static-go-btn">I'M READY — GO! →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" style="display:none;">✓ LINK COPIED — GO RUIN SOMEONE'S DAY</div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="crazy">CRAZY</span><span class="quizzes">QUIZZES</span></div>
+        <p class="footer-desc">Diagnosing your personality with snacks since right now. Results may be used against you in the group chat.</p>
+        <div class="footer-tagline">★ BEST VIEWED IN NETSCAPE NAVIGATOR 4.0 ★</div>
+      </div>
+      <div class="footer-sitemap">
+        <span class="label">QUIZZES</span>
+        <a href="/">All Quizzes</a>
+        <a href="/" id="footer-blitz">Daily Blitz</a>
+        <span class="label">COMPANY</span>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Use</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CrazyQuizzes.com — made with ♥ and zero focus groups</span>
+      <span>crazyquizzes.com</span>
+    </div>
+  </footer>
+
+  <script define:vars={{ blitzes: blitzesData, cards: cardsData, initialBlitzId: id }}>
+    let state = {
+      view: 'bintro',
+      activeBlitzId: initialBlitzId,
+      bIndex: 0,
+      bTime: 10,
+      bLocked: false,
+      bPicked: null,
+      bScore: 0,
+      bStreak: 0,
+    };
+
+    let tickTimer = null;
+    let advTimer = null;
+
+    function setState(u) { state = { ...state, ...u }; render(); }
+
+    function getTodayBlitzId() {
+      const keys = Object.keys(blitzes);
+      return keys[Math.floor(Date.now() / 86400000) % keys.length];
+    }
+
+    function openRandom() {
+      const blitzIds = cards.filter(c => c.type === 'blitz').map(c => c.id);
+      const quizIds  = cards.filter(c => c.type !== 'blitz').map(c => c.id);
+      const all = [...blitzIds.map(id => ({ type: 'blitz', id })), ...quizIds.map(id => ({ type: 'quiz', id }))];
+      const pick = all[Math.floor(Math.random() * all.length)];
+      window.location.href = pick.type === 'blitz' ? `/blitz/${pick.id}` : `/quiz/${pick.id}`;
+    }
+
+    function startBlitz() {
+      clearTimers();
+      setState({ view: 'bquestion', bIndex: 0, bTime: 10, bLocked: false, bPicked: null, bScore: 0, bStreak: 0 });
+      tickTimer = setInterval(tick, 1000);
+    }
+    function tick() {
+      if (state.view !== 'bquestion' || state.bLocked) return;
+      const t = state.bTime - 1;
+      if (t <= 0) { setState({ bTime: 0 }); lockBlitz(-1); }
+      else setState({ bTime: t });
+    }
+    function lockBlitz(idx) {
+      if (state.bLocked) return;
+      const blitz = blitzes[state.activeBlitzId];
+      const q = blitz.questions[state.bIndex];
+      const correct = idx === q.correct;
+      setState({ bLocked: true, bPicked: idx, bScore: state.bScore + (correct ? 1 : 0), bStreak: correct ? state.bStreak + 1 : 0 });
+      advTimer = setTimeout(nextBlitz, 1500);
+    }
+    function nextBlitz() {
+      const blitz = blitzes[state.activeBlitzId];
+      const next = state.bIndex + 1;
+      if (next >= blitz.questions.length) { clearTimers(); setState({ view: 'bresults' }); }
+      else setState({ bIndex: next, bTime: 10, bLocked: false, bPicked: null });
+    }
+    function clearTimers() { clearInterval(tickTimer); clearTimeout(advTimer); }
+
+    function doShare() {
+      navigator.clipboard.writeText(window.location.href).catch(() => {});
+      showToast('✓ LINK COPIED — GO RUIN SOMEONE\'S DAY');
+    }
+    function doShareTikTok() {
+      if (navigator.share) navigator.share({ title: document.title, url: window.location.href }).catch(() => {});
+      else { navigator.clipboard.writeText(window.location.href).catch(() => {}); showToast('LINK COPIED — PASTE IT IN YOUR TIKTOK BIO 🎵'); }
+    }
+    function doShareInsta() {
+      if (navigator.share) navigator.share({ title: document.title, url: window.location.href }).catch(() => {});
+      else { navigator.clipboard.writeText(window.location.href).catch(() => {}); showToast('LINK COPIED — ADD IT TO YOUR INSTA STORY 📸'); }
+    }
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      if (!t) return;
+      t.textContent = msg;
+      t.style.display = 'block';
+      clearTimeout(showToast._tid);
+      showToast._tid = setTimeout(() => { t.style.display = 'none'; }, 2800);
+    }
+
+    function e(str) {
+      return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    function renderBIntro() {
+      const blitz = blitzes[state.activeBlitzId];
+      return `
+        <div class="view-bintro">
+          <a href="/" class="back-link">← BACK TO QUIZZES</a>
+          <div class="bintro-card">
+            <div class="bintro-inner">
+              <div class="bintro-bolt">⚡</div>
+              <div class="bintro-eyebrow">PLAY-ALONG · BEAT THE CLOCK</div>
+              <h1><span class="yellow">${e(blitz.title.toUpperCase())}</span></h1>
+              <div class="bintro-chips">
+                <span class="bintro-chip cyan">10 QUESTIONS</span>
+                <span class="bintro-chip yellow">⏱ 10 SEC EACH</span>
+                <span class="bintro-chip pink">🔥 BUILD A STREAK</span>
+              </div>
+              <p>Guess the emoji, name the flag, true-or-false and more. Tap fast — when the timer hits zero, the answer locks itself.</p>
+              <button class="btn-go" data-action="startblitz">I'M READY — GO! →</button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderBQuestion() {
+      const blitz = blitzes[state.activeBlitzId];
+      const bq = blitz.questions[state.bIndex];
+      const locked = state.bLocked;
+      const picked = state.bPicked;
+      const bTotal = blitz.questions.length;
+      const danger = state.bTime <= 3;
+      const timeColor = danger ? '#ff3b9a' : '#6c3bff';
+      const timePct = Math.round((state.bTime / 10) * 100);
+
+      const bOptions = bq.options.map((label, i) => {
+        let bg = '#fff', fg = '#1a1430', mark = '';
+        if (locked) {
+          if (i === bq.correct) { bg = '#3bffd2'; fg = '#1a1430'; mark = '✓'; }
+          else if (i === picked) { bg = '#ff3b9a'; fg = '#fff'; mark = '✗'; }
+          else { bg = '#fbfaff'; fg = '#a79fc0'; }
+        }
+        return { label, letter: 'ABCD'[i], bg, fg, mark, idx: i };
+      });
+
+      return `
+        <div class="view-bquestion">
+          <div class="b-topbar">
+            <button class="quit-btn" data-action="home">✕ QUIT</button>
+            <div class="b-badges">
+              <span class="b-badge dark">Q ${state.bIndex + 1} / ${bTotal}</span>
+              <span class="b-badge cyan">⭐ ${state.bScore}</span>
+              <span class="b-badge pink">🔥 ${state.bStreak}</span>
+            </div>
+          </div>
+          <div class="timer-row">
+            <span class="timer-num" style="color:${timeColor};">${state.bTime}</span>
+            <div class="timer-bar-wrap">
+              <div class="timer-bar-fill" style="width:${timePct}%;background:${timeColor};"></div>
+            </div>
+          </div>
+          <div class="b-kind">${e(bq.kind)}</div>
+          ${bq.prompt ? `<div class="b-prompt-box">${e(bq.prompt)}</div>` : ''}
+          <h1>${e(bq.text)}</h1>
+          <div class="b-options-grid">
+            ${bOptions.map(opt => `
+              <button class="b-option-btn" data-action="bpick" data-idx="${opt.idx}"
+                style="background:${e(opt.bg)};color:${e(opt.fg)};"
+                ${locked ? 'disabled' : ''}>
+                <span class="b-option-letter">${e(opt.letter)}</span>
+                <span style="flex:1;">${e(opt.label)}</span>
+                <span class="b-option-mark">${e(opt.mark)}</span>
+              </button>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderBResults() {
+      const blitz = blitzes[state.activeBlitzId];
+      const s = state.bScore;
+      const bTotal = blitz.questions.length;
+      let grade;
+      if (s === bTotal) grade = { name: '🏆 QUIZ GOD', color: '#ffd23f', ink: '#1a1430', line: 'Flawless. Are you cheating? (We hope so.)' };
+      else if (s >= bTotal * 0.8) grade = { name: '🧠 GALAXY BRAIN', color: '#6c3bff', ink: '#fff', line: 'Disgustingly smart. Please go outside.' };
+      else if (s >= bTotal * 0.6) grade = { name: '😎 PRETTY SHARP', color: '#3bffd2', ink: '#1a1430', line: 'Respectable. The group chat is impressed.' };
+      else if (s >= bTotal * 0.4) grade = { name: '🙂 NOT BAD', color: '#fffdf7', ink: '#1a1430', line: 'You won some, you lost some. Balance.' };
+      else grade = { name: '💀 OOF', color: '#ff3b9a', ink: '#fff', line: 'It happens. Blame the timer. Run it back.' };
+
+      return `
+        <div class="view-bresults">
+          <div class="bresults-eyebrow">⚡ BLITZ COMPLETE ⚡</div>
+          <div class="bresults-card">
+            <div class="bresults-top" style="background:${e(grade.color)};">
+              <div class="bresults-label" style="color:${e(grade.ink)};">YOU SCORED</div>
+              <div class="bresults-score" style="color:${e(grade.ink)};">${s} / ${bTotal}</div>
+              <div class="bresults-grade" style="color:${e(grade.ink)};">${e(grade.name)}</div>
+            </div>
+            <div class="bresults-body">
+              <p class="bresults-line">${e(grade.line)}</p>
+              <div class="share-label">CHALLENGE A FRIEND</div>
+              <div class="share-grid">
+                <button class="share-btn pink" data-action="share">📋 COPY LINK</button>
+                <button class="share-btn cyan" data-action="share-tiktok">TIKTOK</button>
+                <button class="share-btn yellow" data-action="share-insta">INSTA</button>
+              </div>
+              <div class="results-actions">
+                <button class="btn-retake" data-action="startblitz">↻ PLAY AGAIN</button>
+                <button class="btn-more" data-action="home">MORE QUIZZES →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function render() {
+      const app = document.getElementById('app');
+      switch (state.view) {
+        case 'bintro':    app.innerHTML = renderBIntro(); break;
+        case 'bquestion': app.innerHTML = renderBQuestion(); break;
+        case 'bresults':  app.innerHTML = renderBResults(); break;
+      }
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+
+    document.addEventListener('click', (ev) => {
+      const el = ev.target.closest('[data-action]');
+      if (!el) return;
+      switch (el.dataset.action) {
+        case 'home':         window.location.href = '/'; break;
+        case 'startblitz':   startBlitz(); break;
+        case 'bpick':        lockBlitz(parseInt(el.dataset.idx)); break;
+        case 'share':        doShare(); break;
+        case 'share-tiktok': doShareTikTok(); break;
+        case 'share-insta':  doShareInsta(); break;
+      }
+    });
+
+    document.getElementById('nav-random').addEventListener('click', openRandom);
+
+    const todayBlitzId = getTodayBlitzId();
+    document.getElementById('nav-blitz').href = `/blitz/${todayBlitzId}`;
+    document.getElementById('footer-blitz').href = `/blitz/${todayBlitzId}`;
+
+    render();
+  </script>
+</body>
+</html>

@@ -10,6 +10,7 @@
     "video:studio": "cd scripts/remotion && npm run studio"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
     "@aws-sdk/client-s3": "^3.1075.0",
     "astro": "^4.16.0",
     "dotenv": "^17.4.2",
