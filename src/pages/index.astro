@@ -1009,7 +1009,15 @@ import blitzesData from '../data/blitzes.json';
       return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
     }
 
+    function getTodayBlitzId() {
+      const blitzKeys = Object.keys(blitzes);
+      const dayIndex = Math.floor(Date.now() / 86400000) % blitzKeys.length;
+      return blitzKeys[dayIndex];
+    }
+
     function renderHome() {
+      const todayBlitzId = getTodayBlitzId();
+      const todayBlitz = blitzes[todayBlitzId];
       return `
         <div>
           <!-- HERO -->
@@ -1035,16 +1043,16 @@ import blitzesData from '../data/blitzes.json';
 
           <!-- DAILY BLITZ BANNER -->
           <section>
-            <div class="blitz-banner" data-action="blitz">
+            <div class="blitz-banner" data-action="blitz" data-id="${e(todayBlitzId)}">
               <div class="blitz-bg-icon">⚡</div>
               <div style="position:relative;max-width:46ch;">
                 <div class="blitz-eyebrow">⚡ NEW EVERY DAY · PLAY ALONG · BEAT THE CLOCK</div>
                 <h2>TODAY'S <span class="yellow">BLITZ</span></h2>
-                <p>10 questions, 10 seconds each. Guess the emoji, name the flag, true-or-false &amp; more before the timer runs out. How fast is your brain?</p>
+                <p>${e(todayBlitz.title)} — 10 questions, 10 seconds each. How fast is your brain?</p>
               </div>
               <div class="blitz-right">
                 <div class="blitz-emojis">🎬 🚩 ✅ 🧠</div>
-                <button class="blitz-play-btn">▶ PLAY THE BLITZ</button>
+                <button class="blitz-play-btn" data-action="blitz" data-id="${e(todayBlitzId)}">▶ PLAY THE BLITZ</button>
               </div>
             </div>
           </section>
@@ -1384,7 +1392,7 @@ import blitzesData from '../data/blitzes.json';
     // Header buttons
     document.getElementById('logo-btn').addEventListener('click', goHome);
     document.getElementById('nav-quizzes').addEventListener('click', goHome);
-    document.getElementById('nav-blitz').addEventListener('click', () => openBlitz('daily-trivia'));
+    document.getElementById('nav-blitz').addEventListener('click', () => openBlitz(getTodayBlitzId()));
     document.getElementById('nav-random').addEventListener('click', openRandom);
     document.getElementById('nav-categories').addEventListener('click', openCategories);
 

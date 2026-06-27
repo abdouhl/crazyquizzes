@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "make-video": "bun run scripts/make-quiz-video.ts",
+    "video:studio": "cd scripts/remotion && npm run studio"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1075.0",
