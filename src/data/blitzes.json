@@ -6858,5 +6858,1005 @@
         "correct": 2
       }
     ]
+  },
+  "kpop-boy-groups": {
+    "title": "K-pop Boy Groups Blitz",
+    "questions": [
+      {
+        "kind": "GROUPS",
+        "prompt": "💎",
+        "text": "How many members does SEVENTEEN have?",
+        "options": [
+          "13",
+          "12",
+          "10",
+          "9"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GROUPS",
+        "prompt": "🏢",
+        "text": "Which company is Stray Kids under?",
+        "options": [
+          "JYP Entertainment",
+          "SM Entertainment",
+          "Big Hit",
+          "YG Entertainment"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GROUPS",
+        "prompt": "🌐",
+        "text": "Which of these is a sub-unit of NCT?",
+        "options": [
+          "NCT 127",
+          "NCT ONE",
+          "NCT Seoul",
+          "NCT Play"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GROUPS",
+        "prompt": "🏆",
+        "text": "BTS, TXT, and ENHYPEN all share which parent company?",
+        "options": [
+          "HYBE",
+          "SM Entertainment",
+          "JYP",
+          "YG Entertainment"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GROUPS",
+        "prompt": "📺",
+        "text": "ENHYPEN debuted through which survival show?",
+        "options": [
+          "I-Land",
+          "Produce 101",
+          "Stray Kids Show",
+          "Road to Kingdom"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GROUPS",
+        "prompt": "7️⃣",
+        "text": "How many members are in BTS?",
+        "options": [
+          "7",
+          "6",
+          "8",
+          "9"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GROUPS",
+        "prompt": "🌊",
+        "text": "Which group uses the motto '8 Makes 1 Team'?",
+        "options": [
+          "ATEEZ",
+          "EXO",
+          "GOT7",
+          "MONSTA X"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GROUPS",
+        "prompt": "⚡",
+        "text": "3RACHA is the production sub-unit of which group?",
+        "options": [
+          "Stray Kids",
+          "NCT",
+          "SEVENTEEN",
+          "ATEEZ"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GROUPS",
+        "prompt": "🎵",
+        "text": "Which boy group is under KQ Entertainment?",
+        "options": [
+          "ATEEZ",
+          "MONSTA X",
+          "THE BOYZ",
+          "VICTON"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GROUPS",
+        "prompt": "🔢",
+        "text": "SEVENTEEN's name represents 13 members + 3 units + how many?",
+        "options": [
+          "1 team",
+          "2 goals",
+          "4 seasons",
+          "0 limits"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "kpop-fandom-names": {
+    "title": "Know Your K-pop Fandoms",
+    "questions": [
+      {
+        "kind": "FANDOM",
+        "prompt": "💜",
+        "text": "What is BTS's official fandom called?",
+        "options": [
+          "ARMY",
+          "BLINK",
+          "STAY",
+          "ONCE"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "FANDOM",
+        "prompt": "💎",
+        "text": "What is SEVENTEEN's fandom called?",
+        "options": [
+          "CARAT",
+          "BUDDY",
+          "MELODY",
+          "ORBIT"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "FANDOM",
+        "prompt": "🐾",
+        "text": "What is Stray Kids' fandom called?",
+        "options": [
+          "STAY",
+          "ARMY",
+          "BLINK",
+          "ONCE"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "FANDOM",
+        "prompt": "🌊",
+        "text": "What is ATEEZ's fandom called?",
+        "options": [
+          "ATINY",
+          "AHOY",
+          "ATEAM",
+          "ATINYS"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "FANDOM",
+        "prompt": "🌙",
+        "text": "TXT's fandom name MOA stands for 'Moments of ___'?",
+        "options": [
+          "Alwaysness",
+          "Awesomeness",
+          "Amazingness",
+          "Affection"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "FANDOM",
+        "prompt": "⭐",
+        "text": "What is EXO's fandom called?",
+        "options": [
+          "EXO-L",
+          "EXO-K",
+          "EXOLS",
+          "EXOFAM"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "FANDOM",
+        "prompt": "💛",
+        "text": "What is BIGBANG's fandom called?",
+        "options": [
+          "VIP",
+          "BLINK",
+          "BANG",
+          "YGF"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "FANDOM",
+        "prompt": "🦋",
+        "text": "What is ENHYPEN's fandom called?",
+        "options": [
+          "ENGENE",
+          "ENGINE",
+          "ENVY",
+          "ENERGY"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "FANDOM",
+        "prompt": "🐦",
+        "text": "What is GOT7's fandom called?",
+        "options": [
+          "iGOT7",
+          "IGOT",
+          "GOTIES",
+          "FANS7"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "FANDOM",
+        "prompt": "👾",
+        "text": "What is MONSTA X's fandom called?",
+        "options": [
+          "MONBEBE",
+          "MONSTAR",
+          "MONSTAX",
+          "MONBABE"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "bts-blitz": {
+    "title": "BTS Army Challenge",
+    "questions": [
+      {
+        "kind": "BTS",
+        "prompt": "💜",
+        "text": "Who is the leader of BTS?",
+        "options": [
+          "RM",
+          "Jin",
+          "J-Hope",
+          "Suga"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "BTS",
+        "prompt": "👶",
+        "text": "Who is the maknae (youngest) of BTS?",
+        "options": [
+          "Jungkook",
+          "Jimin",
+          "V",
+          "J-Hope"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "BTS",
+        "prompt": "🎵",
+        "text": "What was BTS's first all-English song?",
+        "options": [
+          "Dynamite",
+          "Butter",
+          "Permission to Dance",
+          "Boy With Luv"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "BTS",
+        "prompt": "👴",
+        "text": "Who is the oldest member of BTS?",
+        "options": [
+          "Jin",
+          "RM",
+          "Suga",
+          "J-Hope"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "BTS",
+        "prompt": "🔤",
+        "text": "What does 'BTS' stand for in Korean?",
+        "options": [
+          "Bangtan Sonyeondan",
+          "Bang Tan Stars",
+          "Boys To Stars",
+          "Bangtan Sidekick"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "BTS",
+        "prompt": "🏆",
+        "text": "'Dynamite' became BTS's first #1 on which chart?",
+        "options": [
+          "Billboard Hot 100",
+          "UK Singles",
+          "Gaon Chart",
+          "Oricon"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "BTS",
+        "prompt": "🤴",
+        "text": "Which BTS member is nicknamed 'World Wide Handsome'?",
+        "options": [
+          "Jin",
+          "V",
+          "Jungkook",
+          "Jimin"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "BTS",
+        "prompt": "📅",
+        "text": "Which year did BTS debut?",
+        "options": [
+          "2013",
+          "2012",
+          "2014",
+          "2015"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "BTS",
+        "prompt": "🎨",
+        "text": "What color is BTS's official lightstick (Army Bomb)?",
+        "options": [
+          "Purple",
+          "Blue",
+          "Pink",
+          "Gold"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "BTS",
+        "prompt": "🏢",
+        "text": "BTS is managed by which company?",
+        "options": [
+          "Big Hit Music (HYBE)",
+          "SM Entertainment",
+          "JYP Entertainment",
+          "YG Entertainment"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "stray-kids-blitz": {
+    "title": "Stray Kids Know-It-All",
+    "questions": [
+      {
+        "kind": "SKZOO",
+        "prompt": "🐺",
+        "text": "How many members are currently in Stray Kids?",
+        "options": [
+          "8",
+          "9",
+          "7",
+          "10"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SKZOO",
+        "prompt": "👑",
+        "text": "Who is the leader of Stray Kids?",
+        "options": [
+          "Bang Chan",
+          "Han",
+          "Felix",
+          "Changbin"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SKZOO",
+        "prompt": "🎛️",
+        "text": "Which sub-unit is the production trio of Stray Kids?",
+        "options": [
+          "3RACHA",
+          "Dance Racha",
+          "Vocal Racha",
+          "SKZ-X"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SKZOO",
+        "prompt": "🌏",
+        "text": "Bang Chan and Felix are both Korean-___?",
+        "options": [
+          "Australian",
+          "American",
+          "British",
+          "Canadian"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SKZOO",
+        "prompt": "📅",
+        "text": "Which year did Stray Kids debut?",
+        "options": [
+          "2018",
+          "2017",
+          "2019",
+          "2020"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SKZOO",
+        "prompt": "🐾",
+        "text": "What is Stray Kids' fandom name?",
+        "options": [
+          "STAY",
+          "ARMY",
+          "SKZOO",
+          "STAYS"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SKZOO",
+        "prompt": "👶",
+        "text": "Who is the maknae of Stray Kids?",
+        "options": [
+          "I.N",
+          "Felix",
+          "Seungmin",
+          "Han"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SKZOO",
+        "prompt": "😮",
+        "text": "Which member's real name is Lee Min-ho (not the actor)?",
+        "options": [
+          "Lee Know",
+          "Hyunjin",
+          "Changbin",
+          "Felix"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SKZOO",
+        "prompt": "🎵",
+        "text": "3RACHA consists of Bang Chan, Changbin, and who?",
+        "options": [
+          "Han",
+          "Felix",
+          "Hyunjin",
+          "I.N"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SKZOO",
+        "prompt": "🔥",
+        "text": "What is the Korean name of Stray Kids?",
+        "options": [
+          "스트레이 키즈",
+          "방탄소년단",
+          "세븐틴",
+          "에이티즈"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "seventeen-blitz": {
+    "title": "SEVENTEEN IQ Check",
+    "questions": [
+      {
+        "kind": "CARAT",
+        "prompt": "💎",
+        "text": "How many members does SEVENTEEN have?",
+        "options": [
+          "13",
+          "12",
+          "14",
+          "15"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "CARAT",
+        "prompt": "👑",
+        "text": "Who is the leader of SEVENTEEN?",
+        "options": [
+          "S.Coups",
+          "Woozi",
+          "Hoshi",
+          "Joshua"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "CARAT",
+        "prompt": "🎵",
+        "text": "Who is SEVENTEEN's main producer and Vocal Team leader?",
+        "options": [
+          "Woozi",
+          "S.Coups",
+          "Vernon",
+          "DK"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "CARAT",
+        "prompt": "📅",
+        "text": "Which year did SEVENTEEN debut?",
+        "options": [
+          "2015",
+          "2016",
+          "2014",
+          "2017"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "CARAT",
+        "prompt": "🔢",
+        "text": "The '17' in SEVENTEEN means 13 members + 3 units + 1 ___?",
+        "options": [
+          "Team",
+          "Goal",
+          "Dream",
+          "Stage"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "CARAT",
+        "prompt": "💃",
+        "text": "Who leads SEVENTEEN's Performance Team?",
+        "options": [
+          "Hoshi",
+          "Dino",
+          "Jun",
+          "The8"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "CARAT",
+        "prompt": "👶",
+        "text": "Who is the maknae of SEVENTEEN?",
+        "options": [
+          "Dino",
+          "Vernon",
+          "Seungkwan",
+          "The8"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "CARAT",
+        "prompt": "🏢",
+        "text": "SEVENTEEN operates under which parent company?",
+        "options": [
+          "HYBE",
+          "SM Entertainment",
+          "JYP",
+          "YG"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "CARAT",
+        "prompt": "🎤",
+        "text": "Which of these is NOT a SEVENTEEN sub-unit?",
+        "options": [
+          "Rap Unit",
+          "Vocal Team",
+          "Hip-Hop Team",
+          "Performance Team"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "CARAT",
+        "prompt": "🌍",
+        "text": "Which member, Joshua, is Korean-___?",
+        "options": [
+          "American",
+          "Australian",
+          "British",
+          "Canadian"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "ateez-blitz": {
+    "title": "ATEEZ Pirate Quiz",
+    "questions": [
+      {
+        "kind": "ATEEZ",
+        "prompt": "🏴‍☠️",
+        "text": "How many members are in ATEEZ?",
+        "options": [
+          "8",
+          "7",
+          "9",
+          "10"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ATEEZ",
+        "prompt": "⚓",
+        "text": "Who is the 'Captain' (leader) of ATEEZ?",
+        "options": [
+          "Hongjoong",
+          "Seonghwa",
+          "Yunho",
+          "Yeosang"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ATEEZ",
+        "prompt": "🌊",
+        "text": "What is ATEEZ's fandom called?",
+        "options": [
+          "ATINY",
+          "AHOY",
+          "ATEAM",
+          "ATINYS"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ATEEZ",
+        "prompt": "📅",
+        "text": "Which year did ATEEZ debut?",
+        "options": [
+          "2018",
+          "2017",
+          "2019",
+          "2020"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ATEEZ",
+        "prompt": "🥋",
+        "text": "Which ATEEZ member holds a 3rd dan Taekwondo belt?",
+        "options": [
+          "San",
+          "Hongjoong",
+          "Yunho",
+          "Jongho"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ATEEZ",
+        "prompt": "🏢",
+        "text": "Which company manages ATEEZ?",
+        "options": [
+          "KQ Entertainment",
+          "SM Entertainment",
+          "JYP",
+          "HYBE"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ATEEZ",
+        "prompt": "👶",
+        "text": "Who is the maknae of ATEEZ?",
+        "options": [
+          "Jongho",
+          "San",
+          "Wooyoung",
+          "Mingi"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ATEEZ",
+        "prompt": "👴",
+        "text": "Who is the oldest member of ATEEZ?",
+        "options": [
+          "Seonghwa",
+          "Hongjoong",
+          "Yunho",
+          "Yeosang"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ATEEZ",
+        "prompt": "🎤",
+        "text": "What is ATEEZ's famous team greeting?",
+        "options": [
+          "8 Makes 1 Team!",
+          "Together We Rise!",
+          "8 Is One!",
+          "One For All!"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ATEEZ",
+        "prompt": "🎵",
+        "text": "Which former Big Hit trainee is in ATEEZ?",
+        "options": [
+          "Yeosang",
+          "Hongjoong",
+          "San",
+          "Jongho"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "kpop-debut-quiz": {
+    "title": "K-pop Debut Year Blitz",
+    "questions": [
+      {
+        "kind": "DEBUT",
+        "prompt": "📅",
+        "text": "Which year did BTS debut?",
+        "options": [
+          "2013",
+          "2012",
+          "2014",
+          "2015"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "DEBUT",
+        "prompt": "📅",
+        "text": "Which year did EXO debut?",
+        "options": [
+          "2012",
+          "2011",
+          "2013",
+          "2014"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "DEBUT",
+        "prompt": "📅",
+        "text": "Which year did Stray Kids debut?",
+        "options": [
+          "2018",
+          "2017",
+          "2019",
+          "2020"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "DEBUT",
+        "prompt": "📅",
+        "text": "Which year did SEVENTEEN debut?",
+        "options": [
+          "2015",
+          "2014",
+          "2016",
+          "2017"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "DEBUT",
+        "prompt": "📅",
+        "text": "Which year did ATEEZ debut?",
+        "options": [
+          "2018",
+          "2019",
+          "2017",
+          "2020"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "DEBUT",
+        "prompt": "📅",
+        "text": "Which year did TXT (Tomorrow X Together) debut?",
+        "options": [
+          "2019",
+          "2018",
+          "2020",
+          "2021"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "DEBUT",
+        "prompt": "📅",
+        "text": "Which year did ENHYPEN debut?",
+        "options": [
+          "2020",
+          "2019",
+          "2021",
+          "2022"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "DEBUT",
+        "prompt": "📅",
+        "text": "Which year did BIGBANG debut?",
+        "options": [
+          "2006",
+          "2005",
+          "2007",
+          "2008"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "DEBUT",
+        "prompt": "📅",
+        "text": "Which year did SHINee debut?",
+        "options": [
+          "2008",
+          "2007",
+          "2009",
+          "2010"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "DEBUT",
+        "prompt": "📅",
+        "text": "Which year did GOT7 debut?",
+        "options": [
+          "2014",
+          "2013",
+          "2015",
+          "2016"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "kpop-maknae": {
+    "title": "Who's the Maknae?",
+    "questions": [
+      {
+        "kind": "MAKNAE",
+        "prompt": "👶",
+        "text": "Who is the youngest (maknae) of BTS?",
+        "options": [
+          "Jungkook",
+          "Jimin",
+          "V",
+          "Suga"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MAKNAE",
+        "prompt": "👶",
+        "text": "Who is the maknae of Stray Kids?",
+        "options": [
+          "I.N",
+          "Felix",
+          "Seungmin",
+          "Han"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MAKNAE",
+        "prompt": "👶",
+        "text": "Who is the maknae of ATEEZ?",
+        "options": [
+          "Jongho",
+          "San",
+          "Wooyoung",
+          "Mingi"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MAKNAE",
+        "prompt": "👶",
+        "text": "Who is the maknae of SEVENTEEN?",
+        "options": [
+          "Dino",
+          "Vernon",
+          "Seungkwan",
+          "The8"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MAKNAE",
+        "prompt": "👶",
+        "text": "Who is the maknae of TXT?",
+        "options": [
+          "Hueningkai",
+          "Taehyun",
+          "Beomgyu",
+          "Soobin"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MAKNAE",
+        "prompt": "👶",
+        "text": "Who is the maknae of EXO?",
+        "options": [
+          "Sehun",
+          "Kai",
+          "Baekhyun",
+          "Chen"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MAKNAE",
+        "prompt": "👶",
+        "text": "Who is the maknae of GOT7?",
+        "options": [
+          "Yugyeom",
+          "BamBam",
+          "Youngjae",
+          "Jinyoung"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MAKNAE",
+        "prompt": "👶",
+        "text": "Who is the maknae of MONSTA X?",
+        "options": [
+          "I.M",
+          "Kihyun",
+          "Minhyuk",
+          "Joohoney"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MAKNAE",
+        "prompt": "👶",
+        "text": "Who is the maknae of SHINee?",
+        "options": [
+          "Taemin",
+          "Key",
+          "Minho",
+          "Onew"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MAKNAE",
+        "prompt": "👶",
+        "text": "TXT's maknae Hueningkai holds what nickname?",
+        "options": [
+          "Diamond Maknae",
+          "Golden Maknae",
+          "Baby Maknae",
+          "Chaos Maknae"
+        ],
+        "correct": 0
+      }
+    ]
   }
 }
