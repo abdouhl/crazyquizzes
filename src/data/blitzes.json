@@ -7858,5 +7858,2235 @@
         "correct": 0
       }
     ]
+  },
+  "exo-blitz": {
+    "title": "EXO Quiz Blitz",
+    "questions": [
+      {
+        "kind": "EXO",
+        "prompt": "🌌",
+        "text": "How many members does EXO currently have?",
+        "options": [
+          "9",
+          "12",
+          "8",
+          "10"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "EXO",
+        "prompt": "👑",
+        "text": "Who is the leader of EXO?",
+        "options": [
+          "Suho",
+          "Xiumin",
+          "Kai",
+          "Sehun"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "EXO",
+        "prompt": "👴",
+        "text": "Who is the oldest EXO member?",
+        "options": [
+          "Xiumin",
+          "Suho",
+          "Lay",
+          "Baekhyun"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "EXO",
+        "prompt": "👶",
+        "text": "Who is the maknae of EXO?",
+        "options": [
+          "Sehun",
+          "Kai",
+          "D.O",
+          "Chanyeol"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "EXO",
+        "prompt": "📅",
+        "text": "Which year did EXO debut?",
+        "options": [
+          "2012",
+          "2011",
+          "2013",
+          "2014"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "EXO",
+        "prompt": "💿",
+        "text": "What is EXO's fandom called?",
+        "options": [
+          "EXO-L",
+          "EXO-K",
+          "EXO-M",
+          "EXO-FAN"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "EXO",
+        "prompt": "🎵",
+        "text": "EXO's sub-unit EXO-CBX consists of Chen, Baekhyun, and who?",
+        "options": [
+          "Xiumin",
+          "Kai",
+          "Sehun",
+          "Chanyeol"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "EXO",
+        "prompt": "🏢",
+        "text": "Which company manages EXO?",
+        "options": [
+          "SM Entertainment",
+          "JYP",
+          "YG",
+          "HYBE"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "EXO",
+        "prompt": "🇨🇳",
+        "text": "Which current EXO member is from China?",
+        "options": [
+          "Lay",
+          "Xiumin",
+          "Chen",
+          "Suho"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "EXO",
+        "prompt": "👥",
+        "text": "EXO's sub-unit for Sehun & Chanyeol is called?",
+        "options": [
+          "EXO-SC",
+          "EXO-SE",
+          "EXO-CHAN",
+          "EXO-XO"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "nct-blitz": {
+    "title": "NCT Universe Quiz",
+    "questions": [
+      {
+        "kind": "NCT",
+        "prompt": "🌐",
+        "text": "Who is the leader of NCT 127?",
+        "options": [
+          "Taeyong",
+          "Johnny",
+          "Doyoung",
+          "Mark"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "NCT",
+        "prompt": "🇺🇸",
+        "text": "Johnny of NCT 127 is from which US city?",
+        "options": [
+          "Chicago",
+          "New York",
+          "Los Angeles",
+          "Seattle"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "NCT",
+        "prompt": "🌙",
+        "text": "NCT's sub-unit for their younger members is?",
+        "options": [
+          "NCT Dream",
+          "NCT U",
+          "WayV",
+          "NCT WISH"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "NCT",
+        "prompt": "🇨🇦",
+        "text": "Mark Lee of NCT is from which country?",
+        "options": [
+          "Canada",
+          "USA",
+          "UK",
+          "Korea"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "NCT",
+        "prompt": "🗺️",
+        "text": "NCT 127's name refers to the longitude of which city?",
+        "options": [
+          "Seoul",
+          "Tokyo",
+          "Beijing",
+          "Bangkok"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "NCT",
+        "prompt": "🇨🇳",
+        "text": "Which NCT sub-unit focuses on Chinese-speaking markets?",
+        "options": [
+          "WayV",
+          "NCT M",
+          "NCT C",
+          "NCT Dream"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "NCT",
+        "prompt": "🏢",
+        "text": "NCT is managed by which company?",
+        "options": [
+          "SM Entertainment",
+          "JYP",
+          "YG",
+          "HYBE"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "NCT",
+        "prompt": "🎤",
+        "text": "Haechan's role in NCT 127 is?",
+        "options": [
+          "Main Vocalist",
+          "Main Rapper",
+          "Main Dancer",
+          "Leader"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "NCT",
+        "prompt": "🔤",
+        "text": "NCT stands for 'Neo Culture ___'?",
+        "options": [
+          "Technology",
+          "Team",
+          "Talent",
+          "Trend"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "NCT",
+        "prompt": "🇯🇵",
+        "text": "Which NCT 127 member is from Japan?",
+        "options": [
+          "Yuta",
+          "Johnny",
+          "Mark",
+          "Jungwoo"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "got7-blitz": {
+    "title": "GOT7 Blitz",
+    "questions": [
+      {
+        "kind": "GOT7",
+        "prompt": "7️⃣",
+        "text": "How many members are in GOT7?",
+        "options": [
+          "7",
+          "6",
+          "8",
+          "9"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GOT7",
+        "prompt": "👑",
+        "text": "Who is the leader of GOT7?",
+        "options": [
+          "Jay B",
+          "Mark",
+          "Jackson",
+          "Jinyoung"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GOT7",
+        "prompt": "👶",
+        "text": "Who is the maknae of GOT7?",
+        "options": [
+          "Yugyeom",
+          "BamBam",
+          "Youngjae",
+          "Jinyoung"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GOT7",
+        "prompt": "📅",
+        "text": "Which year did GOT7 debut?",
+        "options": [
+          "2014",
+          "2013",
+          "2015",
+          "2016"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GOT7",
+        "prompt": "🇨🇳",
+        "text": "Jackson Wang is from which city?",
+        "options": [
+          "Hong Kong",
+          "Beijing",
+          "Shanghai",
+          "Taipei"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GOT7",
+        "prompt": "🇹🇭",
+        "text": "Which GOT7 member is from Thailand?",
+        "options": [
+          "BamBam",
+          "Jackson",
+          "Mark",
+          "Youngjae"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GOT7",
+        "prompt": "💜",
+        "text": "What is GOT7's fandom called?",
+        "options": [
+          "iGOT7",
+          "GOTIES",
+          "FANS7",
+          "GOT-FANS"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GOT7",
+        "prompt": "🏢",
+        "text": "GOT7 originally debuted under which company?",
+        "options": [
+          "JYP Entertainment",
+          "SM",
+          "YG",
+          "HYBE"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GOT7",
+        "prompt": "🇺🇸",
+        "text": "Mark Tuan is which nationality?",
+        "options": [
+          "Taiwanese-American",
+          "Korean",
+          "Chinese",
+          "Canadian"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "GOT7",
+        "prompt": "🎤",
+        "text": "Youngjae's position in GOT7 is?",
+        "options": [
+          "Main Vocalist",
+          "Main Rapper",
+          "Main Dancer",
+          "Leader"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "monsta-x-blitz": {
+    "title": "MONSTA X Blitz",
+    "questions": [
+      {
+        "kind": "MONBEBE",
+        "prompt": "👾",
+        "text": "How many members are currently in MONSTA X?",
+        "options": [
+          "6",
+          "7",
+          "5",
+          "8"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MONBEBE",
+        "prompt": "👑",
+        "text": "Who is the leader of MONSTA X?",
+        "options": [
+          "Shownu",
+          "Minhyuk",
+          "Kihyun",
+          "Joohoney"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MONBEBE",
+        "prompt": "👶",
+        "text": "Who is the maknae of MONSTA X?",
+        "options": [
+          "I.M",
+          "Kihyun",
+          "Minhyuk",
+          "Joohoney"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MONBEBE",
+        "prompt": "📅",
+        "text": "Which year did MONSTA X debut?",
+        "options": [
+          "2015",
+          "2014",
+          "2016",
+          "2017"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MONBEBE",
+        "prompt": "💜",
+        "text": "What is MONSTA X's fandom called?",
+        "options": [
+          "MONBEBE",
+          "MONSTAR",
+          "MONSTER",
+          "MONBABE"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MONBEBE",
+        "prompt": "🏢",
+        "text": "Which company manages MONSTA X?",
+        "options": [
+          "Starship Entertainment",
+          "SM",
+          "JYP",
+          "YG"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MONBEBE",
+        "prompt": "👋",
+        "text": "Which member left MONSTA X in 2019 and later debuted solo?",
+        "options": [
+          "Wonho",
+          "Shownu",
+          "Minhyuk",
+          "Kihyun"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MONBEBE",
+        "prompt": "📺",
+        "text": "MONSTA X debuted through which survival show?",
+        "options": [
+          "No.Mercy",
+          "Produce 101",
+          "Road to Kingdom",
+          "Stray Kids"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MONBEBE",
+        "prompt": "🎤",
+        "text": "Kihyun's position in MONSTA X is?",
+        "options": [
+          "Main Vocalist",
+          "Main Rapper",
+          "Main Dancer",
+          "Leader"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MONBEBE",
+        "prompt": "🔤",
+        "text": "I.M's real name is Im ___?",
+        "options": [
+          "Chang-kyun",
+          "Min-hyuk",
+          "Ki-hyun",
+          "Jong-heon"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "shinee-blitz": {
+    "title": "SHINee Legends Quiz",
+    "questions": [
+      {
+        "kind": "SHAWOL",
+        "prompt": "✨",
+        "text": "How many members are currently active in SHINee?",
+        "options": [
+          "4",
+          "5",
+          "3",
+          "6"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SHAWOL",
+        "prompt": "📅",
+        "text": "Which year did SHINee debut?",
+        "options": [
+          "2008",
+          "2007",
+          "2009",
+          "2010"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SHAWOL",
+        "prompt": "👶",
+        "text": "Who is the maknae of SHINee?",
+        "options": [
+          "Taemin",
+          "Key",
+          "Minho",
+          "Onew"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SHAWOL",
+        "prompt": "💜",
+        "text": "What are SHINee fans called?",
+        "options": [
+          "Shawols",
+          "SHINee World",
+          "StarLight",
+          "SHINee-L"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SHAWOL",
+        "prompt": "🏢",
+        "text": "Which company is SHINee under?",
+        "options": [
+          "SM Entertainment",
+          "JYP",
+          "YG",
+          "HYBE"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SHAWOL",
+        "prompt": "💔",
+        "text": "SHINee member Jonghyun passed away in December ___?",
+        "options": [
+          "2017",
+          "2016",
+          "2018",
+          "2019"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SHAWOL",
+        "prompt": "💃",
+        "text": "Which SHINee member is widely regarded as one of K-pop's greatest dancers?",
+        "options": [
+          "Taemin",
+          "Key",
+          "Minho",
+          "Onew"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SHAWOL",
+        "prompt": "🎵",
+        "text": "SHINee's debut song (also called 'Noona Neomu Yeppeo') is?",
+        "options": [
+          "Replay",
+          "Ring Ding Dong",
+          "Lucifer",
+          "View"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SHAWOL",
+        "prompt": "🎭",
+        "text": "Key's real name is?",
+        "options": [
+          "Kim Kibum",
+          "Kim Ki-bom",
+          "Kim Kibom",
+          "Kim Beom-ki"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "SHAWOL",
+        "prompt": "🎤",
+        "text": "Which SHINee member is also a highly acclaimed actor?",
+        "options": [
+          "Minho",
+          "Key",
+          "Onew",
+          "Taemin"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "enhypen-blitz": {
+    "title": "ENHYPEN Blitz",
+    "questions": [
+      {
+        "kind": "ENGENE",
+        "prompt": "🦋",
+        "text": "Who is the leader of ENHYPEN?",
+        "options": [
+          "Jungwon",
+          "Heeseung",
+          "Jay",
+          "Sunghoon"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ENGENE",
+        "prompt": "👶",
+        "text": "Who is the maknae of ENHYPEN?",
+        "options": [
+          "Ni-Ki",
+          "Sunoo",
+          "Jungwon",
+          "Jake"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ENGENE",
+        "prompt": "🇯🇵",
+        "text": "Ni-Ki is from which country?",
+        "options": [
+          "Japan",
+          "South Korea",
+          "USA",
+          "Australia"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ENGENE",
+        "prompt": "📅",
+        "text": "Which year did ENHYPEN debut?",
+        "options": [
+          "2020",
+          "2019",
+          "2021",
+          "2022"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ENGENE",
+        "prompt": "💜",
+        "text": "What is ENHYPEN's fandom called?",
+        "options": [
+          "ENGENE",
+          "ENGINE",
+          "ENVY",
+          "ENERGY"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ENGENE",
+        "prompt": "📺",
+        "text": "ENHYPEN debuted through which survival show?",
+        "options": [
+          "I-Land",
+          "Produce X 101",
+          "Boys Planet",
+          "Road to Kingdom"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ENGENE",
+        "prompt": "🌏",
+        "text": "Jake is from which country?",
+        "options": [
+          "Australia",
+          "USA",
+          "Canada",
+          "New Zealand"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ENGENE",
+        "prompt": "🏢",
+        "text": "ENHYPEN is managed by which label?",
+        "options": [
+          "BELIFT LAB",
+          "SM",
+          "JYP",
+          "YG"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ENGENE",
+        "prompt": "🇺🇸",
+        "text": "ENHYPEN member Jay is from which US city?",
+        "options": [
+          "Seattle",
+          "Chicago",
+          "Los Angeles",
+          "New York"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ENGENE",
+        "prompt": "⛸️",
+        "text": "Sunghoon was a former competitive ___?",
+        "options": [
+          "Ice skater",
+          "Swimmer",
+          "Gymnast",
+          "Footballer"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "txt-blitz": {
+    "title": "TXT (Tomorrow X Together) Blitz",
+    "questions": [
+      {
+        "kind": "MOA",
+        "prompt": "🌙",
+        "text": "Who is the leader of TXT?",
+        "options": [
+          "Soobin",
+          "Yeonjun",
+          "Beomgyu",
+          "Taehyun"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MOA",
+        "prompt": "🔤",
+        "text": "TXT stands for 'Tomorrow X ___'?",
+        "options": [
+          "Together",
+          "Tomorrow",
+          "Transform",
+          "Talent"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MOA",
+        "prompt": "👶",
+        "text": "Who is the maknae of TXT?",
+        "options": [
+          "Hueningkai",
+          "Taehyun",
+          "Beomgyu",
+          "Soobin"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MOA",
+        "prompt": "🌍",
+        "text": "Hueningkai is Korean-___?",
+        "options": [
+          "American",
+          "Australian",
+          "German",
+          "British"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MOA",
+        "prompt": "💜",
+        "text": "What is TXT's fandom called?",
+        "options": [
+          "MOA",
+          "DREAM",
+          "MELODY",
+          "FUTURE"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MOA",
+        "prompt": "📅",
+        "text": "Which year did TXT debut?",
+        "options": [
+          "2019",
+          "2018",
+          "2020",
+          "2021"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MOA",
+        "prompt": "🔤",
+        "text": "MOA stands for 'Moments of ___'?",
+        "options": [
+          "Alwaysness",
+          "Amazingness",
+          "Affection",
+          "Awesomeness"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MOA",
+        "prompt": "🏢",
+        "text": "TXT is managed by which company?",
+        "options": [
+          "BIGHIT MUSIC (HYBE)",
+          "SM",
+          "JYP",
+          "YG"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MOA",
+        "prompt": "👴",
+        "text": "Which TXT member is the oldest?",
+        "options": [
+          "Yeonjun",
+          "Soobin",
+          "Beomgyu",
+          "Taehyun"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "MOA",
+        "prompt": "🎵",
+        "text": "Hueningkai is multilingual in Korean, English, and ___?",
+        "options": [
+          "Mandarin",
+          "Japanese",
+          "German",
+          "French"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "bigbang-blitz": {
+    "title": "BIGBANG Legends Quiz",
+    "questions": [
+      {
+        "kind": "VIP",
+        "prompt": "👑",
+        "text": "Who is BIGBANG's leader and main producer?",
+        "options": [
+          "G-Dragon",
+          "T.O.P",
+          "Taeyang",
+          "Daesung"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "VIP",
+        "prompt": "📅",
+        "text": "Which year did BIGBANG debut?",
+        "options": [
+          "2006",
+          "2005",
+          "2007",
+          "2008"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "VIP",
+        "prompt": "💜",
+        "text": "What is BIGBANG's fandom called?",
+        "options": [
+          "VIP",
+          "BLINK",
+          "BANG",
+          "YELLO"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "VIP",
+        "prompt": "🏢",
+        "text": "BIGBANG is under which company?",
+        "options": [
+          "YG Entertainment",
+          "SM",
+          "JYP",
+          "HYBE"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "VIP",
+        "prompt": "🔤",
+        "text": "G-Dragon's real name is?",
+        "options": [
+          "Kwon Ji-yong",
+          "Dong Young-bae",
+          "Kang Dae-sung",
+          "Choi Seung-hyun"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "VIP",
+        "prompt": "☀️",
+        "text": "Taeyang's real name is?",
+        "options": [
+          "Dong Young-bae",
+          "Kwon Ji-yong",
+          "Kang Dae-sung",
+          "Choi Seung-hyun"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "VIP",
+        "prompt": "🕶️",
+        "text": "T.O.P's real name is?",
+        "options": [
+          "Choi Seung-hyun",
+          "Kwon Ji-yong",
+          "Dong Young-bae",
+          "Kang Dae-sung"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "VIP",
+        "prompt": "🎤",
+        "text": "BIGBANG's iconic 2012 MV with neon hair and 'WOW FANTASTIC BABY' is?",
+        "options": [
+          "Fantastic Baby",
+          "Bang Bang Bang",
+          "Lies",
+          "Haru Haru"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "VIP",
+        "prompt": "🔢",
+        "text": "How many members are in the original BIGBANG lineup?",
+        "options": [
+          "5",
+          "4",
+          "6",
+          "7"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "VIP",
+        "prompt": "🔄",
+        "text": "BIGBANG's 2022 comeback 'Still Life' was their first group release in how many years?",
+        "options": [
+          "6",
+          "4",
+          "8",
+          "10"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "super-junior-blitz": {
+    "title": "Super Junior Blitz",
+    "questions": [
+      {
+        "kind": "E.L.F",
+        "prompt": "⭐",
+        "text": "Which year did Super Junior debut?",
+        "options": [
+          "2005",
+          "2004",
+          "2006",
+          "2007"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "E.L.F",
+        "prompt": "👑",
+        "text": "Who is the leader of Super Junior?",
+        "options": [
+          "Leeteuk",
+          "Siwon",
+          "Yesung",
+          "Eunhyuk"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "E.L.F",
+        "prompt": "💜",
+        "text": "What is Super Junior's fandom called?",
+        "options": [
+          "E.L.F",
+          "SONE",
+          "Shawol",
+          "Cassiopeia"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "E.L.F",
+        "prompt": "🏢",
+        "text": "Super Junior is under which company?",
+        "options": [
+          "SM Entertainment",
+          "JYP",
+          "YG",
+          "HYBE"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "E.L.F",
+        "prompt": "🎵",
+        "text": "Which Super Junior song features the iconic hook 'Sorry Sorry Sorry Sorry'?",
+        "options": [
+          "Sorry Sorry",
+          "Bonamana",
+          "Mr. Simple",
+          "U"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "E.L.F",
+        "prompt": "👥",
+        "text": "Super Junior's sub-unit for Donghae & Eunhyuk is called?",
+        "options": [
+          "SJ-D&E",
+          "SJ-DE",
+          "SJ-DH",
+          "SJ-EH"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "E.L.F",
+        "prompt": "🎤",
+        "text": "Super Junior's vocal trio K.R.Y consists of Kyuhyun, Ryeowook, and?",
+        "options": [
+          "Yesung",
+          "Siwon",
+          "Leeteuk",
+          "Heechul"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "E.L.F",
+        "prompt": "💙",
+        "text": "Super Junior's official color is?",
+        "options": [
+          "Sapphire Blue",
+          "Pearl White",
+          "Purple",
+          "Gold"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "E.L.F",
+        "prompt": "🔢",
+        "text": "How many members did Super Junior originally debut with?",
+        "options": [
+          "12",
+          "13",
+          "11",
+          "10"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "E.L.F",
+        "prompt": "✨",
+        "text": "Which member was added later as the 13th member of Super Junior?",
+        "options": [
+          "Kyuhyun",
+          "Siwon",
+          "Henry",
+          "Zhoumi"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "the-boyz-blitz": {
+    "title": "THE BOYZ Blitz",
+    "questions": [
+      {
+        "kind": "THE B",
+        "prompt": "👑",
+        "text": "How many members are in THE BOYZ?",
+        "options": [
+          "10",
+          "11",
+          "12",
+          "9"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "THE B",
+        "prompt": "🎤",
+        "text": "Who is the leader of THE BOYZ?",
+        "options": [
+          "Sangyeon",
+          "Jacob",
+          "Younghoon",
+          "Juyeon"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "THE B",
+        "prompt": "📅",
+        "text": "Which year did THE BOYZ debut?",
+        "options": [
+          "2017",
+          "2016",
+          "2018",
+          "2019"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "THE B",
+        "prompt": "💜",
+        "text": "What is THE BOYZ's fandom called?",
+        "options": [
+          "THE B",
+          "B-ZONE",
+          "BOYZ",
+          "THEB"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "THE B",
+        "prompt": "🇨🇦",
+        "text": "THE BOYZ member Jacob is from which country?",
+        "options": [
+          "Canada",
+          "Korea",
+          "USA",
+          "Australia"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "THE B",
+        "prompt": "🇺🇸",
+        "text": "Maknae Eric was born in which country?",
+        "options": [
+          "USA",
+          "Korea",
+          "Canada",
+          "UK"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "THE B",
+        "prompt": "🏆",
+        "text": "THE BOYZ won which K-pop survival competition?",
+        "options": [
+          "Road to Kingdom",
+          "Kingdom",
+          "World Klass",
+          "Boys Planet"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "THE B",
+        "prompt": "👶",
+        "text": "Who is the maknae of THE BOYZ?",
+        "options": [
+          "Eric",
+          "Sunwoo",
+          "Q",
+          "New"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "THE B",
+        "prompt": "🏢",
+        "text": "THE BOYZ are currently signed to which company?",
+        "options": [
+          "ONE HUNDRED",
+          "IST Entertainment",
+          "Cre.ker",
+          "HYBE"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "THE B",
+        "prompt": "💃",
+        "text": "THE BOYZ's main dancer Juyeon's birth name is?",
+        "options": [
+          "Lee Ju-yeon",
+          "Kim Young-hoon",
+          "Lee Jae-hyun",
+          "Ji Chang-min"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "treasure-blitz": {
+    "title": "TREASURE Blitz",
+    "questions": [
+      {
+        "kind": "TEUME",
+        "prompt": "💛",
+        "text": "How many members are in TREASURE?",
+        "options": [
+          "10",
+          "12",
+          "11",
+          "9"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "TEUME",
+        "prompt": "🏢",
+        "text": "TREASURE is under which company?",
+        "options": [
+          "YG Entertainment",
+          "SM",
+          "JYP",
+          "HYBE"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "TEUME",
+        "prompt": "📅",
+        "text": "Which year did TREASURE debut?",
+        "options": [
+          "2020",
+          "2019",
+          "2021",
+          "2022"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "TEUME",
+        "prompt": "💜",
+        "text": "What is TREASURE's fandom called?",
+        "options": [
+          "TREASURE MAKER",
+          "TREASURIST",
+          "TEAMER",
+          "TMAKER"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "TEUME",
+        "prompt": "📺",
+        "text": "TREASURE was formed through which YG survival show?",
+        "options": [
+          "YG Treasure Box",
+          "Produce X 101",
+          "Boys Planet",
+          "Mix Nine"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "TEUME",
+        "prompt": "🇯🇵",
+        "text": "Which TREASURE member's full name is Watanabe Haruto?",
+        "options": [
+          "Haruto",
+          "Asahi",
+          "Yoshi",
+          "Yuto"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "TEUME",
+        "prompt": "💙",
+        "text": "TREASURE's official color is?",
+        "options": [
+          "Sky Blue",
+          "Purple",
+          "Gold",
+          "Green"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "TEUME",
+        "prompt": "👶",
+        "text": "Who is the maknae of TREASURE?",
+        "options": [
+          "So Junghwan",
+          "Park Jeongwoo",
+          "Doyoung",
+          "Asahi"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "TEUME",
+        "prompt": "🇯🇵",
+        "text": "How many Japanese members does TREASURE have?",
+        "options": [
+          "3",
+          "2",
+          "1",
+          "4"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "TEUME",
+        "prompt": "🏆",
+        "text": "TREASURE released their debut mini-album '__ CHAPTER 1: FIRST STEP' in 2020?",
+        "options": [
+          "THE",
+          "A",
+          "MY",
+          "OUR"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "zb1-blitz": {
+    "title": "ZEROBASEONE (ZB1) Blitz",
+    "questions": [
+      {
+        "kind": "ZEROSE",
+        "prompt": "🌱",
+        "text": "Which year did ZEROBASEONE debut?",
+        "options": [
+          "2023",
+          "2022",
+          "2024",
+          "2021"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ZEROSE",
+        "prompt": "📺",
+        "text": "ZB1 was formed through which survival show?",
+        "options": [
+          "Boys Planet",
+          "Road to Kingdom",
+          "I-Land",
+          "No.Mercy"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ZEROSE",
+        "prompt": "💜",
+        "text": "What is ZEROBASEONE's fandom called?",
+        "options": [
+          "ZEROSE",
+          "ZEROSEONE",
+          "ZEROBASE",
+          "ZERONSE"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ZEROSE",
+        "prompt": "👑",
+        "text": "Who is the leader of ZEROBASEONE?",
+        "options": [
+          "Sung Hanbin",
+          "Kim Jiwoong",
+          "Kim Taerae",
+          "Park Gunwook"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ZEROSE",
+        "prompt": "🇨🇦",
+        "text": "ZB1 member Seok Matthew is from which country?",
+        "options": [
+          "Canada",
+          "South Korea",
+          "China",
+          "USA"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ZEROSE",
+        "prompt": "🏢",
+        "text": "ZB1 is managed by which company?",
+        "options": [
+          "WakeOne",
+          "HYBE",
+          "SM",
+          "YG"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ZEROSE",
+        "prompt": "👴",
+        "text": "Who is the oldest member of ZB1 (current lineup)?",
+        "options": [
+          "Kim Jiwoong",
+          "Sung Hanbin",
+          "Seok Matthew",
+          "Kim Taerae"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ZEROSE",
+        "prompt": "👶",
+        "text": "Who is the maknae of ZB1 (current lineup)?",
+        "options": [
+          "Park Gunwook",
+          "Kim Taerae",
+          "Seok Matthew",
+          "Sung Hanbin"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ZEROSE",
+        "prompt": "💙",
+        "text": "ZB1's official color is?",
+        "options": [
+          "Blue",
+          "Purple",
+          "Red",
+          "Gold"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ZEROSE",
+        "prompt": "🔤",
+        "text": "ZB1 stands for 'ZERO ___ ONE'?",
+        "options": [
+          "BASE",
+          "BIAS",
+          "BAND",
+          "BASIC"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "boynextdoor-blitz": {
+    "title": "BOYNEXTDOOR Blitz",
+    "questions": [
+      {
+        "kind": "ONEDOOR",
+        "prompt": "🏠",
+        "text": "Which year did BOYNEXTDOOR debut?",
+        "options": [
+          "2023",
+          "2022",
+          "2024",
+          "2021"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ONEDOOR",
+        "prompt": "🔢",
+        "text": "How many members are in BOYNEXTDOOR?",
+        "options": [
+          "6",
+          "5",
+          "7",
+          "8"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ONEDOOR",
+        "prompt": "👑",
+        "text": "Who is the leader of BOYNEXTDOOR?",
+        "options": [
+          "Jaehyun",
+          "Sungho",
+          "Riwoo",
+          "Taesan"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ONEDOOR",
+        "prompt": "💜",
+        "text": "What is BOYNEXTDOOR's fandom called?",
+        "options": [
+          "ONEDOOR",
+          "NEIGHBOUR",
+          "NEXTDOOR",
+          "BOYCLUB"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ONEDOOR",
+        "prompt": "🏢",
+        "text": "BOYNEXTDOOR is under which parent company?",
+        "options": [
+          "HYBE",
+          "SM",
+          "JYP",
+          "YG"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ONEDOOR",
+        "prompt": "👶",
+        "text": "Who is the maknae of BOYNEXTDOOR?",
+        "options": [
+          "Woonhak",
+          "Leehan",
+          "Taesan",
+          "Riwoo"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ONEDOOR",
+        "prompt": "🎤",
+        "text": "KOZ Entertainment (BND's label) was founded by which rapper?",
+        "options": [
+          "Zico",
+          "Suga",
+          "G-Dragon",
+          "RM"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ONEDOOR",
+        "prompt": "🇯🇵",
+        "text": "BOYNEXTDOOR had their Japanese debut in which year?",
+        "options": [
+          "2024",
+          "2023",
+          "2025",
+          "2022"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ONEDOOR",
+        "prompt": "🎵",
+        "text": "Who is the main vocalist of BOYNEXTDOOR?",
+        "options": [
+          "Sungho",
+          "Jaehyun",
+          "Riwoo",
+          "Taesan"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "ONEDOOR",
+        "prompt": "🌟",
+        "text": "BOYNEXTDOOR is classified as which generation of K-pop?",
+        "options": [
+          "4th generation",
+          "3rd generation",
+          "5th generation",
+          "2nd generation"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "pentagon-blitz": {
+    "title": "PENTAGON Blitz",
+    "questions": [
+      {
+        "kind": "UNIVERSE",
+        "prompt": "⭐",
+        "text": "How many members are currently in PENTAGON?",
+        "options": [
+          "9",
+          "10",
+          "8",
+          "11"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "UNIVERSE",
+        "prompt": "👑",
+        "text": "Who is the leader of PENTAGON?",
+        "options": [
+          "Hui",
+          "Jinho",
+          "Hongseok",
+          "Shinwon"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "UNIVERSE",
+        "prompt": "📅",
+        "text": "Which year did PENTAGON debut?",
+        "options": [
+          "2016",
+          "2015",
+          "2017",
+          "2018"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "UNIVERSE",
+        "prompt": "💜",
+        "text": "What is PENTAGON's fandom called?",
+        "options": [
+          "Universe",
+          "UniNavy",
+          "PENTA",
+          "UNISTAR"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "UNIVERSE",
+        "prompt": "🏢",
+        "text": "PENTAGON is managed by which company?",
+        "options": [
+          "Cube Entertainment",
+          "SM",
+          "JYP",
+          "YG"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "UNIVERSE",
+        "prompt": "🎵",
+        "text": "PENTAGON's Hui is also famous as a ___?",
+        "options": [
+          "Producer",
+          "Actor",
+          "Model",
+          "MC"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "UNIVERSE",
+        "prompt": "🇯🇵",
+        "text": "PENTAGON member Yuto is from which country?",
+        "options": [
+          "Japan",
+          "China",
+          "Korea",
+          "USA"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "UNIVERSE",
+        "prompt": "🇨🇳",
+        "text": "PENTAGON's international member Yanan is from which country?",
+        "options": [
+          "China",
+          "Japan",
+          "Korea",
+          "Thailand"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "UNIVERSE",
+        "prompt": "👶",
+        "text": "Who is the maknae of PENTAGON?",
+        "options": [
+          "Wooseok",
+          "Kino",
+          "Yuto",
+          "Yanan"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "UNIVERSE",
+        "prompt": "🏆",
+        "text": "PENTAGON's Hui co-produced 'Never' for which group?",
+        "options": [
+          "Wanna One",
+          "BTS",
+          "EXO",
+          "iKON"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "2pm-blitz": {
+    "title": "2PM Blitz",
+    "questions": [
+      {
+        "kind": "HOTTEST",
+        "prompt": "🕑",
+        "text": "How many members are in 2PM?",
+        "options": [
+          "6",
+          "7",
+          "5",
+          "8"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "HOTTEST",
+        "prompt": "📅",
+        "text": "Which year did 2PM debut?",
+        "options": [
+          "2008",
+          "2007",
+          "2009",
+          "2010"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "HOTTEST",
+        "prompt": "🏢",
+        "text": "2PM is managed by which company?",
+        "options": [
+          "JYP Entertainment",
+          "SM",
+          "YG",
+          "HYBE"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "HOTTEST",
+        "prompt": "💜",
+        "text": "What is 2PM's fandom called?",
+        "options": [
+          "Hottest",
+          "Hotties",
+          "2HOT",
+          "2FANS"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "HOTTEST",
+        "prompt": "🇹🇭",
+        "text": "2PM member Nichkhun is from which country?",
+        "options": [
+          "Thailand",
+          "China",
+          "USA",
+          "Korea"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "HOTTEST",
+        "prompt": "🎬",
+        "text": "Taecyeon is recognized as one of K-pop's most successful ___?",
+        "options": [
+          "Actor-idols",
+          "Rappers",
+          "Dancers",
+          "Producers"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "HOTTEST",
+        "prompt": "👋",
+        "text": "Which member left 2PM in 2009 and became a major solo artist?",
+        "options": [
+          "Jay Park",
+          "Junho",
+          "Chansung",
+          "Jun.K"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "HOTTEST",
+        "prompt": "💪",
+        "text": "2PM is often called 'The Beastly Idols' for their ___?",
+        "options": [
+          "Powerful performance style",
+          "Large fan base",
+          "Beast-themed MVs",
+          "Aggressive marketing"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "HOTTEST",
+        "prompt": "🔤",
+        "text": "Jun.K's real name is?",
+        "options": [
+          "Kim Junsu",
+          "Park Junho",
+          "Jang Wooyoung",
+          "Lee Chansung"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "HOTTEST",
+        "prompt": "🎵",
+        "text": "2PM's 2009 breakthrough hit that became a massive commercial success?",
+        "options": [
+          "Again & Again",
+          "Heartbeat",
+          "10 Out of 10",
+          "Without U"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "kpop-4thgen": {
+    "title": "4th Gen K-pop Blitz",
+    "questions": [
+      {
+        "kind": "4TH GEN",
+        "prompt": "🌟",
+        "text": "Which of these is considered 4th gen K-pop?",
+        "options": [
+          "ENHYPEN",
+          "BTS",
+          "EXO",
+          "BIGBANG"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "4TH GEN",
+        "prompt": "📺",
+        "text": "Which survival show produced ZEROBASEONE?",
+        "options": [
+          "Boys Planet",
+          "Produce 101",
+          "I-Land",
+          "Road to Kingdom"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "4TH GEN",
+        "prompt": "🏢",
+        "text": "BOYNEXTDOOR is under which parent company?",
+        "options": [
+          "HYBE",
+          "SM",
+          "JYP",
+          "YG"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "4TH GEN",
+        "prompt": "📅",
+        "text": "TXT debuted in which year, making them early 4th gen?",
+        "options": [
+          "2019",
+          "2018",
+          "2020",
+          "2021"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "4TH GEN",
+        "prompt": "💜",
+        "text": "Which 4th gen group's fandom is called ENGENE?",
+        "options": [
+          "ENHYPEN",
+          "ENFLAME",
+          "P1HARMONY",
+          "CRAVITY"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "4TH GEN",
+        "prompt": "📅",
+        "text": "TREASURE debuted in which year?",
+        "options": [
+          "2020",
+          "2019",
+          "2021",
+          "2018"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "4TH GEN",
+        "prompt": "📺",
+        "text": "Which 4th gen group was formed through I-Land?",
+        "options": [
+          "ENHYPEN",
+          "TXT",
+          "ZB1",
+          "BOYNEXTDOOR"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "4TH GEN",
+        "prompt": "🔢",
+        "text": "How many members did ZB1 debut with?",
+        "options": [
+          "9",
+          "8",
+          "10",
+          "7"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "4TH GEN",
+        "prompt": "💜",
+        "text": "BOYNEXTDOOR's fandom name is?",
+        "options": [
+          "ONEDOOR",
+          "NEIGHBOUR",
+          "NEXTDOOR",
+          "BOYCLUB"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "4TH GEN",
+        "prompt": "🎤",
+        "text": "Which rapper founded KOZ Entertainment, label of BOYNEXTDOOR?",
+        "options": [
+          "Zico",
+          "G-Dragon",
+          "RM",
+          "Suga"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "kpop-oldschool": {
+    "title": "K-pop Legends Blitz",
+    "questions": [
+      {
+        "kind": "LEGEND",
+        "prompt": "🏆",
+        "text": "Which 2nd gen group is often called 'Kings of K-pop'?",
+        "options": [
+          "BIGBANG",
+          "SHINee",
+          "2PM",
+          "Super Junior"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "LEGEND",
+        "prompt": "👥",
+        "text": "TVXQ originally had how many members?",
+        "options": [
+          "5",
+          "2",
+          "4",
+          "6"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "LEGEND",
+        "prompt": "📅",
+        "text": "Super Junior debuted in which year?",
+        "options": [
+          "2005",
+          "2004",
+          "2006",
+          "2007"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "LEGEND",
+        "prompt": "🎵",
+        "text": "SHINee's debut song is also known as 'Noona Neomu Yeppeo' which translates to?",
+        "options": [
+          "Replay",
+          "Ring Ding Dong",
+          "Lucifer",
+          "View"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "LEGEND",
+        "prompt": "🎤",
+        "text": "BIGBANG's iconic 'WOW FANTASTIC BABY' is from which song?",
+        "options": [
+          "Fantastic Baby",
+          "Bang Bang Bang",
+          "Lies",
+          "Haru Haru"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "LEGEND",
+        "prompt": "🏢",
+        "text": "2PM, GOT7, and Stray Kids all share which company?",
+        "options": [
+          "JYP Entertainment",
+          "SM",
+          "YG",
+          "HYBE"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "LEGEND",
+        "prompt": "👑",
+        "text": "Who is considered the pioneer of the 'idol rapper-producer' concept?",
+        "options": [
+          "G-Dragon",
+          "RM",
+          "Suga",
+          "Zico"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "LEGEND",
+        "prompt": "👥",
+        "text": "TVXQ's current two members are Yunho and ___?",
+        "options": [
+          "Changmin",
+          "Jaejoong",
+          "Yoochun",
+          "Junsu"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "LEGEND",
+        "prompt": "🎵",
+        "text": "Super Junior's 'Sorry Sorry' was released in which year?",
+        "options": [
+          "2009",
+          "2008",
+          "2010",
+          "2011"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "LEGEND",
+        "prompt": "💃",
+        "text": "Taemin of SHINee is considered one of K-pop's greatest ___?",
+        "options": [
+          "Dancers",
+          "Rappers",
+          "Producers",
+          "Actors"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "kpop-tf-groups": {
+    "title": "K-pop Groups True or False",
+    "questions": [
+      {
+        "kind": "TRUE/FALSE",
+        "prompt": "🤔",
+        "text": "BTS has 7 members.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "TRUE/FALSE",
+        "prompt": "🤔",
+        "text": "SEVENTEEN has more than 10 members.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "TRUE/FALSE",
+        "prompt": "🤔",
+        "text": "NCT 127 focuses on Japanese members.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1
+      },
+      {
+        "kind": "TRUE/FALSE",
+        "prompt": "🤔",
+        "text": "Stray Kids are under YG Entertainment.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1
+      },
+      {
+        "kind": "TRUE/FALSE",
+        "prompt": "🤔",
+        "text": "The ATEEZ fandom is called ATINY.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "TRUE/FALSE",
+        "prompt": "🤔",
+        "text": "TXT debuted before ENHYPEN.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "TRUE/FALSE",
+        "prompt": "🤔",
+        "text": "GOT7 is still under JYP Entertainment.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1
+      },
+      {
+        "kind": "TRUE/FALSE",
+        "prompt": "🤔",
+        "text": "BIGBANG is under SM Entertainment.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1
+      },
+      {
+        "kind": "TRUE/FALSE",
+        "prompt": "🤔",
+        "text": "EXO debuted in 2012.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0
+      },
+      {
+        "kind": "TRUE/FALSE",
+        "prompt": "🤔",
+        "text": "BOYNEXTDOOR is under HYBE Labels.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 0
+      }
+    ]
   }
 }

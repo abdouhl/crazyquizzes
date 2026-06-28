@@ -71,11 +71,12 @@ const jsonLd = {
     *, *::before, *::after { box-sizing: border-box; }
     html, body { margin: 0; padding: 0; }
 
-    @keyframes cq-blink { 0%, 55% { opacity: 1; } 56%, 100% { opacity: 0; } }
-    @keyframes cq-float { 0%, 100% { transform: translateY(0) rotate(var(--r,0deg)); } 50% { transform: translateY(-12px) rotate(var(--r,0deg)); } }
-    @keyframes cq-spin { to { transform: rotate(360deg); } }
-    @keyframes cq-wiggle { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
-    @keyframes cq-pop { 0% { transform: scale(.6); opacity: 0; } 65% { transform: scale(1.1); } 100% { transform: scale(1); opacity: 1; } }
+    @keyframes cq-blink   { 0%, 55% { opacity: 1; } 56%, 100% { opacity: 0; } }
+    @keyframes cq-float   { 0%, 100% { transform: translateY(0) rotate(var(--r,0deg)); } 50% { transform: translateY(-12px) rotate(var(--r,0deg)); } }
+    @keyframes cq-spin    { to { transform: rotate(360deg); } }
+    @keyframes cq-wiggle  { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+    @keyframes cq-pop     { 0% { transform: scale(.6); opacity: 0; } 65% { transform: scale(1.1); } 100% { transform: scale(1); opacity: 1; } }
+    @keyframes cq-fadein  { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
 
     body {
       font-family: 'Space Grotesk', system-ui, sans-serif;
@@ -202,24 +203,15 @@ const jsonLd = {
       align-items: center;
       justify-content: center;
       background: repeating-linear-gradient(45deg, #efe7ff, #efe7ff 13px, #f8f4ff 13px, #f8f4ff 26px);
+      overflow: hidden;
     }
-    .intro-cover-label {
-      font: 600 12px/1 'Courier New', monospace;
-      letter-spacing: .12em;
-      color: #6c3bff;
-      text-transform: uppercase;
-      background: #fff;
-      border: 2px solid #1a1430;
-      padding: 6px 11px;
-    }
+    .intro-cover-emoji { font-size: 72px; line-height: 1; filter: drop-shadow(0 6px 20px rgba(0,0,0,.45)); user-select: none; }
     .intro-viral {
       position: absolute;
       top: 14px;
       left: 14px;
       font-family: 'Bungee', cursive;
       font-size: 11px;
-      background: #ff3b9a;
-      color: #fff;
       border: 2px solid #1a1430;
       box-shadow: 2px 2px 0 #1a1430;
       padding: 5px 9px;
@@ -289,6 +281,12 @@ const jsonLd = {
       background: repeating-linear-gradient(45deg, #6c3bff, #6c3bff 8px, #8a63ff 8px, #8a63ff 16px);
       transition: width .3s ease;
     }
+    .prog-dots { display: flex; gap: 5px; justify-content: center; margin-bottom: 22px; flex-wrap: wrap; }
+    .prog-dot { width: 10px; height: 10px; border: 2px solid #1a1430; border-radius: 0; background: #fff; transition: background .2s, transform .15s; flex: none; }
+    .prog-dot.done   { background: #6c3bff; }
+    .prog-dot.active { background: #ff3b9a; transform: scale(1.25); }
+    .key-hint { font-family: 'Bungee', cursive; font-size: 10px; color: #a79fc0; text-align: center; margin-top: 12px; }
+    .key-hint kbd { display: inline-block; background: #fff; border: 1px solid #d0c8f0; padding: 1px 5px; font-family: 'Bungee', cursive; font-size: 9px; margin: 0 2px; }
     .view-question h1 {
       font-family: 'Bungee', cursive;
       font-size: clamp(24px, 4.4vw, 38px);
@@ -554,6 +552,11 @@ const jsonLd = {
       .options-grid { gap: 9px; grid-template-columns: 1fr; }
       .option-btn { padding: 11px 13px; font-size: 14px; gap: 10px; box-shadow: 3px 3px 0 #1a1430; }
       .option-letter { width: 28px; height: 28px; font-size: 11px; flex-shrink: 0; }
+      .prog-dots { gap: 4px; margin-bottom: 12px; }
+      .prog-dot { width: 8px; height: 8px; }
+      .intro-cover { height: 130px; }
+      .intro-cover-emoji { font-size: 52px; }
+      .key-hint { display: none; }
 
       /* ---- RESULTS ---- */
       .view-results { padding: 10px 0 12px; }
@@ -614,9 +617,9 @@ const jsonLd = {
     <div class="view-intro">
       <a href="/" class="back-link">← BACK TO QUIZZES</a>
       <div class="intro-card">
-        <div class="intro-cover">
-          <span class="intro-cover-label">{quiz.cover}</span>
-          <span class="intro-viral">🔥 VIRAL</span>
+        <div class="intro-cover" style={`background:${card?.coverBg ?? 'repeating-linear-gradient(45deg,#efe7ff,#efe7ff 13px,#f8f4ff 13px,#f8f4ff 26px)'};`}>
+          <span class="intro-cover-emoji">{card?.coverEmoji ?? '🎭'}</span>
+          <span class="intro-viral" style={`background:${card?.badgeColor ?? '#ff3b9a'};color:${card?.badgeInk ?? '#fff'};`}>{card?.badge ?? '🔥 VIRAL'}</span>
         </div>
         <div class="intro-body">
           <div class="intro-cat">{quiz.cat}</div>
@@ -701,17 +704,27 @@ const jsonLd = {
       }
     }
 
+    function getShareText() {
+      if (state.result) {
+        const quiz = quizzes[state.activeQuizId];
+        const r = quiz.results[state.result];
+        return `I got "${r.name}" on "${quiz.title}"! What did you get? 👀\n${window.location.href}`;
+      }
+      return window.location.href;
+    }
     function doShare() {
-      navigator.clipboard.writeText(window.location.href).catch(() => {});
-      showToast('✓ LINK COPIED — GO RUIN SOMEONE\'S DAY');
+      navigator.clipboard.writeText(getShareText()).catch(() => {});
+      showToast('✓ RESULT COPIED — GO RUIN SOMEONE\'S DAY');
     }
     function doShareTikTok() {
-      if (navigator.share) navigator.share({ title: document.title, url: window.location.href }).catch(() => {});
-      else { navigator.clipboard.writeText(window.location.href).catch(() => {}); showToast('LINK COPIED — PASTE IT IN YOUR TIKTOK BIO 🎵'); }
+      const shareData = { title: document.title, text: getShareText(), url: window.location.href };
+      if (navigator.share) navigator.share(shareData).catch(() => {});
+      else { navigator.clipboard.writeText(getShareText()).catch(() => {}); showToast('COPIED — PASTE IN YOUR TIKTOK BIO 🎵'); }
     }
     function doShareInsta() {
-      if (navigator.share) navigator.share({ title: document.title, url: window.location.href }).catch(() => {});
-      else { navigator.clipboard.writeText(window.location.href).catch(() => {}); showToast('LINK COPIED — ADD IT TO YOUR INSTA STORY 📸'); }
+      const shareData = { title: document.title, text: getShareText(), url: window.location.href };
+      if (navigator.share) navigator.share(shareData).catch(() => {});
+      else { navigator.clipboard.writeText(getShareText()).catch(() => {}); showToast('COPIED — ADD TO YOUR INSTA STORY 📸'); }
     }
     function showToast(msg) {
       const t = document.getElementById('toast');
@@ -728,13 +741,19 @@ const jsonLd = {
 
     function renderIntro() {
       const quiz = quizzes[state.activeQuizId];
+      const card = cards.find(c => c.id === state.activeQuizId) || {};
+      const coverBg = card.coverBg || 'repeating-linear-gradient(45deg,#efe7ff,#efe7ff 13px,#f8f4ff 13px,#f8f4ff 26px)';
+      const coverEmoji = card.coverEmoji || '🎭';
+      const badgeColor = card.badgeColor || '#ff3b9a';
+      const badgeInk = card.badgeInk || '#fff';
+      const badge = card.badge || '🔥 VIRAL';
       return `
-        <div class="view-intro">
+        <div class="view-intro" style="animation:cq-fadein .2s ease both;">
           <a href="/" class="back-link">← BACK TO QUIZZES</a>
           <div class="intro-card">
-            <div class="intro-cover">
-              <span class="intro-cover-label">${e(quiz.cover)}</span>
-              <span class="intro-viral">🔥 VIRAL</span>
+            <div class="intro-cover" style="background:${e(coverBg)};">
+              <span class="intro-cover-emoji">${e(coverEmoji)}</span>
+              <span class="intro-viral" style="background:${e(badgeColor)};color:${e(badgeInk)};">${e(badge)}</span>
             </div>
             <div class="intro-body">
               <div class="intro-cat">${e(quiz.cat)}</div>
@@ -758,8 +777,12 @@ const jsonLd = {
       const num = state.qIndex + 1;
       const q = quiz.questions[state.qIndex];
       const pct = Math.round((num / total) * 100);
+      const dots = quiz.questions.map((_, i) => {
+        const cls = i < state.qIndex ? 'done' : (i === state.qIndex ? 'active' : '');
+        return `<span class="prog-dot${cls ? ' ' + cls : ''}"></span>`;
+      }).join('');
       return `
-        <div class="view-question">
+        <div class="view-question" style="animation:cq-fadein .15s ease both;">
           <div class="q-topbar">
             <button class="quit-btn" data-action="home">✕ QUIT</button>
             <span class="q-counter">QUESTION ${num} / ${total}</span>
@@ -767,6 +790,7 @@ const jsonLd = {
           <div class="progress-bar-wrap">
             <div class="progress-bar-fill" style="width:${pct}%;"></div>
           </div>
+          <div class="prog-dots">${dots}</div>
           <h1>${e(q.text)}</h1>
           <div class="options-grid">
             ${q.options.map((opt, i) => `
@@ -776,6 +800,7 @@ const jsonLd = {
               </button>
             `).join('')}
           </div>
+          <div class="key-hint">Press <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd> to answer</div>
         </div>
       `;
     }
@@ -842,6 +867,16 @@ const jsonLd = {
     document.getElementById('nav-random').addEventListener('click', openRandom);
     document.getElementById('nav-blitz').href = `/blitz/${getTodayBlitzId()}`;
     document.getElementById('footer-blitz').href = `/blitz/${getTodayBlitzId()}`;
+
+    document.addEventListener('keydown', (ev) => {
+      if (state.view !== 'question') return;
+      const quiz = quizzes[state.activeQuizId];
+      const q = quiz?.questions[state.qIndex];
+      if (!q) return;
+      const keyMap = { '1': 0, '2': 1, '3': 2, '4': 3 };
+      const idx = keyMap[ev.key];
+      if (idx !== undefined && idx < q.options.length) { ev.preventDefault(); pickAnswer(q.options[idx].key); }
+    });
 
     render();
   </script>

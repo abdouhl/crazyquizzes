@@ -1395,5 +1395,329 @@
       "MUSIC",
       "POP CULTURE"
     ]
+  },
+  {
+    "id": "exo-blitz",
+    "title": "EXO Quiz Blitz",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "🌌🎤",
+    "coverBg": "linear-gradient(135deg,#7c3aed 0%,#111827 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "nct-blitz",
+    "title": "NCT Universe Quiz",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "🌐✨",
+    "coverBg": "linear-gradient(135deg,#059669 0%,#1a1430 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "got7-blitz",
+    "title": "GOT7 Blitz",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "7️⃣🐦",
+    "coverBg": "linear-gradient(135deg,#16a34a 0%,#1a1430 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "monsta-x-blitz",
+    "title": "MONSTA X Blitz",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "👾🔥",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#7c3aed 50%,#dc2626 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "shinee-blitz",
+    "title": "SHINee Legends Quiz",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "✨💎",
+    "coverBg": "linear-gradient(135deg,#0891b2 0%,#6c3bff 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "enhypen-blitz",
+    "title": "ENHYPEN Blitz",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "🦋⚡",
+    "coverBg": "linear-gradient(135deg,#6c3bff 0%,#3bffd2 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "txt-blitz",
+    "title": "TXT Blitz",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "🌙🌟",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#4c1d95 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "bigbang-blitz",
+    "title": "BIGBANG Legends Quiz",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "💥👑",
+    "coverBg": "linear-gradient(135deg,#ffd23f 0%,#1a1430 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "super-junior-blitz",
+    "title": "Super Junior Blitz",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "💙⭐",
+    "coverBg": "linear-gradient(135deg,#1d4ed8 0%,#1a1430 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "the-boyz-blitz",
+    "title": "THE BOYZ Blitz",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "👑⚡",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#374151 50%,#6c3bff 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "treasure-blitz",
+    "title": "TREASURE Blitz",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "💛🏆",
+    "coverBg": "linear-gradient(135deg,#0ea5e9 0%,#ffd23f 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "zb1-blitz",
+    "title": "ZEROBASEONE Blitz",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "🌱💙",
+    "coverBg": "linear-gradient(135deg,#2563eb 0%,#1a1430 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "boynextdoor-blitz",
+    "title": "BOYNEXTDOOR Blitz",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "🏠🎵",
+    "coverBg": "linear-gradient(135deg,#f59e0b 0%,#1a1430 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "pentagon-blitz",
+    "title": "PENTAGON Blitz",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "⭐🌌",
+    "coverBg": "linear-gradient(135deg,#4f46e5 0%,#1e1b4b 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "2pm-blitz",
+    "title": "2PM Blitz",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "🕑💪",
+    "coverBg": "linear-gradient(135deg,#dc2626 0%,#1a1430 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "kpop-4thgen",
+    "title": "4th Gen K-pop Blitz",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "🌟🆕",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#6c3bff 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "kpop-oldschool",
+    "title": "K-pop Legends Blitz",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "🏆📼",
+    "coverBg": "linear-gradient(135deg,#92400e 0%,#1a1430 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "kpop-tf-groups",
+    "title": "K-pop Groups True or False",
+    "cat": "K-POP BLITZ",
+    "takes": "—",
+    "coverEmoji": "✅❌",
+    "coverBg": "linear-gradient(135deg,#16a34a 0%,#dc2626 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "kpop-which-group",
+    "title": "Which K-pop Boy Group Are You?",
+    "cat": "PERSONALITY · K-POP",
+    "takes": "—",
+    "coverEmoji": "🎤🌟",
+    "coverBg": "linear-gradient(135deg,#6c3bff 0%,#ff3b9a 100%)",
+    "badge": "🔥 PERSONALITY",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "MUSIC",
+      "POP CULTURE",
+      "PERSONALITY"
+    ]
   }
 ]

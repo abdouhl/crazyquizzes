@@ -75,9 +75,16 @@ const jsonLd = {
     *, *::before, *::after { box-sizing: border-box; }
     html, body { margin: 0; padding: 0; }
 
-    @keyframes cq-spin { to { transform: rotate(360deg); } }
-    @keyframes cq-wiggle { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
-    @keyframes cq-pop { 0% { transform: scale(.6); opacity: 0; } 65% { transform: scale(1.1); } 100% { transform: scale(1); opacity: 1; } }
+    @keyframes cq-spin    { to { transform: rotate(360deg); } }
+    @keyframes cq-wiggle  { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+    @keyframes cq-pop     { 0% { transform: scale(.6); opacity: 0; } 65% { transform: scale(1.1); } 100% { transform: scale(1); opacity: 1; } }
+    @keyframes cq-fadein  { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes cq-pulse   { 0%,100%{transform:scale(1)} 50%{transform:scale(1.22)} }
+    @keyframes cq-confetti {
+      0%   { transform: translateY(0) rotate(0deg) scaleX(1); opacity: 1; }
+      80%  { opacity: 1; }
+      100% { transform: translateY(105vh) rotate(720deg) scaleX(-1); opacity: 0; }
+    }
 
     body {
       font-family: 'Space Grotesk', system-ui, sans-serif;
@@ -198,7 +205,8 @@ const jsonLd = {
     .b-badge.cyan { background: #3bffd2; color: #1a1430; }
     .b-badge.pink { background: #ff3b9a; color: #fff; }
     .timer-row { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
-    .timer-num { flex: none; font-family: 'Bungee', cursive; font-size: 18px; width: 48px; height: 48px; border: 3px solid #1a1430; box-shadow: 3px 3px 0 #1a1430; display: flex; align-items: center; justify-content: center; background: #fff; }
+    .timer-num { flex: none; font-family: 'Bungee', cursive; font-size: 18px; width: 48px; height: 48px; border: 3px solid #1a1430; box-shadow: 3px 3px 0 #1a1430; display: flex; align-items: center; justify-content: center; background: #fff; transition: color .2s; }
+    .timer-num.danger { animation: cq-pulse .45s ease-in-out infinite; }
     .timer-bar-wrap { flex: 1; height: 18px; border: 3px solid #1a1430; background: #fff; box-shadow: 3px 3px 0 #1a1430; overflow: hidden; }
     .timer-bar-fill { height: 100%; transition: width 1s linear; }
     .b-kind { font-family: 'Bungee', cursive; font-size: 11px; color: #6c3bff; margin-bottom: 14px; }
@@ -251,6 +259,33 @@ const jsonLd = {
     .btn-retake:hover { transform: translate(-2px,-2px); box-shadow: 7px 7px 0 #1a1430; }
     .btn-more { flex: 1; min-width: 140px; font-family: 'Bungee', cursive; font-size: 13px; color: #1a1430; background: #fff; border: 3px solid #1a1430; box-shadow: 5px 5px 0 #1a1430; padding: 15px; cursor: pointer; transition: transform .1s, box-shadow .1s; }
     .btn-more:hover { transform: translate(-2px,-2px); box-shadow: 7px 7px 0 #3bffd2; }
+
+    /* ANSWER REVIEW */
+    .brq-wrap { margin-top: 24px; padding-top: 20px; border-top: 3px solid #1a1430; text-align: left; }
+    .brq-title { font-family: 'Bungee', cursive; font-size: 12px; color: #6b6285; margin-bottom: 12px; }
+    .brq-item { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border: 2px solid #1a1430; margin-bottom: 8px; background: #fff; }
+    .brq-item.ok   { border-color: #3bffd2; background: #f0fdf9; }
+    .brq-item.wrong { border-color: #ff3b9a; background: #fff0f6; }
+    .brq-item.timeout { border-color: #ffd23f; background: #fffbf0; }
+    .brq-num { font-family: 'Bungee', cursive; font-size: 11px; color: #a79fc0; flex: none; padding-top: 2px; min-width: 18px; }
+    .brq-info { flex: 1; min-width: 0; }
+    .brq-text { font-weight: 600; font-size: 13px; line-height: 1.3; margin-bottom: 3px; }
+    .brq-answer { font-size: 12px; font-weight: 500; color: #6b6285; }
+    .brq-mark { font-family: 'Bungee', cursive; font-size: 16px; flex: none; margin-left: auto; padding-top: 1px; }
+    .brq-item.ok .brq-mark    { color: #3bffd2; }
+    .brq-item.wrong .brq-mark { color: #ff3b9a; }
+    .brq-item.timeout .brq-mark { color: #ffd23f; }
+
+    /* KEYBOARD HINT */
+    .key-hint { font-family: 'Bungee', cursive; font-size: 10px; color: #a79fc0; text-align: center; margin-top: 12px; }
+    .key-hint kbd { display: inline-block; background: #fff; border: 1px solid #d0c8f0; border-radius: 2px; padding: 1px 5px; font-family: 'Bungee', cursive; font-size: 9px; margin: 0 2px; }
+
+    /* STATS ROW */
+    .bresults-stats { display: flex; gap: 0; border-top: 3px solid #1a1430; }
+    .bresults-stat { flex: 1; text-align: center; padding: 14px 8px; border-right: 3px solid #1a1430; }
+    .bresults-stat:last-child { border-right: none; }
+    .bresults-stat-num { font-family: 'Bungee', cursive; font-size: 22px; }
+    .bresults-stat-lbl { font-family: 'Bungee', cursive; font-size: 9px; color: #6b6285; margin-top: 3px; }
 
     /* TOAST */
     .toast {
@@ -370,6 +405,11 @@ const jsonLd = {
       .share-btn { font-size: 10px; padding: 9px 6px; box-shadow: 2px 2px 0 #1a1430; }
       .results-actions { gap: 8px; }
       .btn-retake, .btn-more { font-size: 11px; padding: 11px; box-shadow: 3px 3px 0 #1a1430; }
+      .brq-item { padding: 8px 10px; }
+      .brq-text { font-size: 12px; }
+      .bresults-stat-num { font-size: 18px; }
+      .bresults-stat-lbl { font-size: 8px; }
+      .key-hint { display: none; }
     }
   </style>
 </head>
@@ -454,6 +494,8 @@ const jsonLd = {
       bPicked: null,
       bScore: 0,
       bStreak: 0,
+      bMaxStreak: 0,
+      bAnswers: [],
     };
 
     let tickTimer = null;
@@ -476,7 +518,7 @@ const jsonLd = {
 
     function startBlitz() {
       clearTimers();
-      setState({ view: 'bquestion', bIndex: 0, bTime: 10, bLocked: false, bPicked: null, bScore: 0, bStreak: 0 });
+      setState({ view: 'bquestion', bIndex: 0, bTime: 10, bLocked: false, bPicked: null, bScore: 0, bStreak: 0, bMaxStreak: 0, bAnswers: [] });
       tickTimer = setInterval(tick, 1000);
     }
     function tick() {
@@ -490,7 +532,16 @@ const jsonLd = {
       const blitz = blitzes[state.activeBlitzId];
       const q = blitz.questions[state.bIndex];
       const correct = idx === q.correct;
-      setState({ bLocked: true, bPicked: idx, bScore: state.bScore + (correct ? 1 : 0), bStreak: correct ? state.bStreak + 1 : 0 });
+      const newStreak = correct ? state.bStreak + 1 : 0;
+      const newMaxStreak = Math.max(state.bMaxStreak, newStreak);
+      const newAnswers = [...state.bAnswers, {
+        qText: q.text,
+        correct,
+        timedOut: idx === -1,
+        pickedLabel: idx >= 0 ? q.options[idx] : null,
+        correctLabel: q.options[q.correct],
+      }];
+      setState({ bLocked: true, bPicked: idx, bScore: state.bScore + (correct ? 1 : 0), bStreak: newStreak, bMaxStreak: newMaxStreak, bAnswers: newAnswers });
       advTimer = setTimeout(nextBlitz, 1500);
     }
     function nextBlitz() {
@@ -501,17 +552,43 @@ const jsonLd = {
     }
     function clearTimers() { clearInterval(tickTimer); clearTimeout(advTimer); }
 
+    function getShareText() {
+      const blitz = blitzes[state.activeBlitzId];
+      const total = blitz.questions.length;
+      return `I scored ${state.bScore}/${total} on "${blitz.title}"! Think you can beat me? 👀\n${window.location.href}`;
+    }
     function doShare() {
-      navigator.clipboard.writeText(window.location.href).catch(() => {});
-      showToast('✓ LINK COPIED — GO RUIN SOMEONE\'S DAY');
+      const text = getShareText();
+      navigator.clipboard.writeText(text).catch(() => {});
+      showToast('✓ SCORE COPIED — GO CHALLENGE SOMEONE');
     }
     function doShareTikTok() {
-      if (navigator.share) navigator.share({ title: document.title, url: window.location.href }).catch(() => {});
-      else { navigator.clipboard.writeText(window.location.href).catch(() => {}); showToast('LINK COPIED — PASTE IT IN YOUR TIKTOK BIO 🎵'); }
+      const shareData = { title: document.title, text: getShareText(), url: window.location.href };
+      if (navigator.share) navigator.share(shareData).catch(() => {});
+      else { navigator.clipboard.writeText(getShareText()).catch(() => {}); showToast('COPIED — PASTE IN YOUR TIKTOK BIO 🎵'); }
     }
     function doShareInsta() {
-      if (navigator.share) navigator.share({ title: document.title, url: window.location.href }).catch(() => {});
-      else { navigator.clipboard.writeText(window.location.href).catch(() => {}); showToast('LINK COPIED — ADD IT TO YOUR INSTA STORY 📸'); }
+      const shareData = { title: document.title, text: getShareText(), url: window.location.href };
+      if (navigator.share) navigator.share(shareData).catch(() => {});
+      else { navigator.clipboard.writeText(getShareText()).catch(() => {}); showToast('COPIED — ADD TO YOUR INSTA STORY 📸'); }
+    }
+    function spawnConfetti() {
+      const colors = ['#6c3bff','#3bffd2','#ff3b9a','#ffd23f','#fff','#1a1430'];
+      const wrap = document.createElement('div');
+      wrap.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:999;overflow:hidden;';
+      for (let i = 0; i < 90; i++) {
+        const p = document.createElement('div');
+        const color = colors[i % colors.length];
+        const left  = Math.random() * 100;
+        const delay = Math.random() * 1.4;
+        const dur   = 2.5 + Math.random() * 1.8;
+        const size  = 7 + Math.random() * 9;
+        const isRect = Math.random() > 0.4;
+        p.style.cssText = `position:absolute;left:${left}%;top:-20px;width:${size}px;height:${isRect ? size * 1.6 : size}px;background:${color};border:1px solid rgba(0,0,0,.12);animation:cq-confetti ${dur}s ${delay}s ease-in both;`;
+        wrap.appendChild(p);
+      }
+      document.body.appendChild(wrap);
+      setTimeout(() => wrap.remove(), 5500);
     }
     function showToast(msg) {
       const t = document.getElementById('toast');
@@ -580,7 +657,7 @@ const jsonLd = {
             </div>
           </div>
           <div class="timer-row">
-            <span class="timer-num" style="color:${timeColor};">${state.bTime}</span>
+            <span class="timer-num${danger ? ' danger' : ''}" style="color:${timeColor};">${state.bTime}</span>
             <div class="timer-bar-wrap">
               <div class="timer-bar-fill" style="width:${timePct}%;background:${timeColor};"></div>
             </div>
@@ -599,6 +676,7 @@ const jsonLd = {
               </button>
             `).join('')}
           </div>
+          <div class="key-hint">Press <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd> to answer</div>
         </div>
       `;
     }
@@ -614,6 +692,25 @@ const jsonLd = {
       else if (s >= bTotal * 0.4) grade = { name: '🙂 NOT BAD', color: '#fffdf7', ink: '#1a1430', line: 'You won some, you lost some. Balance.' };
       else grade = { name: '💀 OOF', color: '#ff3b9a', ink: '#fff', line: 'It happens. Blame the timer. Run it back.' };
 
+      if (s === bTotal) setTimeout(spawnConfetti, 350);
+
+      const answers = state.bAnswers || [];
+      const reviewHTML = answers.map((a, i) => {
+        const cls  = a.timedOut ? 'timeout' : (a.correct ? 'ok' : 'wrong');
+        const mark = a.timedOut ? '⏱' : (a.correct ? '✓' : '✗');
+        return `
+          <div class="brq-item ${cls}">
+            <span class="brq-num">${i + 1}</span>
+            <div class="brq-info">
+              <div class="brq-text">${e(a.qText)}</div>
+              ${a.timedOut ? `<div class="brq-answer">⏱ Timed out — ${e(a.correctLabel)}</div>` :
+                !a.correct ? `<div class="brq-answer">✓ ${e(a.correctLabel)}</div>` : ''}
+            </div>
+            <span class="brq-mark">${mark}</span>
+          </div>
+        `;
+      }).join('');
+
       return `
         <div class="view-bresults">
           <div class="bresults-eyebrow">⚡ BLITZ COMPLETE ⚡</div>
@@ -623,11 +720,29 @@ const jsonLd = {
               <div class="bresults-score" style="color:${e(grade.ink)};">${s} / ${bTotal}</div>
               <div class="bresults-grade" style="color:${e(grade.ink)};">${e(grade.name)}</div>
             </div>
+            <div class="bresults-stats">
+              <div class="bresults-stat">
+                <div class="bresults-stat-num">${s}</div>
+                <div class="bresults-stat-lbl">CORRECT</div>
+              </div>
+              <div class="bresults-stat">
+                <div class="bresults-stat-num">${bTotal - s}</div>
+                <div class="bresults-stat-lbl">MISSED</div>
+              </div>
+              <div class="bresults-stat">
+                <div class="bresults-stat-num">${state.bMaxStreak}</div>
+                <div class="bresults-stat-lbl">BEST STREAK</div>
+              </div>
+              <div class="bresults-stat">
+                <div class="bresults-stat-num">${Math.round((s / bTotal) * 100)}%</div>
+                <div class="bresults-stat-lbl">ACCURACY</div>
+              </div>
+            </div>
             <div class="bresults-body">
               <p class="bresults-line">${e(grade.line)}</p>
               <div class="share-label">CHALLENGE A FRIEND</div>
               <div class="share-grid">
-                <button class="share-btn pink" data-action="share">📋 COPY LINK</button>
+                <button class="share-btn pink" data-action="share">📋 COPY SCORE</button>
                 <button class="share-btn cyan" data-action="share-tiktok">TIKTOK</button>
                 <button class="share-btn yellow" data-action="share-insta">INSTA</button>
               </div>
@@ -635,6 +750,11 @@ const jsonLd = {
                 <button class="btn-retake" data-action="startblitz">↻ PLAY AGAIN</button>
                 <button class="btn-more" data-action="home">MORE QUIZZES →</button>
               </div>
+              ${reviewHTML ? `
+              <div class="brq-wrap">
+                <div class="brq-title">QUESTION REVIEW</div>
+                ${reviewHTML}
+              </div>` : ''}
             </div>
           </div>
         </div>
@@ -665,6 +785,15 @@ const jsonLd = {
     });
 
     document.getElementById('nav-random').addEventListener('click', openRandom);
+
+    document.addEventListener('keydown', (ev) => {
+      if (state.view !== 'bquestion' || state.bLocked) return;
+      const idx = { '1': 0, '2': 1, '3': 2, '4': 3 }[ev.key];
+      if (idx === undefined) return;
+      const blitz = blitzes[state.activeBlitzId];
+      const bq = blitz?.questions[state.bIndex];
+      if (bq && idx < bq.options.length) { ev.preventDefault(); lockBlitz(idx); }
+    });
 
     const todayBlitzId = getTodayBlitzId();
     document.getElementById('nav-blitz').href = `/blitz/${todayBlitzId}`;
