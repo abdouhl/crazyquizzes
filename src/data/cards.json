@@ -1,5 +1,56 @@
 [
   {
+    "id": "world-cup-country",
+    "title": "Which World Cup 2026 Team Are You?",
+    "cat": "SPORTS",
+    "takes": "234K",
+    "coverEmoji": "⚽🏆",
+    "coverBg": "linear-gradient(135deg,#1a7a4a 0%,#ffd23f 100%)",
+    "badge": "🌍 WC2026",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "SPORTS",
+      "WORLD CUP"
+    ]
+  },
+  {
+    "id": "world-cup-history",
+    "title": "World Cup History Blitz",
+    "cat": "HISTORY BLITZ",
+    "takes": "156K",
+    "coverEmoji": "🏆⚽",
+    "coverBg": "linear-gradient(135deg,#c9a227 0%,#1a1430 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SPORTS",
+      "HISTORY"
+    ]
+  },
+  {
+    "id": "world-cup-countries",
+    "title": "World Cup 2026: Country Facts",
+    "cat": "SPORTS BLITZ",
+    "takes": "89K",
+    "coverEmoji": "🌍⚽",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#1a7a4a 100%)",
+    "badge": "⚡ BLITZ",
+    "badgeColor": "#3bffd2",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": [
+      "ALL",
+      "SPORTS",
+      "GEOGRAPHY"
+    ]
+  },
+  {
     "id": "emoji-movie",
     "title": "Guess the Movie by Emoji",
     "cat": "EMOJI BLITZ",
@@ -1929,7 +1980,11 @@
     "badgeColor": "#ff3b9a",
     "badgeInk": "#fff",
     "type": "blitz",
-    "categories": ["ALL", "K-POP", "MUSIC"]
+    "categories": [
+      "ALL",
+      "K-POP",
+      "MUSIC"
+    ]
   },
   {
     "id": "twice-guess-member",
@@ -1942,7 +1997,11 @@
     "badgeColor": "#ffd23f",
     "badgeInk": "#1a1430",
     "type": "blitz",
-    "categories": ["ALL", "K-POP", "MUSIC"]
+    "categories": [
+      "ALL",
+      "K-POP",
+      "MUSIC"
+    ]
   },
   {
     "id": "aespa-guess-member",
@@ -1955,7 +2014,11 @@
     "badgeColor": "#3bffd2",
     "badgeInk": "#1a1430",
     "type": "blitz",
-    "categories": ["ALL", "K-POP", "MUSIC"]
+    "categories": [
+      "ALL",
+      "K-POP",
+      "MUSIC"
+    ]
   },
   {
     "id": "ive-guess-member",
@@ -1968,7 +2031,11 @@
     "badgeColor": "#ffd23f",
     "badgeInk": "#1a1430",
     "type": "blitz",
-    "categories": ["ALL", "K-POP", "MUSIC"]
+    "categories": [
+      "ALL",
+      "K-POP",
+      "MUSIC"
+    ]
   },
   {
     "id": "le-sserafim-guess-member",
@@ -1981,7 +2048,11 @@
     "badgeColor": "#ff3b9a",
     "badgeInk": "#fff",
     "type": "blitz",
-    "categories": ["ALL", "K-POP", "MUSIC"]
+    "categories": [
+      "ALL",
+      "K-POP",
+      "MUSIC"
+    ]
   },
   {
     "id": "gidle-guess-member",
@@ -1994,7 +2065,11 @@
     "badgeColor": "#6c3bff",
     "badgeInk": "#fff",
     "type": "blitz",
-    "categories": ["ALL", "K-POP", "MUSIC"]
+    "categories": [
+      "ALL",
+      "K-POP",
+      "MUSIC"
+    ]
   },
   {
     "id": "itzy-guess-member",
@@ -2007,7 +2082,11 @@
     "badgeColor": "#3bffd2",
     "badgeInk": "#1a1430",
     "type": "blitz",
-    "categories": ["ALL", "K-POP", "MUSIC"]
+    "categories": [
+      "ALL",
+      "K-POP",
+      "MUSIC"
+    ]
   },
   {
     "id": "red-velvet-guess-member",
@@ -2020,7 +2099,11 @@
     "badgeColor": "#ff3b9a",
     "badgeInk": "#fff",
     "type": "blitz",
-    "categories": ["ALL", "K-POP", "MUSIC"]
+    "categories": [
+      "ALL",
+      "K-POP",
+      "MUSIC"
+    ]
   },
   {
     "id": "mamamoo-guess-member",
@@ -2033,7 +2116,11 @@
     "badgeColor": "#ffd23f",
     "badgeInk": "#1a1430",
     "type": "blitz",
-    "categories": ["ALL", "K-POP", "MUSIC"]
+    "categories": [
+      "ALL",
+      "K-POP",
+      "MUSIC"
+    ]
   },
   {
     "id": "girls-generation-guess-member",
@@ -2046,7 +2133,11 @@
     "badgeColor": "#3bffd2",
     "badgeInk": "#1a1430",
     "type": "blitz",
-    "categories": ["ALL", "K-POP", "MUSIC"]
+    "categories": [
+      "ALL",
+      "K-POP",
+      "MUSIC"
+    ]
   },
   {
     "id": "nmixx-guess-member",
@@ -2059,7 +2150,11 @@
     "badgeColor": "#6c3bff",
     "badgeInk": "#fff",
     "type": "blitz",
-    "categories": ["ALL", "K-POP", "MUSIC"]
+    "categories": [
+      "ALL",
+      "K-POP",
+      "MUSIC"
+    ]
   },
   {
     "id": "stayc-guess-member",
@@ -2072,7 +2167,11 @@
     "badgeColor": "#ff3b9a",
     "badgeInk": "#fff",
     "type": "blitz",
-    "categories": ["ALL", "K-POP", "MUSIC"]
+    "categories": [
+      "ALL",
+      "K-POP",
+      "MUSIC"
+    ]
   },
   {
     "id": "babymonster-guess-member",
@@ -2085,7 +2184,11 @@
     "badgeColor": "#ffd23f",
     "badgeInk": "#1a1430",
     "type": "blitz",
-    "categories": ["ALL", "K-POP", "MUSIC"]
+    "categories": [
+      "ALL",
+      "K-POP",
+      "MUSIC"
+    ]
   },
   {
     "id": "illit-guess-member",
@@ -2098,7 +2201,11 @@
     "badgeColor": "#ffd23f",
     "badgeInk": "#1a1430",
     "type": "blitz",
-    "categories": ["ALL", "K-POP", "MUSIC"]
+    "categories": [
+      "ALL",
+      "K-POP",
+      "MUSIC"
+    ]
   },
   {
     "id": "2ne1-guess-member",
@@ -2111,6 +2218,10 @@
     "badgeColor": "#6c3bff",
     "badgeInk": "#fff",
     "type": "blitz",
-    "categories": ["ALL", "K-POP", "MUSIC"]
+    "categories": [
+      "ALL",
+      "K-POP",
+      "MUSIC"
+    ]
   }
 ]

@@ -17,7 +17,9 @@ const card = (cardsData as any[]).find((c) => c.id === id);
 
 const canonicalURL = `https://crazyquizzes.com/blitz/${id}`;
 const pageTitle = `${blitz.title} — Quiz Blitz — CrazyQuizzes`;
-const pageDesc = `Think you're fast? Take the ${blitz.title} blitz — 10 questions, 10 seconds each. Can you beat the clock?`;
+const pageDesc = blitz.desc
+  ? (blitz.desc.length > 155 ? blitz.desc.slice(0, 152) + '...' : blitz.desc)
+  : `How fast can you score on "${blitz.title}"? 10 rapid-fire questions, 10 seconds each — beat the clock and challenge your friends!`;
 const ogImage = `https://crazyquizzes.com/og-default.png`;
 
 const jsonLd = {
@@ -25,19 +27,31 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'BreadcrumbList',
+      '@id': `${canonicalURL}#breadcrumb`,
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crazyquizzes.com' },
-        { '@type': 'ListItem', position: 2, name: 'Daily Blitz', item: 'https://crazyquizzes.com' },
+        { '@type': 'ListItem', position: 2, name: 'Trivia Blitzes', item: 'https://crazyquizzes.com/trivia-quizzes' },
         { '@type': 'ListItem', position: 3, name: blitz.title, item: canonicalURL },
       ],
     },
     {
-      '@type': 'WebPage',
+      '@type': 'Quiz',
       '@id': canonicalURL,
       url: canonicalURL,
-      name: pageTitle,
+      name: blitz.title,
       description: pageDesc,
+      numberOfQuestions: 10,
+      timeRequired: 'PT3M',
+      educationalLevel: 'general',
+      interactivityType: 'active',
       isPartOf: { '@id': 'https://crazyquizzes.com/#website' },
+      breadcrumb: { '@id': `${canonicalURL}#breadcrumb` },
+      publisher: {
+        '@type': 'Organization',
+        '@id': 'https://crazyquizzes.com/#organization',
+        name: 'CrazyQuizzes',
+        url: 'https://crazyquizzes.com',
+      },
     },
   ],
 };
@@ -52,7 +66,7 @@ const jsonLd = {
   <link rel="canonical" href={canonicalURL} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
   <meta property="og:site_name" content="CrazyQuizzes" />
   <meta property="og:url" content={canonicalURL} />
   <meta property="og:title" content={pageTitle} />
@@ -60,14 +74,19 @@ const jsonLd = {
   <meta property="og:image" content={ogImage} />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content={pageTitle} />
+  <meta property="og:locale" content="en_US" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={pageTitle} />
   <meta name="twitter:description" content={pageDesc} />
   <meta name="twitter:image" content={ogImage} />
+  <meta name="twitter:image:alt" content={pageTitle} />
+  <meta name="theme-color" content="#6c3bff" />
 
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
-
+  <!-- Google AdSense Auto Ads -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3610150616518651" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -95,6 +114,7 @@ const jsonLd = {
       background-size: 28px 28px;
       overflow-x: hidden;
     }
+    body.quiz-playing { overflow: hidden; height: 100dvh; }
 
     header {
       position: sticky;
@@ -196,7 +216,7 @@ const jsonLd = {
     .btn-go:hover { transform: translate(-2px,-2px); box-shadow: 8px 8px 0 #ffd23f; }
 
     /* BLITZ QUESTION */
-    .view-bquestion { padding: 28px 0 70px; max-width: 760px; margin: 0 auto; }
+    .view-bquestion { padding: 18px 0 12px; max-width: 760px; margin: 0 auto; }
     .b-topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
     .quit-btn { cursor: pointer; font-family: 'Bungee', cursive; font-size: 11px; color: #6c3bff; background: none; border: none; padding: 0; }
     .b-badges { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -204,7 +224,7 @@ const jsonLd = {
     .b-badge.dark { background: #1a1430; color: #fff; }
     .b-badge.cyan { background: #3bffd2; color: #1a1430; }
     .b-badge.pink { background: #ff3b9a; color: #fff; }
-    .timer-row { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+    .timer-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
     .timer-num { flex: none; font-family: 'Bungee', cursive; font-size: 18px; width: 48px; height: 48px; border: 3px solid #1a1430; box-shadow: 3px 3px 0 #1a1430; display: flex; align-items: center; justify-content: center; background: #fff; transition: color .2s; }
     .timer-num.danger { animation: cq-pulse .45s ease-in-out infinite; }
     .timer-bar-wrap { flex: 1; height: 18px; border: 3px solid #1a1430; background: #fff; box-shadow: 3px 3px 0 #1a1430; overflow: hidden; }
@@ -218,14 +238,14 @@ const jsonLd = {
       text-align: center;
       font-size: clamp(48px, 12vw, 84px);
       line-height: 1.1;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
-    .view-bquestion h1 { font-family: 'Bungee', cursive; font-size: clamp(20px, 3.6vw, 30px); line-height: 1.12; margin: 0 0 24px; }
+    .view-bquestion h1 { font-family: 'Bungee', cursive; font-size: clamp(20px, 3.6vw, 30px); line-height: 1.12; margin: 0 0 12px; }
     .bq-img-wrap { width:100%; max-width:220px; margin:0 auto 20px; }
     .bq-img { width:100%; border-radius:14px; aspect-ratio:3/4; object-fit:cover; object-position:top center; display:block; border:3px solid #1a1430; box-shadow:4px 4px 0 #1a1430; }
     .bintro-cover-img-wrap { width:110px; height:110px; border-radius:50%; overflow:hidden; margin:0 auto 14px; border:3px solid #ffd23f; box-shadow:4px 4px 0 #6c3bff; }
     .bintro-cover-img { width:100%; height:100%; object-fit:cover; object-position:top center; display:block; }
-    .b-options-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    .b-options-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
     .b-option-btn {
       text-align: left;
       display: flex;
@@ -437,7 +457,7 @@ const jsonLd = {
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <a href="/">Home</a>
     <span>›</span>
-    <a href="/">Daily Blitz</a>
+    <a href="/trivia-quizzes">Trivia Blitzes</a>
     <span>›</span>
     {blitz.title}
   </nav>
@@ -466,6 +486,9 @@ const jsonLd = {
     </div>
   </div>
 
+  <!-- Ad zone — shown on intro/results, hidden during questions. Add <ins> ad unit here after creating one in AdSense → Ads → Ad units -->
+  <div id="cq-ad-zone" style="max-width:728px;margin:0 auto;padding:0 22px;display:block;"></div>
+
   <div id="toast" class="toast" style="display:none;">✓ LINK COPIED — GO RUIN SOMEONE'S DAY</div>
 
   <footer>
@@ -474,10 +497,13 @@ const jsonLd = {
         <div class="footer-logo"><span class="crazy">CRAZY</span><span class="quizzes">QUIZZES</span></div>
         <p class="footer-desc">Diagnosing your personality with snacks since right now. Results may be used against you in the group chat.</p>
         <div class="footer-tagline">★ BEST VIEWED IN NETSCAPE NAVIGATOR 4.0 ★</div>
+        <a href="https://www.pinterest.com/crazyquizzes/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:7px;margin-top:14px;background:#e60023;color:#fff;font-family:'Bungee',cursive;font-size:11px;padding:8px 14px;border:2px solid #1a1430;box-shadow:3px 3px 0 #1a1430;text-decoration:none;"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>PINTEREST</a>
       </div>
       <div class="footer-sitemap">
         <span class="label">QUIZZES</span>
         <a href="/">All Quizzes</a>
+        <a href="/personality-quizzes">Personality Quizzes</a>
+        <a href="/trivia-quizzes">Trivia Blitzes</a>
         <a href="/" id="footer-blitz">Daily Blitz</a>
         <span class="label">COMPANY</span>
         <a href="/about">About</a>
@@ -771,12 +797,18 @@ const jsonLd = {
 
     function render() {
       const app = document.getElementById('app');
+      const adZone = document.getElementById('cq-ad-zone');
+      const footer = document.querySelector('footer');
+      const playing = state.view === 'bquestion';
+      document.body.classList.toggle('quiz-playing', playing);
+      if (footer) footer.style.display = playing ? 'none' : '';
+      if (adZone) adZone.style.display = playing ? 'none' : 'block';
       switch (state.view) {
-        case 'bintro':    app.innerHTML = renderBIntro(); break;
+        case 'bintro':    app.innerHTML = renderBIntro();    break;
         case 'bquestion': app.innerHTML = renderBQuestion(); break;
-        case 'bresults':  app.innerHTML = renderBResults(); break;
+        case 'bresults':  app.innerHTML = renderBResults();  break;
       }
-      window.scrollTo({ top: 0, behavior: 'instant' });
+      if (!playing) window.scrollTo({ top: 0, behavior: 'instant' });
     }
 
     document.addEventListener('click', (ev) => {
@@ -808,6 +840,24 @@ const jsonLd = {
     document.getElementById('footer-blitz').href = `/blitz/${todayBlitzId}`;
 
     render();
+  </script>
+
+  <!-- Cookie consent banner -->
+  <div id="cq-cookie" style="position:fixed;bottom:0;left:0;right:0;z-index:999;background:#1a1430;border-top:3px solid #3bffd2;padding:12px 22px;display:none;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;">
+    <span style="font-family:'Bungee',cursive;font-size:11px;color:#fff;">🍪 We use cookies for advertising &amp; analytics. <a href="/privacy" style="color:#3bffd2;text-decoration:underline;">Privacy Policy</a></span>
+    <div style="display:flex;gap:8px;flex-shrink:0;">
+      <button id="cq-accept" style="background:#3bffd2;color:#1a1430;border:2px solid #3bffd2;box-shadow:3px 3px 0 #6c3bff;padding:8px 16px;font-family:'Bungee',cursive;font-size:10px;cursor:pointer;">ACCEPT</button>
+      <button id="cq-decline" style="background:transparent;color:#b3a9d6;border:2px solid #b3a9d6;padding:8px 14px;font-family:'Bungee',cursive;font-size:10px;cursor:pointer;">NO THANKS</button>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var b = document.getElementById('cq-cookie');
+      if (!b) return;
+      if (!localStorage.getItem('cq-consent')) b.style.display = 'flex';
+      document.getElementById('cq-accept').onclick = function () { localStorage.setItem('cq-consent', 'granted'); b.remove(); };
+      document.getElementById('cq-decline').onclick = function () { localStorage.setItem('cq-consent', 'denied'); b.remove(); };
+    })();
   </script>
 </body>
 </html>

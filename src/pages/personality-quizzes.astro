@@ -1,0 +1,92 @@
+---
+import cardsData from '../data/cards.json';
+import quizzesData from '../data/quizzes.json';
+import Layout from '../layouts/Layout.astro';
+
+const personalityCards = (cardsData as any[]).filter((c: any) => c.type === 'personality');
+const quizzes = quizzesData as Record<string, any>;
+
+const pageDesc = `${personalityCards.length} free personality quizzes to discover your type, vibe, and traits. Each quiz takes 2 minutes, results are shareable, and the algorithm has zero credentials.`;
+const canonicalURL = 'https://crazyquizzes.com/personality-quizzes';
+
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://crazyquizzes.com' },
+        { '@type': 'ListItem', position: 2, name: 'Personality Quizzes', item: canonicalURL },
+      ],
+    },
+    {
+      '@type': 'CollectionPage',
+      '@id': canonicalURL,
+      url: canonicalURL,
+      name: 'Free Personality Quizzes Online — CrazyQuizzes',
+      description: pageDesc,
+      isPartOf: { '@id': 'https://crazyquizzes.com/#website' },
+      publisher: { '@id': 'https://crazyquizzes.com/#organization' },
+      mainEntity: {
+        '@type': 'ItemList',
+        name: 'Personality Quizzes',
+        numberOfItems: personalityCards.length,
+        itemListElement: personalityCards.map((card: any, i: number) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: card.title,
+          url: `https://crazyquizzes.com/quiz/${card.id}`,
+          description: quizzes[card.id]?.desc,
+        })),
+      },
+    },
+  ],
+});
+---
+<Layout
+  title="Free Personality Quizzes Online"
+  description={pageDesc}
+  canonical={canonicalURL}
+  jsonLd={jsonLd}
+>
+  <nav class="page-breadcrumb" aria-label="Breadcrumb" style="font-family:'Bungee',cursive;font-size:11px;color:#6b6285;margin-bottom:22px;">
+    <a href="/" style="color:#6c3bff;text-decoration:none;">Home</a>
+    <span style="margin:0 6px;opacity:.5;">›</span>
+    Personality Quizzes
+  </nav>
+
+  <div class="page-badge">✦ {personalityCards.length} QUIZZES</div>
+  <h1 class="page-title">PERSONALITY<br><span style="color:#6c3bff;">QUIZZES</span></h1>
+  <div class="page-body">
+    <p>Free personality quizzes that tell you things about yourself you didn't ask to know. Take one. Share your result. Let the group chat debate your accuracy.</p>
+    <p>Each quiz is 6–10 questions and takes about 2 minutes. No login, no fees, no scientifically valid methodology.</p>
+  </div>
+
+  <div style="margin-top:32px;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">
+    {personalityCards.map((card: any) => {
+      const quiz = quizzes[card.id];
+      return (
+        <a href={`/quiz/${card.id}`} style="text-decoration:none;color:inherit;display:block;">
+          <div style={`background:#fff;border:3px solid #1a1430;box-shadow:5px 5px 0 #1a1430;overflow:hidden;transition:transform .1s,box-shadow .1s;`}
+               onmouseenter="this.style.transform='translate(-2px,-2px)';this.style.boxShadow='7px 7px 0 #6c3bff'"
+               onmouseleave="this.style.transform='';this.style.boxShadow='5px 5px 0 #1a1430'">
+            <div style={`height:90px;background:${card.coverBg ?? '#f3eeff'};border-bottom:3px solid #1a1430;display:flex;align-items:center;justify-content:center;font-size:42px;`}>
+              {card.coverEmoji ?? '🎭'}
+            </div>
+            <div style="padding:14px 16px;">
+              <div style="font-family:'Bungee',cursive;font-size:10px;color:#6c3bff;margin-bottom:6px;">{card.cat}</div>
+              <h2 style="font-family:'Bungee',cursive;font-size:15px;line-height:1.1;margin:0 0 8px;">{card.title}</h2>
+              {quiz?.desc && <p style="font-size:12px;line-height:1.45;color:#3a3358;margin:0 0 10px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">{quiz.desc}</p>}
+              <div style="font-family:'Bungee',cursive;font-size:10px;color:#6b6285;">👁 {card.takes} TOOK THIS &nbsp;·&nbsp; {quiz?.qcount ?? 6} QUESTIONS</div>
+            </div>
+          </div>
+        </a>
+      );
+    })}
+  </div>
+
+  <div style="margin-top:48px;" class="page-body">
+    <h2>MORE QUIZZES</h2>
+    <p>Looking for something faster? Try our <a href="/trivia-quizzes">Trivia Blitzes</a> — 10 questions, 10 seconds each. Or head <a href="/">back to all quizzes</a> to browse everything.</p>
+  </div>
+</Layout>

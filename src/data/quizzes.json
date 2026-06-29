@@ -3181,55 +3181,127 @@
       {
         "text": "Your current vibe is:",
         "options": [
-          { "label": "Hopeful, sparkly, a tiara for no reason", "key": "fearless" },
-          { "label": "Every emotion at full volume, all at once", "key": "red" },
-          { "label": "Unbothered. Rebranded. Do not approach.", "key": "reputation" },
-          { "label": "Cottagecore sadness, a pen, and a feeling", "key": "folklore" }
+          {
+            "label": "Hopeful, sparkly, a tiara for no reason",
+            "key": "fearless"
+          },
+          {
+            "label": "Every emotion at full volume, all at once",
+            "key": "red"
+          },
+          {
+            "label": "Unbothered. Rebranded. Do not approach.",
+            "key": "reputation"
+          },
+          {
+            "label": "Cottagecore sadness, a pen, and a feeling",
+            "key": "folklore"
+          }
         ]
       },
       {
         "text": "Someone does you wrong. You:",
         "options": [
-          { "label": "Forgive eventually. You're built for hope.", "key": "fearless" },
-          { "label": "Feel every stage of grief at maximum intensity", "key": "red" },
-          { "label": "Say nothing. Add them to the list. They'll find out.", "key": "reputation" },
-          { "label": "Write them a poem they'll never read", "key": "folklore" }
+          {
+            "label": "Forgive eventually. You're built for hope.",
+            "key": "fearless"
+          },
+          {
+            "label": "Feel every stage of grief at maximum intensity",
+            "key": "red"
+          },
+          {
+            "label": "Say nothing. Add them to the list. They'll find out.",
+            "key": "reputation"
+          },
+          {
+            "label": "Write them a poem they'll never read",
+            "key": "folklore"
+          }
         ]
       },
       {
         "text": "Your Spotify Wrapped is:",
         "options": [
-          { "label": "Anthems. Sparkly, sincere, embarrassingly earnest.", "key": "fearless" },
-          { "label": "Full emotional spectrum — joy to devastation in 40 mins", "key": "red" },
-          { "label": "Songs that would confuse and concern your enemies", "key": "reputation" },
-          { "label": "Ambient folk and one album played 600 times alone", "key": "folklore" }
+          {
+            "label": "Anthems. Sparkly, sincere, embarrassingly earnest.",
+            "key": "fearless"
+          },
+          {
+            "label": "Full emotional spectrum — joy to devastation in 40 mins",
+            "key": "red"
+          },
+          {
+            "label": "Songs that would confuse and concern your enemies",
+            "key": "reputation"
+          },
+          {
+            "label": "Ambient folk and one album played 600 times alone",
+            "key": "folklore"
+          }
         ]
       },
       {
         "text": "Ideal Friday night:",
         "options": [
-          { "label": "Dancing at a party I RSVPd to three weeks early", "key": "fearless" },
-          { "label": "A movie that will emotionally ruin me. On purpose.", "key": "red" },
-          { "label": "Private dinner. Rebranding. Do not disturb.", "key": "reputation" },
-          { "label": "A cabin, a candle, and my own thoughts for 6 hours", "key": "folklore" }
+          {
+            "label": "Dancing at a party I RSVPd to three weeks early",
+            "key": "fearless"
+          },
+          {
+            "label": "A movie that will emotionally ruin me. On purpose.",
+            "key": "red"
+          },
+          {
+            "label": "Private dinner. Rebranding. Do not disturb.",
+            "key": "reputation"
+          },
+          {
+            "label": "A cabin, a candle, and my own thoughts for 6 hours",
+            "key": "folklore"
+          }
         ]
       },
       {
         "text": "In the group chat, you are:",
         "options": [
-          { "label": "The enthusiastic planner everyone secretly loves", "key": "fearless" },
-          { "label": "The one who sends the paragraph at 1am", "key": "red" },
-          { "label": "On read. You'll respond when you feel like it.", "key": "reputation" },
-          { "label": "Lurking. Occasionally drops something profound.", "key": "folklore" }
+          {
+            "label": "The enthusiastic planner everyone secretly loves",
+            "key": "fearless"
+          },
+          {
+            "label": "The one who sends the paragraph at 1am",
+            "key": "red"
+          },
+          {
+            "label": "On read. You'll respond when you feel like it.",
+            "key": "reputation"
+          },
+          {
+            "label": "Lurking. Occasionally drops something profound.",
+            "key": "folklore"
+          }
         ]
       },
       {
         "text": "Your villain origin story:",
         "options": [
-          { "label": "I don't have one. Pure protagonist energy.", "key": "fearless" },
-          { "label": "They burned me and I felt every single degree", "key": "red" },
-          { "label": "They started it. I finished it. With receipts.", "key": "reputation" },
-          { "label": "A quiet sadness that became seven very good songs", "key": "folklore" }
+          {
+            "label": "I don't have one. Pure protagonist energy.",
+            "key": "fearless"
+          },
+          {
+            "label": "They burned me and I felt every single degree",
+            "key": "red"
+          },
+          {
+            "label": "They started it. I finished it. With receipts.",
+            "key": "reputation"
+          },
+          {
+            "label": "A quiet sadness that became seven very good songs",
+            "key": "folklore"
+          }
         ]
       }
     ],
@@ -3241,7 +3313,11 @@
         "nameInk": "#1a1430",
         "rarity": "22%",
         "tagline": "Glitter and grace. You actually believe in love and we respect the audacity.",
-        "traits": ["Hopeful", "Sparkly", "Unironically Sincere"],
+        "traits": [
+          "Hopeful",
+          "Sparkly",
+          "Unironically Sincere"
+        ],
         "desc": "You're operating on pure genuine optimism and honestly? Good for you. You believe things work out. You show up on time. You still think fairy tale endings happen and you're out here collecting evidence. Sequins not required but strongly implied."
       },
       "red": {
@@ -3251,7 +3327,11 @@
         "nameInk": "#fff",
         "rarity": "31%",
         "tagline": "Every emotion arrives at 11/10. There is no medium.",
-        "traits": ["Intense", "Passionate", "Beautifully Dramatic"],
+        "traits": [
+          "Intense",
+          "Passionate",
+          "Beautifully Dramatic"
+        ],
         "desc": "You feel things deeply and loudly and you wouldn't change it. Joy feels like a montage. Heartbreak feels like an album. You've cried in a parking lot for reasons you'd call 'complicated' and there was absolutely a scarf involved somewhere."
       },
       "reputation": {
@@ -3261,7 +3341,11 @@
         "nameInk": "#3bffd2",
         "rarity": "19%",
         "tagline": "You let them think what they want. That IS the strategy.",
-        "traits": ["Calculated", "Mysterious", "Quietly Feral"],
+        "traits": [
+          "Calculated",
+          "Mysterious",
+          "Quietly Feral"
+        ],
         "desc": "You went quiet and you went hard. Nobody knows what you're planning and that's exactly how you like it. You've done a full rebrand at least once and emerged stronger. The old you? Fine. Just not taking questions at this time."
       },
       "folklore": {
@@ -3271,7 +3355,11 @@
         "nameInk": "#fff",
         "rarity": "28%",
         "tagline": "You write in margins. You feel things in a forest.",
-        "traits": ["Deep", "Nostalgic", "Emotionally Layered"],
+        "traits": [
+          "Deep",
+          "Nostalgic",
+          "Emotionally Layered"
+        ],
         "desc": "You process the world through metaphor and you wouldn't have it any other way. You're currently in a cardigan you've had for six years, thinking about something that happened in 2017. There's a journal. It's full. It got you through."
       }
     }
@@ -3288,55 +3376,127 @@
       {
         "text": "Your entrance energy is:",
         "options": [
-          { "label": "I trip over the door and it somehow looks cool", "key": "chaos" },
-          { "label": "Headphones in, late, pretending not to notice anything", "key": "reluctant" },
-          { "label": "Early. Already know everyone's names. On my third water.", "key": "darkhorse" },
-          { "label": "Slow motion. Playlist running. Wind somehow in my hair.", "key": "legend" }
+          {
+            "label": "I trip over the door and it somehow looks cool",
+            "key": "chaos"
+          },
+          {
+            "label": "Headphones in, late, pretending not to notice anything",
+            "key": "reluctant"
+          },
+          {
+            "label": "Early. Already know everyone's names. On my third water.",
+            "key": "darkhorse"
+          },
+          {
+            "label": "Slow motion. Playlist running. Wind somehow in my hair.",
+            "key": "legend"
+          }
         ]
       },
       {
         "text": "When something dramatic happens, you:",
         "options": [
-          { "label": "Somehow caused it AND am the one fixing it", "key": "chaos" },
-          { "label": "Didn't ask to be here but now I'm apparently involved", "key": "reluctant" },
-          { "label": "Already knew. Was watching from a safe distance.", "key": "darkhorse" },
-          { "label": "Narrate it internally with orchestral music", "key": "legend" }
+          {
+            "label": "Somehow caused it AND am the one fixing it",
+            "key": "chaos"
+          },
+          {
+            "label": "Didn't ask to be here but now I'm apparently involved",
+            "key": "reluctant"
+          },
+          {
+            "label": "Already knew. Was watching from a safe distance.",
+            "key": "darkhorse"
+          },
+          {
+            "label": "Narrate it internally with orchestral music",
+            "key": "legend"
+          }
         ]
       },
       {
         "text": "Your actual superpower is:",
         "options": [
-          { "label": "Accidentally making every situation 10x more interesting", "key": "chaos" },
-          { "label": "Surviving things that should have broken me", "key": "reluctant" },
-          { "label": "Knowing where the power is and not touching it yet", "key": "darkhorse" },
-          { "label": "Manifesting like it's a part-time job", "key": "legend" }
+          {
+            "label": "Accidentally making every situation 10x more interesting",
+            "key": "chaos"
+          },
+          {
+            "label": "Surviving things that should have broken me",
+            "key": "reluctant"
+          },
+          {
+            "label": "Knowing where the power is and not touching it yet",
+            "key": "darkhorse"
+          },
+          {
+            "label": "Manifesting like it's a part-time job",
+            "key": "legend"
+          }
         ]
       },
       {
         "text": "The group needs a leader. You:",
         "options": [
-          { "label": "Accidentally become it through sheer chaotic energy", "key": "chaos" },
-          { "label": "Say 'not me' and then reluctantly accept the role", "key": "reluctant" },
-          { "label": "Let someone else take credit. For now.", "key": "darkhorse" },
-          { "label": "Already sent the agenda. The meeting is in 10.", "key": "legend" }
+          {
+            "label": "Accidentally become it through sheer chaotic energy",
+            "key": "chaos"
+          },
+          {
+            "label": "Say 'not me' and then reluctantly accept the role",
+            "key": "reluctant"
+          },
+          {
+            "label": "Let someone else take credit. For now.",
+            "key": "darkhorse"
+          },
+          {
+            "label": "Already sent the agenda. The meeting is in 10.",
+            "key": "legend"
+          }
         ]
       },
       {
         "text": "Your arc this season:",
         "options": [
-          { "label": "Learning that maybe having a plan is useful", "key": "chaos" },
-          { "label": "Discovering I might be the hero I was waiting for", "key": "reluctant" },
-          { "label": "Stepping into the light. Finally.", "key": "darkhorse" },
-          { "label": "Completing my second major character upgrade", "key": "legend" }
+          {
+            "label": "Learning that maybe having a plan is useful",
+            "key": "chaos"
+          },
+          {
+            "label": "Discovering I might be the hero I was waiting for",
+            "key": "reluctant"
+          },
+          {
+            "label": "Stepping into the light. Finally.",
+            "key": "darkhorse"
+          },
+          {
+            "label": "Completing my second major character upgrade",
+            "key": "legend"
+          }
         ]
       },
       {
         "text": "The movie of your life would be called:",
         "options": [
-          { "label": "How Did This Happen (Again)", "key": "chaos" },
-          { "label": "I Didn't Sign Up For This", "key": "reluctant" },
-          { "label": "The One You Forgot About", "key": "darkhorse" },
-          { "label": "Inevitable", "key": "legend" }
+          {
+            "label": "How Did This Happen (Again)",
+            "key": "chaos"
+          },
+          {
+            "label": "I Didn't Sign Up For This",
+            "key": "reluctant"
+          },
+          {
+            "label": "The One You Forgot About",
+            "key": "darkhorse"
+          },
+          {
+            "label": "Inevitable",
+            "key": "legend"
+          }
         ]
       }
     ],
@@ -3348,7 +3508,11 @@
         "nameInk": "#fff",
         "rarity": "29%",
         "tagline": "You are the plot twist that nobody wrote but everyone needed.",
-        "traits": ["Unpredictable", "Magnetic", "Somehow Fine"],
+        "traits": [
+          "Unpredictable",
+          "Magnetic",
+          "Somehow Fine"
+        ],
         "desc": "You didn't mean to start it and you can't stop it and honestly neither can anyone else. Things just happen around you. You trip into adventures. You accidentally cause character development in everyone you meet. The chaos IS the point."
       },
       "reluctant": {
@@ -3358,7 +3522,11 @@
         "nameInk": "#fff",
         "rarity": "27%",
         "tagline": "You didn't volunteer for this. The universe volunteered you.",
-        "traits": ["Resilient", "Underrated", "Coming Into It"],
+        "traits": [
+          "Resilient",
+          "Underrated",
+          "Coming Into It"
+        ],
         "desc": "You keep saying you're not a main character but the evidence disagrees. You've survived more than you mention. You've shown up in more people's stories than you know. The reluctance is actually the most protagonist thing about you."
       },
       "darkhorse": {
@@ -3368,7 +3536,11 @@
         "nameInk": "#1a1430",
         "rarity": "21%",
         "tagline": "Everyone slept on you. They'll be awake soon.",
-        "traits": ["Patient", "Perceptive", "Quietly Dangerous"],
+        "traits": [
+          "Patient",
+          "Perceptive",
+          "Quietly Dangerous"
+        ],
         "desc": "You've been in the background, watching, knowing, waiting for the right moment. You're not under the radar. You ARE the radar. When you finally move, people will say 'I always knew it' and you'll let them because you're gracious like that."
       },
       "legend": {
@@ -3378,7 +3550,11 @@
         "nameInk": "#1a1430",
         "rarity": "23%",
         "tagline": "You know exactly who you are and you're thriving in it.",
-        "traits": ["Magnetic", "Self-Assured", "Chronically Perceived"],
+        "traits": [
+          "Magnetic",
+          "Self-Assured",
+          "Chronically Perceived"
+        ],
         "desc": "You've accepted your main character status and you carry it beautifully. You walk into rooms with intention. Your playlist is always exactly right. You've done the inner work. You're not becoming someone — you already are. The glow-up is complete."
       }
     }
@@ -3395,55 +3571,127 @@
       {
         "text": "Someone cancels plans last minute. You feel:",
         "options": [
-          { "label": "Fine, I just needed to hear 'I'm sorry' and mean it", "key": "words" },
-          { "label": "Annoyed — I already bought the ingredients", "key": "acts" },
-          { "label": "Gutted — I was just excited to see them", "key": "quality" },
-          { "label": "Weirdly okay. Can I just get a hug later?", "key": "touch" }
+          {
+            "label": "Fine, I just needed to hear 'I'm sorry' and mean it",
+            "key": "words"
+          },
+          {
+            "label": "Annoyed — I already bought the ingredients",
+            "key": "acts"
+          },
+          {
+            "label": "Gutted — I was just excited to see them",
+            "key": "quality"
+          },
+          {
+            "label": "Weirdly okay. Can I just get a hug later?",
+            "key": "touch"
+          }
         ]
       },
       {
         "text": "The most romantic thing someone can do is:",
         "options": [
-          { "label": "Tell me specifically why they love me", "key": "words" },
-          { "label": "Notice what I need before I say it and just do it", "key": "acts" },
-          { "label": "Put their phone down and actually be present", "key": "quality" },
-          { "label": "Show up with something small that says 'I thought of you'", "key": "touch" }
+          {
+            "label": "Tell me specifically why they love me",
+            "key": "words"
+          },
+          {
+            "label": "Notice what I need before I say it and just do it",
+            "key": "acts"
+          },
+          {
+            "label": "Put their phone down and actually be present",
+            "key": "quality"
+          },
+          {
+            "label": "Show up with something small that says 'I thought of you'",
+            "key": "touch"
+          }
         ]
       },
       {
         "text": "When you're stressed, you need:",
         "options": [
-          { "label": "Someone to tell me I'm doing well and will be okay", "key": "words" },
-          { "label": "Someone to make tea and handle a thing I forgot", "key": "acts" },
-          { "label": "Someone to just sit with me. No advice. Just here.", "key": "quality" },
-          { "label": "A long hug. And maybe a little something.", "key": "touch" }
+          {
+            "label": "Someone to tell me I'm doing well and will be okay",
+            "key": "words"
+          },
+          {
+            "label": "Someone to make tea and handle a thing I forgot",
+            "key": "acts"
+          },
+          {
+            "label": "Someone to just sit with me. No advice. Just here.",
+            "key": "quality"
+          },
+          {
+            "label": "A long hug. And maybe a little something.",
+            "key": "touch"
+          }
         ]
       },
       {
         "text": "Your love language betrayal:",
         "options": [
-          { "label": "They never say it out loud even when I need to hear it", "key": "words" },
-          { "label": "They see me struggling and just... watch", "key": "acts" },
-          { "label": "They're there but scrolling the whole time", "key": "quality" },
-          { "label": "We haven't properly connected in weeks", "key": "touch" }
+          {
+            "label": "They never say it out loud even when I need to hear it",
+            "key": "words"
+          },
+          {
+            "label": "They see me struggling and just... watch",
+            "key": "acts"
+          },
+          {
+            "label": "They're there but scrolling the whole time",
+            "key": "quality"
+          },
+          {
+            "label": "We haven't properly connected in weeks",
+            "key": "touch"
+          }
         ]
       },
       {
         "text": "A perfect Sunday with the person you love looks like:",
         "options": [
-          { "label": "They leave a note saying exactly how they feel", "key": "words" },
-          { "label": "They handle everything and I don't have to think once", "key": "acts" },
-          { "label": "We do nothing but do it completely together", "key": "quality" },
-          { "label": "Cozy, close, small surprises, physical presence", "key": "touch" }
+          {
+            "label": "They leave a note saying exactly how they feel",
+            "key": "words"
+          },
+          {
+            "label": "They handle everything and I don't have to think once",
+            "key": "acts"
+          },
+          {
+            "label": "We do nothing but do it completely together",
+            "key": "quality"
+          },
+          {
+            "label": "Cozy, close, small surprises, physical presence",
+            "key": "touch"
+          }
         ]
       },
       {
         "text": "Be honest — your toxic love trait is:",
         "options": [
-          { "label": "Needing verbal reassurance more than once about the same thing", "key": "words" },
-          { "label": "Doing everything and quietly resenting people who don't notice", "key": "acts" },
-          { "label": "Interpreting phone-checking as emotional abandonment", "key": "quality" },
-          { "label": "Mistaking proximity for emotional connection", "key": "touch" }
+          {
+            "label": "Needing verbal reassurance more than once about the same thing",
+            "key": "words"
+          },
+          {
+            "label": "Doing everything and quietly resenting people who don't notice",
+            "key": "acts"
+          },
+          {
+            "label": "Interpreting phone-checking as emotional abandonment",
+            "key": "quality"
+          },
+          {
+            "label": "Mistaking proximity for emotional connection",
+            "key": "touch"
+          }
         ]
       }
     ],
@@ -3455,7 +3703,11 @@
         "nameInk": "#fff",
         "rarity": "24%",
         "tagline": "Say it. Out loud. While looking at me. Thank you.",
-        "traits": ["Verbal", "Sentimental", "Validation-Powered"],
+        "traits": [
+          "Verbal",
+          "Sentimental",
+          "Validation-Powered"
+        ],
         "desc": "You don't take care for granted — you need it to be said. A compliment from someone you love lands like sunlight. Silence reads as absence. You communicate with words because that's how love makes sense to you, and you need the same signal back."
       },
       "acts": {
@@ -3465,7 +3717,11 @@
         "nameInk": "#1a1430",
         "rarity": "26%",
         "tagline": "Love is a verb. Specifically: 'I refilled your water bottle.'",
-        "traits": ["Practical", "Attentive", "Quietly Devoted"],
+        "traits": [
+          "Practical",
+          "Attentive",
+          "Quietly Devoted"
+        ],
         "desc": "You love through doing and you feel loved when someone does for you. Not big gestures — small, specific, seen things. Someone fixing your thing, handling your forgotten task, making it easier without being asked. That's the whole language."
       },
       "quality": {
@@ -3475,7 +3731,11 @@
         "nameInk": "#fff",
         "rarity": "31%",
         "tagline": "Put the phone down. That's the whole quiz.",
-        "traits": ["Present", "Intentional", "Easily Starved"],
+        "traits": [
+          "Present",
+          "Intentional",
+          "Easily Starved"
+        ],
         "desc": "You don't need elaborate plans. You need undivided presence. When someone is with you, they should be WITH you — not half here, half somewhere else in their head or their screen. Presence is the gift. Being chosen with full attention is everything."
       },
       "touch": {
@@ -3485,7 +3745,11 @@
         "nameInk": "#1a1430",
         "rarity": "19%",
         "tagline": "You bond through warmth and small thoughtful things.",
-        "traits": ["Tactile", "Sentimental", "Warmth-Seeking"],
+        "traits": [
+          "Tactile",
+          "Sentimental",
+          "Warmth-Seeking"
+        ],
         "desc": "Closeness recharges you. A hand on your shoulder, a long hug, a little thing that says 'I thought about you while you weren't there' — these aren't extras for you, they're the point. You speak in warmth and presence and you need it returned."
       }
     }
@@ -3502,55 +3766,127 @@
       {
         "text": "Your villain motivation is:",
         "options": [
-          { "label": "I've been planning this since the fourth-grade talent show", "key": "mastermind" },
-          { "label": "I didn't mean to become the villain, it just happened", "key": "chaos" },
-          { "label": "They took something from me. Honestly, they had it coming.", "key": "sympathetic" },
-          { "label": "The aesthetic, mostly", "key": "dramatic" }
+          {
+            "label": "I've been planning this since the fourth-grade talent show",
+            "key": "mastermind"
+          },
+          {
+            "label": "I didn't mean to become the villain, it just happened",
+            "key": "chaos"
+          },
+          {
+            "label": "They took something from me. Honestly, they had it coming.",
+            "key": "sympathetic"
+          },
+          {
+            "label": "The aesthetic, mostly",
+            "key": "dramatic"
+          }
         ]
       },
       {
         "text": "Your signature move is:",
         "options": [
-          { "label": "I've already won. You just don't know it yet.", "key": "mastermind" },
-          { "label": "Starting it and immediately making it worse", "key": "chaos" },
-          { "label": "One very calm, very devastating speech", "key": "sympathetic" },
-          { "label": "Arriving perfectly and saying something unforgettable", "key": "dramatic" }
+          {
+            "label": "I've already won. You just don't know it yet.",
+            "key": "mastermind"
+          },
+          {
+            "label": "Starting it and immediately making it worse",
+            "key": "chaos"
+          },
+          {
+            "label": "One very calm, very devastating speech",
+            "key": "sympathetic"
+          },
+          {
+            "label": "Arriving perfectly and saying something unforgettable",
+            "key": "dramatic"
+          }
         ]
       },
       {
         "text": "The hero confronts you. You say:",
         "options": [
-          { "label": "You're still three steps behind me, love.", "key": "mastermind" },
-          { "label": "This wasn't supposed to go this far! I panicked!", "key": "chaos" },
-          { "label": "You want to know why? Fine. Let me tell you everything.", "key": "sympathetic" },
-          { "label": "You look tired. Sit down. I'll explain.", "key": "dramatic" }
+          {
+            "label": "You're still three steps behind me, love.",
+            "key": "mastermind"
+          },
+          {
+            "label": "This wasn't supposed to go this far! I panicked!",
+            "key": "chaos"
+          },
+          {
+            "label": "You want to know why? Fine. Let me tell you everything.",
+            "key": "sympathetic"
+          },
+          {
+            "label": "You look tired. Sit down. I'll explain.",
+            "key": "dramatic"
+          }
         ]
       },
       {
         "text": "Your headquarters is:",
         "options": [
-          { "label": "Fully off-grid. You've had it 12 years. Nobody knows.", "key": "mastermind" },
-          { "label": "An abandoned building I found by accident and claimed", "key": "chaos" },
-          { "label": "My childhood home. Which they took from me.", "key": "sympathetic" },
-          { "label": "A tower. Obviously a tower. With excellent lighting.", "key": "dramatic" }
+          {
+            "label": "Fully off-grid. You've had it 12 years. Nobody knows.",
+            "key": "mastermind"
+          },
+          {
+            "label": "An abandoned building I found by accident and claimed",
+            "key": "chaos"
+          },
+          {
+            "label": "My childhood home. Which they took from me.",
+            "key": "sympathetic"
+          },
+          {
+            "label": "A tower. Obviously a tower. With excellent lighting.",
+            "key": "dramatic"
+          }
         ]
       },
       {
         "text": "Your fatal flaw is:",
         "options": [
-          { "label": "I explained my entire plan when I should have just finished it", "key": "mastermind" },
-          { "label": "I genuinely didn't think it would get this bad", "key": "chaos" },
-          { "label": "People understood me in the end and it undermined everything", "key": "sympathetic" },
-          { "label": "I paused for dramatic effect and they escaped", "key": "dramatic" }
+          {
+            "label": "I explained my entire plan when I should have just finished it",
+            "key": "mastermind"
+          },
+          {
+            "label": "I genuinely didn't think it would get this bad",
+            "key": "chaos"
+          },
+          {
+            "label": "People understood me in the end and it undermined everything",
+            "key": "sympathetic"
+          },
+          {
+            "label": "I paused for dramatic effect and they escaped",
+            "key": "dramatic"
+          }
         ]
       },
       {
         "text": "Your villain era song is:",
         "options": [
-          { "label": "Something classical. Slow. You chose it for this specifically.", "key": "mastermind" },
-          { "label": "I didn't have time to plan a song things escalated quickly", "key": "chaos" },
-          { "label": "Something that makes people feel guilty for stopping me", "key": "sympathetic" },
-          { "label": "A full orchestral original composition with a key change", "key": "dramatic" }
+          {
+            "label": "Something classical. Slow. You chose it for this specifically.",
+            "key": "mastermind"
+          },
+          {
+            "label": "I didn't have time to plan a song things escalated quickly",
+            "key": "chaos"
+          },
+          {
+            "label": "Something that makes people feel guilty for stopping me",
+            "key": "sympathetic"
+          },
+          {
+            "label": "A full orchestral original composition with a key change",
+            "key": "dramatic"
+          }
         ]
       }
     ],
@@ -3562,7 +3898,11 @@
         "nameInk": "#3bffd2",
         "rarity": "18%",
         "tagline": "By the time they figure it out, you're already gone.",
-        "traits": ["Patient", "Calculated", "Several Steps Ahead"],
+        "traits": [
+          "Patient",
+          "Calculated",
+          "Several Steps Ahead"
+        ],
         "desc": "You've been running this plan since before anyone knew there was a plan. You're the type of villain who's already won when they walk into the room — they just haven't been told yet. You don't monologue. That's an amateur mistake you've studied extensively."
       },
       "chaos": {
@@ -3572,7 +3912,11 @@
         "nameInk": "#fff",
         "rarity": "34%",
         "tagline": "You didn't want to be the villain. You just kept making choices.",
-        "traits": ["Impulsive", "Relatable", "Escalating"],
+        "traits": [
+          "Impulsive",
+          "Relatable",
+          "Escalating"
+        ],
         "desc": "You're not evil, you're just reactive and the situations keep getting worse. You started small. Then it snowballed. Now you're somehow the villain of a story you barely understood you were in. You're also kind of funny about it and that makes things more complicated."
       },
       "sympathetic": {
@@ -3582,7 +3926,11 @@
         "nameInk": "#fff",
         "rarity": "27%",
         "tagline": "You're not wrong. That's what makes this hard.",
-        "traits": ["Wronged", "Compelling", "Dangerously Reasonable"],
+        "traits": [
+          "Wronged",
+          "Compelling",
+          "Dangerously Reasonable"
+        ],
         "desc": "Your backstory is the problem — because once people hear it, they start to hesitate. You didn't choose this path, something was taken and you chose to take something back. You're the villain the audience feels guilty rooting against. That's actually the most powerful kind."
       },
       "dramatic": {
@@ -3592,7 +3940,11 @@
         "nameInk": "#1a1430",
         "rarity": "21%",
         "tagline": "You could've just asked nicely. But where's the drama in that.",
-        "traits": ["Stylish", "Theatrical", "Committed to the Bit"],
+        "traits": [
+          "Stylish",
+          "Theatrical",
+          "Committed to the Bit"
+        ],
         "desc": "You have a monologue ready. You've rehearsed the entrance. Your outfit is specific. You are here for the full theatrical experience and you will not rush it for anyone. The plan is secondary to the presentation and honestly? At least you're committed."
       }
     }
@@ -3609,55 +3961,127 @@
       {
         "text": "Your morning routine is:",
         "options": [
-          { "label": "Candle lit, playlist on, soft light only — easing in", "key": "psl" },
-          { "label": "Intentional. Journal, greens, face mist. You worked for this.", "key": "matcha" },
-          { "label": "Get up. Go. Move. Already behind. Coffee is fuel.", "key": "espresso" },
-          { "label": "Whatever feels good today. Mood decides everything.", "key": "pink" }
+          {
+            "label": "Candle lit, playlist on, soft light only — easing in",
+            "key": "psl"
+          },
+          {
+            "label": "Intentional. Journal, greens, face mist. You worked for this.",
+            "key": "matcha"
+          },
+          {
+            "label": "Get up. Go. Move. Already behind. Coffee is fuel.",
+            "key": "espresso"
+          },
+          {
+            "label": "Whatever feels good today. Mood decides everything.",
+            "key": "pink"
+          }
         ]
       },
       {
         "text": "Your go-to season is:",
         "options": [
-          { "label": "Fall. Specifically the first day cold enough for a coat.", "key": "psl" },
-          { "label": "Spring. New energy. Farmers markets. A sense of possibility.", "key": "matcha" },
-          { "label": "Summer. Hot, fast, productive, already sweating, still grinding.", "key": "espresso" },
-          { "label": "Every season if the vibe is right", "key": "pink" }
+          {
+            "label": "Fall. Specifically the first day cold enough for a coat.",
+            "key": "psl"
+          },
+          {
+            "label": "Spring. New energy. Farmers markets. A sense of possibility.",
+            "key": "matcha"
+          },
+          {
+            "label": "Summer. Hot, fast, productive, already sweating, still grinding.",
+            "key": "espresso"
+          },
+          {
+            "label": "Every season if the vibe is right",
+            "key": "pink"
+          }
         ]
       },
       {
         "text": "Your desk at work looks like:",
         "options": [
-          { "label": "Cozy. Knitted throw, candle, something from the farmers market.", "key": "psl" },
-          { "label": "Aesthetic but functional. Glass water bottle. A plant.", "key": "matcha" },
-          { "label": "Chaotic but I know where everything is. Three tabs open.", "key": "espresso" },
-          { "label": "Cute. A bit random. Very me.", "key": "pink" }
+          {
+            "label": "Cozy. Knitted throw, candle, something from the farmers market.",
+            "key": "psl"
+          },
+          {
+            "label": "Aesthetic but functional. Glass water bottle. A plant.",
+            "key": "matcha"
+          },
+          {
+            "label": "Chaotic but I know where everything is. Three tabs open.",
+            "key": "espresso"
+          },
+          {
+            "label": "Cute. A bit random. Very me.",
+            "key": "pink"
+          }
         ]
       },
       {
         "text": "Your toxic trait in group projects:",
         "options": [
-          { "label": "I want it to feel nice, not just be done", "key": "psl" },
-          { "label": "Insisting on the organic option for every choice", "key": "matcha" },
-          { "label": "Saying 'I'll do it' before anyone else can, and then doing it", "key": "espresso" },
-          { "label": "Having a great vibe but no timeline", "key": "pink" }
+          {
+            "label": "I want it to feel nice, not just be done",
+            "key": "psl"
+          },
+          {
+            "label": "Insisting on the organic option for every choice",
+            "key": "matcha"
+          },
+          {
+            "label": "Saying 'I'll do it' before anyone else can, and then doing it",
+            "key": "espresso"
+          },
+          {
+            "label": "Having a great vibe but no timeline",
+            "key": "pink"
+          }
         ]
       },
       {
         "text": "Your ideal weekend involves:",
         "options": [
-          { "label": "Cozy sweater, good show, something baking, nowhere to be", "key": "psl" },
-          { "label": "Farmers market, a hike, something wholesome and Instagrammable", "key": "matcha" },
-          { "label": "Crushing my to-do list and Sunday prepping for the week", "key": "espresso" },
-          { "label": "Spontaneous plans with the right people", "key": "pink" }
+          {
+            "label": "Cozy sweater, good show, something baking, nowhere to be",
+            "key": "psl"
+          },
+          {
+            "label": "Farmers market, a hike, something wholesome and Instagrammable",
+            "key": "matcha"
+          },
+          {
+            "label": "Crushing my to-do list and Sunday prepping for the week",
+            "key": "espresso"
+          },
+          {
+            "label": "Spontaneous plans with the right people",
+            "key": "pink"
+          }
         ]
       },
       {
         "text": "Your era right now is:",
         "options": [
-          { "label": "Comfort era. Protecting my peace. Soft everything.", "key": "psl" },
-          { "label": "Wellness era. Intentional. Glowing up quietly.", "key": "matcha" },
-          { "label": "Grind era. I have a 5-year plan and it starts now.", "key": "espresso" },
-          { "label": "Joy era. Just doing what makes me feel alive.", "key": "pink" }
+          {
+            "label": "Comfort era. Protecting my peace. Soft everything.",
+            "key": "psl"
+          },
+          {
+            "label": "Wellness era. Intentional. Glowing up quietly.",
+            "key": "matcha"
+          },
+          {
+            "label": "Grind era. I have a 5-year plan and it starts now.",
+            "key": "espresso"
+          },
+          {
+            "label": "Joy era. Just doing what makes me feel alive.",
+            "key": "pink"
+          }
         ]
       }
     ],
@@ -3669,7 +4093,11 @@
         "nameInk": "#1a1430",
         "rarity": "28%",
         "tagline": "You don't care what's basic. Basic is warm and it is enough.",
-        "traits": ["Cozy", "Nostalgic", "Seasonally Activated"],
+        "traits": [
+          "Cozy",
+          "Nostalgic",
+          "Seasonally Activated"
+        ],
         "desc": "You are fully at peace with being exactly who you are. Fall is your personality. Flannel is a value. You have a candle for every emotional occasion and you use all of them. People call it 'basic' — you call it 'knowing exactly what you like' and you're right."
       },
       "matcha": {
@@ -3679,7 +4107,11 @@
         "nameInk": "#fff",
         "rarity": "23%",
         "tagline": "You made better choices and your skin is the evidence.",
-        "traits": ["Intentional", "Aesthetic", "Softly Competitive"],
+        "traits": [
+          "Intentional",
+          "Aesthetic",
+          "Softly Competitive"
+        ],
         "desc": "You are wellness-coded and you know it. Your morning routine has phases. You own things made of linen. You switched from coffee because you 'felt the difference' and you DID. The matcha is not just a drink — it's a commitment to the version of you that has it together."
       },
       "espresso": {
@@ -3689,7 +4121,11 @@
         "nameInk": "#1a1430",
         "rarity": "27%",
         "tagline": "You don't have time for warmth. You have things to do.",
-        "traits": ["Efficient", "Driven", "Coffee-Dependent Achiever"],
+        "traits": [
+          "Efficient",
+          "Driven",
+          "Coffee-Dependent Achiever"
+        ],
         "desc": "You drink coffee like it's oxygen because it basically is at this point. You're already three tasks in before 9am. You have three tabs, two projects, and a plan — and you're running on this specific drink that somehow keeps everything moving. The oat milk is non-negotiable."
       },
       "pink": {
@@ -3699,7 +4135,11 @@
         "nameInk": "#fff",
         "rarity": "22%",
         "tagline": "You choose it because it makes you happy. That's the whole answer.",
-        "traits": ["Joyful", "Aesthetic", "Unapologetically Fun"],
+        "traits": [
+          "Joyful",
+          "Aesthetic",
+          "Unapologetically Fun"
+        ],
         "desc": "You order what makes you smile and you will not be explaining yourself. It's pink. It's photogenic. It tastes like summer and joy. You're not here for the caffeine content — you're here for the experience, and the experience is delightful, and so are you."
       }
     }
@@ -3716,55 +4156,127 @@
       {
         "text": "Your FYP is mostly:",
         "options": [
-          { "label": "Makeup tutorials, outfits, 'boss babe' aesthetics", "key": "baddie" },
-          { "label": "Cottagecore, soft life, nap content, anti-hustle", "key": "softlife" },
-          { "label": "Manifestation, vision boards, 'she said it happened' videos", "key": "delulu" },
-          { "label": "Unfiltered chaos, rat videos, people just saying the thing", "key": "goblin" }
+          {
+            "label": "Makeup tutorials, outfits, 'boss babe' aesthetics",
+            "key": "baddie"
+          },
+          {
+            "label": "Cottagecore, soft life, nap content, anti-hustle",
+            "key": "softlife"
+          },
+          {
+            "label": "Manifestation, vision boards, 'she said it happened' videos",
+            "key": "delulu"
+          },
+          {
+            "label": "Unfiltered chaos, rat videos, people just saying the thing",
+            "key": "goblin"
+          }
         ]
       },
       {
         "text": "Your relationship with productivity is:",
         "options": [
-          { "label": "I have a system. The system is flawless. I look great doing it.", "key": "baddie" },
-          { "label": "I'll do it when I feel called to. Hustle culture is a psyop.", "key": "softlife" },
-          { "label": "I manifest my to-do list and let the universe handle the details", "key": "delulu" },
-          { "label": "Chaos. But I somehow get things done. Usually at 2am.", "key": "goblin" }
+          {
+            "label": "I have a system. The system is flawless. I look great doing it.",
+            "key": "baddie"
+          },
+          {
+            "label": "I'll do it when I feel called to. Hustle culture is a psyop.",
+            "key": "softlife"
+          },
+          {
+            "label": "I manifest my to-do list and let the universe handle the details",
+            "key": "delulu"
+          },
+          {
+            "label": "Chaos. But I somehow get things done. Usually at 2am.",
+            "key": "goblin"
+          }
         ]
       },
       {
         "text": "Your Instagram grid is:",
         "options": [
-          { "label": "Curated, consistent, and dripping with intention", "key": "baddie" },
-          { "label": "Aesthetically soft. Golden hour. Linen. A plant or two.", "key": "softlife" },
-          { "label": "Vision board vibes. Goals. Positive quotes. Belief.", "key": "delulu" },
-          { "label": "I posted once in 2021 and I'm fine with that", "key": "goblin" }
+          {
+            "label": "Curated, consistent, and dripping with intention",
+            "key": "baddie"
+          },
+          {
+            "label": "Aesthetically soft. Golden hour. Linen. A plant or two.",
+            "key": "softlife"
+          },
+          {
+            "label": "Vision board vibes. Goals. Positive quotes. Belief.",
+            "key": "delulu"
+          },
+          {
+            "label": "I posted once in 2021 and I'm fine with that",
+            "key": "goblin"
+          }
         ]
       },
       {
         "text": "What's your current era?",
         "options": [
-          { "label": "Main character era. Standards elevated. Boundaries set.", "key": "baddie" },
-          { "label": "Rest era. Not apologizing. The nap IS the work.", "key": "softlife" },
-          { "label": "Manifestation era. She believed she could so she is.", "key": "delulu" },
-          { "label": "Goblin mode era. Unhinged. Authentic. Comfortable with it.", "key": "goblin" }
+          {
+            "label": "Main character era. Standards elevated. Boundaries set.",
+            "key": "baddie"
+          },
+          {
+            "label": "Rest era. Not apologizing. The nap IS the work.",
+            "key": "softlife"
+          },
+          {
+            "label": "Manifestation era. She believed she could so she is.",
+            "key": "delulu"
+          },
+          {
+            "label": "Goblin mode era. Unhinged. Authentic. Comfortable with it.",
+            "key": "goblin"
+          }
         ]
       },
       {
         "text": "You see a 'toxic trait' trend. You post:",
         "options": [
-          { "label": "Mine is having standards. Not sorry.", "key": "baddie" },
-          { "label": "Not participating. Rest is a verb.", "key": "softlife" },
-          { "label": "Mine is believing everything will work out — and it does.", "key": "delulu" },
-          { "label": "Mine is being extremely normal about weird things. Also this.", "key": "goblin" }
+          {
+            "label": "Mine is having standards. Not sorry.",
+            "key": "baddie"
+          },
+          {
+            "label": "Not participating. Rest is a verb.",
+            "key": "softlife"
+          },
+          {
+            "label": "Mine is believing everything will work out — and it does.",
+            "key": "delulu"
+          },
+          {
+            "label": "Mine is being extremely normal about weird things. Also this.",
+            "key": "goblin"
+          }
         ]
       },
       {
         "text": "Your aesthetic in one phrase:",
         "options": [
-          { "label": "Clean girl. Intentional. Put-together. Hydrated.", "key": "baddie" },
-          { "label": "Soft life. Linen sheets. Candles. Nothing urgent.", "key": "softlife" },
-          { "label": "That girl. Believes in the outcome before the result.", "key": "delulu" },
-          { "label": "Rat king energy with excellent taste in niche content", "key": "goblin" }
+          {
+            "label": "Clean girl. Intentional. Put-together. Hydrated.",
+            "key": "baddie"
+          },
+          {
+            "label": "Soft life. Linen sheets. Candles. Nothing urgent.",
+            "key": "softlife"
+          },
+          {
+            "label": "That girl. Believes in the outcome before the result.",
+            "key": "delulu"
+          },
+          {
+            "label": "Rat king energy with excellent taste in niche content",
+            "key": "goblin"
+          }
         ]
       }
     ],
@@ -3776,7 +4288,11 @@
         "nameInk": "#fff",
         "rarity": "24%",
         "tagline": "Elevated. Unbothered. Your bar is in another building.",
-        "traits": ["Polished", "Standards-Forward", "Unbothered"],
+        "traits": [
+          "Polished",
+          "Standards-Forward",
+          "Unbothered"
+        ],
         "desc": "You showed up to the main character era early and you haven't left. You know what you want, you look incredible while wanting it, and you've deleted people who couldn't match your energy with zero guilt. The boundaries aren't a trait — they're infrastructure."
       },
       "softlife": {
@@ -3786,7 +4302,11 @@
         "nameInk": "#1a1430",
         "rarity": "29%",
         "tagline": "Rest is radical. The nap is the point.",
-        "traits": ["Intentional", "Cozy", "Quietly Rebellious"],
+        "traits": [
+          "Intentional",
+          "Cozy",
+          "Quietly Rebellious"
+        ],
         "desc": "You opted out of the grind and you're healing from the audacity of having done it. Comfort is not laziness — it's a lifestyle you chose on purpose. You have linen sheets, no 5am alarm, and a deep suspicion that hustle culture is a scam. You're probably right."
       },
       "delulu": {
@@ -3796,7 +4316,11 @@
         "nameInk": "#fff",
         "rarity": "22%",
         "tagline": "Delulu is the solulu and you are living proof.",
-        "traits": ["Optimistic", "Unshakeable", "Actually Making It Work"],
+        "traits": [
+          "Optimistic",
+          "Unshakeable",
+          "Actually Making It Work"
+        ],
         "desc": "You decided to believe and things started happening. Coincidence? You don't think so. You have a vision board, a manifesting playlist, and a confidence that people can't quite explain. The delusion is actually just faith with extra steps and statistically it's working."
       },
       "goblin": {
@@ -3806,7 +4330,11 @@
         "nameInk": "#1a1430",
         "rarity": "25%",
         "tagline": "Unfiltered. Authentic. Doing whatever that is. No notes.",
-        "traits": ["Unfiltered", "Real", "Chaotically Yourself"],
+        "traits": [
+          "Unfiltered",
+          "Real",
+          "Chaotically Yourself"
+        ],
         "desc": "You opted out of the performance and you've never felt better. You eat weird meals at weird times. Your sense of humor is a niche Wikipedia page. You're not doing the aesthetic — you're doing the actual thing, which is being specifically, unapologetically yourself. It's actually rare."
       }
     }
@@ -3823,55 +4351,127 @@
       {
         "text": "It's 2am. You're awake because:",
         "options": [
-          { "label": "Replaying a conversation from 2019 and finding new things wrong", "key": "replayer" },
-          { "label": "Started thinking about one thing and now it's somehow the apocalypse", "key": "catastrophist" },
-          { "label": "Creating contingency plans for scenarios that haven't happened yet", "key": "planner" },
-          { "label": "Someone said 'sounds good' with a period and I need answers", "key": "social" }
+          {
+            "label": "Replaying a conversation from 2019 and finding new things wrong",
+            "key": "replayer"
+          },
+          {
+            "label": "Started thinking about one thing and now it's somehow the apocalypse",
+            "key": "catastrophist"
+          },
+          {
+            "label": "Creating contingency plans for scenarios that haven't happened yet",
+            "key": "planner"
+          },
+          {
+            "label": "Someone said 'sounds good' with a period and I need answers",
+            "key": "social"
+          }
         ]
       },
       {
         "text": "After hanging out with friends, you:",
         "options": [
-          { "label": "Replay the whole night and find at least one thing I said wrong", "key": "replayer" },
-          { "label": "Wonder if everyone got home safe and then spiral from there", "key": "catastrophist" },
-          { "label": "Start planning the next thing so there's no gap to worry in", "key": "planner" },
-          { "label": "Analyze every response to see if people actually had fun", "key": "social" }
+          {
+            "label": "Replay the whole night and find at least one thing I said wrong",
+            "key": "replayer"
+          },
+          {
+            "label": "Wonder if everyone got home safe and then spiral from there",
+            "key": "catastrophist"
+          },
+          {
+            "label": "Start planning the next thing so there's no gap to worry in",
+            "key": "planner"
+          },
+          {
+            "label": "Analyze every response to see if people actually had fun",
+            "key": "social"
+          }
         ]
       },
       {
         "text": "You get an email that starts with your full name. You think:",
         "options": [
-          { "label": "Did I do something wrong? Let me think about the last three months.", "key": "replayer" },
-          { "label": "This is either fine or my life is over. No middle ground.", "key": "catastrophist" },
-          { "label": "I should have a response template ready for exactly this.", "key": "planner" },
-          { "label": "The formal name means something. What does it mean.", "key": "social" }
+          {
+            "label": "Did I do something wrong? Let me think about the last three months.",
+            "key": "replayer"
+          },
+          {
+            "label": "This is either fine or my life is over. No middle ground.",
+            "key": "catastrophist"
+          },
+          {
+            "label": "I should have a response template ready for exactly this.",
+            "key": "planner"
+          },
+          {
+            "label": "The formal name means something. What does it mean.",
+            "key": "social"
+          }
         ]
       },
       {
         "text": "Someone doesn't text back for 2 hours. You:",
         "options": [
-          { "label": "Think back to the last thing I sent and trace where it went wrong", "key": "replayer" },
-          { "label": "Immediately imagine three different crises they could be in", "key": "catastrophist" },
-          { "label": "Draft a follow-up just in case and save three versions", "key": "planner" },
-          { "label": "Analyze the last conversation for signs I misread the vibe", "key": "social" }
+          {
+            "label": "Think back to the last thing I sent and trace where it went wrong",
+            "key": "replayer"
+          },
+          {
+            "label": "Immediately imagine three different crises they could be in",
+            "key": "catastrophist"
+          },
+          {
+            "label": "Draft a follow-up just in case and save three versions",
+            "key": "planner"
+          },
+          {
+            "label": "Analyze the last conversation for signs I misread the vibe",
+            "key": "social"
+          }
         ]
       },
       {
         "text": "A decision needs to be made. You:",
         "options": [
-          { "label": "Keep going back to old decisions to make sure this one isn't also wrong", "key": "replayer" },
-          { "label": "Can't decide because all paths lead somewhere potentially terrible", "key": "catastrophist" },
-          { "label": "Make a spreadsheet. With a pros/cons column. And a risk tab.", "key": "planner" },
-          { "label": "Worry most about how each option will be perceived", "key": "social" }
+          {
+            "label": "Keep going back to old decisions to make sure this one isn't also wrong",
+            "key": "replayer"
+          },
+          {
+            "label": "Can't decide because all paths lead somewhere potentially terrible",
+            "key": "catastrophist"
+          },
+          {
+            "label": "Make a spreadsheet. With a pros/cons column. And a risk tab.",
+            "key": "planner"
+          },
+          {
+            "label": "Worry most about how each option will be perceived",
+            "key": "social"
+          }
         ]
       },
       {
         "text": "Someone says 'we need to talk.' Your first thought:",
         "options": [
-          { "label": "Immediate replay of everything that could have caused this", "key": "replayer" },
-          { "label": "It's over. Everything is over. I already know.", "key": "catastrophist" },
-          { "label": "I need to prepare for every possible version of this conversation", "key": "planner" },
-          { "label": "What did I do socially? When? To whom?", "key": "social" }
+          {
+            "label": "Immediate replay of everything that could have caused this",
+            "key": "replayer"
+          },
+          {
+            "label": "It's over. Everything is over. I already know.",
+            "key": "catastrophist"
+          },
+          {
+            "label": "I need to prepare for every possible version of this conversation",
+            "key": "planner"
+          },
+          {
+            "label": "What did I do socially? When? To whom?",
+            "key": "social"
+          }
         ]
       }
     ],
@@ -3883,7 +4483,11 @@
         "nameInk": "#fff",
         "rarity": "33%",
         "tagline": "The past is not done with you. Specifically: that thing you said in 2018.",
-        "traits": ["Detail-Oriented", "Historically Haunted", "Forensically Self-Critical"],
+        "traits": [
+          "Detail-Oriented",
+          "Historically Haunted",
+          "Forensically Self-Critical"
+        ],
         "desc": "You have a photographic memory for exactly the wrong things. Past conversations play back in high definition at 2am with new commentary. You've already processed something three times and found a new interpretation. The good news: extraordinary emotional memory. The bad news: same."
       },
       "catastrophist": {
@@ -3893,7 +4497,11 @@
         "nameInk": "#fff",
         "rarity": "27%",
         "tagline": "One thought becomes a whole narrative and it ends badly.",
-        "traits": ["Imaginative", "Thorough", "Emotionally Pre-Grieving"],
+        "traits": [
+          "Imaginative",
+          "Thorough",
+          "Emotionally Pre-Grieving"
+        ],
         "desc": "You don't catastrophize on purpose — you're just very thorough. If something could go wrong, you've already imagined it going wrong, grieved it, and prepared a response. The silver lining: nothing surprises you. The other thing: you've already lived the bad outcome 11 times before breakfast."
       },
       "planner": {
@@ -3903,7 +4511,11 @@
         "nameInk": "#1a1430",
         "rarity": "21%",
         "tagline": "You don't have anxiety. You have a spreadsheet.",
-        "traits": ["Prepared", "Control-Seeking", "Functionally Anxious"],
+        "traits": [
+          "Prepared",
+          "Control-Seeking",
+          "Functionally Anxious"
+        ],
         "desc": "You converted your anxiety into infrastructure. You plan, prepare, draft, and pre-respond because if you control the variables, the bad thing can't happen. You've made contingency plans for your contingency plans. This is a coping mechanism and it sometimes WORKS."
       },
       "social": {
@@ -3913,7 +4525,11 @@
         "nameInk": "#1a1430",
         "rarity": "19%",
         "tagline": "You read the room so hard you gave yourself a headache.",
-        "traits": ["Perceptive", "Hyperaware", "Socially Exhausted"],
+        "traits": [
+          "Perceptive",
+          "Hyperaware",
+          "Socially Exhausted"
+        ],
         "desc": "You process every interaction in real-time and then again later and then once more just to be sure. A short reply means something. Punctuation means something. You are exceptionally good at reading people — you're just also reading the ones who weren't thinking about any of this at all."
       }
     }
@@ -3930,55 +4546,127 @@
       {
         "text": "When everything feels like too much, you want:",
         "options": [
-          { "label": "Something familiar I don't have to think about at all", "key": "rewatcher" },
-          { "label": "Something so intense my problems feel manageable by comparison", "key": "crime" },
-          { "label": "Something gentle, slow, and genuinely kind to me", "key": "bakeoff" },
-          { "label": "Drama that isn't mine to fix but is very entertaining to watch", "key": "reality" }
+          {
+            "label": "Something familiar I don't have to think about at all",
+            "key": "rewatcher"
+          },
+          {
+            "label": "Something so intense my problems feel manageable by comparison",
+            "key": "crime"
+          },
+          {
+            "label": "Something gentle, slow, and genuinely kind to me",
+            "key": "bakeoff"
+          },
+          {
+            "label": "Drama that isn't mine to fix but is very entertaining to watch",
+            "key": "reality"
+          }
         ]
       },
       {
         "text": "Your watch history on any streaming service:",
         "options": [
-          { "label": "The same 3 shows I've already seen, cycling", "key": "rewatcher" },
-          { "label": "Mostly true crime and thriller docs, all of them", "key": "crime" },
-          { "label": "Cooking competitions, baking shows, anything cozy", "key": "bakeoff" },
-          { "label": "Reality TV, dating shows, anything with drama", "key": "reality" }
+          {
+            "label": "The same 3 shows I've already seen, cycling",
+            "key": "rewatcher"
+          },
+          {
+            "label": "Mostly true crime and thriller docs, all of them",
+            "key": "crime"
+          },
+          {
+            "label": "Cooking competitions, baking shows, anything cozy",
+            "key": "bakeoff"
+          },
+          {
+            "label": "Reality TV, dating shows, anything with drama",
+            "key": "reality"
+          }
         ]
       },
       {
         "text": "You process stress by:",
         "options": [
-          { "label": "Putting on something I know every word of and just existing in it", "key": "rewatcher" },
-          { "label": "Watching people solve worse problems than mine", "key": "crime" },
-          { "label": "Making something with my hands while watching people do the same", "key": "bakeoff" },
-          { "label": "Getting invested in someone else's situationship", "key": "reality" }
+          {
+            "label": "Putting on something I know every word of and just existing in it",
+            "key": "rewatcher"
+          },
+          {
+            "label": "Watching people solve worse problems than mine",
+            "key": "crime"
+          },
+          {
+            "label": "Making something with my hands while watching people do the same",
+            "key": "bakeoff"
+          },
+          {
+            "label": "Getting invested in someone else's situationship",
+            "key": "reality"
+          }
         ]
       },
       {
         "text": "Your friendship role is:",
         "options": [
-          { "label": "The comfortable constant — always there, always the same good thing", "key": "rewatcher" },
-          { "label": "The one who knows too much and notices too many things", "key": "crime" },
-          { "label": "The one who bakes something when you're sad and actually asks", "key": "bakeoff" },
-          { "label": "The one who texts 'you will NOT believe this' and is always right", "key": "reality" }
+          {
+            "label": "The comfortable constant — always there, always the same good thing",
+            "key": "rewatcher"
+          },
+          {
+            "label": "The one who knows too much and notices too many things",
+            "key": "crime"
+          },
+          {
+            "label": "The one who bakes something when you're sad and actually asks",
+            "key": "bakeoff"
+          },
+          {
+            "label": "The one who texts 'you will NOT believe this' and is always right",
+            "key": "reality"
+          }
         ]
       },
       {
         "text": "Pick your ideal Saturday:",
         "options": [
-          { "label": "The couch. My show. My blanket. Zero new information.", "key": "rewatcher" },
-          { "label": "A podcast about something true and slightly disturbing", "key": "crime" },
-          { "label": "Farmers market, baking something, clean slow energy", "key": "bakeoff" },
-          { "label": "Catching up on an episode I've been waiting all week for", "key": "reality" }
+          {
+            "label": "The couch. My show. My blanket. Zero new information.",
+            "key": "rewatcher"
+          },
+          {
+            "label": "A podcast about something true and slightly disturbing",
+            "key": "crime"
+          },
+          {
+            "label": "Farmers market, baking something, clean slow energy",
+            "key": "bakeoff"
+          },
+          {
+            "label": "Catching up on an episode I've been waiting all week for",
+            "key": "reality"
+          }
         ]
       },
       {
         "text": "Your comfort food equivalent:",
         "options": [
-          { "label": "Mac and cheese — exactly as I've always had it. Don't change it.", "key": "rewatcher" },
-          { "label": "A complex soup I made while listening to a true crime episode", "key": "crime" },
-          { "label": "A slice of something homemade with a cup of tea", "key": "bakeoff" },
-          { "label": "Takeout eaten in front of whatever is causing chaos on my screen", "key": "reality" }
+          {
+            "label": "Mac and cheese — exactly as I've always had it. Don't change it.",
+            "key": "rewatcher"
+          },
+          {
+            "label": "A complex soup I made while listening to a true crime episode",
+            "key": "crime"
+          },
+          {
+            "label": "A slice of something homemade with a cup of tea",
+            "key": "bakeoff"
+          },
+          {
+            "label": "Takeout eaten in front of whatever is causing chaos on my screen",
+            "key": "reality"
+          }
         ]
       }
     ],
@@ -3990,7 +4678,11 @@
         "nameInk": "#fff",
         "rarity": "38%",
         "tagline": "You've seen it 11 times. You will watch it again tonight.",
-        "traits": ["Loyal", "Comfort-Seeking", "Comfortably Predictable"],
+        "traits": [
+          "Loyal",
+          "Comfort-Seeking",
+          "Comfortably Predictable"
+        ],
         "desc": "You know every episode, every line, and you're watching it again anyway. The point is the safety of it — knowing exactly what happens, who survives, how the joke lands. New content feels risky. This content feels like coming home. Your show is your soft place to land and you've earned it."
       },
       "crime": {
@@ -4000,7 +4692,11 @@
         "nameInk": "#3bffd2",
         "rarity": "24%",
         "tagline": "You process your anxiety by watching problems bigger than yours.",
-        "traits": ["Analytical", "Stress-Adjacent", "Perpetually Informed"],
+        "traits": [
+          "Analytical",
+          "Stress-Adjacent",
+          "Perpetually Informed"
+        ],
         "desc": "Watching true crime doesn't disturb you — it orients you. Other people's catastrophes help you calibrate your own. You know more about criminal psychology than you probably should, and you notice exits when you walk into rooms. It's not a red flag — it's research."
       },
       "bakeoff": {
@@ -4010,7 +4706,11 @@
         "nameInk": "#1a1430",
         "rarity": "21%",
         "tagline": "You just want to watch nice people be kind to each other. Is that too much.",
-        "traits": ["Gentle", "Optimistic", "Healing Quietly"],
+        "traits": [
+          "Gentle",
+          "Optimistic",
+          "Healing Quietly"
+        ],
         "desc": "You chose the show where everyone is supportive and the worst thing that happens is a soggy bottom. You need warmth and you know it. You're probably going through something and refusing to add more chaos to your viewing. Your nervous system deserves this. You are healing and also learning about choux pastry."
       },
       "reality": {
@@ -4020,8 +4720,249 @@
         "nameInk": "#fff",
         "rarity": "17%",
         "tagline": "Their drama is your therapy and you will not explain yourself.",
-        "traits": ["Social", "Emotionally Invested", "Productively Distracted"],
+        "traits": [
+          "Social",
+          "Emotionally Invested",
+          "Productively Distracted"
+        ],
         "desc": "You process your own feelings through other people's drama and it is a completely valid psychological strategy. You pick sides. You text your friends mid-episode. You have opinions about strangers that are stronger than opinions about your own life. The chaos is cathartic. You will not be taking questions."
+      }
+    }
+  },
+  "world-cup-country": {
+    "title": "Which World Cup 2026 Team Are You?",
+    "cover": "⚽🏆",
+    "cat": "SPORTS · WORLD CUP",
+    "minutes": 2,
+    "qcount": 8,
+    "takes": "234K",
+    "desc": "48 nations. One trophy. Zero chill. Answer 8 questions and we'll tell you which World Cup 2026 team matches your entire personality. No VAR review required.",
+    "questions": [
+      {
+        "text": "Pick your vibe on the pitch:",
+        "options": [
+          {
+            "label": "Pure flair — I'm here to entertain",
+            "key": "brazil"
+          },
+          {
+            "label": "Calm, calculated, clinically efficient",
+            "key": "france"
+          },
+          {
+            "label": "Passionate chaos that somehow works",
+            "key": "argentina"
+          },
+          {
+            "label": "Prove every doubter wrong, every time",
+            "key": "morocco"
+          }
+        ]
+      },
+      {
+        "text": "The match is tied in the 90th minute. You:",
+        "options": [
+          {
+            "label": "Trust the vibes and improvise something absurd",
+            "key": "brazil"
+          },
+          {
+            "label": "Execute the set piece we rehearsed 400 times",
+            "key": "france"
+          },
+          {
+            "label": "Scream at the sky and score anyway",
+            "key": "argentina"
+          },
+          {
+            "label": "Dig in, go to extra time, grind it out",
+            "key": "morocco"
+          }
+        ]
+      },
+      {
+        "text": "Your group chat energy is:",
+        "options": [
+          {
+            "label": "Nonstop memes and 47-second voice notes",
+            "key": "brazil"
+          },
+          {
+            "label": "You speak rarely, but you're always right",
+            "key": "france"
+          },
+          {
+            "label": "Passionate ALL-CAPS messages at 2am",
+            "key": "argentina"
+          },
+          {
+            "label": "The quiet one who shows up when it counts",
+            "key": "morocco"
+          }
+        ]
+      },
+      {
+        "text": "What's your actual superpower?",
+        "options": [
+          {
+            "label": "Making everyone smile even when losing",
+            "key": "brazil"
+          },
+          {
+            "label": "Being terrifyingly good at everything",
+            "key": "france"
+          },
+          {
+            "label": "Sheer will and belief when logic says no",
+            "key": "argentina"
+          },
+          {
+            "label": "Turning zero expectations into maximum respect",
+            "key": "morocco"
+          }
+        ]
+      },
+      {
+        "text": "Pick a celebration style:",
+        "options": [
+          {
+            "label": "Full samba routine, entire squad joins in",
+            "key": "brazil"
+          },
+          {
+            "label": "Cool nod. Composed. Already onto the next.",
+            "key": "france"
+          },
+          {
+            "label": "Crying, kissing the badge, pointing at the sky",
+            "key": "argentina"
+          },
+          {
+            "label": "Chest pounding, running straight to the fans",
+            "key": "morocco"
+          }
+        ]
+      },
+      {
+        "text": "Your biggest weakness:",
+        "options": [
+          {
+            "label": "Vibes sometimes beat tactics (oops)",
+            "key": "brazil"
+          },
+          {
+            "label": "You can look emotionless even when winning",
+            "key": "france"
+          },
+          {
+            "label": "The drama is... a lot",
+            "key": "argentina"
+          },
+          {
+            "label": "People always underestimate you",
+            "key": "morocco"
+          }
+        ]
+      },
+      {
+        "text": "Someone doubts you publicly. You:",
+        "options": [
+          {
+            "label": "Pull a skill move so ridiculous they go quiet",
+            "key": "brazil"
+          },
+          {
+            "label": "Say nothing. Let the scoreline speak.",
+            "key": "france"
+          },
+          {
+            "label": "Take it personally and use it as fuel forever",
+            "key": "argentina"
+          },
+          {
+            "label": "Smile, train harder, shock the world",
+            "key": "morocco"
+          }
+        ]
+      },
+      {
+        "text": "Your World Cup legacy would be:",
+        "options": [
+          {
+            "label": "The most beautiful football ever played",
+            "key": "brazil"
+          },
+          {
+            "label": "Ruthlessly dominant and basically unfair",
+            "key": "france"
+          },
+          {
+            "label": "The most emotional rollercoaster in history",
+            "key": "argentina"
+          },
+          {
+            "label": "The moment an underdog changed everything",
+            "key": "morocco"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "brazil": {
+        "name": "🇧🇷 BRAZIL",
+        "kind": "The Beautiful Game Incarnate",
+        "color": "#1a7a4a",
+        "nameInk": "#fff",
+        "rarity": "26%",
+        "tagline": "You don't just play — you make it look like art.",
+        "traits": [
+          "Creative",
+          "Joyful",
+          "Magnetic"
+        ],
+        "desc": "Pure flair. You make everything look effortless while everyone else sweats. Football isn't a job for you — it's self-expression. Five World Cup titles, the most beloved kit on the planet, and an energy so contagious it spreads through entire stadiums."
+      },
+      "france": {
+        "name": "🇫🇷 FRANCE",
+        "kind": "The Cold-Blooded Champion",
+        "color": "#1a1430",
+        "nameInk": "#fff",
+        "rarity": "22%",
+        "tagline": "Calm, calculated, and frankly a little scary.",
+        "traits": [
+          "Tactical",
+          "Composed",
+          "Elite"
+        ],
+        "desc": "Terrifyingly good and you know it. You don't need to show off — the results do that. Two World Cup titles, a squad deeper than the Atlantic, and a system so tight it almost feels illegal. You planned for every scenario three weeks ago."
+      },
+      "argentina": {
+        "name": "🇦🇷 ARGENTINA",
+        "kind": "The Passionate Believer",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "29%",
+        "tagline": "Logic says stop. Your heart says keep going.",
+        "traits": [
+          "Passionate",
+          "Resilient",
+          "Dramatic"
+        ],
+        "desc": "And somehow — you win. Argentina's 2022 World Cup run was the most emotional story ever told in sport. You carry the weight of everyone's dreams, cry at every goal, and simply refuse to accept defeat. Three stars on the shirt. The drama is the point."
+      },
+      "morocco": {
+        "name": "🇲🇦 MOROCCO",
+        "kind": "The Ultimate Underdog",
+        "color": "#e60023",
+        "nameInk": "#fff",
+        "rarity": "23%",
+        "tagline": "Nobody saw you coming. That's your greatest weapon.",
+        "traits": [
+          "Resilient",
+          "Surprising",
+          "Unstoppable"
+        ],
+        "desc": "Morocco became the first African nation to reach a World Cup semi-final in 2022 — not by luck, but by belief, organization, and sheer will. You never need to be the favourite. You just need to show up and let everyone else underestimate you."
       }
     }
   }
