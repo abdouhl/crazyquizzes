@@ -221,6 +221,10 @@ const jsonLd = {
       margin-bottom: 20px;
     }
     .view-bquestion h1 { font-family: 'Bungee', cursive; font-size: clamp(20px, 3.6vw, 30px); line-height: 1.12; margin: 0 0 24px; }
+    .bq-img-wrap { width:100%; max-width:220px; margin:0 auto 20px; }
+    .bq-img { width:100%; border-radius:14px; aspect-ratio:3/4; object-fit:cover; object-position:top center; display:block; border:3px solid #1a1430; box-shadow:4px 4px 0 #1a1430; }
+    .bintro-cover-img-wrap { width:110px; height:110px; border-radius:50%; overflow:hidden; margin:0 auto 14px; border:3px solid #ffd23f; box-shadow:4px 4px 0 #6c3bff; }
+    .bintro-cover-img { width:100%; height:100%; object-fit:cover; object-position:top center; display:block; }
     .b-options-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
     .b-option-btn {
       text-align: left;
@@ -361,6 +365,7 @@ const jsonLd = {
       .bintro-card { box-shadow: 5px 5px 0 #6c3bff; }
       .bintro-inner { padding: 18px 18px 20px; }
       .bintro-bolt { font-size: 36px; margin-bottom: 8px; }
+      .bintro-cover-img-wrap { width:80px; height:80px; }
       .bintro-eyebrow { font-size: 10px; margin-bottom: 6px; }
       .bintro-card h1 { font-size: 24px; margin-bottom: 12px; }
       .bintro-chips { gap: 7px; margin-bottom: 18px; }
@@ -443,7 +448,10 @@ const jsonLd = {
       <a href="/" class="back-link">← BACK TO QUIZZES</a>
       <div class="bintro-card">
         <div class="bintro-inner">
-          <div class="bintro-bolt">⚡</div>
+          {blitz.coverImg
+            ? <div class="bintro-cover-img-wrap"><img class="bintro-cover-img" src={blitz.coverImg} alt={blitz.title} loading="lazy" referrerpolicy="no-referrer" /></div>
+            : <div class="bintro-bolt">⚡</div>
+          }
           <div class="bintro-eyebrow">PLAY-ALONG · BEAT THE CLOCK</div>
           <h1><span class="yellow">{blitz.title.toUpperCase()}</span></h1>
           <div class="bintro-chips">
@@ -451,7 +459,7 @@ const jsonLd = {
             <span class="bintro-chip yellow">⏱ 10 SEC EACH</span>
             <span class="bintro-chip pink">🔥 BUILD A STREAK</span>
           </div>
-          <p>Guess the emoji, name the flag, true-or-false and more. Tap fast — when the timer hits zero, the answer locks itself.</p>
+          <p>{blitz.desc || 'Guess the emoji, name the flag, true-or-false and more. Tap fast — when the timer hits zero, the answer locks itself.'}</p>
           <button class="btn-go" id="static-go-btn">I'M READY — GO! →</button>
         </div>
       </div>
@@ -610,7 +618,7 @@ const jsonLd = {
           <a href="/" class="back-link">← BACK TO QUIZZES</a>
           <div class="bintro-card">
             <div class="bintro-inner">
-              <div class="bintro-bolt">⚡</div>
+              ${blitz.coverImg ? `<div class="bintro-cover-img-wrap"><img class="bintro-cover-img" src="${e(blitz.coverImg)}" alt="${e(blitz.title)}" loading="lazy" referrerpolicy="no-referrer"></div>` : `<div class="bintro-bolt">⚡</div>`}
               <div class="bintro-eyebrow">PLAY-ALONG · BEAT THE CLOCK</div>
               <h1><span class="yellow">${e(blitz.title.toUpperCase())}</span></h1>
               <div class="bintro-chips">
@@ -618,7 +626,7 @@ const jsonLd = {
                 <span class="bintro-chip yellow">⏱ 10 SEC EACH</span>
                 <span class="bintro-chip pink">🔥 BUILD A STREAK</span>
               </div>
-              <p>Guess the emoji, name the flag, true-or-false and more. Tap fast — when the timer hits zero, the answer locks itself.</p>
+              <p>${e(blitz.desc || 'Guess the emoji, name the flag, true-or-false and more. Tap fast — when the timer hits zero, the answer locks itself.')}</p>
               <button class="btn-go" data-action="startblitz">I'M READY — GO! →</button>
             </div>
           </div>
@@ -663,7 +671,7 @@ const jsonLd = {
             </div>
           </div>
           <div class="b-kind">${e(bq.kind)}</div>
-          ${bq.prompt ? `<div class="b-prompt-box">${e(bq.prompt)}</div>` : ''}
+          ${bq.image ? `<div class="bq-img-wrap"><img class="bq-img" src="${e(bq.image)}" alt="Guess who?" loading="lazy" referrerpolicy="no-referrer"></div>` : bq.prompt ? `<div class="b-prompt-box">${e(bq.prompt)}</div>` : ''}
           <h1>${e(bq.text)}</h1>
           <div class="b-options-grid">
             ${bOptions.map(opt => `

@@ -1719,5 +1719,398 @@
       "POP CULTURE",
       "PERSONALITY"
     ]
+  },
+  {
+    "id": "taylor-swift-era",
+    "title": "Which Taylor Swift Era Are You?",
+    "cat": "PERSONALITY · MUSIC",
+    "takes": "1.2M",
+    "coverEmoji": "✨🎵",
+    "coverBg": "linear-gradient(135deg,#ffd23f 0%,#ff3b9a 100%)",
+    "badge": "🔥 VIRAL",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "MUSIC",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "main-character",
+    "title": "What's Your Main Character Energy?",
+    "cat": "PERSONALITY · VIBES",
+    "takes": "934K",
+    "coverEmoji": "🎬🌟",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#6c3bff 100%)",
+    "badge": "✨ NEW",
+    "badgeColor": "#6c3bff",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "VIBES",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "love-language",
+    "title": "What's Your Love Language?",
+    "cat": "PERSONALITY · VIBES",
+    "takes": "2.1M",
+    "coverEmoji": "💌❤️",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#6c3bff 100%)",
+    "badge": "🔥 VIRAL",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "VIBES",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "villain-type",
+    "title": "Which Type of Villain Are You?",
+    "cat": "PERSONALITY · CHAOS",
+    "takes": "1.6M",
+    "coverEmoji": "🦹‍♀️😈",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#ff3b9a 100%)",
+    "badge": "🔥 HOT",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "CHAOS",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "starbucks-order",
+    "title": "Which Starbucks Order Are You?",
+    "cat": "PERSONALITY · FOOD",
+    "takes": "1.8M",
+    "coverEmoji": "☕🩷",
+    "coverBg": "linear-gradient(135deg,#22c55e 0%,#ffd23f 100%)",
+    "badge": "🔥 RELATABLE",
+    "badgeColor": "#22c55e",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "FOOD",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "gen-z-archetype",
+    "title": "Which Gen Z Archetype Are You?",
+    "cat": "PERSONALITY · POP CULTURE",
+    "takes": "1.1M",
+    "coverEmoji": "📱✨",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#ffd23f 100%)",
+    "badge": "🔥 VIRAL",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "POP CULTURE",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "overthinker-type",
+    "title": "What Kind of Overthinker Are You?",
+    "cat": "PERSONALITY · CHAOS",
+    "takes": "987K",
+    "coverEmoji": "🧠💭",
+    "coverBg": "linear-gradient(135deg,#6c3bff 0%,#3bffd2 100%)",
+    "badge": "🔥 RELATABLE",
+    "badgeColor": "#6c3bff",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "CHAOS",
+      "VIBES"
+    ]
+  },
+  {
+    "id": "comfort-show",
+    "title": "Which Comfort Show Are You?",
+    "cat": "PERSONALITY · MOVIES & TV",
+    "takes": "743K",
+    "coverEmoji": "📺🛋️",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#3bffd2 100%)",
+    "badge": "✨ NEW",
+    "badgeColor": "#3bffd2",
+    "badgeInk": "#1a1430",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "MOVIES & TV",
+      "VIBES"
+    ]
+  },
+  {
+    "id": "animal-speed",
+    "title": "Faster or Slower? Animals",
+    "cat": "FASTER OR SLOWER",
+    "takes": "—",
+    "coverEmoji": "🐆⚡",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#6c3bff 100%)",
+    "badge": "✨ NEW",
+    "badgeColor": "#6c3bff",
+    "badgeInk": "#fff",
+    "type": "compare",
+    "categories": [
+      "ALL",
+      "SCIENCE",
+      "TRIVIA",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "car-speed",
+    "title": "Faster or Slower? Supercars",
+    "cat": "FASTER OR SLOWER",
+    "takes": "—",
+    "coverEmoji": "🏎️⚡",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#1a1430 100%)",
+    "badge": "✨ NEW",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "compare",
+    "categories": [
+      "ALL",
+      "TRIVIA",
+      "POP CULTURE",
+      "CHAOS"
+    ]
+  },
+  {
+    "id": "building-height",
+    "title": "Taller or Shorter? Skyscrapers",
+    "cat": "TALLER OR SHORTER",
+    "takes": "—",
+    "coverEmoji": "🏙️📏",
+    "coverBg": "linear-gradient(135deg,#3bffd2 0%,#1a1430 100%)",
+    "badge": "✨ NEW",
+    "badgeColor": "#3bffd2",
+    "badgeInk": "#1a1430",
+    "type": "compare",
+    "categories": [
+      "ALL",
+      "GEOGRAPHY",
+      "HISTORY",
+      "TRIVIA"
+    ]
+  },
+  {
+    "id": "blackpink-guess-member",
+    "title": "Guess the BLACKPINK Member",
+    "cat": "K-POP",
+    "takes": "—",
+    "coverImg": "https://kprofiles.com/wp-content/uploads/2016/08/Jisoo-Blackpink-2025.jpg",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#1a1430 100%)",
+    "badge": "📸 GUESS THE MEMBER",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "blitz",
+    "categories": ["ALL", "K-POP", "MUSIC"]
+  },
+  {
+    "id": "twice-guess-member",
+    "title": "Guess the TWICE Member",
+    "cat": "K-POP",
+    "takes": "—",
+    "coverImg": "https://kprofiles.com/wp-content/uploads/2016/05/NAYEON-1-900x643.jpeg",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#6c3bff 100%)",
+    "badge": "📸 GUESS THE MEMBER",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": ["ALL", "K-POP", "MUSIC"]
+  },
+  {
+    "id": "aespa-guess-member",
+    "title": "Guess the aespa Member",
+    "cat": "K-POP",
+    "takes": "—",
+    "coverImg": "https://kprofiles.com/wp-content/uploads/2020/10/KARINA-533x800.jpeg",
+    "coverBg": "linear-gradient(135deg,#3bffd2 0%,#1a1430 100%)",
+    "badge": "📸 GUESS THE MEMBER",
+    "badgeColor": "#3bffd2",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": ["ALL", "K-POP", "MUSIC"]
+  },
+  {
+    "id": "ive-guess-member",
+    "title": "Guess the IVE Member",
+    "cat": "K-POP",
+    "takes": "—",
+    "coverImg": "https://kprofiles.com/wp-content/uploads/2021/11/IMG_3841-600x800.jpeg",
+    "coverBg": "linear-gradient(135deg,#ffd23f 0%,#6c3bff 100%)",
+    "badge": "📸 GUESS THE MEMBER",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": ["ALL", "K-POP", "MUSIC"]
+  },
+  {
+    "id": "le-sserafim-guess-member",
+    "title": "Guess the LE SSERAFIM Member",
+    "cat": "K-POP",
+    "takes": "—",
+    "coverImg": "https://kprofiles.com/wp-content/uploads/2022/03/chaewon.png",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#ffd23f 100%)",
+    "badge": "📸 GUESS THE MEMBER",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "blitz",
+    "categories": ["ALL", "K-POP", "MUSIC"]
+  },
+  {
+    "id": "gidle-guess-member",
+    "title": "Guess the (G)I-DLE Member",
+    "cat": "K-POP",
+    "takes": "—",
+    "coverImg": "https://kprofiles.com/wp-content/uploads/2018/04/SOYEON-2-533x800.jpeg",
+    "coverBg": "linear-gradient(135deg,#6c3bff 0%,#ff3b9a 100%)",
+    "badge": "📸 GUESS THE MEMBER",
+    "badgeColor": "#6c3bff",
+    "badgeInk": "#fff",
+    "type": "blitz",
+    "categories": ["ALL", "K-POP", "MUSIC"]
+  },
+  {
+    "id": "itzy-guess-member",
+    "title": "Guess the ITZY Member",
+    "cat": "K-POP",
+    "takes": "—",
+    "coverImg": "https://kprofiles.com/wp-content/uploads/2019/01/YEJI-593x800.png",
+    "coverBg": "linear-gradient(135deg,#3bffd2 0%,#6c3bff 100%)",
+    "badge": "📸 GUESS THE MEMBER",
+    "badgeColor": "#3bffd2",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": ["ALL", "K-POP", "MUSIC"]
+  },
+  {
+    "id": "red-velvet-guess-member",
+    "title": "Guess the Red Velvet Member",
+    "cat": "K-POP",
+    "takes": "—",
+    "coverImg": "https://kprofiles.com/wp-content/uploads/2016/04/IRENE-1-533x800.jpg",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#6c3bff 100%)",
+    "badge": "📸 GUESS THE MEMBER",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "blitz",
+    "categories": ["ALL", "K-POP", "MUSIC"]
+  },
+  {
+    "id": "mamamoo-guess-member",
+    "title": "Guess the MAMAMOO Member",
+    "cat": "K-POP",
+    "takes": "—",
+    "coverImg": "https://kprofiles.com/wp-content/uploads/2016/04/SOLAR-900x675.jpeg",
+    "coverBg": "linear-gradient(135deg,#ffd23f 0%,#1a1430 100%)",
+    "badge": "📸 GUESS THE MEMBER",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": ["ALL", "K-POP", "MUSIC"]
+  },
+  {
+    "id": "girls-generation-guess-member",
+    "title": "Guess the Girls' Generation Member",
+    "cat": "K-POP",
+    "takes": "—",
+    "coverImg": "https://kprofiles.com/wp-content/uploads/2016/04/F1B27CF7-08A1-4474-B081-FA4C77B99ACA-571x800.jpeg",
+    "coverBg": "linear-gradient(135deg,#3bffd2 0%,#ff3b9a 100%)",
+    "badge": "📸 GUESS THE MEMBER",
+    "badgeColor": "#3bffd2",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": ["ALL", "K-POP", "MUSIC"]
+  },
+  {
+    "id": "nmixx-guess-member",
+    "title": "Guess the NMIXX Member",
+    "cat": "K-POP",
+    "takes": "—",
+    "coverImg": "https://kprofiles.com/wp-content/uploads/2021/08/SULLYOON-2-900x600.jpeg",
+    "coverBg": "linear-gradient(135deg,#6c3bff 0%,#3bffd2 100%)",
+    "badge": "📸 GUESS THE MEMBER",
+    "badgeColor": "#6c3bff",
+    "badgeInk": "#fff",
+    "type": "blitz",
+    "categories": ["ALL", "K-POP", "MUSIC"]
+  },
+  {
+    "id": "stayc-guess-member",
+    "title": "Guess the STAYC Member",
+    "cat": "K-POP",
+    "takes": "—",
+    "coverImg": "https://kprofiles.com/wp-content/uploads/2020/09/sieun-3.jpg",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#3bffd2 100%)",
+    "badge": "📸 GUESS THE MEMBER",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "blitz",
+    "categories": ["ALL", "K-POP", "MUSIC"]
+  },
+  {
+    "id": "babymonster-guess-member",
+    "title": "Guess the BABYMONSTER Member",
+    "cat": "K-POP",
+    "takes": "—",
+    "coverImg": "https://kprofiles.com/wp-content/uploads/2022/12/AHYEON.png",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#ff3b9a 100%)",
+    "badge": "📸 GUESS THE MEMBER",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": ["ALL", "K-POP", "MUSIC"]
+  },
+  {
+    "id": "illit-guess-member",
+    "title": "Guess the ILLIT Member",
+    "cat": "K-POP",
+    "takes": "—",
+    "coverImg": "https://kprofiles.com/wp-content/uploads/2023/09/IMG_4519-533x800.jpeg",
+    "coverBg": "linear-gradient(135deg,#ffd23f 0%,#ff3b9a 100%)",
+    "badge": "📸 GUESS THE MEMBER",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "blitz",
+    "categories": ["ALL", "K-POP", "MUSIC"]
+  },
+  {
+    "id": "2ne1-guess-member",
+    "title": "Guess the 2NE1 Member",
+    "cat": "K-POP",
+    "takes": "—",
+    "coverImg": "https://kprofiles.com/wp-content/uploads/2016/04/CL-640x800.jpg",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#6c3bff 100%)",
+    "badge": "📸 GUESS THE MEMBER",
+    "badgeColor": "#6c3bff",
+    "badgeInk": "#fff",
+    "type": "blitz",
+    "categories": ["ALL", "K-POP", "MUSIC"]
   }
 ]
