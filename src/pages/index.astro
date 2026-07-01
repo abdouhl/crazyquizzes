@@ -204,6 +204,11 @@ const homeJsonLd = JSON.stringify({
     .quiz-card-takes { font-size:12px; font-weight:600; color:#6b6285; }
     .quiz-card-play { font-family:'Bungee',cursive; font-size:10px; color:#fff; background:#1a1430; padding:5px 10px; }
 
+    .load-more-wrap { grid-column:1/-1; text-align:center; padding:24px 0 8px; }
+    .btn-load-more { font-family:'Bungee',cursive; font-size:14px; color:#fff; background:#6c3bff; border:3px solid #1a1430; box-shadow:5px 5px 0 #1a1430; padding:14px 36px; cursor:pointer; transition:transform .1s,box-shadow .1s; }
+    .btn-load-more:hover { transform:translate(-2px,-2px); box-shadow:7px 7px 0 #ff3b9a; }
+    .load-more-count { display:block; font-family:'Bungee',cursive; font-size:10px; color:#6b6285; margin-top:10px; }
+
     /* ── NO RESULTS ── */
     .no-results { display:none; grid-column:1/-1; padding:60px 0; text-align:center; animation:cq-fadein .2s ease; }
     .no-results-icon { font-size:52px; margin-bottom:14px; }
@@ -327,10 +332,14 @@ const homeJsonLd = JSON.stringify({
   <script define:vars={{ cats: catsData, cards: cardsData, quizzes: quizzesData, blitzes: blitzesData, srvTotal: totalQuizzes, srvBlitz: totalBlitzes, srvPersonality: totalPersonality }}>
 
     // ── STATE ──────────────────────────────────────────────────────────────────
+    const PAGE_SIZE = 24;
+
     let state = {
       view: 'home',
       activeCat: 'ALL',
       searchQuery: '',
+      page: 1,
+      noScroll: false,
     };
 
     function setState(u) { state = { ...state, ...u }; render(); }
@@ -365,8 +374,8 @@ const homeJsonLd = JSON.stringify({
     // ── ACTIONS ────────────────────────────────────────────────────────────────
     function goHome() { setState({ view: 'home', searchQuery: '' }); }
     function filterCat(label) {
-      if (state.view !== 'home') { setState({ view: 'home', activeCat: label }); return; }
-      setState({ activeCat: label });
+      if (state.view !== 'home') { setState({ view: 'home', activeCat: label, page: 1 }); return; }
+      setState({ activeCat: label, page: 1 });
       document.getElementById('cat-chips-section')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
     function openCategories() {
@@ -380,9 +389,11 @@ const homeJsonLd = JSON.stringify({
     }
     function doClearSearch() {
       state.searchQuery = '';
+      state.page = 1;
+      state.noScroll = true;
+      render();
       const si = document.getElementById('search-input');
       if (si) { si.value = ''; si.focus(); }
-      applyFilters();
     }
     function showToast(msg) {
       const t = document.getElementById('toast');
@@ -403,6 +414,9 @@ const homeJsonLd = JSON.stringify({
       const todayBlitz = blitzes[todayBlitzId];
       const filtered = cards.filter(c => c.categories.includes(state.activeCat));
       const featuredCards = cards.filter(c => c.type === 'personality');
+      const isSearching = !!state.searchQuery.trim();
+      const visibleCards = isSearching ? filtered : filtered.slice(0, state.page * PAGE_SIZE);
+      const remaining = filtered.length - visibleCards.length;
 
       return `
         <div style="animation:cq-fadein .18s ease both;">
@@ -494,7 +508,7 @@ const homeJsonLd = JSON.stringify({
               <span class="live-badge">LIVE</span>
             </div>
             <div class="quiz-grid">
-              ${filtered.map(card => `
+              ${visibleCards.map(card => `
                 <a href="${card.type === 'blitz' ? '/blitz/' : card.type === 'compare' ? '/compare/' : '/quiz/'}${e(card.id)}"
                    class="quiz-card"
                    data-searchable="${e((card.title + ' ' + card.cat + ' ' + (card.categories || []).join(' ')).toLowerCase())}"
@@ -514,6 +528,12 @@ const homeJsonLd = JSON.stringify({
                   </div>
                 </a>
               `).join('')}
+
+              ${remaining > 0 ? `
+              <div class="load-more-wrap">
+                <button class="btn-load-more" data-action="load-more">LOAD MORE ↓</button>
+                <span class="load-more-count">${remaining} MORE QUIZ${remaining !== 1 ? 'ZES' : ''} TO EXPLORE</span>
+              </div>` : ''}
 
               <!-- NO RESULTS STATE -->
               <div class="no-results" id="no-results">
@@ -568,7 +588,8 @@ const homeJsonLd = JSON.stringify({
     function render() {
       const app = document.getElementById('app');
       app.innerHTML = renderHome();
-      window.scrollTo({ top: 0, behavior: 'instant' });
+      if (!state.noScroll) window.scrollTo({ top: 0, behavior: 'instant' });
+      state.noScroll = false;
 
       // Re-apply search after DOM rebuild
       const si = document.getElementById('search-input');
@@ -592,14 +613,23 @@ const homeJsonLd = JSON.stringify({
         case 'browse':     document.getElementById('cat-chips-section')?.scrollIntoView({ behavior: 'smooth' }); break;
         case 'filter':     filterCat(el.dataset.cat); break;
         case 'categories': openCategories(); break;
+        case 'load-more':  setState({ page: state.page + 1, noScroll: true }); break;
       }
     });
 
-    // Live search (no re-render)
+    // Live search — re-render when crossing search/no-search boundary, otherwise DOM-filter only
     document.addEventListener('input', (ev) => {
       if (ev.target.id !== 'search-input') return;
+      const wasSearching = !!state.searchQuery;
       state.searchQuery = ev.target.value;
-      applyFilters();
+      const isSearching = !!state.searchQuery;
+      state.noScroll = true;
+      if (wasSearching !== isSearching) {
+        state.page = 1;
+        render();
+      } else {
+        applyFilters();
+      }
     });
 
     // ── HEADER BUTTONS ─────────────────────────────────────────────────────────

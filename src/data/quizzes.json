@@ -4965,5 +4965,3485 @@
         "desc": "Morocco became the first African nation to reach a World Cup semi-final in 2022 — not by luck, but by belief, organization, and sheer will. You never need to be the favourite. You just need to show up and let everyone else underestimate you."
       }
     }
+  },
+  "pizza-order": {
+    "title": "What Your Pizza Order Says About You",
+    "cover": "pizza slices",
+    "cat": "PERSONALITY · FOOD",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "412K",
+    "desc": "Answer 5 questions about your life choices and we'll expose your entire personality through pizza toppings. The algorithm is always right.",
+    "questions": [
+      {
+        "text": "It's group project day. You:",
+        "options": [
+          {
+            "label": "Take over and do it all yourself, obviously",
+            "key": "supreme"
+          },
+          {
+            "label": "Keep it simple, just do your part",
+            "key": "plain"
+          },
+          {
+            "label": "Suggest adding extra everything to the scope",
+            "key": "extra"
+          },
+          {
+            "label": "Quietly finish before anyone else wakes up",
+            "key": "thin"
+          }
+        ]
+      },
+      {
+        "text": "Your ideal Saturday plan:",
+        "options": [
+          {
+            "label": "Packed schedule from 8am to midnight",
+            "key": "supreme"
+          },
+          {
+            "label": "Absolutely nothing, and defending that choice",
+            "key": "plain"
+          },
+          {
+            "label": "Too much of everything simultaneously",
+            "key": "extra"
+          },
+          {
+            "label": "Aesthetic walk, matcha, gone by 2pm",
+            "key": "thin"
+          }
+        ]
+      },
+      {
+        "text": "Your group chat energy:",
+        "options": [
+          {
+            "label": "Adding reactions to everything, always",
+            "key": "extra"
+          },
+          {
+            "label": "Read receipts, no response, unbothered",
+            "key": "thin"
+          },
+          {
+            "label": "The one actually organizing the plans",
+            "key": "supreme"
+          },
+          {
+            "label": "Polite, present, maybe one emoji",
+            "key": "plain"
+          }
+        ]
+      },
+      {
+        "text": "When something goes wrong you:",
+        "options": [
+          {
+            "label": "Spiral immediately and tell everyone",
+            "key": "extra"
+          },
+          {
+            "label": "Say 'it's fine' until it is fine",
+            "key": "plain"
+          },
+          {
+            "label": "Already had three backup plans",
+            "key": "supreme"
+          },
+          {
+            "label": "Just leave quietly and deal with it alone",
+            "key": "thin"
+          }
+        ]
+      },
+      {
+        "text": "Pick your vibe:",
+        "options": [
+          {
+            "label": "More is more is more",
+            "key": "extra"
+          },
+          {
+            "label": "Classic never dies",
+            "key": "plain"
+          },
+          {
+            "label": "I can do it better",
+            "key": "supreme"
+          },
+          {
+            "label": "Less is everything",
+            "key": "thin"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "extra": {
+        "name": "EXTRA CHEESE",
+        "kind": "The Maximalist",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "28%",
+        "tagline": "Too much? There is no such thing.",
+        "traits": [
+          "Dramatic",
+          "Generous",
+          "Extremely Loud"
+        ],
+        "desc": "Everything you do is at 200%. Your texts are essays, your reactions are full-body events, and your playlists are 14 hours long. People adore you for it even when it's exhausting."
+      },
+      "plain": {
+        "name": "PLAIN CHEESE",
+        "kind": "The Classicist",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "22%",
+        "tagline": "Unbothered since birth.",
+        "traits": [
+          "Reliable",
+          "Chill",
+          "Deceptively Wise"
+        ],
+        "desc": "You don't need the bells and whistles and you are correct. While everyone else is overcorrecting, you are simply thriving on a foundation of good basics and zero drama."
+      },
+      "supreme": {
+        "name": "SUPREME LOADED",
+        "kind": "The CEO in Training",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "27%",
+        "tagline": "Why have one thing when you can have everything?",
+        "traits": [
+          "Ambitious",
+          "Overwhelming",
+          "Results-Oriented"
+        ],
+        "desc": "You want everything and you want it optimized. You've already decided you're right, written the follow-up email, and started the retrospective. Respect, honestly."
+      },
+      "thin": {
+        "name": "THIN CRUST SNOB",
+        "kind": "The Aesthetic Minimalist",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "23%",
+        "tagline": "You have taste and you're not afraid to make it everyone's problem.",
+        "traits": [
+          "Refined",
+          "Selective",
+          "Chronically Online"
+        ],
+        "desc": "You care deeply about the right things and couldn't care less about the rest. Your opinions are specific, your aesthetic is curated, and your secret is that you're always right."
+      }
+    }
+  },
+  "travel-style": {
+    "title": "What Type of Traveler Are You?",
+    "cover": "world map",
+    "cat": "PERSONALITY · TRAVEL",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "289K",
+    "desc": "5 questions to determine whether you're a spreadsheet tourist or a 'figure it out at the airport' type. No judgment. Some judgment.",
+    "questions": [
+      {
+        "text": "You booked the trip. Now you:",
+        "options": [
+          {
+            "label": "Build a 47-tab spreadsheet with daily itinerary",
+            "key": "planner"
+          },
+          {
+            "label": "Google the vibe, wing the rest",
+            "key": "adventurer"
+          },
+          {
+            "label": "Research resorts and nothing else",
+            "key": "beach"
+          },
+          {
+            "label": "Immediately start regretting it",
+            "key": "homebody"
+          }
+        ]
+      },
+      {
+        "text": "First thing you do on arrival:",
+        "options": [
+          {
+            "label": "Check off item one on the list",
+            "key": "planner"
+          },
+          {
+            "label": "Walk until something interesting happens",
+            "key": "adventurer"
+          },
+          {
+            "label": "Find the pool and not leave it",
+            "key": "beach"
+          },
+          {
+            "label": "Miss your own bed",
+            "key": "homebody"
+          }
+        ]
+      },
+      {
+        "text": "Your carry-on is:",
+        "options": [
+          {
+            "label": "Color-coded, labeled, exactly 7kg",
+            "key": "planner"
+          },
+          {
+            "label": "Chaotic but somehow everything fits",
+            "key": "adventurer"
+          },
+          {
+            "label": "Sunscreen, book, more sunscreen",
+            "key": "beach"
+          },
+          {
+            "label": "Overpacked comfort items",
+            "key": "homebody"
+          }
+        ]
+      },
+      {
+        "text": "Best part of any trip:",
+        "options": [
+          {
+            "label": "Executing the plan perfectly",
+            "key": "planner"
+          },
+          {
+            "label": "The story you didn't expect to have",
+            "key": "adventurer"
+          },
+          {
+            "label": "Golden hour by the water, no thoughts",
+            "key": "beach"
+          },
+          {
+            "label": "Coming home honestly",
+            "key": "homebody"
+          }
+        ]
+      },
+      {
+        "text": "You see an unplanned detour. You:",
+        "options": [
+          {
+            "label": "It was on the list actually",
+            "key": "planner"
+          },
+          {
+            "label": "You were born for this moment",
+            "key": "adventurer"
+          },
+          {
+            "label": "Only if it leads to a beach",
+            "key": "beach"
+          },
+          {
+            "label": "No",
+            "key": "homebody"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "planner": {
+        "name": "THE PLANNER",
+        "kind": "The Itinerary Architect",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "26%",
+        "tagline": "Your Google Sheet has sub-sheets.",
+        "traits": [
+          "Prepared",
+          "Low-Key Controlling",
+          "Gets Stuff Done"
+        ],
+        "desc": "You've pre-booked the restaurant that takes 6 weeks to get into. Your trip is a masterpiece of logistics. People complain about your spreadsheet until the hotel upgrade comes through."
+      },
+      "adventurer": {
+        "name": "THE ADVENTURER",
+        "kind": "The Chaos Tourist",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "24%",
+        "tagline": "You find the best things by getting gloriously lost.",
+        "traits": [
+          "Spontaneous",
+          "Slightly Unhinged",
+          "Great Stories"
+        ],
+        "desc": "You have been adopted by a local family, accidentally joined a wedding, and found a hidden beach that isn't on any map. Your travel insurance has been used. It was worth it."
+      },
+      "beach": {
+        "name": "THE BEACH BABE",
+        "kind": "The Horizontal Traveler",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "28%",
+        "tagline": "You did not cross an ocean to look at things.",
+        "traits": [
+          "Deeply Relaxed",
+          "Sun-Seeking",
+          "No FOMO"
+        ],
+        "desc": "You've identified the perfect lounge chair and you will not be moving from it until the flight home. Sightseeing is for people who don't know how to vacation properly."
+      },
+      "homebody": {
+        "name": "THE RELUCTANT TOURIST",
+        "kind": "The Accidental Traveler",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "22%",
+        "tagline": "You love the idea of travel more than the travel itself.",
+        "traits": [
+          "Cozy",
+          "Self-Aware",
+          "Honest"
+        ],
+        "desc": "You bought the ticket in a moment of inspiration and have spent every day since wishing you were in your own bed with your own snacks watching your own shows. Still had fun though."
+      }
+    }
+  },
+  "spongebob-character": {
+    "title": "Which SpongeBob Character Are You?",
+    "cover": "bikini bottom",
+    "cat": "PERSONALITY · POP CULTURE",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "1.1M",
+    "desc": "5 deeply unscientific questions to determine which Bikini Bottom resident you are. This is legally binding.",
+    "questions": [
+      {
+        "text": "It's Monday morning. You:",
+        "options": [
+          {
+            "label": "Jump out of bed ready to work, genuinely",
+            "key": "sponge"
+          },
+          {
+            "label": "Don't know what day it is and that's fine",
+            "key": "pat"
+          },
+          {
+            "label": "Already annoyed at everyone around you",
+            "key": "squid"
+          },
+          {
+            "label": "Have been awake since 5am working on a project",
+            "key": "sandy"
+          }
+        ]
+      },
+      {
+        "text": "Your friends would describe you as:",
+        "options": [
+          {
+            "label": "Enthusiastic to the point of exhaustion",
+            "key": "sponge"
+          },
+          {
+            "label": "Lovable but genuinely bewildering",
+            "key": "pat"
+          },
+          {
+            "label": "Talented, underappreciated, you've told them",
+            "key": "squid"
+          },
+          {
+            "label": "The one who actually has their life together",
+            "key": "sandy"
+          }
+        ]
+      },
+      {
+        "text": "When something goes wrong:",
+        "options": [
+          {
+            "label": "Cry, recover, try again within 10 minutes",
+            "key": "sponge"
+          },
+          {
+            "label": "Didn't notice anything went wrong",
+            "key": "pat"
+          },
+          {
+            "label": "Blame external circumstances immediately",
+            "key": "squid"
+          },
+          {
+            "label": "Diagnose the root cause and fix it",
+            "key": "sandy"
+          }
+        ]
+      },
+      {
+        "text": "Your hobbies:",
+        "options": [
+          {
+            "label": "Karate, jellyfishing, impressing everyone",
+            "key": "sandy"
+          },
+          {
+            "label": "Cooking, cleaning, being employee of the month",
+            "key": "sponge"
+          },
+          {
+            "label": "Clarinet. Also clarinet. More clarinet.",
+            "key": "squid"
+          },
+          {
+            "label": "Sitting under a rock mostly",
+            "key": "pat"
+          }
+        ]
+      },
+      {
+        "text": "Pick a sentence you've definitely said:",
+        "options": [
+          {
+            "label": "I'm ready, I'm ready, I'm READY",
+            "key": "sponge"
+          },
+          {
+            "label": "Is mayonnaise an instrument?",
+            "key": "pat"
+          },
+          {
+            "label": "Finally, some recognition for my talents",
+            "key": "squid"
+          },
+          {
+            "label": "Y'all need to focus up right now",
+            "key": "sandy"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "sponge": {
+        "name": "SPONGEBOB",
+        "kind": "The Eternal Optimist",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "27%",
+        "tagline": "You are a fry cook and a lifestyle.",
+        "traits": [
+          "Enthusiastic",
+          "Relentless",
+          "Somehow Endearing"
+        ],
+        "desc": "You feel things very loudly and love your job and cry a normal amount. You are inexplicably good at everything you try and people are both inspired and slightly overwhelmed by you."
+      },
+      "pat": {
+        "name": "PATRICK STAR",
+        "kind": "The Unbothered Genius",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "25%",
+        "tagline": "Wisdom wrapped in confusion.",
+        "traits": [
+          "Carefree",
+          "Occasionally Profound",
+          "Rock-Adjacent"
+        ],
+        "desc": "You seem clueless but occasionally drop sentences that crack reality open. You live simply, love fully, and do not understand why everyone is always so stressed about things."
+      },
+      "squid": {
+        "name": "SQUIDWARD",
+        "kind": "The Misunderstood Artist",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "24%",
+        "tagline": "Unappreciated in your time.",
+        "traits": [
+          "Talented",
+          "Dramatic",
+          "Chronically Done"
+        ],
+        "desc": "You have a gift, a vision, and zero patience for people who can't see it. You're not grumpy, you're just right about everything and waiting for the world to catch up."
+      },
+      "sandy": {
+        "name": "SANDY CHEEKS",
+        "kind": "The Overachiever",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "24%",
+        "tagline": "You came here from Texas and you're winning.",
+        "traits": [
+          "Capable",
+          "Competitive",
+          "Slightly Intimidating"
+        ],
+        "desc": "You have a PhD, a karate black belt, and a tree dome. You set goals in the morning and achieve them before lunch. You are everyone's role model whether they asked or not."
+      }
+    }
+  },
+  "morning-type": {
+    "title": "Are You a Morning Person or Night Owl?",
+    "cover": "sun moon",
+    "cat": "PERSONALITY · LIFESTYLE",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "678K",
+    "desc": "Your sleep schedule says more about your personality than your horoscope. This quiz will expose it in 5 questions.",
+    "questions": [
+      {
+        "text": "Your alarm goes off. You:",
+        "options": [
+          {
+            "label": "Already awake, been up for an hour",
+            "key": "sunrise"
+          },
+          {
+            "label": "Hit snooze exactly 3 times, precise",
+            "key": "zombie"
+          },
+          {
+            "label": "Don't have an alarm, you have a system",
+            "key": "napper"
+          },
+          {
+            "label": "Go back to sleep until it matters",
+            "key": "owl"
+          }
+        ]
+      },
+      {
+        "text": "Your most productive hours:",
+        "options": [
+          {
+            "label": "5-9am, before the world ruins everything",
+            "key": "sunrise"
+          },
+          {
+            "label": "Midnight to 3am, obviously",
+            "key": "owl"
+          },
+          {
+            "label": "Whenever I've had exactly enough rest",
+            "key": "napper"
+          },
+          {
+            "label": "Unclear, productivity is a construct",
+            "key": "zombie"
+          }
+        ]
+      },
+      {
+        "text": "A 7am meeting gets added to your calendar:",
+        "options": [
+          {
+            "label": "Perfect, I've already done three things",
+            "key": "sunrise"
+          },
+          {
+            "label": "You schedule a decoy nap before it",
+            "key": "napper"
+          },
+          {
+            "label": "You see this as an act of war",
+            "key": "owl"
+          },
+          {
+            "label": "You attend but you are not there",
+            "key": "zombie"
+          }
+        ]
+      },
+      {
+        "text": "Your relationship with coffee:",
+        "options": [
+          {
+            "label": "It's a ritual not a dependency, there's a difference",
+            "key": "sunrise"
+          },
+          {
+            "label": "IV drip if I could. I'm looking into it.",
+            "key": "zombie"
+          },
+          {
+            "label": "Tea actually, and I'm at peace with that",
+            "key": "napper"
+          },
+          {
+            "label": "Whatever gets me to midnight",
+            "key": "owl"
+          }
+        ]
+      },
+      {
+        "text": "Best time to have a deep conversation:",
+        "options": [
+          {
+            "label": "Morning walk, fresh mind, peak clarity",
+            "key": "sunrise"
+          },
+          {
+            "label": "2am, when the truth comes out",
+            "key": "owl"
+          },
+          {
+            "label": "After a nap, always after a nap",
+            "key": "napper"
+          },
+          {
+            "label": "Never ideally but I can be flexible",
+            "key": "zombie"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "sunrise": {
+        "name": "SUNRISE GRINDER",
+        "kind": "The Morning Menace",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "22%",
+        "tagline": "Already journaled, exercised, and meal-prepped before you read this.",
+        "traits": [
+          "Disciplined",
+          "Slightly Smug",
+          "Genuinely Impressive"
+        ],
+        "desc": "You greet 6am like an old friend. Your mornings are sacred, structured, and slightly intimidating. People hate you a little but also want to be you and that's the real power."
+      },
+      "owl": {
+        "name": "NIGHT OWL",
+        "kind": "The Midnight Creative",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "28%",
+        "tagline": "You come alive when the sensible people go to bed.",
+        "traits": [
+          "Creative",
+          "Nocturnal",
+          "Romantically Delusional"
+        ],
+        "desc": "Your best ideas arrive at 1am. Your best work happens at 2am. Your best sleep happens at 4am and then through two alarms. You are a menace to morning meetings and an icon everywhere else."
+      },
+      "napper": {
+        "name": "CHAOS NAPPER",
+        "kind": "The Strategic Sleeper",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "25%",
+        "tagline": "Sleep is a tool and you have mastered it.",
+        "traits": [
+          "Adaptive",
+          "Rested",
+          "Wildly Unpredictable"
+        ],
+        "desc": "You can fall asleep anywhere, wake up fully functional, and nap between obligations like a professional. Your sleep schedule exists on its own terms and it works somehow."
+      },
+      "zombie": {
+        "name": "SLEEP-DEPRIVED ZOMBIE",
+        "kind": "The Caffeinated Survivor",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "25%",
+        "tagline": "Alive technically. Operational eventually.",
+        "traits": [
+          "Relatable",
+          "Perpetually Tired",
+          "Running on Fumes"
+        ],
+        "desc": "You are not a morning person or a night owl. You are a tired person making it work. Somehow you're still showing up, still delivering, still there. Respect. Sleep more."
+      }
+    }
+  },
+  "fast-food-chain": {
+    "title": "Which Fast Food Chain Are You?",
+    "cover": "fast food bags",
+    "cat": "PERSONALITY · FOOD",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "934K",
+    "desc": "5 questions that will determine which fast food empire you are at your core. The results may surprise you. They won't.",
+    "questions": [
+      {
+        "text": "Your leadership style:",
+        "options": [
+          {
+            "label": "Everywhere at once, consistent results",
+            "key": "mcdo"
+          },
+          {
+            "label": "Chaotic but everyone is obsessed",
+            "key": "taco"
+          },
+          {
+            "label": "High standards, no exceptions, good vibes",
+            "key": "chick"
+          },
+          {
+            "label": "Regional legend, fiercely loyal following",
+            "key": "innout"
+          }
+        ]
+      },
+      {
+        "text": "Pick your late-night energy:",
+        "options": [
+          {
+            "label": "24-hour legend, always there, no questions",
+            "key": "mcdo"
+          },
+          {
+            "label": "Fourth meal type energy, unhinged hours",
+            "key": "taco"
+          },
+          {
+            "label": "Closed, actually. Sorry. See you tomorrow.",
+            "key": "chick"
+          },
+          {
+            "label": "Drive-through line going around the building",
+            "key": "innout"
+          }
+        ]
+      },
+      {
+        "text": "How you handle a bad day:",
+        "options": [
+          {
+            "label": "Reliable comfort, classic choices, fries",
+            "key": "mcdo"
+          },
+          {
+            "label": "Something absurd with too many sauces",
+            "key": "taco"
+          },
+          {
+            "label": "Everything will be okay, my pleasure",
+            "key": "chick"
+          },
+          {
+            "label": "Animal style. You know what that means.",
+            "key": "innout"
+          }
+        ]
+      },
+      {
+        "text": "Your menu philosophy:",
+        "options": [
+          {
+            "label": "Something for everyone, all the time",
+            "key": "mcdo"
+          },
+          {
+            "label": "Creative chaos that somehow always works",
+            "key": "taco"
+          },
+          {
+            "label": "Few things done exceptionally well",
+            "key": "innout"
+          },
+          {
+            "label": "Simple, fresh, the chicken is the point",
+            "key": "chick"
+          }
+        ]
+      },
+      {
+        "text": "Your fans are:",
+        "options": [
+          {
+            "label": "Literally everyone at some point",
+            "key": "mcdo"
+          },
+          {
+            "label": "Ride-or-die and a little chaotic themselves",
+            "key": "taco"
+          },
+          {
+            "label": "Extremely loyal, slightly evangelical",
+            "key": "chick"
+          },
+          {
+            "label": "Regional cult. Visiting like a pilgrimage.",
+            "key": "innout"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "mcdo": {
+        "name": "McDONALD'S",
+        "kind": "The Universal Constant",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "28%",
+        "tagline": "You are everywhere and somehow still relevant.",
+        "traits": [
+          "Consistent",
+          "Adaptable",
+          "Universally Known"
+        ],
+        "desc": "You are the baseline. The reference point. Every comparison eventually circles back to you. You've had eras, updated your look, survived discourse, and you are still here. Iconic."
+      },
+      "taco": {
+        "name": "TACO BELL",
+        "kind": "The Chaotic Innovator",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "25%",
+        "tagline": "You invented things that shouldn't work and they worked.",
+        "traits": [
+          "Creative",
+          "Unhinged",
+          "Delightfully Weird"
+        ],
+        "desc": "You put nacho cheese in something that didn't need it and made a culinary masterpiece. Your ideas are chaotic, your execution is bold, and your fans are aggressively loyal at 1am."
+      },
+      "chick": {
+        "name": "CHICK-FIL-A",
+        "kind": "The Polished Perfectionist",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "24%",
+        "tagline": "My pleasure. And you mean it.",
+        "traits": [
+          "High Standards",
+          "Genuinely Warm",
+          "Cult Following"
+        ],
+        "desc": "You do one thing and you do it so well that people will wait in a line that wraps around the building. You are polished, principled, and your customer service is legendary and slightly unnerving."
+      },
+      "innout": {
+        "name": "IN-N-OUT",
+        "kind": "The Regional Icon",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "23%",
+        "tagline": "People who've had you will not stop telling people about you.",
+        "traits": [
+          "Cult Status",
+          "Minimal",
+          "West Coast Energy"
+        ],
+        "desc": "You are simple, fresh, and perfect. People who know you are borderline religious about you. People who haven't are confused by the hype until the first bite. Then they get it."
+      }
+    }
+  },
+  "phone-battery": {
+    "title": "What Does Your Phone Battery % Say About You?",
+    "cover": "phone battery",
+    "cat": "PERSONALITY · GEN-Z",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "567K",
+    "desc": "Your relationship with your phone battery is a personality test. 5 questions to confirm what we already know about you.",
+    "questions": [
+      {
+        "text": "Your phone hits 20%. You:",
+        "options": [
+          {
+            "label": "Plug in immediately, this is a crisis",
+            "key": "anxious"
+          },
+          {
+            "label": "Don't notice until it's actually dead",
+            "key": "yolo"
+          },
+          {
+            "label": "You've been managing this since 40%",
+            "key": "charged"
+          },
+          {
+            "label": "Welcome to my daily operating condition",
+            "key": "warrior"
+          }
+        ]
+      },
+      {
+        "text": "Chargers in your life:",
+        "options": [
+          {
+            "label": "One in every room plus a portable one",
+            "key": "charged"
+          },
+          {
+            "label": "Three in your bag just in case",
+            "key": "anxious"
+          },
+          {
+            "label": "Somewhere. Probably.",
+            "key": "yolo"
+          },
+          {
+            "label": "The fraying one that works if you angle it",
+            "key": "warrior"
+          }
+        ]
+      },
+      {
+        "text": "Low battery notification:",
+        "options": [
+          {
+            "label": "Already dealt with, thanks",
+            "key": "charged"
+          },
+          {
+            "label": "Heart rate spike, immediate panic",
+            "key": "anxious"
+          },
+          {
+            "label": "A useful heads-up sometimes",
+            "key": "warrior"
+          },
+          {
+            "label": "You dismissed this, moving on",
+            "key": "yolo"
+          }
+        ]
+      },
+      {
+        "text": "Your screen-on time is:",
+        "options": [
+          {
+            "label": "Acceptable and I've checked",
+            "key": "charged"
+          },
+          {
+            "label": "A number I'll never say out loud",
+            "key": "yolo"
+          },
+          {
+            "label": "The reason I need the portable charger",
+            "key": "anxious"
+          },
+          {
+            "label": "Irrelevant, I survive on necessity",
+            "key": "warrior"
+          }
+        ]
+      },
+      {
+        "text": "Someone asks to borrow your charger:",
+        "options": [
+          {
+            "label": "Here are three options, take your pick",
+            "key": "charged"
+          },
+          {
+            "label": "I need it back in exactly four minutes",
+            "key": "anxious"
+          },
+          {
+            "label": "Mine? Somewhere. Good luck.",
+            "key": "yolo"
+          },
+          {
+            "label": "I'll find the cable if you have the brick",
+            "key": "warrior"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "anxious": {
+        "name": "THE 20% WARRIOR",
+        "kind": "The Battery Anxiety Haver",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "30%",
+        "tagline": "Low battery is a personal attack.",
+        "traits": [
+          "Prepared",
+          "Slightly Panicked",
+          "Always Has a Charger"
+        ],
+        "desc": "80% is your baseline and 20% is a code red. You have charged your phone in a parking lot. You have borrowed a charger from a stranger. You have plans in place and they run on full battery."
+      },
+      "yolo": {
+        "name": "THE YOLO DRAINER",
+        "kind": "The Fearless One",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "23%",
+        "tagline": "Your phone dies and you simply continue existing.",
+        "traits": [
+          "Unbothered",
+          "Present",
+          "Mysteriously Okay"
+        ],
+        "desc": "You let it die and somehow the world doesn't end. You return after two hours offline looking rested. People text you frantically. You respond when you can. You are free."
+      },
+      "charged": {
+        "name": "ALWAYS 100%",
+        "kind": "The Prepared Professional",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "22%",
+        "tagline": "You have never once felt low battery anxiety.",
+        "traits": [
+          "Organized",
+          "Reliable",
+          "Living in the Future"
+        ],
+        "desc": "You charge overnight, top up at lunch, and leave the house at 98%. Your cable is coiled neatly. Your battery health is 100%. You are calm because you are prepared. Teach us."
+      },
+      "warrior": {
+        "name": "1% CHAMPION",
+        "kind": "The Edge-of-Death Survivor",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "25%",
+        "tagline": "You thrive on the edge and the edge is 3%.",
+        "traits": [
+          "Risk Tolerant",
+          "Adaptable",
+          "Chronically Low"
+        ],
+        "desc": "You have sent important emails at 2%. You have navigated without GPS at 1%. Your phone has died mid-sentence and you rebooted and continued without mentioning it. You are built different."
+      }
+    }
+  },
+  "disney-princess": {
+    "title": "Which Disney Princess Are You?",
+    "cover": "magic mirror",
+    "cat": "PERSONALITY · DISNEY",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "1.4M",
+    "desc": "5 chaotic questions to determine which Disney princess energy you carry. The algorithm consulted the magic mirror.",
+    "questions": [
+      {
+        "text": "Your approach to a problem:",
+        "options": [
+          {
+            "label": "Collect friends along the way who can help",
+            "key": "moana"
+          },
+          {
+            "label": "Rebel against whoever created it",
+            "key": "ariel"
+          },
+          {
+            "label": "Challenge it to a fight if necessary",
+            "key": "mulan"
+          },
+          {
+            "label": "Paint it, write it, make something of it",
+            "key": "rapunzel"
+          }
+        ]
+      },
+      {
+        "text": "Your villain is:",
+        "options": [
+          {
+            "label": "Your own self-doubt",
+            "key": "moana"
+          },
+          {
+            "label": "Anyone who tells you no",
+            "key": "ariel"
+          },
+          {
+            "label": "The people who underestimate you",
+            "key": "mulan"
+          },
+          {
+            "label": "The person who kept you small",
+            "key": "rapunzel"
+          }
+        ]
+      },
+      {
+        "text": "Your sidekick energy:",
+        "options": [
+          {
+            "label": "A pig and a demigod",
+            "key": "moana"
+          },
+          {
+            "label": "A crab with opinions",
+            "key": "ariel"
+          },
+          {
+            "label": "A dragon who believes in you",
+            "key": "mulan"
+          },
+          {
+            "label": "A chameleon and a horse with a grudge",
+            "key": "rapunzel"
+          }
+        ]
+      },
+      {
+        "text": "What do you actually want:",
+        "options": [
+          {
+            "label": "To find my purpose beyond what's expected",
+            "key": "moana"
+          },
+          {
+            "label": "To be part of their world, that world specifically",
+            "key": "ariel"
+          },
+          {
+            "label": "To prove them wrong, gloriously",
+            "key": "mulan"
+          },
+          {
+            "label": "To see the floating lights and then everything",
+            "key": "rapunzel"
+          }
+        ]
+      },
+      {
+        "text": "Your weapon:",
+        "options": [
+          {
+            "label": "The ocean itself, plus the heart of Te Fiti",
+            "key": "moana"
+          },
+          {
+            "label": "Curiosity and a collection of things",
+            "key": "ariel"
+          },
+          {
+            "label": "A sword and disguise and zero mercy",
+            "key": "mulan"
+          },
+          {
+            "label": "A frying pan and 70 feet of hair",
+            "key": "rapunzel"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "ariel": {
+        "name": "ARIEL",
+        "kind": "The Collector of Things",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "26%",
+        "tagline": "You want to be where the people are.",
+        "traits": [
+          "Curious",
+          "Impulsive",
+          "Dangerously Optimistic"
+        ],
+        "desc": "You have traded something important for a dream before. You collect experiences and objects and songs. You fall in love with concepts and worlds and you will swim through anything to get there."
+      },
+      "mulan": {
+        "name": "MULAN",
+        "kind": "The Underestimated Legend",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "24%",
+        "tagline": "You didn't do it for the crown. You did it anyway.",
+        "traits": [
+          "Determined",
+          "Quietly Formidable",
+          "Zero Patience for Nonsense"
+        ],
+        "desc": "You were told you couldn't and you memorized that information and used it as fuel. You outperformed everyone, saved the country, and declined the easy reward. An icon of substance."
+      },
+      "moana": {
+        "name": "MOANA",
+        "kind": "The Called One",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "26%",
+        "tagline": "The ocean chose you and you chose it back.",
+        "traits": [
+          "Purposeful",
+          "Brave",
+          "Occasionally Screaming Into the Wind"
+        ],
+        "desc": "You feel called to something bigger than where you are. You go toward it even when it's terrifying. The ocean literally responds to you and your hair is doing incredible things in this wind."
+      },
+      "rapunzel": {
+        "name": "RAPUNZEL",
+        "kind": "The Late Bloomer",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "24%",
+        "tagline": "You were made for more and you are finally going.",
+        "traits": [
+          "Creative",
+          "Joyful",
+          "Quietly Dangerous with a Frying Pan"
+        ],
+        "desc": "You've been waiting for your moment and when it arrives you throw yourself into it with paint on your hands and a frying pan and impossible energy. You contain multitudes. You are unstoppable now."
+      }
+    }
+  },
+  "workout-style": {
+    "title": "What Type of Gym-Goer Are You?",
+    "cover": "gym weights",
+    "cat": "PERSONALITY · LIFESTYLE",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "345K",
+    "desc": "5 questions to identify your gym personality. Somewhere between 'genuinely fit' and 'used the sauna once'.",
+    "questions": [
+      {
+        "text": "You walk into the gym. First stop:",
+        "options": [
+          {
+            "label": "Treadmill. Directly. Don't talk to me.",
+            "key": "cardio"
+          },
+          {
+            "label": "Squat rack. It's occupied. I will wait.",
+            "key": "lifter"
+          },
+          {
+            "label": "Yoga studio, mats, intention-setting vibes",
+            "key": "yogi"
+          },
+          {
+            "label": "A lap to assess the situation",
+            "key": "tourist"
+          }
+        ]
+      },
+      {
+        "text": "Your gym playlist:",
+        "options": [
+          {
+            "label": "True crime podcast at exactly this pace",
+            "key": "cardio"
+          },
+          {
+            "label": "Heavy metal that scares people near you",
+            "key": "lifter"
+          },
+          {
+            "label": "Ambient sound bowl something",
+            "key": "yogi"
+          },
+          {
+            "label": "Whatever was already playing tbh",
+            "key": "tourist"
+          }
+        ]
+      },
+      {
+        "text": "Rest day looks like:",
+        "options": [
+          {
+            "label": "Active recovery run. Just a short one.",
+            "key": "cardio"
+          },
+          {
+            "label": "Food prep. Protein. More protein.",
+            "key": "lifter"
+          },
+          {
+            "label": "Meditation and light stretching and tea",
+            "key": "yogi"
+          },
+          {
+            "label": "The gym will be there tomorrow",
+            "key": "tourist"
+          }
+        ]
+      },
+      {
+        "text": "Someone asks for a spot:",
+        "options": [
+          {
+            "label": "Sure but don't slow me down mid-interval",
+            "key": "cardio"
+          },
+          {
+            "label": "Already by their side before they finish asking",
+            "key": "lifter"
+          },
+          {
+            "label": "I can assist from a grounding position",
+            "key": "yogi"
+          },
+          {
+            "label": "You figure out what spotting means right now",
+            "key": "tourist"
+          }
+        ]
+      },
+      {
+        "text": "Your fitness goal:",
+        "options": [
+          {
+            "label": "Outrun the existential dread, literally",
+            "key": "cardio"
+          },
+          {
+            "label": "Progressive overload until I reach the goal",
+            "key": "lifter"
+          },
+          {
+            "label": "Mind-body connection and actual peace",
+            "key": "yogi"
+          },
+          {
+            "label": "Just being here counts for something",
+            "key": "tourist"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "cardio": {
+        "name": "THE CARDIO BUNNY",
+        "kind": "The Treadmill Philosopher",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "27%",
+        "tagline": "You process your feelings at 8.5km/h.",
+        "traits": [
+          "Enduring",
+          "Introspective",
+          "Slightly Competitive with Past Self"
+        ],
+        "desc": "You didn't start cardio to run from your problems but you stayed for exactly that reason. You have solved every issue in your life on a treadmill and your resting heart rate is excellent."
+      },
+      "lifter": {
+        "name": "THE POWERLIFTER",
+        "kind": "The Serious One",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "24%",
+        "tagline": "You have a program, a log, and a PR you're chasing.",
+        "traits": [
+          "Disciplined",
+          "Data-Driven",
+          "Definitely Has a Protein Shake"
+        ],
+        "desc": "You came with a plan and you're executing it. You know your maxes, your rep ranges, your rest times. People instinctively move out of your way and you appreciate the efficiency."
+      },
+      "yogi": {
+        "name": "THE YOGA DEVOTEE",
+        "kind": "The Mindful One",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "24%",
+        "tagline": "Your gym bag contains essential oils.",
+        "traits": [
+          "Centered",
+          "Flexible Literally and Philosophically",
+          "Slightly Judging Your Form"
+        ],
+        "desc": "You came for the stretch and stayed for the transformation. You breathe intentionally, set intentions, and have left the gym feeling genuinely better about existence. The mat is sacred."
+      },
+      "tourist": {
+        "name": "THE GYM TOURIST",
+        "kind": "The Occasionally Present",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "25%",
+        "tagline": "The membership is an act of optimism.",
+        "traits": [
+          "Aspirational",
+          "Consistent About Inconsistency",
+          "Self-Aware"
+        ],
+        "desc": "You go when you go and you don't go when you don't. The membership fee is a donation to future you. You've used the sauna once. It was transcendent. You'll be back eventually."
+      }
+    }
+  },
+  "season-match": {
+    "title": "Which Season Matches Your Personality?",
+    "cover": "four seasons",
+    "cat": "PERSONALITY · LIFESTYLE",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "723K",
+    "desc": "Your birth month is irrelevant. Your energy tells the real story. 5 questions to find your actual season.",
+    "questions": [
+      {
+        "text": "Your ideal Sunday:",
+        "options": [
+          {
+            "label": "Farmers market, fresh starts, mild weather",
+            "key": "spring"
+          },
+          {
+            "label": "Chaos, friends, somewhere loud and sweaty",
+            "key": "summer"
+          },
+          {
+            "label": "Candles, books, something simmering on the stove",
+            "key": "autumn"
+          },
+          {
+            "label": "Blankets, silence, do not contact me",
+            "key": "winter"
+          }
+        ]
+      },
+      {
+        "text": "Your wardrobe peak:",
+        "options": [
+          {
+            "label": "Transitional layers, pastels, light scarves",
+            "key": "spring"
+          },
+          {
+            "label": "As little as socially acceptable",
+            "key": "summer"
+          },
+          {
+            "label": "Oversized everything, warm tones, boots",
+            "key": "autumn"
+          },
+          {
+            "label": "Coats, darkness, you are the coat",
+            "key": "winter"
+          }
+        ]
+      },
+      {
+        "text": "You feel most alive:",
+        "options": [
+          {
+            "label": "When things are beginning and the air is hopeful",
+            "key": "spring"
+          },
+          {
+            "label": "At golden hour on a rooftop with everyone",
+            "key": "summer"
+          },
+          {
+            "label": "In the exact middle of October",
+            "key": "autumn"
+          },
+          {
+            "label": "At 2am when it's cold and very quiet",
+            "key": "winter"
+          }
+        ]
+      },
+      {
+        "text": "Your social energy:",
+        "options": [
+          {
+            "label": "Fresh and ready, making plans again",
+            "key": "spring"
+          },
+          {
+            "label": "Peak socialization, every night is an event",
+            "key": "summer"
+          },
+          {
+            "label": "Selective, deep, a few close people",
+            "key": "autumn"
+          },
+          {
+            "label": "Intentional hibernation, back in spring",
+            "key": "winter"
+          }
+        ]
+      },
+      {
+        "text": "The smell that represents you:",
+        "options": [
+          {
+            "label": "Rain on pavement, fresh cut grass",
+            "key": "spring"
+          },
+          {
+            "label": "Sunscreen and chlorine and nostalgia",
+            "key": "summer"
+          },
+          {
+            "label": "Woodsmoke, cinnamon, old libraries",
+            "key": "autumn"
+          },
+          {
+            "label": "Cold air, pine, something you can't name",
+            "key": "winter"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "spring": {
+        "name": "SPRING",
+        "kind": "The Fresh Start",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "24%",
+        "tagline": "You are perpetually starting something new.",
+        "traits": [
+          "Optimistic",
+          "Renewable",
+          "Great at Beginnings"
+        ],
+        "desc": "You carry the energy of something just about to bloom. You forgive easily, start over often, and greet each new thing with genuine excitement. Everything is possible in spring and you believe it."
+      },
+      "summer": {
+        "name": "SUMMER",
+        "kind": "The Golden Hour Person",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "26%",
+        "tagline": "You are at your best when everything is loud and warm.",
+        "traits": [
+          "Magnetic",
+          "Chaotic Good",
+          "Impossible to Ignore"
+        ],
+        "desc": "You peak in chaos. You are the friend everyone wants at the party, the person who makes every ordinary Tuesday memorable. You burn bright and you know it and the nights are endless."
+      },
+      "autumn": {
+        "name": "AUTUMN",
+        "kind": "The Aesthetic One",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "27%",
+        "tagline": "October is your entire personality and that's valid.",
+        "traits": [
+          "Cozy",
+          "Deeply Feeling",
+          "Literally Always Cold"
+        ],
+        "desc": "You find beauty in endings. You own more candles than is reasonable. Your aesthetic is specific, your taste is impeccable, and you've been waiting for the temperature to drop since July."
+      },
+      "winter": {
+        "name": "WINTER",
+        "kind": "The Quiet Force",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "23%",
+        "tagline": "Still waters. Considerable depths.",
+        "traits": [
+          "Internal",
+          "Enduring",
+          "Underestimated Constantly"
+        ],
+        "desc": "You are quietest and strongest. You don't perform your feelings, you contain them. People mistake your stillness for coldness until you trust them enough to show the warmth that lives underneath."
+      }
+    }
+  },
+  "ice-cream-flavor": {
+    "title": "What Ice Cream Flavor Are You?",
+    "cover": "ice cream cone",
+    "cat": "PERSONALITY · FOOD",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "481K",
+    "desc": "Your ice cream order tells the truth about you that therapy is still working up to. 5 questions. No lying.",
+    "questions": [
+      {
+        "text": "Your approach to new things:",
+        "options": [
+          {
+            "label": "Classic works for a reason, I'm staying",
+            "key": "vanilla"
+          },
+          {
+            "label": "New flavor? I need six samples first",
+            "key": "mint"
+          },
+          {
+            "label": "The tried and true is tried and true",
+            "key": "choc"
+          },
+          {
+            "label": "I'll try it if it's pretty honestly",
+            "key": "straw"
+          }
+        ]
+      },
+      {
+        "text": "Someone you care about is upset. You:",
+        "options": [
+          {
+            "label": "Show up with food and listen for as long as needed",
+            "key": "choc"
+          },
+          {
+            "label": "Talk it through, find the solution",
+            "key": "mint"
+          },
+          {
+            "label": "Send a voice note and a playlist",
+            "key": "straw"
+          },
+          {
+            "label": "Make them laugh until it's better",
+            "key": "vanilla"
+          }
+        ]
+      },
+      {
+        "text": "Your most chaotic trait:",
+        "options": [
+          {
+            "label": "You're never that chaotic actually",
+            "key": "vanilla"
+          },
+          {
+            "label": "You will argue a point past the point of winning",
+            "key": "mint"
+          },
+          {
+            "label": "Incredibly intense about your preferences",
+            "key": "choc"
+          },
+          {
+            "label": "You make everything about aesthetics",
+            "key": "straw"
+          }
+        ]
+      },
+      {
+        "text": "At a party you are:",
+        "options": [
+          {
+            "label": "Everyone's favorite person there",
+            "key": "vanilla"
+          },
+          {
+            "label": "The one with the surprising hot take",
+            "key": "mint"
+          },
+          {
+            "label": "Deep in one good conversation all night",
+            "key": "choc"
+          },
+          {
+            "label": "Looking great and being charming",
+            "key": "straw"
+          }
+        ]
+      },
+      {
+        "text": "Your best quality:",
+        "options": [
+          {
+            "label": "Consistency that people build their lives around",
+            "key": "vanilla"
+          },
+          {
+            "label": "You are unforgettable once they know you",
+            "key": "mint"
+          },
+          {
+            "label": "You show up, always, no conditions",
+            "key": "choc"
+          },
+          {
+            "label": "You make everything more beautiful",
+            "key": "straw"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "vanilla": {
+        "name": "CLASSIC VANILLA",
+        "kind": "The Foundation",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "26%",
+        "tagline": "Basic? Incorrect. Essential.",
+        "traits": [
+          "Reliable",
+          "Underrated",
+          "Secretly Runs Everything"
+        ],
+        "desc": "You are the baseline everyone is measured against. Not boring — foundational. You are the friend people call at 2am, the constant in every equation. They say vanilla like it's an insult and they are wrong."
+      },
+      "choc": {
+        "name": "DARK CHOCOLATE",
+        "kind": "The Dependable One",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "25%",
+        "tagline": "Rich, deep, and exactly what people need.",
+        "traits": [
+          "Loyal",
+          "Intense",
+          "Acquired Taste"
+        ],
+        "desc": "You are not for everyone and that is not your problem. The people who get you are devoted to you. You are complex, consistent, and slightly bitter when pushed. Your depth is the whole point."
+      },
+      "straw": {
+        "name": "STRAWBERRY",
+        "kind": "The Charmer",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "24%",
+        "tagline": "Sweet, pretty, slightly underestimated.",
+        "traits": [
+          "Warm",
+          "Aesthetic",
+          "People Pleaser Recovering"
+        ],
+        "desc": "You make everything look good and feel nice and you are learning that it's okay to be a little tart sometimes. Your natural warmth draws people in and your taste is impeccable."
+      },
+      "mint": {
+        "name": "MINT CHOCOLATE CHIP",
+        "kind": "The Surprise",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "25%",
+        "tagline": "Cool until suddenly not. The chip changes everything.",
+        "traits": [
+          "Unexpected",
+          "Polarizing",
+          "Quietly Iconic"
+        ],
+        "desc": "People don't know what to do with you at first. Then they try you. Then they're loyal forever or they're not. There is no middle ground with mint chocolate chip and there is no middle ground with you."
+      }
+    }
+  },
+  "texting-style": {
+    "title": "What Does Your Texting Style Say About You?",
+    "cover": "phone messages",
+    "cat": "PERSONALITY · GEN-Z",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "892K",
+    "desc": "Your texting habits are a full psychological profile. 5 questions will confirm everything.",
+    "questions": [
+      {
+        "text": "When you have something to say:",
+        "options": [
+          {
+            "label": "Send it across 7 separate messages as it occurs to you",
+            "key": "double"
+          },
+          {
+            "label": "One word that contains the full meaning if you know you know",
+            "key": "mono"
+          },
+          {
+            "label": "Voice note, it's faster and more honest",
+            "key": "voice"
+          },
+          {
+            "label": "Text plus 4 emojis that modify the entire tone",
+            "key": "emoji"
+          }
+        ]
+      },
+      {
+        "text": "Someone doesn't reply for 3 hours:",
+        "options": [
+          {
+            "label": "Send a follow-up just to clarify the first message",
+            "key": "double"
+          },
+          {
+            "label": "Same. You also haven't replied to three people.",
+            "key": "mono"
+          },
+          {
+            "label": "Leave them a voice note asking if they're okay",
+            "key": "voice"
+          },
+          {
+            "label": "React to their last message with something that has layers",
+            "key": "emoji"
+          }
+        ]
+      },
+      {
+        "text": "Your average text length:",
+        "options": [
+          {
+            "label": "Multiple paragraphs in real-time fragments",
+            "key": "double"
+          },
+          {
+            "label": "Shorter than this question",
+            "key": "mono"
+          },
+          {
+            "label": "Audio file, 2 minutes 34 seconds",
+            "key": "voice"
+          },
+          {
+            "label": "One sentence and then six emojis to recalibrate it",
+            "key": "emoji"
+          }
+        ]
+      },
+      {
+        "text": "You see someone typing... then they stop. You:",
+        "options": [
+          {
+            "label": "Already sent two more messages while you were watching",
+            "key": "double"
+          },
+          {
+            "label": "Didn't notice. Your phone is face down.",
+            "key": "mono"
+          },
+          {
+            "label": "Send a voice note preemptively",
+            "key": "voice"
+          },
+          {
+            "label": "React to the last thing with 👀",
+            "key": "emoji"
+          }
+        ]
+      },
+      {
+        "text": "Your texts would be described as:",
+        "options": [
+          {
+            "label": "A lot, but always full of something",
+            "key": "double"
+          },
+          {
+            "label": "Rare. Potent. People save them.",
+            "key": "mono"
+          },
+          {
+            "label": "Personal, immediate, you can hear the tone",
+            "key": "voice"
+          },
+          {
+            "label": "A hieroglyph system I need to decode",
+            "key": "emoji"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "double": {
+        "name": "THE DOUBLE TEXTER",
+        "kind": "The Stream of Consciousness",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "29%",
+        "tagline": "Your thoughts arrive in real time and you share all of them.",
+        "traits": [
+          "Expressive",
+          "Enthusiastic",
+          "A Lot in the Best Way"
+        ],
+        "desc": "You send messages as they occur to you. In fragments. In waves. The full picture only emerges across the whole conversation and it's actually a coherent masterpiece. People love getting your texts. There are many of them."
+      },
+      "mono": {
+        "name": "THE ONE-WORD ORACLE",
+        "kind": "The Minimalist Communicator",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "22%",
+        "tagline": "'k' as a complete statement of support.",
+        "traits": [
+          "Efficient",
+          "Mysteriously Cool",
+          "Actually Deeply Fond of You"
+        ],
+        "desc": "You communicate in compression. One word carries more than other people's paragraphs. People who know you know what it means. New people find you confusing and then they crack the code and they're hooked."
+      },
+      "voice": {
+        "name": "THE VOICE NOTE SENDER",
+        "kind": "The Verbal Processor",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "25%",
+        "tagline": "Why type when you can just... say it.",
+        "traits": [
+          "Authentic",
+          "Efficient Actually",
+          "Not For Everyone"
+        ],
+        "desc": "You tried typing it and it lost something. You sent a voice note instead and it was perfect. People who love you are used to the 2-minute audios. People who don't yet are learning. The tone is irreplaceable."
+      },
+      "emoji": {
+        "name": "THE EMOJI ARCHITECT",
+        "kind": "The Visual Communicator",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "24%",
+        "tagline": "🙃 says what words cannot.",
+        "traits": [
+          "Nuanced",
+          "Expressive",
+          "Has a 🫠 for Every Occasion"
+        ],
+        "desc": "Your emoji usage is not decoration, it is the message. The 🙃 alone has done more emotional labor than most texts. People have screenshot your emoji sequences and sent them to others to decode. You are an artist."
+      }
+    }
+  },
+  "bad-habit-type": {
+    "title": "What's Your Most Chaotic Bad Habit?",
+    "cover": "chaos spiral",
+    "cat": "PERSONALITY · GEN-Z",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "1.2M",
+    "desc": "We all have one. 5 questions to identify yours with clinical precision and zero judgment. (Some judgment.)",
+    "questions": [
+      {
+        "text": "When you owe someone a reply:",
+        "options": [
+          {
+            "label": "It's been three days and I know. I know.",
+            "key": "ghost"
+          },
+          {
+            "label": "Running 15 minutes late, will explain never",
+            "key": "late"
+          },
+          {
+            "label": "I replied in my head, does that count?",
+            "key": "doom"
+          },
+          {
+            "label": "I bought something instead, long story",
+            "key": "impulse"
+          }
+        ]
+      },
+      {
+        "text": "Your phone right now:",
+        "options": [
+          {
+            "label": "Multiple unread chats I'm emotionally avoiding",
+            "key": "ghost"
+          },
+          {
+            "label": "Notification for something I'll address tomorrow",
+            "key": "late"
+          },
+          {
+            "label": "Currently open. 73 tabs. It's fine.",
+            "key": "doom"
+          },
+          {
+            "label": "An app I downloaded and then bought something in",
+            "key": "impulse"
+          }
+        ]
+      },
+      {
+        "text": "Plans with friends at 7pm. You leave the house:",
+        "options": [
+          {
+            "label": "7:23pm, immediately text 'omw'",
+            "key": "late"
+          },
+          {
+            "label": "7pm. But from inside your phone.",
+            "key": "doom"
+          },
+          {
+            "label": "After confirming three times you're going then going",
+            "key": "ghost"
+          },
+          {
+            "label": "7pm sharp because you impulse-bought an Uber subscription",
+            "key": "impulse"
+          }
+        ]
+      },
+      {
+        "text": "You tell yourself you'll do it:",
+        "options": [
+          {
+            "label": "After this episode. One more. Last one.",
+            "key": "doom"
+          },
+          {
+            "label": "When I'm in the right headspace (it's a high bar)",
+            "key": "ghost"
+          },
+          {
+            "label": "Tomorrow morning. First thing. I mean it this time.",
+            "key": "late"
+          },
+          {
+            "label": "Right after this one purchase that will fix everything",
+            "key": "impulse"
+          }
+        ]
+      },
+      {
+        "text": "The thing you keep meaning to fix:",
+        "options": [
+          {
+            "label": "The texts I haven't answered since February",
+            "key": "ghost"
+          },
+          {
+            "label": "My relationship with being on time",
+            "key": "late"
+          },
+          {
+            "label": "The doomscrolling situation, tomorrow for sure",
+            "key": "doom"
+          },
+          {
+            "label": "The impulse buying situation, just one more thing first",
+            "key": "impulse"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "ghost": {
+        "name": "SERIAL GHOSTER",
+        "kind": "The Inbox Avoider",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "27%",
+        "tagline": "You read it. You cared. You said nothing.",
+        "traits": [
+          "Overwhelmed",
+          "Caring Actually",
+          "Processing in Private"
+        ],
+        "desc": "You don't ghost because you don't care. You ghost because you care too much and don't have the energy right now and then too much time has passed and now it's a thing. The people who know you, know this."
+      },
+      "late": {
+        "name": "CHRONICALLY LATE",
+        "kind": "The Eternal Optimist About Time",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "25%",
+        "tagline": "You genuinely believe you can make it in 5 minutes.",
+        "traits": [
+          "Optimistic",
+          "Bad at Physics",
+          "Very Sorry Always"
+        ],
+        "desc": "You don't mean to be late. You believe deeply every time that this time you'll make it. The gap between your timeline and reality is a documented phenomenon among your friends. They built in 20 minutes. They know."
+      },
+      "doom": {
+        "name": "DOOMSCROLLER",
+        "kind": "The Infinite Feed Inhabitant",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "25%",
+        "tagline": "Just five more minutes since 2019.",
+        "traits": [
+          "Informed",
+          "Paralyzed",
+          "Phone Face Unlocking Itself"
+        ],
+        "desc": "You opened the app to check one thing. That was 47 minutes ago. You have learned things, felt things, and consumed things you can't name. You will try to stop. After this. After definitely this one."
+      },
+      "impulse": {
+        "name": "IMPULSE BUYER",
+        "kind": "The Optimistic Consumer",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "23%",
+        "tagline": "It was on sale and it will fix everything.",
+        "traits": [
+          "Spontaneous",
+          "Easily Persuaded By Yourself",
+          "Great Gift-Giver"
+        ],
+        "desc": "The thought 'I need this' and the purchase are the same moment for you. Sometimes it's genius. Sometimes it's a gadget you describe to no one. Your browser history is a mood board and a cautionary tale."
+      }
+    }
+  },
+  "tv-watcher": {
+    "title": "How Do You Actually Watch TV?",
+    "cover": "tv remote",
+    "cat": "PERSONALITY · POP CULTURE",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "534K",
+    "desc": "Your streaming habits say everything about you. 5 questions to determine which type of viewer you are.",
+    "questions": [
+      {
+        "text": "New show drops. All 8 episodes. You:",
+        "options": [
+          {
+            "label": "Cancel all plans. See you in 6 hours.",
+            "key": "binge"
+          },
+          {
+            "label": "One episode tonight, no more, self-discipline",
+            "key": "episode"
+          },
+          {
+            "label": "Already read the wiki summary",
+            "key": "spoiler"
+          },
+          {
+            "label": "Watch the first 10 minutes of each to decide",
+            "key": "preview"
+          }
+        ]
+      },
+      {
+        "text": "The credits roll. You:",
+        "options": [
+          {
+            "label": "Next episode is already loading",
+            "key": "binge"
+          },
+          {
+            "label": "Close the app. Done for tonight. Really.",
+            "key": "episode"
+          },
+          {
+            "label": "Immediately go to Reddit for discourse",
+            "key": "spoiler"
+          },
+          {
+            "label": "Evaluate the pilot and make a spreadsheet decision",
+            "key": "preview"
+          }
+        ]
+      },
+      {
+        "text": "Someone asks what you're watching:",
+        "options": [
+          {
+            "label": "Finished it. Three days ago. Fully processed.",
+            "key": "binge"
+          },
+          {
+            "label": "Season 2, episode 4, taking it slow",
+            "key": "episode"
+          },
+          {
+            "label": "I know everything about it without watching",
+            "key": "spoiler"
+          },
+          {
+            "label": "Sampling several things, nothing committed to",
+            "key": "preview"
+          }
+        ]
+      },
+      {
+        "text": "A friend spoils the finale:",
+        "options": [
+          {
+            "label": "Already done. Finished it before they could.",
+            "key": "binge"
+          },
+          {
+            "label": "Actually upset. I was savoring this.",
+            "key": "episode"
+          },
+          {
+            "label": "You asked for this spoiler specifically",
+            "key": "spoiler"
+          },
+          {
+            "label": "You hadn't committed yet so neutrally fine",
+            "key": "preview"
+          }
+        ]
+      },
+      {
+        "text": "Your watchlist:",
+        "options": [
+          {
+            "label": "Fully consumed, constantly adding more",
+            "key": "binge"
+          },
+          {
+            "label": "Several things in progress simultaneously, methodically",
+            "key": "episode"
+          },
+          {
+            "label": "Titles I know everything about and may never watch",
+            "key": "spoiler"
+          },
+          {
+            "label": "400 items in stages of consideration",
+            "key": "preview"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "binge": {
+        "name": "BINGE LORD",
+        "kind": "The Full Send Viewer",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "32%",
+        "tagline": "Sleep is optional. The finale is not.",
+        "traits": [
+          "Committed",
+          "Chronically Tired",
+          "Strong Opinions Immediately"
+        ],
+        "desc": "When you start something you finish it. At 3am. On a Tuesday. You process entire seasons of emotional arcs in one sitting and then talk about nothing else for a week. You are either very done or very in it."
+      },
+      "episode": {
+        "name": "ONE PER NIGHT",
+        "kind": "The Disciplined Enjoyer",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "24%",
+        "tagline": "You are savoring it and we respect that.",
+        "traits": [
+          "Self-Controlled",
+          "Patient",
+          "Actually Remembers the Details"
+        ],
+        "desc": "One episode. Then bed. You know what happened a week later because you actually took it in. You avoid spoilers with the intensity of someone protecting a gift. The journey is the point for you."
+      },
+      "spoiler": {
+        "name": "SPOILER SEEKER",
+        "kind": "The Plot-First Watcher",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "22%",
+        "tagline": "You need to know if it's worth the feelings first.",
+        "traits": [
+          "Practical",
+          "Anxiety-Managing",
+          "Not Surprised Ever"
+        ],
+        "desc": "You read the ending first so you can enjoy the journey without the threat of devastation. This is a logical coping strategy. You have never been blindsided by a plot twist. This is called winning."
+      },
+      "preview": {
+        "name": "PERPETUAL SAMPLER",
+        "kind": "The Commitment-Phobe",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "22%",
+        "tagline": "Your watchlist is a museum of intentions.",
+        "traits": [
+          "Selective",
+          "Optimistic",
+          "Chronically Uncommitted"
+        ],
+        "desc": "You know a lot about many shows and have finished very few. The first episode of something is your comfort food. You hold the remote with the power of someone who has many options and is about to make none."
+      }
+    }
+  },
+  "color-personality": {
+    "title": "What Color Matches Your Personality?",
+    "cover": "color palette",
+    "cat": "PERSONALITY · LIFESTYLE",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "651K",
+    "desc": "Not your favorite color. Your actual color — the one that shows up in how you live. 5 questions.",
+    "questions": [
+      {
+        "text": "In a group, you are:",
+        "options": [
+          {
+            "label": "The one bringing energy and warmth",
+            "key": "yellow"
+          },
+          {
+            "label": "Quietly the most interesting person there",
+            "key": "purple"
+          },
+          {
+            "label": "Calm, reliable, everyone comes to you",
+            "key": "blue"
+          },
+          {
+            "label": "Unforgettable and a little overwhelming",
+            "key": "pink"
+          }
+        ]
+      },
+      {
+        "text": "Your emotional range:",
+        "options": [
+          {
+            "label": "Optimistic until proven otherwise",
+            "key": "yellow"
+          },
+          {
+            "label": "Complex and carefully contained",
+            "key": "purple"
+          },
+          {
+            "label": "Even, deep, rarely ruffled",
+            "key": "blue"
+          },
+          {
+            "label": "Felt loudly and shared openly",
+            "key": "pink"
+          }
+        ]
+      },
+      {
+        "text": "How you make decisions:",
+        "options": [
+          {
+            "label": "Gut feeling, immediate, usually right",
+            "key": "yellow"
+          },
+          {
+            "label": "Research, analysis, then the decision",
+            "key": "purple"
+          },
+          {
+            "label": "Logic, fairness, the best outcome for everyone",
+            "key": "blue"
+          },
+          {
+            "label": "Heart first, consequences later, no regrets",
+            "key": "pink"
+          }
+        ]
+      },
+      {
+        "text": "Your aesthetic:",
+        "options": [
+          {
+            "label": "Bright, warm, things that make people smile",
+            "key": "yellow"
+          },
+          {
+            "label": "Rich, dark, things with history",
+            "key": "purple"
+          },
+          {
+            "label": "Clean, calm, intentional white space",
+            "key": "blue"
+          },
+          {
+            "label": "Bold, maximalist, looks like a personality",
+            "key": "pink"
+          }
+        ]
+      },
+      {
+        "text": "People come to you for:",
+        "options": [
+          {
+            "label": "Joy. You make things better by being there.",
+            "key": "yellow"
+          },
+          {
+            "label": "Perspective. You see what others don't.",
+            "key": "purple"
+          },
+          {
+            "label": "Stability. You are the reliable one.",
+            "key": "blue"
+          },
+          {
+            "label": "Honesty. You will say the thing.",
+            "key": "pink"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "yellow": {
+        "name": "GOLDEN YELLOW",
+        "kind": "The Sun Room",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "26%",
+        "tagline": "You make everywhere warmer just by being in it.",
+        "traits": [
+          "Joyful",
+          "Magnetic",
+          "Optimist By Architecture"
+        ],
+        "desc": "You are the light in the room and you don't even know it. People leave conversations with you feeling better. Your energy is a resource other people rely on and you give it freely. Protect it sometimes."
+      },
+      "purple": {
+        "name": "DEEP PURPLE",
+        "kind": "The Mystery Room",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "23%",
+        "tagline": "Uncommon. Can't be copied. Historically significant.",
+        "traits": [
+          "Complex",
+          "Creative",
+          "Takes Time to Know"
+        ],
+        "desc": "You are not surface-level and you don't pretend to be. Your depth is your whole thing. People who earn your trust find layers they didn't expect. You are an acquired appreciation and worth every bit of it."
+      },
+      "blue": {
+        "name": "ELECTRIC BLUE",
+        "kind": "The Anchor",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "26%",
+        "tagline": "Clear, consistent, impossible to ignore when you speak.",
+        "traits": [
+          "Reliable",
+          "Clear-Headed",
+          "Quietly Strong"
+        ],
+        "desc": "You are the person people call when it matters. You are steady without being boring, clear without being cold. You don't chase attention but when you speak the room recalibrates. That's power."
+      },
+      "pink": {
+        "name": "HOT PINK",
+        "kind": "The Statement",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "25%",
+        "tagline": "You walk in and people notice. That's by design.",
+        "traits": [
+          "Bold",
+          "Unapologetic",
+          "Exactly This Much on Purpose"
+        ],
+        "desc": "You are not for subtlety and subtlety is not for you. You are fully committed to being exactly who you are at full volume. People either love it or they need to adjust. They usually adjust."
+      }
+    }
+  },
+  "snack-2am": {
+    "title": "What Snack Are You at 2AM?",
+    "cover": "midnight kitchen",
+    "cat": "PERSONALITY · FOOD",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "743K",
+    "desc": "Who you are at 2am is who you actually are. 5 questions to identify your true midnight snack self.",
+    "questions": [
+      {
+        "text": "Why are you awake at 2am:",
+        "options": [
+          {
+            "label": "Couldn't stop thinking, now I'm here",
+            "key": "cereal"
+          },
+          {
+            "label": "The leftovers called me, I had to answer",
+            "key": "leftover"
+          },
+          {
+            "label": "I was already awake, this is my time",
+            "key": "chips"
+          },
+          {
+            "label": "I'm not hungry I'm just here",
+            "key": "vibes"
+          }
+        ]
+      },
+      {
+        "text": "Your 2am vibe:",
+        "options": [
+          {
+            "label": "Nostalgic, soft, a little melancholy",
+            "key": "cereal"
+          },
+          {
+            "label": "Practical, efficient, this is a meal not a crisis",
+            "key": "leftover"
+          },
+          {
+            "label": "Committed. This snack deserves my full attention.",
+            "key": "chips"
+          },
+          {
+            "label": "Present but not entirely here, if that makes sense",
+            "key": "vibes"
+          }
+        ]
+      },
+      {
+        "text": "What you're actually processing:",
+        "options": [
+          {
+            "label": "A memory or a feeling or a whole thing",
+            "key": "cereal"
+          },
+          {
+            "label": "Nothing, I'm just hungry, not everything is deep",
+            "key": "leftover"
+          },
+          {
+            "label": "The satisfying sound of the bag honestly",
+            "key": "chips"
+          },
+          {
+            "label": "The ceiling. The concept of time. The universe.",
+            "key": "vibes"
+          }
+        ]
+      },
+      {
+        "text": "Your 2am music:",
+        "options": [
+          {
+            "label": "The playlist called 'nostalgic hours'",
+            "key": "cereal"
+          },
+          {
+            "label": "The leftover is enough entertainment",
+            "key": "leftover"
+          },
+          {
+            "label": "Something with bass, the neighbors are asleep anyway",
+            "key": "chips"
+          },
+          {
+            "label": "Silence or something ambient and inexplicable",
+            "key": "vibes"
+          }
+        ]
+      },
+      {
+        "text": "You'll remember this 2am as:",
+        "options": [
+          {
+            "label": "The night I had cereal and figured something out",
+            "key": "cereal"
+          },
+          {
+            "label": "Good pasta honestly. That was good pasta.",
+            "key": "leftover"
+          },
+          {
+            "label": "The bag was gone before I knew what happened",
+            "key": "chips"
+          },
+          {
+            "label": "You won't really. And that's okay.",
+            "key": "vibes"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "cereal": {
+        "name": "CEREAL AT 2AM",
+        "kind": "The Nostalgic",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "27%",
+        "tagline": "The bowl is for feelings, the cereal is just there.",
+        "traits": [
+          "Sentimental",
+          "Processing Something",
+          "Milk First Never"
+        ],
+        "desc": "You are not actually craving cereal. You're craving the version of yourself that had no responsibilities and ate cereal for dinner on purpose. The bowl is a portal. The feelings are real. The cereal is fine."
+      },
+      "leftover": {
+        "name": "COLD LEFTOVERS",
+        "kind": "The Pragmatist",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "25%",
+        "tagline": "It was better cold and you knew it.",
+        "traits": [
+          "Practical",
+          "No Notes",
+          "Eating From the Container"
+        ],
+        "desc": "You are not romanticizing this. There was food. You needed food. The microwave would have changed the texture and you respect the food too much. You ate from the container over the sink. It was correct."
+      },
+      "chips": {
+        "name": "CHIPS FROM THE BAG",
+        "kind": "The Committed One",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "25%",
+        "tagline": "The bag is gone. You have no regrets.",
+        "traits": [
+          "Fully Present",
+          "No Tomorrow Energy",
+          "Slightly Salty"
+        ],
+        "desc": "You opened it for 'a few' and the next thought you had was that the bag was lighter than expected. You were completely absorbed in the act of existing and eating and it was actually wonderful. No regrets."
+      },
+      "vibes": {
+        "name": "JUST VIBES",
+        "kind": "The Philosophical Night Person",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "23%",
+        "tagline": "You weren't hungry. You were existing.",
+        "traits": [
+          "Contemplative",
+          "Not Hungry Actually",
+          "Has Questions"
+        ],
+        "desc": "You went to the kitchen for something and stood in the fridge light for three minutes and then closed it. You weren't hungry. You needed a change of location. You went back to bed. You are fine."
+      }
+    }
+  },
+  "pet-personality": {
+    "title": "Are You More Dog or Cat?",
+    "cover": "dog and cat",
+    "cat": "PERSONALITY · LIFESTYLE",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "1.6M",
+    "desc": "This quiz doesn't care what pets you have. It cares what kind of creature you ARE. 5 questions. The truth awaits.",
+    "questions": [
+      {
+        "text": "Someone you don't know well says hi:",
+        "options": [
+          {
+            "label": "New friend! Immediately engaged!",
+            "key": "dog"
+          },
+          {
+            "label": "Acknowledge, assess, remain composed",
+            "key": "cat"
+          },
+          {
+            "label": "Enormous chaos for no clear reason",
+            "key": "chaos"
+          },
+          {
+            "label": "I just nodded and moved on honestly",
+            "key": "none"
+          }
+        ]
+      },
+      {
+        "text": "Your energy when someone comes home:",
+        "options": [
+          {
+            "label": "Every time is a reunion, every time matters",
+            "key": "dog"
+          },
+          {
+            "label": "Aware. Deliberate approach if they deserve it.",
+            "key": "cat"
+          },
+          {
+            "label": "Something dramatic and completely unexplained",
+            "key": "chaos"
+          },
+          {
+            "label": "Acknowledged them, continued what I was doing",
+            "key": "none"
+          }
+        ]
+      },
+      {
+        "text": "When you want attention:",
+        "options": [
+          {
+            "label": "Direct approach, very clear communication",
+            "key": "dog"
+          },
+          {
+            "label": "Position myself to be discovered, wait",
+            "key": "cat"
+          },
+          {
+            "label": "Knock something off a surface",
+            "key": "chaos"
+          },
+          {
+            "label": "I'll handle it myself actually",
+            "key": "none"
+          }
+        ]
+      },
+      {
+        "text": "Personal space preferences:",
+        "options": [
+          {
+            "label": "Close proximity is always welcome",
+            "key": "dog"
+          },
+          {
+            "label": "On my terms, when I decide, briefly",
+            "key": "cat"
+          },
+          {
+            "label": "Variable. Completely random. Non-negotiable.",
+            "key": "chaos"
+          },
+          {
+            "label": "Considerable personal space required at all times",
+            "key": "none"
+          }
+        ]
+      },
+      {
+        "text": "Your vibe when things get chaotic:",
+        "options": [
+          {
+            "label": "Here to help, extremely present, possibly in the way",
+            "key": "dog"
+          },
+          {
+            "label": "Watching from a height, mildly curious",
+            "key": "cat"
+          },
+          {
+            "label": "The source of the chaos or very invested in it",
+            "key": "chaos"
+          },
+          {
+            "label": "I went to another room when this started",
+            "key": "none"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "dog": {
+        "name": "100% DOG",
+        "kind": "The Enthusiastic Loyalist",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "28%",
+        "tagline": "Every day with you is the best day they've ever had.",
+        "traits": [
+          "Loyal",
+          "Fully Committed",
+          "Cannot Hide Feelings"
+        ],
+        "desc": "You love loudly and completely. When you care about someone it is obvious because you show up every single time with the same full energy. People feel seen by you. That is the rarest and best quality."
+      },
+      "cat": {
+        "name": "PURE CAT",
+        "kind": "The Discerning One",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "27%",
+        "tagline": "You chose them and that means something.",
+        "traits": [
+          "Selective",
+          "Independent",
+          "Deeply Devoted on Own Terms"
+        ],
+        "desc": "You don't give your energy to everyone and that makes it worth something when you do. The people you've decided on know it. You show up on your terms and it is exactly enough and they know it."
+      },
+      "chaos": {
+        "name": "CHAOS PET ENERGY",
+        "kind": "The Unpredictable Force",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "22%",
+        "tagline": "You operate outside the systems everyone else uses.",
+        "traits": [
+          "Unpredictable",
+          "Entertaining",
+          "A Liability Occasionally"
+        ],
+        "desc": "Nobody can predict you and you like it that way. You are a 3am zoomie in human form. You knocked something over and you'd do it again. The people who love you have just factored this in."
+      },
+      "none": {
+        "name": "NO PETS JUST VIBES",
+        "kind": "The Self-Sufficient One",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "23%",
+        "tagline": "You are a whole ecosystem already.",
+        "traits": [
+          "Independent",
+          "Self-Contained",
+          "Low Maintenance by Design"
+        ],
+        "desc": "You don't need a pet because you've already achieved the energy yourself. You are clean, intentional, and don't require much from others. Your space is yours and it is exactly how you want it."
+      }
+    }
+  },
+  "superpower-match": {
+    "title": "What Superpower Matches Your Personality?",
+    "cover": "superhero cape",
+    "cat": "PERSONALITY · POP CULTURE",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "876K",
+    "desc": "Your answer to this quiz is what your superpower would actually be, not what you think you'd want. Brace yourself.",
+    "questions": [
+      {
+        "text": "At a party you don't want to be at:",
+        "options": [
+          {
+            "label": "Slip out before anyone notices you're gone",
+            "key": "invis"
+          },
+          {
+            "label": "Rewind to when you could have said no",
+            "key": "time"
+          },
+          {
+            "label": "Know exactly who to avoid before it's obvious",
+            "key": "read"
+          },
+          {
+            "label": "Already at the next one honestly",
+            "key": "fly"
+          }
+        ]
+      },
+      {
+        "text": "Your real power in daily life:",
+        "options": [
+          {
+            "label": "Disappearing from group chats with no consequences",
+            "key": "invis"
+          },
+          {
+            "label": "Knowing what someone is about to say before they say it",
+            "key": "read"
+          },
+          {
+            "label": "Reverse the last 30 seconds of any conversation",
+            "key": "time"
+          },
+          {
+            "label": "Moving faster than most people think is possible",
+            "key": "fly"
+          }
+        ]
+      },
+      {
+        "text": "What you'd actually use the power for:",
+        "options": [
+          {
+            "label": "Leaving situations without the conversation",
+            "key": "invis"
+          },
+          {
+            "label": "Going back and saying the thing I thought of later",
+            "key": "time"
+          },
+          {
+            "label": "Never being genuinely surprised by anyone's behavior",
+            "key": "read"
+          },
+          {
+            "label": "The commute situation. Solved. Done.",
+            "key": "fly"
+          }
+        ]
+      },
+      {
+        "text": "The downside you'd live with:",
+        "options": [
+          {
+            "label": "Sometimes people forget I'm even there",
+            "key": "invis"
+          },
+          {
+            "label": "Trapped in a loop fixing one conversation forever",
+            "key": "time"
+          },
+          {
+            "label": "Knowing what people actually think of me",
+            "key": "read"
+          },
+          {
+            "label": "Never being able to just sit still",
+            "key": "fly"
+          }
+        ]
+      },
+      {
+        "text": "Your power is really just:",
+        "options": [
+          {
+            "label": "The ability to disappear when it's too much",
+            "key": "invis"
+          },
+          {
+            "label": "Control over the things that already happened",
+            "key": "time"
+          },
+          {
+            "label": "Being right about people before they show you",
+            "key": "read"
+          },
+          {
+            "label": "Moving through the world faster than it moves at you",
+            "key": "fly"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "invis": {
+        "name": "INVISIBILITY",
+        "kind": "The Quiet Presence",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "26%",
+        "tagline": "You want to be seen on your terms only.",
+        "traits": [
+          "Private",
+          "Observant",
+          "Done With Being Perceived"
+        ],
+        "desc": "You chose invisibility because you'd use it constantly and honestly that's fair. You want to opt out of being observed when it's too much. You notice everything and want to control what notices you back."
+      },
+      "time": {
+        "name": "TIME CONTROL",
+        "kind": "The Regret Minimizer",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "24%",
+        "tagline": "You live in the past enough to want to edit it.",
+        "traits": [
+          "Thoughtful",
+          "Slightly Haunted",
+          "Excellent Planner Retroactively"
+        ],
+        "desc": "You replay conversations at 3am finding the perfect response. With time control you'd finally send it. You'd undo the thing, redo it better, and arrive five minutes earlier than you originally did. Perfect."
+      },
+      "read": {
+        "name": "MIND READING",
+        "kind": "The Already Knew That",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "25%",
+        "tagline": "You read people already. This just makes it official.",
+        "traits": [
+          "Perceptive",
+          "Suspicious",
+          "Usually Right"
+        ],
+        "desc": "You've always had a version of this. You notice things before people say them. You see through performances. Actual mind reading would just confirm everything you suspected and you are ready for that information."
+      },
+      "fly": {
+        "name": "FLYING",
+        "kind": "The Escape Artist",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "25%",
+        "tagline": "You'd leave. Immediately. In the air.",
+        "traits": [
+          "Free",
+          "Restless",
+          "Excellent Above 1000 Feet"
+        ],
+        "desc": "The moment you got the power you'd be gone. Not running from something — running toward everything. The commute, the view, the next place, the open sky. You were always designed to move and now you finally can."
+      }
+    }
+  },
+  "spotify-listener": {
+    "title": "What Type of Spotify Listener Are You?",
+    "cover": "music headphones",
+    "cat": "PERSONALITY · MUSIC",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "1.3M",
+    "desc": "Your streaming habits are a full character analysis. 5 questions to identify your exact listener type.",
+    "questions": [
+      {
+        "text": "Your playlist situation:",
+        "options": [
+          {
+            "label": "Over 200 playlists, categorized, never touched again",
+            "key": "hoarder"
+          },
+          {
+            "label": "One playlist, same 12 songs, since 2019",
+            "key": "repeat"
+          },
+          {
+            "label": "Whatever the algorithm made for me today",
+            "key": "algo"
+          },
+          {
+            "label": "My vinyl collection is my streaming library, is my identity",
+            "key": "snob"
+          }
+        ]
+      },
+      {
+        "text": "When you find a song you love:",
+        "options": [
+          {
+            "label": "Add it to six playlists and move on",
+            "key": "hoarder"
+          },
+          {
+            "label": "Listen to it until it's physically part of you",
+            "key": "repeat"
+          },
+          {
+            "label": "The algorithm will remind me when I need it",
+            "key": "algo"
+          },
+          {
+            "label": "Deep dive the artist, their influences, their era",
+            "key": "snob"
+          }
+        ]
+      },
+      {
+        "text": "Your Spotify Wrapped is:",
+        "options": [
+          {
+            "label": "Extremely varied and means nothing",
+            "key": "hoarder"
+          },
+          {
+            "label": "The same 5 songs 400 times each. I know.",
+            "key": "repeat"
+          },
+          {
+            "label": "Somehow exactly correct every year",
+            "key": "algo"
+          },
+          {
+            "label": "Objectively better than yours",
+            "key": "snob"
+          }
+        ]
+      },
+      {
+        "text": "Someone asks for a song rec:",
+        "options": [
+          {
+            "label": "Send them 12, organized by mood and tempo",
+            "key": "hoarder"
+          },
+          {
+            "label": "The same song you recommend to everyone",
+            "key": "repeat"
+          },
+          {
+            "label": "Tell them to trust the algorithm honestly",
+            "key": "algo"
+          },
+          {
+            "label": "A comprehensive tour of a genre they didn't ask about",
+            "key": "snob"
+          }
+        ]
+      },
+      {
+        "text": "Headphones in. You're listening to:",
+        "options": [
+          {
+            "label": "Whatever playlist I made at 1am that one time",
+            "key": "hoarder"
+          },
+          {
+            "label": "The one",
+            "key": "repeat"
+          },
+          {
+            "label": "The Daily Mix, it knows me better than I do",
+            "key": "algo"
+          },
+          {
+            "label": "Something you haven't heard of yet, don't worry about it",
+            "key": "snob"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "hoarder": {
+        "name": "THE PLAYLIST HOARDER",
+        "kind": "The Collector",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "28%",
+        "tagline": "244 playlists and you listen to exactly 3 of them.",
+        "traits": [
+          "Optimistic",
+          "Organized About Chaos",
+          "Beautiful Intentions"
+        ],
+        "desc": "You make the playlist. You name it. You add 40 songs. You listen to it once. You make another. Your library is a museum of moods you were in and moments you planned for. It's actually beautiful in there."
+      },
+      "repeat": {
+        "name": "THE REPEAT OFFENDER",
+        "kind": "The Song Ritualist",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "26%",
+        "tagline": "When you find the song you stay.",
+        "traits": [
+          "Loyal",
+          "Deeply Committed",
+          "This Song Is Your Whole Thing"
+        ],
+        "desc": "You found it and it's the one and you will not apologize. You've heard it 847 times. It still gets you. Each listen adds a layer. Spotify tried to play something else once and you manually went back."
+      },
+      "algo": {
+        "name": "ALGORITHM TRUSTS",
+        "kind": "The Surrendered One",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "23%",
+        "tagline": "You gave yourself over to it and you feel at peace.",
+        "traits": [
+          "Trusting",
+          "Consistently Pleased",
+          "Low Maintenance"
+        ],
+        "desc": "The algorithm knows. You don't question it. It has surfaced songs you needed exactly when you needed them. You have a symbiotic relationship with a machine and you are at peace with that. Smart."
+      },
+      "snob": {
+        "name": "THE CONCERT SNOB",
+        "kind": "The Music Credentialist",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "23%",
+        "tagline": "You heard it before it was a thing. You need people to know this.",
+        "traits": [
+          "Informed",
+          "Passionate",
+          "Slightly Exhausting About It"
+        ],
+        "desc": "Your taste has standards and those standards have requirements. You saw them live before the album. You have opinions about production choices. The mainstream discovering your artist is complicated for you."
+      }
+    }
+  },
+  "holiday-personality": {
+    "title": "What Type of Holiday Person Are You?",
+    "cover": "holiday decorations",
+    "cat": "PERSONALITY · LIFESTYLE",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "312K",
+    "desc": "Your holiday behavior is a personality test wrapped in tinsel. 5 questions to determine your festive type.",
+    "questions": [
+      {
+        "text": "It's November 1st. You:",
+        "options": [
+          {
+            "label": "The decorations are already up. October 25th actually.",
+            "key": "decorator"
+          },
+          {
+            "label": "Make a detailed list of everything needed",
+            "key": "planner"
+          },
+          {
+            "label": "Acknowledge that the season has technically begun",
+            "key": "grinch"
+          },
+          {
+            "label": "The holiday is when? Good thing I saw this quiz.",
+            "key": "latey"
+          }
+        ]
+      },
+      {
+        "text": "Gift shopping:",
+        "options": [
+          {
+            "label": "Done. Since August. All wrapped. Labeled.",
+            "key": "planner"
+          },
+          {
+            "label": "December 24th, 4pm, full panic, peak results",
+            "key": "latey"
+          },
+          {
+            "label": "Gifts are meaningless, presence is enough, no",
+            "key": "grinch"
+          },
+          {
+            "label": "Gift wrapping is where the magic lives actually",
+            "key": "decorator"
+          }
+        ]
+      },
+      {
+        "text": "Your home during the holidays:",
+        "options": [
+          {
+            "label": "A curated festive experience you built yourself",
+            "key": "decorator"
+          },
+          {
+            "label": "Exactly as planned with a timeline and a budget",
+            "key": "planner"
+          },
+          {
+            "label": "The same as always, maybe a candle",
+            "key": "grinch"
+          },
+          {
+            "label": "Hasn't changed yet, will get to it",
+            "key": "latey"
+          }
+        ]
+      },
+      {
+        "text": "Holiday music:",
+        "options": [
+          {
+            "label": "Mariah Carey the moment it is legally allowed",
+            "key": "decorator"
+          },
+          {
+            "label": "A curated playlist by tempo and occasion",
+            "key": "planner"
+          },
+          {
+            "label": "People keep playing it everywhere and you are tired",
+            "key": "grinch"
+          },
+          {
+            "label": "It's playing somewhere, that's nice",
+            "key": "latey"
+          }
+        ]
+      },
+      {
+        "text": "Your actual holiday energy:",
+        "options": [
+          {
+            "label": "The whole event is elevated by your involvement",
+            "key": "decorator"
+          },
+          {
+            "label": "You made sure everyone's needs were met perfectly",
+            "key": "planner"
+          },
+          {
+            "label": "You showed up and that was your contribution",
+            "key": "grinch"
+          },
+          {
+            "label": "You arrived late with wine and it was fine",
+            "key": "latey"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "decorator": {
+        "name": "THE DECORATOR",
+        "kind": "The Festive Maximalist",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "25%",
+        "tagline": "Your home in December is a spiritual experience.",
+        "traits": [
+          "Enthusiastic",
+          "Creative",
+          "Started in October"
+        ],
+        "desc": "The holidays aren't a season, they're a lifestyle you've been building since the leaves changed. Every corner has something. Every detail was intentional. People walk into your space and feel it. That's a gift."
+      },
+      "planner": {
+        "name": "THE OVER-PLANNER",
+        "kind": "The Holiday Project Manager",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "26%",
+        "tagline": "There is a spreadsheet. There is always a spreadsheet.",
+        "traits": [
+          "Prepared",
+          "Low Holiday Stress",
+          "High Control"
+        ],
+        "desc": "You planned the magic and then executed it. The gifts are wrapped. The reservation is made. The itinerary accounts for traffic. People around you enjoy the holidays more because you did the invisible work. Thank you."
+      },
+      "grinch": {
+        "name": "THE HOLIDAY SKEPTIC",
+        "kind": "The Reluctant Attendee",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "24%",
+        "tagline": "You are there. You are participating. That is enough.",
+        "traits": [
+          "Grounded",
+          "Low Chaos",
+          "Secretly Fine With It"
+        ],
+        "desc": "The decorations don't do much for you. The music starts too early. But you show up, you engage, you eat the food, and somewhere in there is a genuine warmth you wouldn't call it that but it's there."
+      },
+      "latey": {
+        "name": "THE LAST MINUTE",
+        "kind": "The Chaos Gifter",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "25%",
+        "tagline": "You did it. In the last hour. It was perfect somehow.",
+        "traits": [
+          "Spontaneous",
+          "Pressure-Activated",
+          "Arrives With Stories"
+        ],
+        "desc": "You work best under the specific pressure of 'the store closes in 45 minutes.' Your gifts are chaotic and personal and occasionally wrapped in a tote bag. You arrived late and brought the energy. It landed."
+      }
+    }
+  },
+  "rom-com-role": {
+    "title": "Which Rom-Com Character Are You?",
+    "cover": "movie night",
+    "cat": "PERSONALITY · POP CULTURE",
+    "minutes": 2,
+    "qcount": 5,
+    "takes": "421K",
+    "desc": "Every rom-com needs a full cast of characters. 5 questions to determine exactly which one you are. Pray for lead.",
+    "questions": [
+      {
+        "text": "Your crush texts you. You:",
+        "options": [
+          {
+            "label": "Overthink it for 45 minutes then respond perfectly",
+            "key": "lead"
+          },
+          {
+            "label": "Help draft the perfect response for someone else",
+            "key": "bestie"
+          },
+          {
+            "label": "Do not answer. Keep them guessing.",
+            "key": "ex"
+          },
+          {
+            "label": "Complicate things significantly by existing",
+            "key": "obstacle"
+          }
+        ]
+      },
+      {
+        "text": "Your role in your friends relationships:",
+        "options": [
+          {
+            "label": "The one the relationship is happening to",
+            "key": "lead"
+          },
+          {
+            "label": "The advice dispenser, the airport driver",
+            "key": "bestie"
+          },
+          {
+            "label": "The cautionary tale they reference",
+            "key": "ex"
+          },
+          {
+            "label": "You appear at a key moment and create tension",
+            "key": "obstacle"
+          }
+        ]
+      },
+      {
+        "text": "Grand gesture? You:",
+        "options": [
+          {
+            "label": "Are either the recipient or the sender, nothing in between",
+            "key": "lead"
+          },
+          {
+            "label": "Helped plan it and drove the getaway car",
+            "key": "bestie"
+          },
+          {
+            "label": "Once received one, walked away anyway",
+            "key": "ex"
+          },
+          {
+            "label": "Your arrival IS the grand gesture unfortunately",
+            "key": "obstacle"
+          }
+        ]
+      },
+      {
+        "text": "Your character arc:",
+        "options": [
+          {
+            "label": "Learns to let someone in. Classic.",
+            "key": "lead"
+          },
+          {
+            "label": "Was right the whole time, gets nothing for it",
+            "key": "bestie"
+          },
+          {
+            "label": "Redeemable or not, there is no in between",
+            "key": "ex"
+          },
+          {
+            "label": "Humbled by the third act, probably",
+            "key": "obstacle"
+          }
+        ]
+      },
+      {
+        "text": "How your story ends:",
+        "options": [
+          {
+            "label": "Running through an airport or equivalent",
+            "key": "lead"
+          },
+          {
+            "label": "Happy at the wedding, single, thriving actually",
+            "key": "bestie"
+          },
+          {
+            "label": "Ambiguous ending, sequel potential honestly",
+            "key": "ex"
+          },
+          {
+            "label": "A lesson was learned. Possibly yours.",
+            "key": "obstacle"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "lead": {
+        "name": "THE LEAD",
+        "kind": "The Main Character",
+        "color": "#ff3b9a",
+        "nameInk": "#fff",
+        "rarity": "28%",
+        "tagline": "Everything happens to you and it is exactly as dramatic as it sounds.",
+        "traits": [
+          "Charismatic",
+          "Perpetually In A Situation",
+          "Good Hair in the Rain"
+        ],
+        "desc": "You are the one the story is about. Feelings arrive fully formed and at full volume. There is a theme song that plays during your commute. You have met someone in a meet-cute. You did not plan this."
+      },
+      "bestie": {
+        "name": "THE BEST FRIEND",
+        "kind": "The Supporting Legend",
+        "color": "#3bffd2",
+        "nameInk": "#1a1430",
+        "rarity": "27%",
+        "tagline": "You gave excellent advice and they used it on someone else.",
+        "traits": [
+          "Wise",
+          "Funny",
+          "Chronically Overlooked"
+        ],
+        "desc": "You are the most interesting person in every scene you are in. You have the best lines. You help, you support, you make the thing happen, and then the credits roll and the poster had other people on it. Justice for you."
+      },
+      "ex": {
+        "name": "THE EX",
+        "kind": "The Plot Device",
+        "color": "#6c3bff",
+        "nameInk": "#fff",
+        "rarity": "22%",
+        "tagline": "You show up right when things were going well.",
+        "traits": [
+          "Complicated",
+          "Convenient for Narrative Tension",
+          "Not Entirely Villainous"
+        ],
+        "desc": "Your timing is always perfect in the worst way. You appear at restaurants, airports, and emotional peak moments. You are not the villain exactly. You are the complication. The story needed you."
+      },
+      "obstacle": {
+        "name": "THE OBSTACLE",
+        "kind": "The Humbling Force",
+        "color": "#ffd23f",
+        "nameInk": "#1a1430",
+        "rarity": "23%",
+        "tagline": "You thought you were winning right up until the third act.",
+        "traits": [
+          "Confident",
+          "Missing Context",
+          "Growth Arc Incoming"
+        ],
+        "desc": "You entered the situation with a clear advantage and left with a lesson. You were not the villain. You were the person who made the love story matter by making it difficult. You probably deserved better. Probably."
+      }
+    }
   }
 }

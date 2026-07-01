@@ -45,6 +45,15 @@ const jsonLd = {
         name: 'CrazyQuizzes',
         url: 'https://crazyquizzes.com',
       },
+      hasPart: quiz.questions.map((q: any, i: number) => ({
+        '@type': 'Question',
+        position: i + 1,
+        name: q.text,
+        suggestedAnswer: q.options.map((o: any) => ({
+          '@type': 'Answer',
+          text: o.label,
+        })),
+      })),
     },
   ],
 };
@@ -511,6 +520,7 @@ const jsonLd = {
     }
     header { flex-shrink: 0; }
     .breadcrumb { flex-shrink: 0; }
+    .cq-seo-qs { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
     #app {
       flex: 1;
       min-height: 0;
@@ -519,12 +529,6 @@ const jsonLd = {
     }
 
     @media (max-width: 640px) {
-      /* Lock viewport — quiz fits the screen */
-      body { height: 100dvh; overflow: hidden; }
-
-      /* Hide non-essential chrome on mobile */
-      .breadcrumb { display: none; }
-      footer { display: none; }
 
       /* Compact header */
       .header-inner { padding: 8px 14px; gap: 8px; }
@@ -652,6 +656,18 @@ const jsonLd = {
       </div>
     </div>
   </div>
+
+  <section class="cq-seo-qs" aria-label="Quiz questions">
+    <h2>{quiz.title} — All Questions</h2>
+    <ol>
+      {quiz.questions.map((q: any) => (
+        <li>
+          <p>{q.text}</p>
+          <ul>{q.options.map((o: any) => <li>{o.label}</li>)}</ul>
+        </li>
+      ))}
+    </ol>
+  </section>
 
   <!-- Ad zone — shown on intro/results, hidden during questions. Add <ins> ad unit here after creating one in AdSense → Ads → Ad units -->
   <div id="cq-ad-zone" style="max-width:728px;margin:0 auto;padding:0 22px;display:block;"></div>

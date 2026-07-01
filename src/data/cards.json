@@ -2223,5 +2223,358 @@
       "K-POP",
       "MUSIC"
     ]
+  },
+  {
+    "id": "pizza-order",
+    "title": "What Your Pizza Order Says About You",
+    "cat": "PERSONALITY",
+    "takes": "412K",
+    "coverEmoji": "🍕",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#ffd23f 100%)",
+    "badge": "🍕 CHEESY",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "FOOD"
+    ]
+  },
+  {
+    "id": "travel-style",
+    "title": "What Type of Traveler Are You?",
+    "cat": "PERSONALITY",
+    "takes": "289K",
+    "coverEmoji": "✈️🏖️",
+    "coverBg": "linear-gradient(135deg,#3bffd2 0%,#6c3bff 100%)",
+    "badge": "✈️ WANDER",
+    "badgeColor": "#3bffd2",
+    "badgeInk": "#1a1430",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "TRAVEL",
+      "LIFESTYLE"
+    ]
+  },
+  {
+    "id": "spongebob-character",
+    "title": "Which SpongeBob Character Are You?",
+    "cat": "PERSONALITY",
+    "takes": "1.1M",
+    "coverEmoji": "🧽⭐",
+    "coverBg": "linear-gradient(135deg,#ffd23f 0%,#3bffd2 100%)",
+    "badge": "🧽 BIKINI BOTTOM",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "POP CULTURE",
+      "Y2K"
+    ]
+  },
+  {
+    "id": "morning-type",
+    "title": "Morning Person or Night Owl?",
+    "cat": "PERSONALITY",
+    "takes": "678K",
+    "coverEmoji": "🌅🦉",
+    "coverBg": "linear-gradient(135deg,#ffd23f 0%,#1a1430 100%)",
+    "badge": "🌙 NIGHT VIBES",
+    "badgeColor": "#6c3bff",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "LIFESTYLE",
+      "GEN-Z"
+    ]
+  },
+  {
+    "id": "fast-food-chain",
+    "title": "Which Fast Food Chain Are You?",
+    "cat": "PERSONALITY",
+    "takes": "934K",
+    "coverEmoji": "🍔🍟",
+    "coverBg": "linear-gradient(135deg,#ffd23f 0%,#ff3b9a 100%)",
+    "badge": "🍔 VALUE MEAL",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "FOOD",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "phone-battery",
+    "title": "What Does Your Phone Battery Say About You?",
+    "cat": "PERSONALITY",
+    "takes": "567K",
+    "coverEmoji": "🔋📱",
+    "coverBg": "linear-gradient(135deg,#3bffd2 0%,#ff3b9a 100%)",
+    "badge": "🔋 LOW KEY",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "GEN-Z",
+      "LIFESTYLE"
+    ]
+  },
+  {
+    "id": "disney-princess",
+    "title": "Which Disney Princess Are You?",
+    "cat": "PERSONALITY",
+    "takes": "1.4M",
+    "coverEmoji": "👑✨",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#6c3bff 100%)",
+    "badge": "👑 ROYALTY",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "DISNEY",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "workout-style",
+    "title": "What Type of Gym-Goer Are You?",
+    "cat": "PERSONALITY",
+    "takes": "345K",
+    "coverEmoji": "💪🏋️",
+    "coverBg": "linear-gradient(135deg,#6c3bff 0%,#3bffd2 100%)",
+    "badge": "💪 GYM RAT",
+    "badgeColor": "#6c3bff",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "LIFESTYLE",
+      "SPORTS"
+    ]
+  },
+  {
+    "id": "rom-com-role",
+    "title": "Which Rom-Com Character Are You?",
+    "cat": "PERSONALITY",
+    "takes": "421K",
+    "coverEmoji": "💌🎬",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#ffd23f 100%)",
+    "badge": "💌 LEAD ROLE",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "POP CULTURE",
+      "LIFESTYLE"
+    ]
+  },
+  {
+    "id": "season-match",
+    "title": "Which Season Matches Your Personality?",
+    "cat": "PERSONALITY",
+    "takes": "723K",
+    "coverEmoji": "🌸🍂",
+    "coverBg": "linear-gradient(135deg,#3bffd2 0%,#ff3b9a 100%)",
+    "badge": "🍂 AUTUMN CODED",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "LIFESTYLE"
+    ]
+  },
+  {
+    "id": "ice-cream-flavor",
+    "title": "What Ice Cream Flavor Are You?",
+    "cat": "PERSONALITY",
+    "takes": "481K",
+    "coverEmoji": "🍦🍨",
+    "coverBg": "linear-gradient(135deg,#ffd23f 0%,#ff3b9a 100%)",
+    "badge": "🍦 SUNDAE BEST",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "FOOD"
+    ]
+  },
+  {
+    "id": "texting-style",
+    "title": "What Does Your Texting Style Say About You?",
+    "cat": "PERSONALITY",
+    "takes": "892K",
+    "coverEmoji": "💬📱",
+    "coverBg": "linear-gradient(135deg,#6c3bff 0%,#ff3b9a 100%)",
+    "badge": "💬 READ RECEIPT",
+    "badgeColor": "#6c3bff",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "GEN-Z",
+      "LIFESTYLE"
+    ]
+  },
+  {
+    "id": "bad-habit-type",
+    "title": "What's Your Most Chaotic Bad Habit?",
+    "cat": "PERSONALITY",
+    "takes": "1.2M",
+    "coverEmoji": "😬💀",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#6c3bff 100%)",
+    "badge": "😬 OOPS",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "GEN-Z",
+      "LIFESTYLE"
+    ]
+  },
+  {
+    "id": "tv-watcher",
+    "title": "How Do You Actually Watch TV?",
+    "cat": "PERSONALITY",
+    "takes": "534K",
+    "coverEmoji": "📺🍿",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#6c3bff 100%)",
+    "badge": "📺 BINGE MODE",
+    "badgeColor": "#6c3bff",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "POP CULTURE",
+      "LIFESTYLE"
+    ]
+  },
+  {
+    "id": "color-personality",
+    "title": "What Color Matches Your Personality?",
+    "cat": "PERSONALITY",
+    "takes": "651K",
+    "coverEmoji": "🎨🌈",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#3bffd2 100%)",
+    "badge": "🎨 TRUE COLOR",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "LIFESTYLE"
+    ]
+  },
+  {
+    "id": "snack-2am",
+    "title": "What Snack Are You at 2AM?",
+    "cat": "PERSONALITY",
+    "takes": "743K",
+    "coverEmoji": "🌙🍜",
+    "coverBg": "linear-gradient(135deg,#1a1430 0%,#ff3b9a 100%)",
+    "badge": "🌙 MIDNIGHT SNACK",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "FOOD",
+      "GEN-Z"
+    ]
+  },
+  {
+    "id": "pet-personality",
+    "title": "Are You More Dog or Cat?",
+    "cat": "PERSONALITY",
+    "takes": "1.6M",
+    "coverEmoji": "🐶🐱",
+    "coverBg": "linear-gradient(135deg,#ffd23f 0%,#6c3bff 100%)",
+    "badge": "🐾 SETTLED",
+    "badgeColor": "#6c3bff",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "LIFESTYLE"
+    ]
+  },
+  {
+    "id": "superpower-match",
+    "title": "What Superpower Matches Your Personality?",
+    "cat": "PERSONALITY",
+    "takes": "876K",
+    "coverEmoji": "⚡🦸",
+    "coverBg": "linear-gradient(135deg,#6c3bff 0%,#ffd23f 100%)",
+    "badge": "⚡ POWER UP",
+    "badgeColor": "#ffd23f",
+    "badgeInk": "#1a1430",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "POP CULTURE"
+    ]
+  },
+  {
+    "id": "spotify-listener",
+    "title": "What Type of Spotify Listener Are You?",
+    "cat": "PERSONALITY",
+    "takes": "1.3M",
+    "coverEmoji": "🎵🎧",
+    "coverBg": "linear-gradient(135deg,#3bffd2 0%,#6c3bff 100%)",
+    "badge": "🎧 REPEAT 1",
+    "badgeColor": "#3bffd2",
+    "badgeInk": "#1a1430",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "MUSIC",
+      "LIFESTYLE"
+    ]
+  },
+  {
+    "id": "holiday-personality",
+    "title": "What Type of Holiday Person Are You?",
+    "cat": "PERSONALITY",
+    "takes": "312K",
+    "coverEmoji": "🎄✨",
+    "coverBg": "linear-gradient(135deg,#ff3b9a 0%,#3bffd2 100%)",
+    "badge": "🎄 FESTIVE",
+    "badgeColor": "#ff3b9a",
+    "badgeInk": "#fff",
+    "type": "personality",
+    "categories": [
+      "ALL",
+      "PERSONALITY",
+      "LIFESTYLE"
+    ]
   }
 ]
